@@ -39,7 +39,7 @@ proxies:
   - {name: Proxy_US2, server: 52.43.33.6, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: Proxy_US3, server: 69.50.92.110, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
   - {name: Proxy_US4, server: mmt.bjcu.donghui.tech, port: 35423, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8c052d7a-d5da-495a-abee-93f4bef380e1, tfo: false}
-  - {name: Proxy_US5, server: 3.71.242.90, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, network: tcp, ws-opts: {path: /, headers: http/1.1}}
+  - {name: Proxy_US5, server: 3.71.242.90, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, network: tcp, ws-opts: {path: /, headers:  {Host: trojan.burgerip.co.uk}}}
   - {name: Proxy_SG, server: hzhz1.sssyun.xyz, port: 39204, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b, tfo: false}
   - {name: Proxy_SG2, server: 13.250.59.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: Proxy_CN, server: 221.181.185.71, port: 20934, type: ss, cipher: aes-256-cfb, password: bbO8KazkNBUGb7HP}
@@ -66,7 +66,7 @@ proxies:
   - {name: Proxy_IR, server: f41.maryam1500.top, port: 2098, client-fingerprint: chrome, type: vmess, uuid: 83876222-64a4-4912-aa18-b7d9d34959de, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: Proxy_VN, server: 120.232.81.50, port: 15083, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
   - {name: Proxy_DE, server: 120.232.153.71, port: 43526, client-fingerprint: chrome, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: Proxy_DE2, server: 3.124.66.211, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, network: tcp, ws-opts: {path: /, headers: http/1.1}}
+  - {name: Proxy_DE2, server: 3.124.66.211, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, network: tcp, ws-opts: {path: /, headers:  {Host: trojan.burgerip.co.uk}}}
 
 
 proxy-groups:
