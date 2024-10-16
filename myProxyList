@@ -30,6 +30,44 @@ proxies:
   - {name: Proxy1, server: shouer1.209966.xyz, port: 14338, type: vmess, uuid: 7fd4d16d-4b6b-4560-cf6c-23fa094be476, alterId: 0, cipher: auto, tls: false}
   - {name: Proxy2, server: 45.144.48.128, port: 3624, type: ss, cipher: aes-256-cfb, password: u4075420937}
   - {name: Proxy3, server: de2-full.privateip.net, port: 443, type: vmess, uuid: 1fb05049-6d24-4c78-90b6-689b011fce25, alterId: 0, cipher: auto, tls: true,  network: ws, ws-opts: {path: /RACEVPN, headers: {Host: de2-full.privateip.net}}}
+  - {name: Proxy_NL, server: 45.158.171.36, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: a8bt9fY0QsLS6eLnXUe0Ym}
+  - {name: Proxy_NL2, server: 45.158.171.2, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: a8bt9fY0QsLS6eLnXUe0Ym}
+  - {name: Proxy_GB, server: 212.102.53.198, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
+  - {name: Proxy_GB2, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
+  - {name: Proxy_GB3, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
+  - {name: Proxy_US, server: 205.134.180.150, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2}
+  - {name: Proxy_US2, server: 52.43.33.6, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: Proxy_US3, server: 69.50.92.110, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: Proxy_US4, server: mmt.bjcu.donghui.tech, port: 35423, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8c052d7a-d5da-495a-abee-93f4bef380e1, tfo: false}
+  - {name: Proxy_US5, server: 3.71.242.90, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, network: tcp, ws-opts: {path: /, headers: http/1.1}}
+  - {name: Proxy_SG, server: hzhz1.sssyun.xyz, port: 39204, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b, tfo: false}
+  - {name: Proxy_SG2, server: 13.250.59.97, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: Proxy_CN, server: 221.181.185.71, port: 20934, type: ss, cipher: aes-256-cfb, password: bbO8KazkNBUGb7HP}
+  - {name: Proxy_CN2, server: 120.232.153.40, port: 43526, client-fingerprint: chrome, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: Proxy_TR, server: 5.188.36.54, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: xeQxB7sMGptfFct2qk2ESLeCNLLhRRwXrkNZXCdLFYvYwPQD}
+  - {name: Proxy_CA, server: 23.154.136.247, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: Proxy_HK, server: 183.240.255.75, port: 11001, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 29774f68-6f8c-492d-9ada-5cfd4313d218, tfo: false}
+  - {name: Proxy_HK2, server: jioawdm.zhangwei.li, port: 54937, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8c052d7a-d5da-495a-abee-93f4bef380e1, tfo: false}
+  - {name: Proxy_HK3, server: gtm1.ktmwan.com, port: 27263, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: b6979cfa-bab9-4303-b10c-cd350fbea326, tfo: false}
+  - {name: Proxy_HK4, server: 143.92.42.65, port: 2902, client-fingerprint: chrome, type: vmess, uuid: 640c1077-d10b-4225-a9fb-d3e9c3ce7a00, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: Proxy_HK5, server: z3.fragranceninja.com, port: 12960, client-fingerprint: chrome, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false}
+  - {name: Proxy_HK6, server: 120.232.81.50, port: 16088, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
+  - {name: Proxy_HK7, server: 183.240.255.75, port: 11001, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 29774f68-6f8c-492d-9ada-5cfd4313d218, tfo: false}
+  - {name: Proxy_TW, server: twnode11.oportal.cc, port: 443, client-fingerprint: chrome, type: trojan, password: 981db44e-9f07-49eb-9ba0-6ab4939919a2, sni: twnode11.oportal.cc, skip-cert-verify: false}
+  - {name: Proxy_TW2, server: jioawdm.zhangwei.li, port: 27251, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8c052d7a-d5da-495a-abee-93f4bef380e1, tfo: false}
+  - {name: Proxy_JP, server: 120.232.81.50, port: 15084, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
+  - {name: Proxy_JP2, server: biedazjyd.zhangwei.li, port: 50331, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 8c052d7a-d5da-495a-abee-93f4bef380e1, tfo: false}
+  - {name: Proxy_JP3, server: hzhz1.sssyun.xyz, port: 49207, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 4b3391e1-3cc6-4e82-816c-6b7bf516c12b, tfo: false}
+  - {name: Proxy_JP4, server: 61.172.235.22, port: 11002, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 5e169d24-64c5-4a31-8942-1e7b05e79db5, tfo: false}
+  - {name: Proxy_JP5, server: 14.152.94.40, port: 8191, client-fingerprint: chrome, type: ssr, cipher: dummy, password: 123456, protocol: auth_chain_a, obfs: plain, protocol-param: 59869:ES8PT7, obfs-param: 59869:ES8PT7}
+  - {name: Proxy_JP6, server: 13.115.189.201, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: Proxy_SK, server: 18.182.55.134, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: Proxy_ID, server: 13.112.168.104, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: Proxy_IR, server: f41.maryam1500.top, port: 2098, client-fingerprint: chrome, type: vmess, uuid: 83876222-64a4-4912-aa18-b7d9d34959de, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: Proxy_VN, server: 120.232.81.50, port: 15083, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
+  - {name: Proxy_DE, server: 120.232.153.71, port: 43526, client-fingerprint: chrome, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
+  - {name: Proxy_DE2, server: 3.124.66.211, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, network: tcp, ws-opts: {path: /, headers: http/1.1}}
+
 
 proxy-groups:
   - name: ProxyNet
@@ -38,6 +76,43 @@ proxy-groups:
       - Proxy1
       - Proxy2
       - Proxy3
+      - Proxy_NL
+      - Proxy_NL2
+      - Proxy_GB
+      - Proxy_GB2
+      - Proxy_GB3
+      - Proxy_US
+      - Proxy_US2
+      - Proxy_US3
+      - Proxy_US4
+      - Proxy_US5
+      - Proxy_SG
+      - Proxy_SG2
+      - Proxy_CN
+      - Proxy_CN2
+      - Proxy_TR
+      - Proxy_CA
+      - Proxy_HK
+      - Proxy_HK2
+      - Proxy_HK3
+      - Proxy_HK4
+      - Proxy_HK5
+      - Proxy_HK6
+      - Proxy_HK7
+      - Proxy_TW
+      - Proxy_TW2
+      - Proxy_JP
+      - Proxy_JP2
+      - Proxy_JP3
+      - Proxy_JP4
+      - Proxy_JP5
+      - Proxy_JP6
+      - Proxy_SK
+      - Proxy_ID
+      - Proxy_IR
+      - Proxy_VN
+      - Proxy_DE
+      - Proxy_DE2
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
