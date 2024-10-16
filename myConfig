@@ -1122,11 +1122,11 @@ USER-AGENT,Line*,ProxyNet
   - DOMAIN-SUFFIX,sentry.io,ProxyNet
   - DOMAIN-SUFFIX,stripe.com,ProxyNet
   - DOMAIN-SUFFIX,turn.livekit.cloud,ProxyNet
-IP-CIDR,24.199.123.28/32,ProxyNet,no-resolve
-IP-CIDR,45.76.214.191/32,ProxyNet,no-resolve
-IP-CIDR,64.23.132.171/32,ProxyNet,no-resolve
-IP-CIDR,143.198.200.27/32,ProxyNet,no-resolve
-IP-CIDR,159.89.204.203/32,ProxyNet,no-resolve
+  - IP-CIDR,24.199.123.28/32,ProxyNet,no-resolve
+  - IP-CIDR,45.76.214.191/32,ProxyNet,no-resolve
+  - IP-CIDR,64.23.132.171/32,ProxyNet,no-resolve
+  - IP-CIDR,143.198.200.27/32,ProxyNet,no-resolve
+  - IP-CIDR,159.89.204.203/32,ProxyNet,no-resolve
 # Telegram
   - DOMAIN-SUFFIX,t.me,ProxyNet
   - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
@@ -1134,16 +1134,16 @@ IP-CIDR,159.89.204.203/32,ProxyNet,no-resolve
   - DOMAIN-SUFFIX,telegram.me,ProxyNet
   - DOMAIN-SUFFIX,telegram.org,ProxyNet
   - DOMAIN-SUFFIX,telesco.pe,ProxyNet
-IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
-IP-CIDR,91.108.8.0/22,ProxyNet,no-resolve
-IP-CIDR,91.108.12.0/22,ProxyNet,no-resolve
-IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
-IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
-IP-CIDR,109.239.140.0/24,ProxyNet,no-resolve
-IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
-IP-CIDR,2001:B28:F23D::/48,ProxyNet,no-resolve
-IP-CIDR,2001:B28:F23F::/48,ProxyNet,no-resolve
-IP-CIDR,2001:67C:4E8::/48,ProxyNet,no-resolve
+  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.8.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.12.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
+  - IP-CIDR,109.239.140.0/24,ProxyNet,no-resolve
+  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
+  - IP-CIDR,2001:B28:F23D::/48,ProxyNet,no-resolve
+  - IP-CIDR,2001:B28:F23F::/48,ProxyNet,no-resolve
+  - IP-CIDR,2001:67C:4E8::/48,ProxyNet,no-resolve
 # DNS Leak
   - DOMAIN-SUFFIX,dnsleaktest.com,ProxyNet
   - DOMAIN-SUFFIX,dnsleak.com,ProxyNet
@@ -1158,33 +1158,12 @@ IP-CIDR,2001:67C:4E8::/48,ProxyNet,no-resolve
   - DOMAIN-SUFFIX,whoer.net,ProxyNet
   - DOMAIN-SUFFIX,whrq.net,ProxyNet
 # LAN
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
 # China
-GEOIP,CN,DIRECT
+  - GEOIP,CN,DIRECT
 # Final
-FINAL,ProxyNet
+  - FINAL,ProxyNet
 
-[Host]
-localhost = 127.0.0.1
-[General]
-bypass-system = true
-skip-proxy = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, localhost, *.local, captive.apple.com
-tun-excluded-routes = 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.88.99.0/24, 192.168.0.0/16, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32, 239.255.255.250/32
-dns-server = system
-fallback-dns-server = system
-ipv6 = true
-prefer-ipv6 = false
-dns-direct-system = false
-icmp-auto-reply = true
-always-reject-url-rewrite = false
-private-ip-answer = true
-# direct domain fail to resolve use proxy rule
-dns-direct-fallback-proxy = true
-# The fallback behavior when UDP traffic matches a policy that doesn't support the UDP relay. Possible values: DIRECT, REJECT.
-udp-policy-not-supported-behaviour = REJECT
-[URL Rewrite]
-^https?://(www.)?g.cn https://www.google.com 302
-^https?://(www.)?google.cn https://www.google.com 302
