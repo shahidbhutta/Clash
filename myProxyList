@@ -28,7 +28,7 @@ dns:
       - 0.0.0.0/32
 proxies:
   - {name: 🇰🇷 Proxy1, server: shouer1.209966.xyz, port: 14338, type: vmess, uuid: 7fd4d16d-4b6b-4560-cf6c-23fa094be476, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 Proxy2, server: 45.144.48.128, port: 3123, type: ss, cipher: aes-256-cfb, password: u4075420937}
+  - {name: 🇺🇸 Proxy2, server: 45.144.48.128, port: 3624, type: ss, cipher: aes-256-cfb, password: u4075420937}
   - {name: 🇺🇸 Proxy3, server: 45.144.48.128, port: 3102, type: ss, cipher: aes-256-cfb, password: u4459935101}
 #  - {name: 🇺🇸 Proxy4, server: 162.159.152.66, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
 #  - {name: 🇺🇸 Proxy5, server: 104.19.32.12, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
