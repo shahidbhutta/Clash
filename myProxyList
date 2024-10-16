@@ -29,7 +29,7 @@ dns:
 proxies:
   - {name: 🇰🇷 Proxy1, server: shouer1.209966.xyz, port: 14338, type: vmess, uuid: 7fd4d16d-4b6b-4560-cf6c-23fa094be476, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 Proxy2, server: 45.144.48.128, port: 3624, type: ss, cipher: aes-256-cfb, password: u4075420937}
-  - {name: 🇺🇸 Proxy3, server: 51.222.205.252, port: 8443, type: ss, cipher: aes-256-gcm, password: SQMfklZBYuP3EhSHPfpesp3AJonr1aoiJ4l587ESUSE=}
+  - {name: 🇺🇸 Proxy3, server: de2-full.privateip.net, port: 443, type: vmess, uuid: 1fb05049-6d24-4c78-90b6-689b011fce25, alterId: 0, cipher: auto, tls: true,  network: ws, ws-opts: {path: /RACEVPN, headers: {Host: de2-full.privateip.net}}}
 #  - {name: 🇺🇸 Proxy4, server: 162.159.152.66, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
 #  - {name: 🇺🇸 Proxy5, server: 104.19.32.12, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
 #  - {name: 🇺🇸 Proxy6, server: 206.238.236.108, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
