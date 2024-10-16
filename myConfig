@@ -27,16 +27,16 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: ProxyNet1, type: ss, server: 54.169.26.131, port: "13341", cipher: chacha20-ietf-poly1305, password: kZX3GZkWstiviwCAY0ibCj
-  - name: ProxyNet2, type: vmess, server: shouer1.209966.xyz, port: "14338", uuid: 7fd4d16d-4b6b-4560-cf6c-23fa094be476, alterId: "0", cipher: auto
-  - name: ProxyNet3, type: ss, server: 45.144.48.128, port: "3100", cipher: aes-256-cfb, password: u6363248873
+  - name: Proxy1, type: ss, server: 45.144.48.128, port: "3102", cipher: aes-256-cfb, password: u4459935101
+  - name: Proxy2, type: vmess, server: shouer1.209966.xyz, port: "14338", uuid: 7fd4d16d-4b6b-4560-cf6c-23fa094be476, alterId: "0", cipher: auto
+  - name: Proxy3, type: ss, server: 45.144.48.128, port: "3100", cipher: aes-256-cfb, password: u6363248873
 ProxyNet-groups:
   - name: ProxyNet
     type: select
     proxies:
-      - ProxyNet1
-      - ProxyNet2
-      - ProxyNet3
+      - Proxy1
+      - Proxy2
+      - Proxy3
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
