@@ -53,6 +53,7 @@ proxies:
   - {name: 🇷🇺 Proxy25, server: 194.76.18.50, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
   - {name: 🇺🇦 Proxy26, server: 45.67.215.208, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
   - {name: 🇺🇸 Proxy28, server: 34.150.55.114, port: 48489, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
+  - {name: 🇺🇸 Proxy29, server: 192.200.160.33, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
   - {name: 🇺🇸 Proxy31, server: 162.159.152.70, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
   - {name: 🇯🇵 Proxy32, server: 160.16.79.228, port: 443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
   - {name: 🇷🇺 Proxy34, server: 45.8.146.85, port: 2054, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
@@ -61,6 +62,7 @@ proxies:
   - {name: 🇰🇷 Proxy38, server: 121.143.196.49, port: 30001, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
   - {name: 🇬🇧 Proxy39, server: 212.102.53.198, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
   - {name: 🇰🇷 Proxy40, server: 106.240.1.52, port: 20443, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
+  - {name: 🇺🇸 Proxy43, server: 205.134.180.150, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2}
   - {name: 🇨🇳 Proxy44, server: hknode07.oportal.cc, port: 443, type: trojan, password: 981db44e-9f07-49eb-9ba0-6ab4939919a2}
   - {name: 🇯🇵 Proxy45, server: tg_mfbpn03.52cloud.us.kg, port: 38404, type: ss, cipher: chacha20-ietf-poly1305, password: 5409bf78-b122-4b9b-9050-da36576f5bbc}
   - {name: 🇨🇳 Proxy46, server: 203.184.132.238, port: 1520, type: trojan, password: auto, sni: tg.cmliussss.us.kg, network: ws, ws-opts: {path: /, headers: {Host: tg.cmliussss.us.kg}}}
@@ -97,6 +99,7 @@ proxy-groups:
       - 🇷🇺 Proxy25
       - 🇺🇦 Proxy26
       - 🇺🇸 Proxy28
+      - 🇺🇸 Proxy29
       - 🇺🇸 Proxy31
       - 🇯🇵 Proxy32
       - 🇷🇺 Proxy34
