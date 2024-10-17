@@ -59,18 +59,18 @@ proxies:
   - {name: Proxy_ID, server: 13.112.168.104, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: Proxy_DE, server: 120.232.153.71, port: 43526, client-fingerprint: chrome, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
 # https://cdn.jsdelivr.net/gh/itxve/fetch-clash-node/node/NodeShare.yaml
-  - {name: New1, server: z2.fragranceninja.com, port: 12968, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
-  - {name: New2, server: z2.fragranceninja.com, port: 12942, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
-  - {name: New3, server: z3.fragranceninja.com, port: 12959, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: / , headers: {Host: z3.fragranceninja.com}}}
-  - {name: New4, server: z6.fragranceninja.com, port: 12920, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
-  - {name: New5, server: z6.fragranceninja.com, port: 12933, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: z6.fragranceninja.com}}}
-  - {name: New6, server: z3.fragranceninja.com, port: 12960, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
-  - {name: New7, server: z8.fragranceninja.com, port: 12910, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
-  - {name: New8, server: z8.fragranceninja.com, port: 12947, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
-  - {name: New9, server: z8.fragranceninja.com, port: 12956, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
-  - {name: New10, server: z2.fragranceninja.com, port: 12945, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
-  - {name: New11, server: z3.fragranceninja.com, port: 12972, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
-  - {name: New12, server: z8.fragranceninja.com, port: 12937, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New1, server: z2.fragranceninja.com, port: 12968, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New2, server: z2.fragranceninja.com, port: 12942, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
+#  - {name: New3, server: z3.fragranceninja.com, port: 12959, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: / , headers: {Host: z3.fragranceninja.com}}}
+#  - {name: New4, server: z6.fragranceninja.com, port: 12920, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New5, server: z6.fragranceninja.com, port: 12933, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: z6.fragranceninja.com}}}
+#  - {name: New6, server: z3.fragranceninja.com, port: 12960, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
+#  - {name: New7, server: z8.fragranceninja.com, port: 12910, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New8, server: z8.fragranceninja.com, port: 12947, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New9, server: z8.fragranceninja.com, port: 12956, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New10, server: z2.fragranceninja.com, port: 12945, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+#  - {name: New11, server: z3.fragranceninja.com, port: 12972, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
+#  - {name: New12, server: z8.fragranceninja.com, port: 12937, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
   - {name: NewSS, server: jp5.mhw7e2.online, port: 20005, client-fingerprint: chrome, type: ss, udp: true, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
 
 
@@ -107,18 +107,18 @@ proxy-groups:
       - Proxy_SK
       - Proxy_ID
       - Proxy_DE
-      - New1
-      - New2
-      - New3
-      - New4
-      - New5
-      - New6
-      - New7
-      - New8
-      - New9
-      - New10
-      - New11
-      - New12
+#      - New1
+#      - New2
+#      - New3
+#      - New4
+#      - New5
+#      - New6
+#      - New7
+#      - New8
+#      - New9
+#      - New10
+#      - New11
+#      - New12
       - NewSS
 
 rules:
