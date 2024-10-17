@@ -55,7 +55,7 @@ proxies:
   - {name: Proxy_SK, server: 18.182.55.134, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: Proxy_ID, server: 13.112.168.104, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
   - {name: Proxy_DE, server: 120.232.153.71, port: 43526, client-fingerprint: chrome, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-#  - {name: New1, server: z2.fragranceninja.com, port: 12968, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
+  - {name: New1, server: z2.fragranceninja.com, port: 12968, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
 #  - {name: New2, server: z2.fragranceninja.com, port: 12942, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: tcp}
 #  - {name: New3, server: z3.fragranceninja.com, port: 12959, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: / , headers: {Host: z3.fragranceninja.com}}}
 #  - {name: New4, server: z6.fragranceninja.com, port: 12920, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: , headers: {Host: }}}
@@ -103,7 +103,7 @@ proxy-groups:
       - Proxy_SK
       - Proxy_ID
       - Proxy_DE
-#      - New1
+      - New1
 #      - New2
 #      - New3
 #      - New4
