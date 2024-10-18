@@ -35,12 +35,7 @@ proxies:
   - {name: Proxy_GB, server: 212.102.53.198, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
   - {name: Proxy_GB2, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
   - {name: Proxy_GB3, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
-  - {name: Proxy_CN2, server: 120.232.153.40, port: 43526, client-fingerprint: chrome, type: vmess, uuid: 21a9bff2-72de-4e62-93ff-8b159f66d875, alterId: 64, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
   - {name: Proxy_HK, server: 120.232.81.50, port: 16088, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
-  - {name: Proxy_TW, server: twnode11.oportal.cc, port: 443, client-fingerprint: chrome, type: trojan, password: 981db44e-9f07-49eb-9ba0-6ab4939919a2, sni: twnode11.oportal.cc, skip-cert-verify: false}
-  - {name: Proxy_JP, server: 120.232.81.50, port: 15084, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
-  - {name: New3, server: z3.fragranceninja.com, port: 12959, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: / , headers: {Host: z3.fragranceninja.com}}}
-
 proxy-groups:
   - name: ProxyNet
     type: url-test
@@ -56,11 +51,7 @@ proxy-groups:
       - Proxy_GB
       - Proxy_GB2
       - Proxy_GB3
-      - Proxy_CN2
       - Proxy_HK
-      - Proxy_TW
-      - Proxy_JP
-      - New3
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
