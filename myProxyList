@@ -27,8 +27,10 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - {name: Fast, server: soonfrk.soon.guru, port: 40011, type: ss, cipher: chacha20-ietf-poly1305, password: adb64f15-6d91-4950-824b-915f1842c1ca}
-  - {name: Faster, server: hkt2.bika.hk, port: 30251, type: vmess, uuid: 9e88a10b-655c-5120-89d0-408634169561, alterId: 0, cipher: auto, udp: true, servername: , skip-cert-verify: true}
+  - {name: Alvin1, server: 104.21.238.38, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
+  - {name: Fast1, server: soonfrk.soon.guru, port: 40011, type: ss, cipher: chacha20-ietf-poly1305, password: adb64f15-6d91-4950-824b-915f1842c1ca}
+  - {name: Fast2, server: hkt2.bika.hk, port: 30251, type: vmess, uuid: 9e88a10b-655c-5120-89d0-408634169561, alterId: 0, cipher: auto, udp: true, servername: , skip-cert-verify: true}
+  - {name: Fast3, server: 45.144.48.128, port: 3155, type: ss, cipher: aes-256-cfb, password: u8974409040}
   - {name: Proxy1, server: 45.144.48.128, port: 3624, type: ss, cipher: aes-256-cfb, password: u4075420937}
   - {name: Proxy2, server: de2-full.privateip.net, port: 443, type: vmess, uuid: 1fb05049-6d24-4c78-90b6-689b011fce25, alterId: 0, cipher: auto, tls: true,  network: ws, ws-opts: {path: /RACEVPN, headers: {Host: de2-full.privateip.net}}}
   - {name: NewUS1, server: 69.50.92.110, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
@@ -79,7 +81,10 @@ proxy-groups:
     interval: 60
     tolerance: 20
     proxies:
-      - Fast
+      - Alvin1
+      - Fast1
+      - Fast2
+      - Fast3
       - Proxy1
       - Proxy2
       - NewUS1
