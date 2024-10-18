@@ -27,6 +27,7 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
+  - {name: Alvin1, server: 104.21.238.38, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: Fast1, server: soonfrk.soon.guru, port: 40011, type: ss, cipher: chacha20-ietf-poly1305, password: adb64f15-6d91-4950-824b-915f1842c1ca}
   - {name: Fast2, server: hkt2.bika.hk, port: 30251, type: vmess, uuid: 9e88a10b-655c-5120-89d0-408634169561, alterId: 0, cipher: auto, udp: true, servername: , skip-cert-verify: true}
   - {name: Fast3, server: 45.144.48.128, port: 3155, type: ss, cipher: aes-256-cfb, password: u8974409040}
@@ -44,6 +45,7 @@ proxy-groups:
     interval: 60
     tolerance: 20
     proxies:
+      - Alvin1
       - Fast1
       - Fast2
       - Fast3
