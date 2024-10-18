@@ -47,7 +47,6 @@ proxy-groups:
       - Fast1
       - Fast2
       - Fast3
-      - test
       - Proxy1
       - Proxy2
       - NewUS6
