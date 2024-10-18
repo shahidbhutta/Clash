@@ -71,11 +71,12 @@ proxies:
   - {name: New12, server: z8.fragranceninja.com, port: 12937, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws}
   - {name: NewSS, server: jp5.mhw7e2.online, port: 20005, client-fingerprint: chrome, type: ss, udp: true, cipher: chacha20-ietf-poly1305, password: 70747514-fb14-4f31-8390-e1f0453eff6d}
 
-
-
 proxy-groups:
   - name: ProxyNet
-    type: select
+        type: url-test
+        url: http://www.gstatic.com/generate_204
+        interval: 60
+        tolerance: 50
     proxies:
       - Fast
       - Faster
