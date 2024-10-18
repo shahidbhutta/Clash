@@ -78,6 +78,7 @@ proxy-groups:
     type: select
     proxies:
       - Fast
+      - Faster
       - Proxy1
       - Proxy2
       - NewUS1
