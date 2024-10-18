@@ -41,11 +41,6 @@ proxies:
   - {name: Proxy_JP, server: 120.232.81.50, port: 15084, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
   - {name: New3, server: z3.fragranceninja.com, port: 12959, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, udp: true, version: 2, servername: , skip-cert-verify: true, network: ws, ws-opts: {path: / , headers: {Host: z3.fragranceninja.com}}}
 
-[Proxy Group]
-# url-test select which proxy will be used by benchmarking speed to a URL.
-# name = url-test, [proxys], url, interval(second)
-Proxy = url-test, Proxy1, Proxy2, http://www.google.com/generate_204, 300
-
 proxy-groups:
   - name: ProxyNet
     type: url-test
