@@ -97,6 +97,7 @@ proxy-groups:
       - 🇬🇧 英国 44
       - 🇨🇳 中国 24
       - 🇨🇳 中国 58
+      - Ukrain
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
