@@ -16,37 +16,13 @@ proxies:
   - {name: Proxy_GB2, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
   - {name: Proxy_GB3, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
   - {name: Proxy_HK, server: 120.232.81.50, port: 16088, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
-  - tag: VLESS123
-    protocol: vless
-    settings:
-      vnext:
-        - address: 199.232.95.123
-          port: 80
-          users:
-            - id: 89b3cbba-e6ac-485a-9481-976a0415eab9
-              alterId: 0
-              email: t@t.tt
-              security: auto
-              encryption: none
-    streamSettings:
-      network: ws
-      wsSettings:
-        path: /Telegram@Linkvws?ed=2560
-        headers:
-          Host: sara193.ir
-          User-Agent: >-
-            Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,like Gecko) Chrome/92.0.4515.131 Safari/537.36
-    mux:
-      enabled: false
-      concurrency: -1
-  - tag: direct
-    protocol: freedom
-    settings: {}
-  - tag: block
-    protocol: blackhole
-    settings:
-      response:
-        type: http
+  - {name: Faster, server: 24.144.66.227, port: 443, type: vless, uuid: b2a0ab2e-c99d-4691-b3b7-233db523afa7, alterId: 0, udp: true, cipher: none, security: none, fingerprint: random, network: ws, ws-opts: {path: /BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN?ed=8443, headers: {Host: Tel.lololilo.lol}}}
+
+  
+  type=ws&host=&
+  path=%2F
+
+  
 proxy-groups:
   - name: ProxyNet
     type: url-test
@@ -65,7 +41,7 @@ proxy-groups:
       - Proxy_GB2
       - Proxy_GB3
       - Proxy_HK
-      - VLESS123
+      - Faster
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
