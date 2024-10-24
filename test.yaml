@@ -16,7 +16,7 @@ proxies:
   - {name: Proxy_GB2, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
   - {name: Proxy_GB3, server: 212.102.53.198, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-128-gcm, password: shadowsocks, tfo: false}
   - {name: Proxy_HK, server: 120.232.81.50, port: 16088, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: hGkQ6915tD, tfo: false}
-  - {name: VLESS, server: 103.116.7.103, port: 2083, client-fingerprint: chrome, type: vless, cipher: none, id: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, alterId: 0, cipher: none, tls: true, tlsSettings: {allowInsecure: false, serverName: nicorobin.eula.cloudns.org, fingerprint: chrome, show: false}, network: ws, ws-opts: {path: /?ed=2048&Telegram\U0001F1E8\U0001F1F3 @WangCai2, headers: {Host: nicorobin.eula.cloudns.org, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36}}}
+  - {name: VLESS, server: 103.116.7.103, port: 2083, client-fingerprint: chrome, type: vless, cipher: none, id: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, alterId: 0, cipher: none, tls: true, allowInsecure: false, serverName: nicorobin.eula.cloudns.org, fingerprint: chrome, show: false, network: ws, ws-opts: {path: /?ed=2048&Telegram\U0001F1E8\U0001F1F3 @WangCai2, headers: {Host: nicorobin.eula.cloudns.org, User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36}}}
 
 proxy-groups:
   - name: ProxyNet
