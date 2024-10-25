@@ -35,31 +35,11 @@ proxies:
   - {name: Alvin1, server: 104.21.238.38, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: Alvin2, server: 104.21.238.37, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: Alvin3, server: 104.21.238.36, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
-  - {name: 🇨🇳 中国 63, server: 61.220.126.180, port: 443, type: trojan, password: 981db44e-9f07-49eb-9ba0-6ab4939919a2, sni: twnode11.oportal.cc}
-  - {name: 🇨🇳 中国 3, server: twnode11.oportal.cc, port: 443, type: trojan, password: 981db44e-9f07-49eb-9ba0-6ab4939919a2, sni: twnode11.oportal.cc}
-  - {name: 🇨🇳 中国 18, server: hkt2.bika.hk, port: 30251, type: vmess, uuid: 9e88a10b-655c-5120-89d0-408634169561, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 41, server: 69.50.93.113, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {"name":"🇬🇧GB-5","type":"trojan","server":"3.8.248.241","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇮🇪IE-13","type":"trojan","server":"52.214.169.156","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE-3","type":"trojan","server":"63.176.31.124","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE-8","type":"trojan","server":"3.68.99.104","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR-7","type":"trojan","server":"15.237.161.156","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE-11","type":"trojan","server":"51.21.70.13","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇬🇧GB-14","type":"trojan","server":"35.179.6.130","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇸🇪SE-010","type":"trojan","server":"13.50.73.187","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {name: 🇺🇸 美国 34, server: 23.150.248.29, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇮🇳 印度 7, server: artistic-cat.sheepdog670.boats, port: 443, type: trojan, password: !<str> 3648425794742788096}
-  - {"name":"🇺🇸US 3","type":"vmess","server":"plex.com","port":"80","cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}}}
-  - {"name":"US🇺🇸 | 0️⃣1️⃣","type":"vmess","server":"plex.com","port":443,"cipher":"auto","uuid":"a888b89a-08ac-40e6-8ad7-cfce9569f967","alterId":0,"tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/racevpn","headers":{"host":"gerMAnyISvP.iR"}},"client-fingerprint":"chrome"}
-  - {name: 🇨🇳 中国 37, server: z6.fragranceninja.com, port: 12928, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇨🇳 中国 45, server: z2.fragranceninja.com, port: 12968, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: z2.fragranceninja.com}}}
-  - {name: 🇨🇳 中国 13, server: hknode07.oportal.cc, port: 443, type: trojan, password: 981db44e-9f07-49eb-9ba0-6ab4939919a2, sni: hknode07.oportal.cc}
-  - {"name":"🇸🇪SE-0","type":"trojan","server":"51.21.46.132","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {name: 🇬🇧 英国 44, server: 212.102.53.198, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: 🇨🇳 中国 24, server: z3.fragranceninja.com, port: 12960, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇨🇳 中国 58, server: z2.fragranceninja.com, port: 12969, type: vmess, uuid: a32313ad-5e39-4f9a-9cad-512041790050, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: z2.fragranceninja.com}}}
-  - {name: Ukrain, server: 37.19.198.244, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks}
-  - {name: CN_youtube, server: hkt2.bika.hk, port: 30251, type: vmess, uuid: 9e88a10b-655c-5120-89d0-408634169561, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Faster, server: 24.144.66.227, port: 443, type: vless, uuid: b2a0ab2e-c99d-4691-b3b7-233db523afa7, alterId: 0, udp: true, cipher: none, security: none, fingerprint: random, network: ws, ws-opts: {path: /BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN?ed=8443, headers: {Host: Tel.lololilo.lol}}}
+  - {name: vless1, server: 169.159.152.229, port: 443, type: vless, uuid: 84b65da3-0542-44ce-9058-f208b5ca8300, alterId: 0, udp: true, cipher: none, security: none, tls: true, sni: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com, alpn: h3, fingerprint: random, network: ws, ws-opts: {path: /cassiusvpn.pages.dev/?ed=2560, headers: {Host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com}}}
+
+
+
 proxy-groups:
   - name: ProxyNet
     type: url-test
@@ -75,31 +55,9 @@ proxy-groups:
       - Alvin1
       - Alvin2
       - Alvin3
-      - 🇨🇳 中国 63
-      - 🇨🇳 中国 3
-      - 🇨🇳 中国 18
-      - 🇺🇸 美国 41
-      - 🇬🇧GB-5
-      - 🇮🇪IE-13
-      - 🇩🇪DE-3
-      - 🇩🇪DE-8
-      - 🇫🇷FR-7
-      - 🇸🇪SE-11
-      - 🇬🇧GB-14
-      - 🇸🇪SE-010
-      - 🇺🇸 美国 34
-      - 🇮🇳 印度 7
-      - 🇺🇸US 3
-      - US🇺🇸 | 0️⃣1️⃣
-      - 🇨🇳 中国 37
-      - 🇨🇳 中国 45
-      - 🇨🇳 中国 13
-      - 🇸🇪SE-0
-      - 🇬🇧 英国 44
-      - 🇨🇳 中国 24
-      - 🇨🇳 中国 58
-      - Ukrain
-      - CN_youtube
+      - Faster
+      - vless1
+      
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
