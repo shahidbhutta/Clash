@@ -1,13 +1,9 @@
-# https://blog.kooker.jp/free-clash/ Last Checked 2024-10-25 01:00:14
-# 所有免费节点都爬取自网络，请勿用于非法用途。
-# 推荐使用https://github.com/chen08209/FlClash/
-# 本站提供的都是免费且公益的节点，稳定性与长时间连接速率无法与收费版的高速机场节点相提并论，不能奢望太多。
 port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
 proxies:
   - {name: 🇦🇪 阿拉伯联合酋长国 - 迪拜 - Amazon Technologies Inc. - 1, server: 51.112.129.82, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c}
   - {name: 🇦🇪 阿拉伯联合酋长国 - 迪拜 - Amazon Technologies Inc. - 2, server: 51.112.65.135, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c}
