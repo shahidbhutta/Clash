@@ -1,4 +1,82 @@
-vless://f0d584bc-342f-4443-ba24-79e4d0e504b1@190.93.246.152:8880?encryption=none&security=none&fp=chrome&type=ws&host=late-tooth.granzinhannah.workers.dev&path=%2F%40AZARBAYJAB1%40AZARBAYJAB1%3Fed%3D2560#%F0%9F%91%89%F0%9F%86%94
-vless://84b65da3-0542-44ce-9058-f208b5ca8300@162.159.152.229:443?encryption=none&security=tls&sni=e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com&alpn=h3&fp=random&type=ws&host=e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com&path=%2Fcassiusvpn.pages.dev%2F%3Fed%3D2560#%F0%9F%94%92%20VL-WS-TLS%20%F0%9F%8F%B4%E2%80%8D%E2%98%A0%EF%B8%8F%20NA-162.159.152.229%3A443
-vless://8a842d53-fe3b-4dd0-a0c8-723213c26fbd@151.101.66.219:80?encryption=none&security=none&sni=speedtest.net&alpn=http%2F1.1&fp=chrome&type=ws&host=bas-kon-irani.ir&path=%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%3Fed%3D2048#%F0%9F%94%92%20VL-WS-NONE%20%F0%9F%87%BA%F0%9F%87%B8%20US-151.101.66.219%3A80
-vless://8a842d53-fe3b-4dd0-a0c8-723213c26fbd@151.101.66.133:443?encryption=none&security=tls&sni=tufts.edu&alpn=http%2F1.1&fp=chrome&type=ws&host=bas-kon-irani.ir&path=%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%2F%40Alfred_Config%3Fed%3D2048#%F0%9F%94%92%20VL-WS-TLS%20%F0%9F%87%BA%F0%9F%87%B8%20US-151.101.66.133%3A443
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver: 
+    - 223.5.5.5
+    - 114.114.114.114
+    - 8.8.8.8
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+- name: Proxy1
+  type: vless
+  server: 190.93.246.152
+  port: 8880
+  uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
+  network: ws
+  ws-opts:
+    path: /@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+    headers:
+      host: late-tooth.granzinhannah.workers.dev
+  tls: false
+  skip-cert-verify: false
+  udp: true
+
+- name: Proxy2
+  type: vless
+  server: 162.159.152.229
+  port: 443
+  uuid: 84b65da3-0542-44ce-9058-f208b5ca8300
+  network: ws
+  ws-opts:
+    path: /cassiusvpn.pages.dev/?ed=2560
+    headers:
+      host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+  tls: true
+  sni: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+  alpn:
+    - h3
+  skip-cert-verify: false
+  udp: true
+
+proxy-groups:
+- name: Balance
+  type: load-balance
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+    - Proxy1
+    - Proxy2
+
+- name: URL_Test
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+    - Proxy1
+    - Proxy2
+    
+rules:
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Balance
