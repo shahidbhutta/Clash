@@ -35,10 +35,9 @@ proxies:
   - {name: Alvin1, server: 104.21.238.38, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: Alvin2, server: 104.21.238.37, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: Alvin3, server: 104.21.238.36, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
-  - {name: Faster, server: 24.144.66.227, port: 443, type: vless, uuid: b2a0ab2e-c99d-4691-b3b7-233db523afa7, alterId: 0, udp: true, cipher: none, security: none, fingerprint: random, network: ws, ws-opts: {path: /BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN-BARGOVPN?ed=8443, headers: {Host: Tel.lololilo.lol}}}
-  - {name: vless1, server: 169.159.152.229, port: 443, type: vless, uuid: 84b65da3-0542-44ce-9058-f208b5ca8300, alterId: 0, udp: true, cipher: none, security: none, tls: true, sni: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com, alpn: h3, fingerprint: random, network: ws, ws-opts: {path: /cassiusvpn.pages.dev/?ed=2560, headers: {Host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com}}}
-
-
+  - {name: CN_0002, server: dajbxtw.naikonode1.top, port: 15504, type: ssr, cipher: chacha20-ietf, obfs: plain, obfs-param: 83e2a40208.microsoft.com, password: NaikoCloud, protocol: auth_aes128_md5, protocol-param: "40208:yYyiNvXTethxtYP7", udp: true}
+  - {name: CN_0003, server: 120.232.153.37, port: 46665, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3}
+  - {name: CA_0001, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
 
 proxy-groups:
   - name: ProxyNet
@@ -55,8 +54,9 @@ proxy-groups:
       - Alvin1
       - Alvin2
       - Alvin3
-      - Faster
-      - vless1
+      - CN_0002
+      - CN_0003
+      - CA_0001
       
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
