@@ -38,7 +38,7 @@ proxies:
   - {name: CN_0002, server: dajbxtw.naikonode1.top, port: 15504, type: ssr, cipher: chacha20-ietf, obfs: plain, obfs-param: 83e2a40208.microsoft.com, password: NaikoCloud, protocol: auth_aes128_md5, protocol-param: "40208:yYyiNvXTethxtYP7", udp: true}
   - {name: CN_0003, server: 120.232.153.37, port: 46665, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3}
   - {name: CA_0001, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: mine, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, cipher: none, udp: true, tls: true, sni: mindroom-5cz.pages.dev, fp: chrome, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL?ed=2560, headers: {Host: mindroom-5cz.pages.dev}}}
+  - {name: Tr1, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, cipher: none, udp: true, tls: true, sni: mindroom-5cz.pages.dev, fp: chrome, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL?ed=2560, headers: {Host: mindroom-5cz.pages.dev}}}
   - {name: VLSS, server: 188.42.145.159, port: 443, type: vless, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, cipher: none, udp: true, tls: true, sni: VIrgiNiavPn-nL.pagEs.dEv, fp: chrome, network: ws, ws-opts: {path: /, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}}
   
 proxy-groups:
@@ -59,6 +59,8 @@ proxy-groups:
       - CN_0002
       - CN_0003
       - CA_0001
+      - Tr1
+      - VLSS
       
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
