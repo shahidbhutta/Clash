@@ -188,6 +188,7 @@ proxy-groups:
   - GoSocks_Android_VM
   - GoHTTP_home
   - GoSocks_home
+  - KR_0043
   url: http://www.gstatic.com/generate_204
   interval: 120
   tolerance: 50
