@@ -365,6 +365,10 @@ proxy-groups:
 
 rules:
   - DOMAIN-KEYWORD,bank,♻️ OK
+  - DOMAIN-SUFFIX,hbl.com,♻️ OK
+  - DOMAIN-SUFFIX,mobilinkbank.com,♻️ OK
+  - DOMAIN-SUFFIX,wise.com,♻️ OK
+  - DOMAIN-SUFFIX,ubldigital.com,♻️ OK
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
