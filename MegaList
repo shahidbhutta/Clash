@@ -14,13 +14,14 @@ dns:
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
   fallback:
     - https://doh.dns.sb/dns-query
     - https://dns.cloudflare.com/dns-query
     - https://dns.twnic.tw/dns-query
-    - tls://8.8.4.4:853
   fallback-filter:
     geoip: true
     ipcidr:
@@ -36,33 +37,334 @@ proxies:
   - {name: Alvin2, server: 104.21.238.37, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: Alvin3, server: 104.21.238.36, port: 2086, type: vmess, uuid: ee420fda-efb7-48a8-9249-8987e36ebd9e, alterId: 0, cipher: auto, udp: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip16.9447609.xyz}}}
   - {name: CN_0002, server: dajbxtw.naikonode1.top, port: 15504, type: ssr, cipher: chacha20-ietf, obfs: plain, obfs-param: 83e2a40208.microsoft.com, password: NaikoCloud, protocol: auth_aes128_md5, protocol-param: "40208:yYyiNvXTethxtYP7", udp: true}
-  - {name: CN_0003, server: 120.232.153.37, port: 46665, type: vmess, alterId: 64, cipher: auto, skip-cert-verify: true, tls: false, udp: true, uuid: 3ac820af-becb-45d7-9e7a-e33d02961bb3}
-  - {name: CA_0001, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: Tr1, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, cipher: none, udp: true, tls: true, sni: mindroom-5cz.pages.dev, fp: chrome, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL?ed=2560, headers: {Host: mindroom-5cz.pages.dev}}}
   - {name: VLSS, server: 188.42.145.159, port: 443, type: vless, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, cipher: none, udp: true, tls: true, sni: VIrgiNiavPn-nL.pagEs.dEv, fp: chrome, network: ws, ws-opts: {path: /, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}}
-  
+  - {name: AT_0002, server: 94.177.8.26, port: 130, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}, udp: true}
+  - {name: CA_0003, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws, headers: {Host: 23.162.200.227}}}
+  - {name: CN_0004, server: 183.240.253.26, port: 30565, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: CN_0005, server: 183.236.51.23, port: 46602, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CN_0006, server: 183.236.48.163, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: CN_0007, server: gy.58n.net, port: 20301, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: z301.hongkongnode.top, skip-cert-verify: true, udp: true}
+  - {name: CN_0008, server: 183.236.51.23, port: 52112, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_0009, server: gy.58n.net, port: 59021, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: x100.flybar.work, skip-cert-verify: true, udp: true}
+  - {name: CN_0010, server: gy.58n.net, port: 22741, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: dufu.hongkongnode.top, skip-cert-verify: true, udp: true}
+  - {name: CN_0011, server: yd2.ainivp.com, port: 33202, type: vmess, uuid: 9204afcd-023e-781f-1abc-c12efccd1344, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: yd2.ainivp.com, network: ws, ws-opts: {path: /ray, headers: {Host: yd2.ainivp.com}}, udp: true}
+  - {name: CN_0012, server: yd2.ainivp.com, port: 33202, type: vmess, uuid: 9204afcd-023e-781f-1abc-c12efccd1344, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: yd2.ainivp.com}}}
+  - {name: CN_0013, server: gy.58n.net, port: 41767, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: x114.flybar.work, skip-cert-verify: true, udp: true}
+  - {name: CN_0014, server: gy.58n.net, port: 21970, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: x41.flybar.work, skip-cert-verify: true, udp: true}
+  - {name: CN_0015, server: gy.58n.net, port: 20076, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: x76.flybar.work, skip-cert-verify: true, udp: true}
+  - {name: CN_0016, server: gy.58n.net, port: 24603, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: z259.hongkongnode.top, skip-cert-verify: true, udp: true}
+  - {name: CN_0017, server: gy.58n.net, port: 20304, type: trojan, password: 6b679df8-c45c-394f-a4a3-db2721aae730, sni: z304.hongkongnode.top, skip-cert-verify: true, udp: true}
+  - {name: CR_0018, server: 190.93.246.152, port: 8880, type: vless, uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: late-tooth.granzinhannah.workers.dev, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: late-tooth.granzinhannah.workers.dev}}, udp: true}
+  - {name: CR_0019, server: 190.93.246.152, port: 8880, type: vless, uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: late-tooth.granzinhannah.workers.dev, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: late-tooth.granzinhannah.workers.dev}}, udp: true}
+  - {name: DE_0020, server: 152.53.13.241, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: DE_0021, server: 152.53.14.225, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: DE_0022, server: 152.53.14.225, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: vless.ifx.us.kg}}}
+  - {name: DE_0023, server: discord.vpnsell.beauty, port: 443, type: vmess, uuid: 57529232-b316-4b4e-abf1-9b6063ba0316, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /29516/iliya, headers: {Host: discord.vpnsell.beauty}}, udp: true}
+  - {name: DE_0024, server: 152.53.13.241, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: FI_0025, server: 65.109.185.229, port: 1001, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: FR_0026, server: 77.221.152.41, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: GB_0028, server: 217.163.76.107, port: 8443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: edgood.889876.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: edgood.889876.xyz}}, udp: true}
+  - {name: GB_0029, server: 217.163.76.65, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lo.ylks.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lo.ylks.us.kg}}}
+  - {name: HK_0031, server: 219.77.65.212, port: 23555, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560fp=random", headers: {Host: juzi8186.5112233.xyz}}, udp: true}
+  - {name: HK_0032, server: 219.77.65.212, port: 23555, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: juzi8186.5112233.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: juzi8186.5112233.xyz}}}
+  - {name: JP_0035, server: 54.238.135.78, port: 443, type: trojan, password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3, sni: edge.steam-dns.top.comcast.net, skip-cert-verify: true, udp: true}
+  - {name: JP_0036, server: 35.75.8.137, port: 443, type: trojan, password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3, sni: fastly.cdn.steampipe.steamcontent.com, skip-cert-verify: true, udp: true}
+  - {name: JP_0037, server: zmaoz.faculty.ucdavis.edu, port: 443, type: vless, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: zmaoz.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/5Ve373mPjKg4vceF?ed", headers: {Host: Falcunargo.net}}, udp: true}
+  - {name: JP_0038, server: 217.142.243.226, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: JP_0039, server: 168.138.46.67, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: JP_0040, server: 64.110.104.30, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: KR_0042, server: 220.124.232.109, port: 28006, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: KR_0043, server: 61.81.181.169, port: 14985, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: LU_0057, server: 188.42.88.78, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: /, headers: {Host: g1.youyuan.us.kg}}, udp: true}
+  - {name: MD_0058, server: 95.164.22.239, port: 2003, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: NL_0060, server: 2.58.56.31, port: 3001, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: NL_0061, server: 194.246.81.62, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: RO_0062, server: 45.85.119.138, port: 8880, type: vless, uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: late-tooth.granzinhannah.workers.dev, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: late-tooth.granzinhannah.workers.dev}}, udp: true}
+  - {name: RU_0063, server: 188.42.145.159, port: 443, type: vless, uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: VIrgiNiavPn-nL.pagEs.dEv, network: ws, ws-opts: {path: /, headers: {Host: VIrgiNiavPn-nL.pagEs.dEv}}, udp: true}
+  - {name: RU_0064, server: 188.42.145.140, port: 443, type: vless, uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: g1.youyuan.us.kg, network: ws, ws-opts: {path: "/?proxyip=proxyip.multacom.fxxk.dedyn.io", headers: {Host: g1.youyuan.us.kg}}, udp: true}
+  - {name: RU_0065, server: 91.219.150.221, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}}
+  - {name: SE_0066, server: 13.53.117.221, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: SE_0067, server: 13.53.51.77, port: 8080, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: SE_0068, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: SE_0069, server: 185.146.173.63, port: 8080, type: vless, uuid: 925b31c8-73d3-44d4-e087-af7b7ff7e490, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: 6h2.diginoshops3.ir, network: ws, ws-opts: {path: "/Fox?ed=2048", headers: {Host: 6h2.diginoshops3.ir}}, udp: true}
+  - {name: SE_0070, server: 185.146.173.63, port: 8080, type: vless, uuid: 925b31c8-73d3-44d4-e087-af7b7ff7e490, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: 1i5.diginoshops10.ir, network: ws, ws-opts: {path: "/Fox?ed=2048", headers: {Host: 1i5.diginoshops10.ir}}, udp: true}
+  - {name: SE_0071, server: 185.146.173.24, port: 80, type: vless, uuid: fe945275-51a2-5c3c-8669-2c112ed35cec, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: Nl1.vless.site., network: ws, ws-opts: {path: /vless, headers: {Host: Nl1.vless.site.}}, udp: true}
+  - {name: TW_0072, server: 210.61.97.241, port: 81, type: vless, uuid: 88ff07e9-51f0-4608-8c5f-ba2fa8a6b18a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: sub.putata.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sub.putata.eu.org}}, udp: true}
+  - {name: US_0073, server: 151.101.130.228, port: 443, type: vless, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: zmaoz.faculty.ucdavis.edu, network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087", headers: {Host: Falcunargo.net}}, udp: true}
+  - {name: US_0074, server: 151.101.130.228, port: 443, type: vless, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: zmaoz.faculty.ucdavis.edu, alpn: [http/1.1], network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087ized", headers: {Host: Falcunargo.net}}, udp: true}
+  - {name: US_0076, server: 104.16.190.131, port: 8443, type: vless, uuid: 9d5e7586-64e1-4c29-9d47-6cbbd57fe8d1, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: pardazeshvpn-tg48.pages.dev, alpn: [h3, h2], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pardazeshvpn-tg48.pages.dev}}, udp: true}
+  - {name: US_0079, server: 104.16.46.140, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0080, server: 104.19.48.236, port: 80, type: vless, uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: v2ra1.ecrgpk.workers.dev, alpn: [h2, http/1.1], network: ws, ws-opts: {path: /@VPNHTTPInjectorfree, headers: {Host: v2ra1.ecrgpk.workers.dev}}, udp: true}
+  - {name: US_0081, server: 54.187.91.40, port: 443, type: trojan, password: 2bec0faf-7a2e-36ea-a603-19303a5ec6d3, sni: fastly.cdn.steampipe.steamcontent.com, skip-cert-verify: true, udp: true}
+  - {name: US_0082, server: funnelytics.io, port: 8443, type: vless, uuid: 694bc934-818f-4040-a30d-5642dec7495f, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: join.bede.VPNCUSTOMIZE.www.speedtest.net.Powerfullserver.de, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/Telegram,VPNCUSTOMIZE?ed=2480", headers: {Host: join.bede.VPNCUSTOMIZE.www.speedtest.net.Powerfullserver.de}}, udp: true}
+  - {name: US_0083, server: 172.66.45.7, port: 443, type: vless, uuid: a94edb46-0734-4593-a8b5-9cd11ddc57f6, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: 5c53ca21.vpn-aryoo.pages.dev, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 5c53ca21.vpn-aryoo.pages.dev}}, udp: true}
+  - {name: US_0084, server: 162.159.152.202, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lo.ylka.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lo.ylka.us.kg}}}
+  - {name: US_0085, server: 162.159.129.60, port: 80, type: vless, uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net., network: ws, ws-opts: {path: "/Telegram-Xv2ry2?ed=512", headers: {Host: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.}}, udp: true}
+  - {name: US_0086, server: 104.19.255.175, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0087, server: 150.241.83.80, port: 8443, type: vless, uuid: 5a64a684-7c96-42b4-b066-8ec3a138998a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: yyyyyyyu.v2ryng01.ru, alpn: [h2, http/1.1], udp: true, network: tcp}
+  - {name: US_0090, server: 141.101.121.253, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0092, server: 172.67.41.53, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0093, server: 162.159.3.130, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0094, server: 173.245.49.128, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0095, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: /trC8BM8bTsAF0AnLYL, headers: {Host: mindrOOm-5cz.pAgEs.dEV}}}
+  - {name: US_0097, server: 173.245.49.46, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0098, server: 151.101.130.228, port: 443, type: vless, uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: zmaoz.faculty.ucdavis.edu, alpn: [http/1.1], network: ws, ws-opts: {path: "/Telegram@V2ray_Alpha/?ed=2087fp=randomized", headers: {Host: Falcunargo.net}}, udp: true}
+  - {name: US_0099, server: 173.245.49.106, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0100, server: 198.41.216.227, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0101, server: 167.82.30.71, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: samane.ir, network: ws, ws-opts: {path: "/4u7lAS4nPLtz0xPz?ed=2560fp=ios", headers: {Host: samane.ir}}, udp: true}
+  - {name: US_0103, server: 173.245.49.56, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0104, server: 173.245.49.10, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0105, server: 172.64.150.145, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
+  - {name: US_0106, server: 141.101.120.13, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0108, server: hajlab.ucdavis.edu, port: 443, type: vless, uuid: 738fd428-024c-47a1-b11b-62aee5b538af, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: hajlab.ucdavis.edu, network: ws, ws-opts: {path: "/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn?ed=2560", headers: {Host: Join_Evay_vpn.ir}}, udp: true}
+  - {name: US_0109, server: 141.101.123.69, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0111, server: 104.19.89.86, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0112, server: 198.41.205.184, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0113, server: 104.19.250.58, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0114, server: 173.245.49.149, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0115, server: 172.64.104.187, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0116, server: 162.159.249.246, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ap.ylks.xyz}}}
+  - {name: US_0117, server: 69.84.182.177, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lp.ylka.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lp.ylka.us.kg}}, udp: true}
+  - {name: US_0118, server: 162.159.44.53, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0120, server: 69.84.182.234, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lo.ylks.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lo.ylks.us.kg}}, udp: true}
+  - {name: US_0121, server: 162.159.129.60, port: 80, type: vless, uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net., alpn: [http/1.1], network: ws, ws-opts: {path: "/Telegram-Xv2ry2?ed=512", headers: {Host: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.}}, udp: true}
+  - {name: US_0123, server: 157.254.227.37, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vless.ifx.us.kg}}, udp: true}
+  - {name: US_0124, server: 199.232.5.79, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}, udp: true}
+  - {name: US_0125, server: 141.101.122.118, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.kpcloud.eu.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lp.kpcloud.eu.org}}}
+  - {name: US_0126, server: 104.17.234.128, port: 80, type: vless, uuid: 385cf215-0fe1-4f21-d8d9-1a9e649b3566, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: unlimiteddev.unlimiteddev.Community., network: ws, ws-opts: {path: "/@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=8880", headers: {Host: unlimiteddev.unlimiteddev.Community.}}, udp: true}
+  - {name: US_0127, server: 104.22.22.158, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: cp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: cp.ylks.xyz}}}
+  - {name: US_0128, server: 172.64.158.206, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: cp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: cp.ylks.xyz}}}
+  - {name: US_0129, server: 172.67.45.196, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.ylks01.eu.org, network: ws, ws-opts: {path: /blue, headers: {Host: lp.ylks01.eu.org}}}
+  - {name: US_0130, server: 173.245.49.35, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: cp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: cp.ylks.xyz}}}
+  - {name: US_0131, server: 104.18.37.111, port: 443, type: trojan, password: bpb-trojan, sni: mindrOOm-5cz.pAgEs.dEV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trC8BM8bTsAF0AnLYL?ed=2560", headers: {Host: mindrOOm-5cz.pAgEs.dEV}}, udp: true}
+  - {name: US_0132, server: www.rxhomeo.in, port: 443, type: vless, uuid: 0792bb58-36ac-451e-a629-e363e53da93b, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: kbe6j36j36jafka.lastronin.cloudns.org, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: kafka.lastronin.cloudns.org}}, udp: true}
+  - {name: US_0133, server: 198.62.62.185, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lu.ylks01.eu.org, network: ws, ws-opts: {path: /blue, headers: {Host: lu.ylks01.eu.org}}, udp: true}
+  - {name: US_0134, server: 173.245.49.15, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: cp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: cp.ylks.xyz}}}
+  - {name: US_0135, server: 173.245.49.232, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: lp.ylks01.eu.org, network: ws, ws-opts: {path: /blue, headers: {Host: lp.ylks01.eu.org}}}
+  - {name: US_0136, server: 104.19.98.12, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: cp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: cp.ylks.xyz}}}
+  - {name: US_0137, server: 141.101.121.159, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: cp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: cp.ylks.xyz}}}
+  - {name: US_0138, server: 69.84.182.71, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lp.ylks01.eu.org, network: ws, ws-opts: {path: /blue, headers: {Host: lp.ylks01.eu.org}}, udp: true}
+  - {name: US_0139, server: 69.84.182.177, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lp.ylka.us.kg, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: lp.ylka.us.kg}}, udp: true}
+  - {name: US_0140, server: 151.101.194.133, port: 443, type: vless, uuid: 2e27f295-cf36-4dea-9300-fc6dbe042871, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: mio.splashthat.com, alpn: [h3, h2, http/1.1], network: ws, ws-opts: {path: "/VLESS?ed=2048", headers: {Host: 5776.ir}}, udp: true}
+  - {name: US_0141, server: 188.114.99.237, port: 443, type: vless, uuid: 4f9219f6-ba56-4e5a-a676-0978d8b613e4, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: shirvanoo.hooplnqpb.ir, network: ws, ws-opts: {path: "/?ed=2048/sinabigo-sinabigo", headers: {Host: shirvanoo.hooplnqpb.ir}}, udp: true}
+  - {name: US_0142, server: 165.154.134.125, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: vless.ifx.us.kg}}}
+  - {name: US_0143, server: 69.84.182.234, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lo.ylks.us.kg, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: lo.ylks.us.kg}}, udp: true}
+  - {name: US_0144, server: 151.101.62.102, port: 443, type: vless, uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: default.ssl.fastly.net, network: ws, ws-opts: {path: "/Telegram-Xv2ry2-8?ed=1080", headers: {Host: 9x.ru}}, udp: true}
+  - {name: US_0145, server: cf.hughhad.us.kg, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: Cf.HuGHhaD.uS.KG, network: ws, udp: true, ws-opts: {path: /}}
+  - {name: US_0146, server: 69.84.182.138, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: lu.ylks01.eu.org, network: ws, ws-opts: {path: /blue, headers: {Host: lu.ylks01.eu.org}}, udp: true}
+  - {name: US_0147, server: 157.254.227.37, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: vless.ifx.us.kg, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: vless.ifx.us.kg}}}
+  - {name: US_0149, server: 198.62.62.236, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: as.ylks.xyz, network: ws, ws-opts: {path: /freecodes, headers: {Host: as.ylks.xyz}}, udp: true}
+  - {name: US_0150, server: 198.62.62.170, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: ap.ylks.xyz}}, udp: true}
+  - {name: US_0151, server: 69.84.182.39, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: ap.ylks.xyz}}, udp: true}
+  - {name: US_0152, server: 198.62.62.176, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: dp.ylks.xyz, network: ws, ws-opts: {path: "/?proxyip=proxyip.us.fxxp.dedyp.io", headers: {Host: dp.ylks.xyz}}, udp: true}
+  - {name: US_0153, server: 198.62.62.84, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: as.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: as.ylks.xyz}}, udp: true}
+  - {name: US_0154, server: 172.67.154.150, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0155, server: 69.84.182.127, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: dp.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: dp.ylks.xyz}}, udp: true}
+  - {name: US_0156, server: 172.67.240.211, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0157, server: 69.84.182.140, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: ap.ylks.xyz}}, udp: true}
+  - {name: US_0158, server: 199.232.5.101, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: mefa.ir, network: ws, ws-opts: {path: "/H?ed=2560", headers: {Host: mefa.ir}}, udp: true}
+  - {name: US_0159, server: 172.67.98.114, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0160, server: 69.84.182.41, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: ap.ylks.xyz}}, udp: true}
+  - {name: US_0161, server: 172.64.202.122, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0162, server: 172.64.130.67, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0163, server: cf.hughhad.us.kg, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, skip-cert-verify: false, client-fingerprint: chrome, servername: Cf.HuGHhaD.uS.KG, network: ws, ws-opts: {path: /, headers: {Host: Cf.HuGHhaD.uS.KG}}}
+  - {name: US_0164, server: 172.67.191.109, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0165, server: 172.67.251.4, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0166, server: speedtest.net, port: 443, type: vmess, uuid: 57727d7d-8873-4000-b3f4-33a93fcfdd51, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: mehrjavan.ir, network: ws, ws-opts: {path: /m28jcoZZUhkqg6pk11, headers: {Host: mehrjavan.ir}}, udp: true}
+  - {name: US_0167, server: 172.67.9.38, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0168, server: 172.67.248.180, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0169, server: 172.67.101.141, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0170, server: 104.17.234.128, port: 80, type: vless, uuid: 385cf215-0fe1-4f21-d8d9-1a9e649b3566, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: unlimiteddev.unlimiteddev.Community., alpn: [""], network: ws, ws-opts: {path: "/@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=8880", headers: {Host: unlimiteddev.unlimiteddev.Community.}}}
+  - {name: US_0171, server: 172.67.192.183, port: 443, type: vless, uuid: 8250d638-45df-41fa-b06f-160d1cb1de0c, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: abc.vpneee.top, network: ws, ws-opts: {path: /YnqGMcAt/, headers: {Host: abc.vpneee.top}}, udp: true}
+  - {name: US_0172, server: 198.62.62.77, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, skip-cert-verify: true, client-fingerprint: chrome, servername: ap.ylks.xyz, network: ws, ws-opts: {path: /blue, headers: {Host: ap.ylks.xyz}}, udp: true}
+  - {name: US_0173, server: isvvpn.fastly80.hosting-ip.com, port: 80, type: vless, uuid: 2e27f295-cf36-4dea-9300-fc6dbe042871, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: 5776.ir, alpn: [""], network: ws, ws-opts: {path: "/VLESS?ed=80", headers: {Host: 5776.ir}}}
+  - {name: US_0174, server: ISVvpn.fastly80.hosting-ip.com, port: 80, type: vless, uuid: 2e27f295-cf36-4dea-9300-fc6dbe042871, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: 5776.ir, alpn: [""], network: ws, ws-opts: {path: "/VLESS?ed=80", headers: {Host: 5776.ir}}}
+  - {name: US_0175, server: 151.101.2.165, port: 80, type: vless, uuid: 9cbe7791-7d04-5d71-89c9-92d4cff083cc, tls: false, skip-cert-verify: true, client-fingerprint: chrome, servername: mortezatv665656.ir, network: ws, ws-opts: {path: /vless, headers: {Host: mortezatv665656.ir}}, udp: true}
+  - {name: VN_0176, server: 160.30.21.105, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: std1.loadingip.com, skip-cert-verify: true}
+  - {name: VN_0177, server: std1.loadingip.com, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, skip-cert-verify: true}
+  - {name: GoHTTP_Android_VM, server: 10.18.20.235, port: 8080, type: http}
+  - {name: GoSocks_Android_VM, server: 10.18.20.235, port: 443, type: socks5}
+  - {name: GoHTTP_home, server: 192.168.1.30, port: 8080, type: http}
+  - {name: GoSocks_home, server: 192.168.1.30, port: 443, type: socks5}
+
+
 proxy-groups:
-  - name: ProxyNet
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 120
-    tolerance: 50
-    proxies:
-      - Alv2
-      - Alv3
-      - Alv4
-      - Alv5
-      - Alv6
-      - Alvin1
-      - Alvin2
-      - Alvin3
-      - CN_0002
-      - CN_0003
-      - CA_0001
-      - Tr1
-      - VLSS
-      
+- name: ⭕ proxinode
+  type: select
+  proxies:
+  - Alv2
+  - Alv3
+  - Alv4
+  - Alv5
+  - Alv6
+  - Alvin1
+  - Alvin2
+  - Alvin3
+  - CN_0002
+  - Tr1
+  - VLSS
+  - AT_0002
+  - CA_0003
+  - CN_0004
+  - CN_0005
+  - CN_0006
+  - CN_0007
+  - CN_0008
+  - CN_0009
+  - CN_0010
+  - CN_0011
+  - CN_0012
+  - CN_0013
+  - CN_0014
+  - CN_0015
+  - CN_0016
+  - CN_0017
+  - CR_0018
+  - CR_0019
+  - DE_0020
+  - DE_0021
+  - DE_0022
+  - DE_0023
+  - DE_0024
+  - FI_0025
+  - FR_0026
+  - GB_0028
+  - GB_0029
+  - HK_0031
+  - HK_0032
+  - JP_0035
+  - JP_0036
+  - JP_0037
+  - JP_0038
+  - JP_0039
+  - JP_0040
+  - KR_0042
+  - KR_0043
+  - LU_0057
+  - MD_0058
+  - NL_0060
+  - NL_0061
+  - RO_0062
+  - RU_0063
+  - RU_0064
+  - RU_0065
+  - SE_0066
+  - SE_0067
+  - SE_0068
+  - SE_0069
+  - SE_0070
+  - SE_0071
+  - TW_0072
+  - US_0073
+  - US_0074
+  - US_0076
+  - US_0079
+  - US_0080
+  - US_0081
+  - US_0082
+  - US_0083
+  - US_0084
+  - US_0085
+  - US_0086
+  - US_0087
+  - US_0090
+  - US_0092
+  - US_0093
+  - US_0094
+  - US_0095
+  - US_0097
+  - US_0098
+  - US_0099
+  - US_0100
+  - US_0101
+  - US_0103
+  - US_0104
+  - US_0105
+  - US_0106
+  - US_0108
+  - US_0109
+  - US_0111
+  - US_0112
+  - US_0113
+  - US_0114
+  - US_0115
+  - US_0116
+  - US_0117
+  - US_0118
+  - US_0120
+  - US_0121
+  - US_0123
+  - US_0124
+  - US_0125
+  - US_0126
+  - US_0127
+  - US_0128
+  - US_0129
+  - US_0130
+  - US_0131
+  - US_0132
+  - US_0133
+  - US_0134
+  - US_0135
+  - US_0136
+  - US_0137
+  - US_0138
+  - US_0139
+  - US_0140
+  - US_0141
+  - US_0142
+  - US_0143
+  - US_0144
+  - US_0145
+  - US_0146
+  - US_0147
+  - US_0149
+  - US_0150
+  - US_0151
+  - US_0152
+  - US_0153
+  - US_0154
+  - US_0155
+  - US_0156
+  - US_0157
+  - US_0158
+  - US_0159
+  - US_0160
+  - US_0161
+  - US_0162
+  - US_0163
+  - US_0164
+  - US_0165
+  - US_0166
+  - US_0167
+  - US_0168
+  - US_0169
+  - US_0170
+  - US_0171
+  - US_0172
+  - US_0173
+  - US_0174
+  - US_0175
+  - VN_0176
+  - VN_0177
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+  tolerance: 50
+
+- name: ♻️ OK
+  type: select
+  proxies:
+  - GoHTTP_Android_VM
+  - GoSocks_Android_VM
+  - GoHTTP_home
+  - GoSocks_home
+  url: http://www.gstatic.com/generate_204
+  interval: 120
+  tolerance: 50
+
 rules:
+  - DOMAIN-KEYWORD,bank,♻️ OK
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
@@ -72,31 +374,31 @@ rules:
   - DOMAIN-SUFFIX,alicdn.com,DIRECT
 # Accelerate most visited sites
   - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
-  - DOMAIN,cdn.angruo.com,ProxyNet
+  - DOMAIN,cdn.angruo.com,⭕ proxinode
   - DOMAIN,download.jetbrains.com,DIRECT
   - DOMAIN,file-igamecj.akamaized.net,DIRECT
   - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
   - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
   - DOMAIN,speedtest.macpaw.com,DIRECT
-  - DOMAIN,beiyong.starnetcn.com,ProxyNet
-  - DOMAIN-SUFFIX,services.googleapis.cn,ProxyNet
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
+  - DOMAIN,beiyong.starnetcn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,services.googleapis.cn,⭕ proxinode
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,⭕ proxinode
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,ProxyNet
-  - DOMAIN,developer.apple.com,ProxyNet
-  - DOMAIN-SUFFIX,digicert.com,ProxyNet
-  - DOMAIN,ocsp.apple.com,ProxyNet
-  - DOMAIN,ocsp.comodoca.com,ProxyNet
-  - DOMAIN,ocsp.usertrust.com,ProxyNet
-  - DOMAIN,ocsp.sectigo.com,ProxyNet
-  - DOMAIN,ocsp.verisign.net,ProxyNet
-  - DOMAIN-SUFFIX,apple-dns.net,ProxyNet
-  - DOMAIN,testflight.apple.com,ProxyNet
-  - DOMAIN,sandbox.itunes.apple.com,ProxyNet
-  - DOMAIN,itunes.apple.com,ProxyNet
-  - DOMAIN-SUFFIX,apps.apple.com,ProxyNet
-  - DOMAIN-SUFFIX,blobstore.apple.com,ProxyNet
-  - DOMAIN,cvws.icloud-content.com,ProxyNet
+  - DOMAIN,safebrowsing.googleapis.com,⭕ proxinode
+  - DOMAIN,developer.apple.com,⭕ proxinode
+  - DOMAIN-SUFFIX,digicert.com,⭕ proxinode
+  - DOMAIN,ocsp.apple.com,⭕ proxinode
+  - DOMAIN,ocsp.comodoca.com,⭕ proxinode
+  - DOMAIN,ocsp.usertrust.com,⭕ proxinode
+  - DOMAIN,ocsp.sectigo.com,⭕ proxinode
+  - DOMAIN,ocsp.verisign.net,⭕ proxinode
+  - DOMAIN-SUFFIX,apple-dns.net,⭕ proxinode
+  - DOMAIN,testflight.apple.com,⭕ proxinode
+  - DOMAIN,sandbox.itunes.apple.com,⭕ proxinode
+  - DOMAIN,itunes.apple.com,⭕ proxinode
+  - DOMAIN-SUFFIX,apps.apple.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blobstore.apple.com,⭕ proxinode
+  - DOMAIN,cvws.icloud-content.com,⭕ proxinode
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
   - DOMAIN-SUFFIX,icloud.com,DIRECT
@@ -238,20 +540,20 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,DIRECT
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
-  - DOMAIN-KEYWORD,amazon,ProxyNet
-  - DOMAIN-KEYWORD,google,ProxyNet
-  - DOMAIN-KEYWORD,gmail,ProxyNet
-  - DOMAIN-KEYWORD,youtube,ProxyNet
-  - DOMAIN-KEYWORD,facebook,ProxyNet
-  - DOMAIN-SUFFIX,fb.me,ProxyNet
-  - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
-  - DOMAIN-KEYWORD,twitter,ProxyNet
-  - DOMAIN-KEYWORD,instagram,ProxyNet
-  - DOMAIN-KEYWORD,dropbox,ProxyNet
-  - DOMAIN-SUFFIX,twimg.com,ProxyNet
-  - DOMAIN-KEYWORD,blogspot,ProxyNet
-  - DOMAIN-SUFFIX,youtu.be,ProxyNet
-  - DOMAIN-KEYWORD,whatsapp,ProxyNet
+  - DOMAIN-KEYWORD,amazon,⭕ proxinode
+  - DOMAIN-KEYWORD,google,⭕ proxinode
+  - DOMAIN-KEYWORD,gmail,⭕ proxinode
+  - DOMAIN-KEYWORD,youtube,⭕ proxinode
+  - DOMAIN-KEYWORD,facebook,⭕ proxinode
+  - DOMAIN-SUFFIX,fb.me,⭕ proxinode
+  - DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
+  - DOMAIN-KEYWORD,twitter,⭕ proxinode
+  - DOMAIN-KEYWORD,instagram,⭕ proxinode
+  - DOMAIN-KEYWORD,dropbox,⭕ proxinode
+  - DOMAIN-SUFFIX,twimg.com,⭕ proxinode
+  - DOMAIN-KEYWORD,blogspot,⭕ proxinode
+  - DOMAIN-SUFFIX,youtu.be,⭕ proxinode
+  - DOMAIN-KEYWORD,whatsapp,⭕ proxinode
   - DOMAIN-KEYWORD,admarvel,REJECT
   - DOMAIN-KEYWORD,admaster,REJECT
   - DOMAIN-KEYWORD,adsage,REJECT
@@ -279,304 +581,304 @@ rules:
   - DOMAIN-SUFFIX,vungle.com,REJECT
   - DOMAIN-KEYWORD,wlmonitor,REJECT
   - DOMAIN-KEYWORD,zjtoolbar,REJECT
-  - DOMAIN-SUFFIX,9to5mac.com,ProxyNet
-  - DOMAIN-SUFFIX,abpchina.org,ProxyNet
-  - DOMAIN-SUFFIX,adblockplus.org,ProxyNet
-  - DOMAIN-SUFFIX,adobe.com,ProxyNet
-  - DOMAIN-SUFFIX,akamaized.net,ProxyNet
-  - DOMAIN-SUFFIX,alfredapp.com,ProxyNet
-  - DOMAIN-SUFFIX,amplitude.com,ProxyNet
-  - DOMAIN-SUFFIX,ampproject.org,ProxyNet
-  - DOMAIN-SUFFIX,android.com,ProxyNet
-  - DOMAIN-SUFFIX,angularjs.org,ProxyNet
-  - DOMAIN-SUFFIX,aolcdn.com,ProxyNet
-  - DOMAIN-SUFFIX,apkpure.com,ProxyNet
-  - DOMAIN-SUFFIX,appledaily.com,ProxyNet
-  - DOMAIN-SUFFIX,appshopper.com,ProxyNet
-  - DOMAIN-SUFFIX,appspot.com,ProxyNet
-  - DOMAIN-SUFFIX,arcgis.com,ProxyNet
-  - DOMAIN-SUFFIX,archive.org,ProxyNet
-  - DOMAIN-SUFFIX,armorgames.com,ProxyNet
-  - DOMAIN-SUFFIX,aspnetcdn.com,ProxyNet
-  - DOMAIN-SUFFIX,att.com,ProxyNet
-  - DOMAIN-SUFFIX,awsstatic.com,ProxyNet
-  - DOMAIN-SUFFIX,azureedge.net,ProxyNet
-  - DOMAIN-SUFFIX,azurewebsites.net,ProxyNet
-  - DOMAIN-SUFFIX,bing.com,ProxyNet
-  - DOMAIN-SUFFIX,bintray.com,ProxyNet
-  - DOMAIN-SUFFIX,bit.com,ProxyNet
-  - DOMAIN-SUFFIX,bit.ly,ProxyNet
-  - DOMAIN-SUFFIX,bitbucket.org,ProxyNet
-  - DOMAIN-SUFFIX,bjango.com,ProxyNet
-  - DOMAIN-SUFFIX,bkrtx.com,ProxyNet
-  - DOMAIN-SUFFIX,blog.com,ProxyNet
-  - DOMAIN-SUFFIX,blogcdn.com,ProxyNet
-  - DOMAIN-SUFFIX,blogger.com,ProxyNet
-  - DOMAIN-SUFFIX,blogsmithmedia.com,ProxyNet
-  - DOMAIN-SUFFIX,blogspot.com,ProxyNet
-  - DOMAIN-SUFFIX,blogspot.hk,ProxyNet
-  - DOMAIN-SUFFIX,bloomberg.com,ProxyNet
-  - DOMAIN-SUFFIX,box.com,ProxyNet
-  - DOMAIN-SUFFIX,box.net,ProxyNet
-  - DOMAIN-SUFFIX,cachefly.net,ProxyNet
-  - DOMAIN-SUFFIX,chromium.org,ProxyNet
-  - DOMAIN-SUFFIX,cl.ly,ProxyNet
-  - DOMAIN-SUFFIX,cloudflare.com,ProxyNet
-  - DOMAIN-SUFFIX,cloudfront.net,ProxyNet
-  - DOMAIN-SUFFIX,cloudmagic.com,ProxyNet
-  - DOMAIN-SUFFIX,cmail19.com,ProxyNet
-  - DOMAIN-SUFFIX,cnet.com,ProxyNet
-  - DOMAIN-SUFFIX,cocoapods.org,ProxyNet
-  - DOMAIN-SUFFIX,comodoca.com,ProxyNet
-  - DOMAIN-SUFFIX,crashlytics.com,ProxyNet
-  - DOMAIN-SUFFIX,culturedcode.com,ProxyNet
-  - DOMAIN-SUFFIX,d.pr,ProxyNet
-  - DOMAIN-SUFFIX,danilo.to,ProxyNet
-  - DOMAIN-SUFFIX,dayone.me,ProxyNet
-  - DOMAIN-SUFFIX,db.tt,ProxyNet
-  - DOMAIN-SUFFIX,deskconnect.com,ProxyNet
-  - DOMAIN-SUFFIX,disq.us,ProxyNet
-  - DOMAIN-SUFFIX,disqus.com,ProxyNet
-  - DOMAIN-SUFFIX,disquscdn.com,ProxyNet
-  - DOMAIN-SUFFIX,dnsimple.com,ProxyNet
-  - DOMAIN-SUFFIX,docker.com,ProxyNet
-  - DOMAIN-SUFFIX,dribbble.com,ProxyNet
-  - DOMAIN-SUFFIX,droplr.com,ProxyNet
-  - DOMAIN-SUFFIX,duckduckgo.com,ProxyNet
-  - DOMAIN-SUFFIX,dueapp.com,ProxyNet
-  - DOMAIN-SUFFIX,dytt8.net,ProxyNet
-  - DOMAIN-SUFFIX,edgecastcdn.net,ProxyNet
-  - DOMAIN-SUFFIX,edgekey.net,ProxyNet
-  - DOMAIN-SUFFIX,edgesuite.net,ProxyNet
-  - DOMAIN-SUFFIX,engadget.com,ProxyNet
-  - DOMAIN-SUFFIX,entrust.net,ProxyNet
-  - DOMAIN-SUFFIX,eurekavpt.com,ProxyNet
-  - DOMAIN-SUFFIX,evernote.com,ProxyNet
-  - DOMAIN-SUFFIX,fabric.io,ProxyNet
-  - DOMAIN-SUFFIX,fast.com,ProxyNet
-  - DOMAIN-SUFFIX,fastly.net,ProxyNet
-  - DOMAIN-SUFFIX,fc2.com,ProxyNet
-  - DOMAIN-SUFFIX,feedburner.com,ProxyNet
-  - DOMAIN-SUFFIX,feedly.com,ProxyNet
-  - DOMAIN-SUFFIX,feedsportal.com,ProxyNet
-  - DOMAIN-SUFFIX,fiftythree.com,ProxyNet
-  - DOMAIN-SUFFIX,firebaseio.com,ProxyNet
-  - DOMAIN-SUFFIX,flexibits.com,ProxyNet
-  - DOMAIN-SUFFIX,flickr.com,ProxyNet
-  - DOMAIN-SUFFIX,flipboard.com,ProxyNet
-  - DOMAIN-SUFFIX,g.co,ProxyNet
-  - DOMAIN-SUFFIX,gabia.net,ProxyNet
-  - DOMAIN-SUFFIX,geni.us,ProxyNet
-  - DOMAIN-SUFFIX,gfx.ms,ProxyNet
-  - DOMAIN-SUFFIX,ggpht.com,ProxyNet
-  - DOMAIN-SUFFIX,ghostnoteapp.com,ProxyNet
-  - DOMAIN-SUFFIX,git.io,ProxyNet
-  - DOMAIN-KEYWORD,github,ProxyNet
-  - DOMAIN-SUFFIX,globalsign.com,ProxyNet
-  - DOMAIN-SUFFIX,gmodules.com,ProxyNet
-  - DOMAIN-SUFFIX,godaddy.com,ProxyNet
-  - DOMAIN-SUFFIX,golang.org,ProxyNet
-  - DOMAIN-SUFFIX,gongm.in,ProxyNet
-  - DOMAIN-SUFFIX,goo.gl,ProxyNet
-  - DOMAIN-SUFFIX,goodreaders.com,ProxyNet
-  - DOMAIN-SUFFIX,goodreads.com,ProxyNet
-  - DOMAIN-SUFFIX,gravatar.com,ProxyNet
-  - DOMAIN-SUFFIX,gstatic.com,ProxyNet
-  - DOMAIN-SUFFIX,gvt0.com,ProxyNet
-  - DOMAIN-SUFFIX,hockeyapp.net,ProxyNet
-  - DOMAIN-SUFFIX,hotmail.com,ProxyNet
-  - DOMAIN-SUFFIX,icons8.com,ProxyNet
-  - DOMAIN-SUFFIX,ifixit.com,ProxyNet
-  - DOMAIN-SUFFIX,ift.tt,ProxyNet
-  - DOMAIN-SUFFIX,ifttt.com,ProxyNet
-  - DOMAIN-SUFFIX,iherb.com,ProxyNet
-  - DOMAIN-SUFFIX,imageshack.us,ProxyNet
-  - DOMAIN-SUFFIX,img.ly,ProxyNet
-  - DOMAIN-SUFFIX,imgur.com,ProxyNet
-  - DOMAIN-SUFFIX,imore.com,ProxyNet
-  - DOMAIN-SUFFIX,instapaper.com,ProxyNet
-  - DOMAIN-SUFFIX,ipn.li,ProxyNet
-  - DOMAIN-SUFFIX,is.gd,ProxyNet
-  - DOMAIN-SUFFIX,issuu.com,ProxyNet
-  - DOMAIN-SUFFIX,itgonglun.com,ProxyNet
-  - DOMAIN-SUFFIX,itun.es,ProxyNet
-  - DOMAIN-SUFFIX,ixquick.com,ProxyNet
-  - DOMAIN-SUFFIX,j.mp,ProxyNet
-  - DOMAIN-SUFFIX,js.revsci.net,ProxyNet
-  - DOMAIN-SUFFIX,jshint.com,ProxyNet
-  - DOMAIN-SUFFIX,jtvnw.net,ProxyNet
-  - DOMAIN-SUFFIX,justgetflux.com,ProxyNet
-  - DOMAIN-SUFFIX,kat.cr,ProxyNet
-  - DOMAIN-SUFFIX,klip.me,ProxyNet
-  - DOMAIN-SUFFIX,libsyn.com,ProxyNet
-  - DOMAIN-SUFFIX,linkedin.com,ProxyNet
-  - DOMAIN-SUFFIX,line-apps.com,ProxyNet
-  - DOMAIN-SUFFIX,linode.com,ProxyNet
-  - DOMAIN-SUFFIX,lithium.com,ProxyNet
-  - DOMAIN-SUFFIX,littlehj.com,ProxyNet
-  - DOMAIN-SUFFIX,live.com,ProxyNet
-  - DOMAIN-SUFFIX,live.net,ProxyNet
-  - DOMAIN-SUFFIX,livefilestore.com,ProxyNet
-  - DOMAIN-SUFFIX,llnwd.net,ProxyNet
-  - DOMAIN-SUFFIX,macid.co,ProxyNet
-  - DOMAIN-SUFFIX,macromedia.com,ProxyNet
-  - DOMAIN-SUFFIX,macrumors.com,ProxyNet
-  - DOMAIN-SUFFIX,mashable.com,ProxyNet
-  - DOMAIN-SUFFIX,mathjax.org,ProxyNet
-  - DOMAIN-SUFFIX,medium.com,ProxyNet
-  - DOMAIN-SUFFIX,mega.co.nz,ProxyNet
-  - DOMAIN-SUFFIX,mega.nz,ProxyNet
-  - DOMAIN-SUFFIX,megaupload.com,ProxyNet
-  - DOMAIN-SUFFIX,microsofttranslator.com,ProxyNet
-  - DOMAIN-SUFFIX,mindnode.com,ProxyNet
-  - DOMAIN-SUFFIX,mobile01.com,ProxyNet
-  - DOMAIN-SUFFIX,modmyi.com,ProxyNet
-  - DOMAIN-SUFFIX,msedge.net,ProxyNet
-  - DOMAIN-SUFFIX,myfontastic.com,ProxyNet
-  - DOMAIN-SUFFIX,name.com,ProxyNet
-  - DOMAIN-SUFFIX,nextmedia.com,ProxyNet
-  - DOMAIN-SUFFIX,nsstatic.net,ProxyNet
-  - DOMAIN-SUFFIX,nssurge.com,ProxyNet
-  - DOMAIN-SUFFIX,nyt.com,ProxyNet
-  - DOMAIN-SUFFIX,nytimes.com,ProxyNet
-  - DOMAIN-SUFFIX,omnigroup.com,ProxyNet
-  - DOMAIN-SUFFIX,onedrive.com,ProxyNet
-  - DOMAIN-SUFFIX,onenote.com,ProxyNet
-  - DOMAIN-SUFFIX,ooyala.com,ProxyNet
-  - DOMAIN-SUFFIX,openvpn.net,ProxyNet
-  - DOMAIN-SUFFIX,openwrt.org,ProxyNet
-  - DOMAIN-SUFFIX,orkut.com,ProxyNet
-  - DOMAIN-SUFFIX,osxdaily.com,ProxyNet
-  - DOMAIN-SUFFIX,outlook.com,ProxyNet
-  - DOMAIN-SUFFIX,ow.ly,ProxyNet
-  - DOMAIN-SUFFIX,paddleapi.com,ProxyNet
-  - DOMAIN-SUFFIX,parallels.com,ProxyNet
-  - DOMAIN-SUFFIX,parse.com,ProxyNet
-  - DOMAIN-SUFFIX,pdfexpert.com,ProxyNet
-  - DOMAIN-SUFFIX,periscope.tv,ProxyNet
-  - DOMAIN-SUFFIX,pinboard.in,ProxyNet
-  - DOMAIN-SUFFIX,pinterest.com,ProxyNet
-  - DOMAIN-SUFFIX,pixelmator.com,ProxyNet
-  - DOMAIN-SUFFIX,pixiv.net,ProxyNet
-  - DOMAIN-SUFFIX,playpcesor.com,ProxyNet
-  - DOMAIN-SUFFIX,playstation.com,ProxyNet
-  - DOMAIN-SUFFIX,playstation.com.hk,ProxyNet
-  - DOMAIN-SUFFIX,playstation.net,ProxyNet
-  - DOMAIN-SUFFIX,playstationnetwork.com,ProxyNet
-  - DOMAIN-SUFFIX,pushwoosh.com,ProxyNet
-  - DOMAIN-SUFFIX,rime.im,ProxyNet
-  - DOMAIN-SUFFIX,servebom.com,ProxyNet
-  - DOMAIN-SUFFIX,sfx.ms,ProxyNet
-  - DOMAIN-SUFFIX,shadowsocks.org,ProxyNet
-  - DOMAIN-SUFFIX,sharethis.com,ProxyNet
-  - DOMAIN-SUFFIX,shazam.com,ProxyNet
-  - DOMAIN-SUFFIX,skype.com,ProxyNet
-  - DOMAIN-SUFFIX,smartdnsProxyNet.com,ProxyNet
-  - DOMAIN-SUFFIX,smartmailcloud.com,ProxyNet
-  - DOMAIN-SUFFIX,sndcdn.com,ProxyNet
-  - DOMAIN-SUFFIX,sony.com,ProxyNet
-  - DOMAIN-SUFFIX,soundcloud.com,ProxyNet
-  - DOMAIN-SUFFIX,sourceforge.net,ProxyNet
-  - DOMAIN-SUFFIX,spotify.com,ProxyNet
-  - DOMAIN-SUFFIX,squarespace.com,ProxyNet
-  - DOMAIN-SUFFIX,sstatic.net,ProxyNet
-  - DOMAIN-SUFFIX,st.luluku.pw,ProxyNet
-  - DOMAIN-SUFFIX,stackoverflow.com,ProxyNet
-  - DOMAIN-SUFFIX,startpage.com,ProxyNet
-  - DOMAIN-SUFFIX,staticflickr.com,ProxyNet
-  - DOMAIN-SUFFIX,steamcommunity.com,ProxyNet
-  - DOMAIN-SUFFIX,symauth.com,ProxyNet
-  - DOMAIN-SUFFIX,symcb.com,ProxyNet
-  - DOMAIN-SUFFIX,symcd.com,ProxyNet
-  - DOMAIN-SUFFIX,tapbots.com,ProxyNet
-  - DOMAIN-SUFFIX,tapbots.net,ProxyNet
-  - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
-  - DOMAIN-SUFFIX,techcrunch.com,ProxyNet
-  - DOMAIN-SUFFIX,techsmith.com,ProxyNet
-  - DOMAIN-SUFFIX,thepiratebay.org,ProxyNet
-  - DOMAIN-SUFFIX,theverge.com,ProxyNet
-  - DOMAIN-SUFFIX,time.com,ProxyNet
-  - DOMAIN-SUFFIX,timeinc.net,ProxyNet
-  - DOMAIN-SUFFIX,tiny.cc,ProxyNet
-  - DOMAIN-SUFFIX,tinypic.com,ProxyNet
-  - DOMAIN-SUFFIX,tmblr.co,ProxyNet
-  - DOMAIN-SUFFIX,todoist.com,ProxyNet
-  - DOMAIN-SUFFIX,trello.com,ProxyNet
-  - DOMAIN-SUFFIX,trustasiassl.com,ProxyNet
-  - DOMAIN-SUFFIX,tumblr.co,ProxyNet
-  - DOMAIN-SUFFIX,tumblr.com,ProxyNet
-  - DOMAIN-SUFFIX,tweetdeck.com,ProxyNet
-  - DOMAIN-SUFFIX,tweetmarker.net,ProxyNet
-  - DOMAIN-SUFFIX,twitch.tv,ProxyNet
-  - DOMAIN-SUFFIX,txmblr.com,ProxyNet
-  - DOMAIN-SUFFIX,typekit.net,ProxyNet
-  - DOMAIN-SUFFIX,ubertags.com,ProxyNet
-  - DOMAIN-SUFFIX,ublock.org,ProxyNet
-  - DOMAIN-SUFFIX,ubnt.com,ProxyNet
-  - DOMAIN-SUFFIX,ulyssesapp.com,ProxyNet
-  - DOMAIN-SUFFIX,urchin.com,ProxyNet
-  - DOMAIN-SUFFIX,usertrust.com,ProxyNet
-  - DOMAIN-SUFFIX,v.gd,ProxyNet
-  - DOMAIN-SUFFIX,v2ex.com,ProxyNet
-  - DOMAIN-SUFFIX,vimeo.com,ProxyNet
-  - DOMAIN-SUFFIX,vimeocdn.com,ProxyNet
-  - DOMAIN-SUFFIX,vine.co,ProxyNet
-  - DOMAIN-SUFFIX,vivaldi.com,ProxyNet
-  - DOMAIN-SUFFIX,vox-cdn.com,ProxyNet
-  - DOMAIN-SUFFIX,vsco.co,ProxyNet
-  - DOMAIN-SUFFIX,vultr.com,ProxyNet
-  - DOMAIN-SUFFIX,w.org,ProxyNet
-  - DOMAIN-SUFFIX,w3schools.com,ProxyNet
-  - DOMAIN-SUFFIX,webtype.com,ProxyNet
-  - DOMAIN-SUFFIX,wikiwand.com,ProxyNet
-  - DOMAIN-SUFFIX,wikileaks.org,ProxyNet
-  - DOMAIN-SUFFIX,wikimedia.org,ProxyNet
-  - DOMAIN-SUFFIX,wikipedia.com,ProxyNet
-  - DOMAIN-SUFFIX,wikipedia.org,ProxyNet
-  - DOMAIN-SUFFIX,windows.com,ProxyNet
-  - DOMAIN-SUFFIX,windows.net,ProxyNet
-  - DOMAIN-SUFFIX,wire.com,ProxyNet
-  - DOMAIN-SUFFIX,wordpress.com,ProxyNet
-  - DOMAIN-SUFFIX,workflowy.com,ProxyNet
-  - DOMAIN-SUFFIX,wp.com,ProxyNet
-  - DOMAIN-SUFFIX,wsj.com,ProxyNet
-  - DOMAIN-SUFFIX,wsj.net,ProxyNet
-  - DOMAIN-SUFFIX,xda-developers.com,ProxyNet
-  - DOMAIN-SUFFIX,xeeno.com,ProxyNet
-  - DOMAIN-SUFFIX,xiti.com,ProxyNet
-  - DOMAIN-SUFFIX,yahoo.com,ProxyNet
-  - DOMAIN-SUFFIX,yimg.com,ProxyNet
-  - DOMAIN-SUFFIX,ying.com,ProxyNet
-  - DOMAIN-SUFFIX,yoyo.org,ProxyNet
-  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
-  - DOMAIN-SUFFIX,telegra.ph,ProxyNet
-  - DOMAIN-SUFFIX,telegram.org,ProxyNet
-  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
-  - IP-CIDR,91.108.8.0/21,ProxyNet,no-resolve
-  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
-  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
-  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,ProxyNet,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,ProxyNet,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,ProxyNet,no-resolve
-  - IP-CIDR,120.232.181.162/32,ProxyNet,no-resolve
-  - IP-CIDR,120.241.147.226/32,ProxyNet,no-resolve
-  - IP-CIDR,120.253.253.226/32,ProxyNet,no-resolve
-  - IP-CIDR,120.253.255.162/32,ProxyNet,no-resolve
-  - IP-CIDR,120.253.255.34/32,ProxyNet,no-resolve
-  - IP-CIDR,120.253.255.98/32,ProxyNet,no-resolve
-  - IP-CIDR,180.163.150.162/32,ProxyNet,no-resolve
-  - IP-CIDR,180.163.150.34/32,ProxyNet,no-resolve
-  - IP-CIDR,180.163.151.162/32,ProxyNet,no-resolve
-  - IP-CIDR,180.163.151.34/32,ProxyNet,no-resolve
-  - IP-CIDR,203.208.39.0/24,ProxyNet,no-resolve
-  - IP-CIDR,203.208.40.0/24,ProxyNet,no-resolve
-  - IP-CIDR,203.208.41.0/24,ProxyNet,no-resolve
-  - IP-CIDR,203.208.43.0/24,ProxyNet,no-resolve
-  - IP-CIDR,203.208.50.0/24,ProxyNet,no-resolve
-  - IP-CIDR,220.181.174.162/32,ProxyNet,no-resolve
-  - IP-CIDR,220.181.174.226/32,ProxyNet,no-resolve
-  - IP-CIDR,220.181.174.34/32,ProxyNet,no-resolve
+  - DOMAIN-SUFFIX,9to5mac.com,⭕ proxinode
+  - DOMAIN-SUFFIX,abpchina.org,⭕ proxinode
+  - DOMAIN-SUFFIX,adblockplus.org,⭕ proxinode
+  - DOMAIN-SUFFIX,adobe.com,⭕ proxinode
+  - DOMAIN-SUFFIX,akamaized.net,⭕ proxinode
+  - DOMAIN-SUFFIX,alfredapp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,amplitude.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
+  - DOMAIN-SUFFIX,android.com,⭕ proxinode
+  - DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
+  - DOMAIN-SUFFIX,aolcdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,apkpure.com,⭕ proxinode
+  - DOMAIN-SUFFIX,appledaily.com,⭕ proxinode
+  - DOMAIN-SUFFIX,appshopper.com,⭕ proxinode
+  - DOMAIN-SUFFIX,appspot.com,⭕ proxinode
+  - DOMAIN-SUFFIX,arcgis.com,⭕ proxinode
+  - DOMAIN-SUFFIX,archive.org,⭕ proxinode
+  - DOMAIN-SUFFIX,armorgames.com,⭕ proxinode
+  - DOMAIN-SUFFIX,aspnetcdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,att.com,⭕ proxinode
+  - DOMAIN-SUFFIX,awsstatic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,azureedge.net,⭕ proxinode
+  - DOMAIN-SUFFIX,azurewebsites.net,⭕ proxinode
+  - DOMAIN-SUFFIX,bing.com,⭕ proxinode
+  - DOMAIN-SUFFIX,bintray.com,⭕ proxinode
+  - DOMAIN-SUFFIX,bit.com,⭕ proxinode
+  - DOMAIN-SUFFIX,bit.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
+  - DOMAIN-SUFFIX,bjango.com,⭕ proxinode
+  - DOMAIN-SUFFIX,bkrtx.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blog.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogger.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogspot.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogspot.hk,⭕ proxinode
+  - DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
+  - DOMAIN-SUFFIX,box.com,⭕ proxinode
+  - DOMAIN-SUFFIX,box.net,⭕ proxinode
+  - DOMAIN-SUFFIX,cachefly.net,⭕ proxinode
+  - DOMAIN-SUFFIX,chromium.org,⭕ proxinode
+  - DOMAIN-SUFFIX,cl.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
+  - DOMAIN-SUFFIX,cloudmagic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cmail19.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cnet.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
+  - DOMAIN-SUFFIX,comodoca.com,⭕ proxinode
+  - DOMAIN-SUFFIX,crashlytics.com,⭕ proxinode
+  - DOMAIN-SUFFIX,culturedcode.com,⭕ proxinode
+  - DOMAIN-SUFFIX,d.pr,⭕ proxinode
+  - DOMAIN-SUFFIX,danilo.to,⭕ proxinode
+  - DOMAIN-SUFFIX,dayone.me,⭕ proxinode
+  - DOMAIN-SUFFIX,db.tt,⭕ proxinode
+  - DOMAIN-SUFFIX,deskconnect.com,⭕ proxinode
+  - DOMAIN-SUFFIX,disq.us,⭕ proxinode
+  - DOMAIN-SUFFIX,disqus.com,⭕ proxinode
+  - DOMAIN-SUFFIX,disquscdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
+  - DOMAIN-SUFFIX,docker.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
+  - DOMAIN-SUFFIX,droplr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dueapp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dytt8.net,⭕ proxinode
+  - DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
+  - DOMAIN-SUFFIX,edgekey.net,⭕ proxinode
+  - DOMAIN-SUFFIX,edgesuite.net,⭕ proxinode
+  - DOMAIN-SUFFIX,engadget.com,⭕ proxinode
+  - DOMAIN-SUFFIX,entrust.net,⭕ proxinode
+  - DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
+  - DOMAIN-SUFFIX,evernote.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fabric.io,⭕ proxinode
+  - DOMAIN-SUFFIX,fast.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fastly.net,⭕ proxinode
+  - DOMAIN-SUFFIX,fc2.com,⭕ proxinode
+  - DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
+  - DOMAIN-SUFFIX,feedly.com,⭕ proxinode
+  - DOMAIN-SUFFIX,feedsportal.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fiftythree.com,⭕ proxinode
+  - DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
+  - DOMAIN-SUFFIX,flexibits.com,⭕ proxinode
+  - DOMAIN-SUFFIX,flickr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,flipboard.com,⭕ proxinode
+  - DOMAIN-SUFFIX,g.co,⭕ proxinode
+  - DOMAIN-SUFFIX,gabia.net,⭕ proxinode
+  - DOMAIN-SUFFIX,geni.us,⭕ proxinode
+  - DOMAIN-SUFFIX,gfx.ms,⭕ proxinode
+  - DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ghostnoteapp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,git.io,⭕ proxinode
+  - DOMAIN-KEYWORD,github,⭕ proxinode
+  - DOMAIN-SUFFIX,globalsign.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
+  - DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
+  - DOMAIN-SUFFIX,golang.org,⭕ proxinode
+  - DOMAIN-SUFFIX,gongm.in,⭕ proxinode
+  - DOMAIN-SUFFIX,goo.gl,⭕ proxinode
+  - DOMAIN-SUFFIX,goodreaders.com,⭕ proxinode
+  - DOMAIN-SUFFIX,goodreads.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
+  - DOMAIN-SUFFIX,hockeyapp.net,⭕ proxinode
+  - DOMAIN-SUFFIX,hotmail.com,⭕ proxinode
+  - DOMAIN-SUFFIX,icons8.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ifixit.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ift.tt,⭕ proxinode
+  - DOMAIN-SUFFIX,ifttt.com,⭕ proxinode
+  - DOMAIN-SUFFIX,iherb.com,⭕ proxinode
+  - DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
+  - DOMAIN-SUFFIX,img.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,imgur.com,⭕ proxinode
+  - DOMAIN-SUFFIX,imore.com,⭕ proxinode
+  - DOMAIN-SUFFIX,instapaper.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ipn.li,⭕ proxinode
+  - DOMAIN-SUFFIX,is.gd,⭕ proxinode
+  - DOMAIN-SUFFIX,issuu.com,⭕ proxinode
+  - DOMAIN-SUFFIX,itgonglun.com,⭕ proxinode
+  - DOMAIN-SUFFIX,itun.es,⭕ proxinode
+  - DOMAIN-SUFFIX,ixquick.com,⭕ proxinode
+  - DOMAIN-SUFFIX,j.mp,⭕ proxinode
+  - DOMAIN-SUFFIX,js.revsci.net,⭕ proxinode
+  - DOMAIN-SUFFIX,jshint.com,⭕ proxinode
+  - DOMAIN-SUFFIX,jtvnw.net,⭕ proxinode
+  - DOMAIN-SUFFIX,justgetflux.com,⭕ proxinode
+  - DOMAIN-SUFFIX,kat.cr,⭕ proxinode
+  - DOMAIN-SUFFIX,klip.me,⭕ proxinode
+  - DOMAIN-SUFFIX,libsyn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
+  - DOMAIN-SUFFIX,line-apps.com,⭕ proxinode
+  - DOMAIN-SUFFIX,linode.com,⭕ proxinode
+  - DOMAIN-SUFFIX,lithium.com,⭕ proxinode
+  - DOMAIN-SUFFIX,littlehj.com,⭕ proxinode
+  - DOMAIN-SUFFIX,live.com,⭕ proxinode
+  - DOMAIN-SUFFIX,live.net,⭕ proxinode
+  - DOMAIN-SUFFIX,livefilestore.com,⭕ proxinode
+  - DOMAIN-SUFFIX,llnwd.net,⭕ proxinode
+  - DOMAIN-SUFFIX,macid.co,⭕ proxinode
+  - DOMAIN-SUFFIX,macromedia.com,⭕ proxinode
+  - DOMAIN-SUFFIX,macrumors.com,⭕ proxinode
+  - DOMAIN-SUFFIX,mashable.com,⭕ proxinode
+  - DOMAIN-SUFFIX,mathjax.org,⭕ proxinode
+  - DOMAIN-SUFFIX,medium.com,⭕ proxinode
+  - DOMAIN-SUFFIX,mega.co.nz,⭕ proxinode
+  - DOMAIN-SUFFIX,mega.nz,⭕ proxinode
+  - DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
+  - DOMAIN-SUFFIX,microsofttranslator.com,⭕ proxinode
+  - DOMAIN-SUFFIX,mindnode.com,⭕ proxinode
+  - DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
+  - DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
+  - DOMAIN-SUFFIX,msedge.net,⭕ proxinode
+  - DOMAIN-SUFFIX,myfontastic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,name.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nextmedia.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nsstatic.net,⭕ proxinode
+  - DOMAIN-SUFFIX,nssurge.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nyt.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
+  - DOMAIN-SUFFIX,omnigroup.com,⭕ proxinode
+  - DOMAIN-SUFFIX,onedrive.com,⭕ proxinode
+  - DOMAIN-SUFFIX,onenote.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ooyala.com,⭕ proxinode
+  - DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
+  - DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
+  - DOMAIN-SUFFIX,orkut.com,⭕ proxinode
+  - DOMAIN-SUFFIX,osxdaily.com,⭕ proxinode
+  - DOMAIN-SUFFIX,outlook.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ow.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,paddleapi.com,⭕ proxinode
+  - DOMAIN-SUFFIX,parallels.com,⭕ proxinode
+  - DOMAIN-SUFFIX,parse.com,⭕ proxinode
+  - DOMAIN-SUFFIX,pdfexpert.com,⭕ proxinode
+  - DOMAIN-SUFFIX,periscope.tv,⭕ proxinode
+  - DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
+  - DOMAIN-SUFFIX,pinterest.com,⭕ proxinode
+  - DOMAIN-SUFFIX,pixelmator.com,⭕ proxinode
+  - DOMAIN-SUFFIX,pixiv.net,⭕ proxinode
+  - DOMAIN-SUFFIX,playpcesor.com,⭕ proxinode
+  - DOMAIN-SUFFIX,playstation.com,⭕ proxinode
+  - DOMAIN-SUFFIX,playstation.com.hk,⭕ proxinode
+  - DOMAIN-SUFFIX,playstation.net,⭕ proxinode
+  - DOMAIN-SUFFIX,playstationnetwork.com,⭕ proxinode
+  - DOMAIN-SUFFIX,pushwoosh.com,⭕ proxinode
+  - DOMAIN-SUFFIX,rime.im,⭕ proxinode
+  - DOMAIN-SUFFIX,servebom.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sfx.ms,⭕ proxinode
+  - DOMAIN-SUFFIX,shadowsocks.org,⭕ proxinode
+  - DOMAIN-SUFFIX,sharethis.com,⭕ proxinode
+  - DOMAIN-SUFFIX,shazam.com,⭕ proxinode
+  - DOMAIN-SUFFIX,skype.com,⭕ proxinode
+  - DOMAIN-SUFFIX,smartdns⭕ proxinode.com,⭕ proxinode
+  - DOMAIN-SUFFIX,smartmailcloud.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sony.com,⭕ proxinode
+  - DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sourceforge.net,⭕ proxinode
+  - DOMAIN-SUFFIX,spotify.com,⭕ proxinode
+  - DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
+  - DOMAIN-SUFFIX,st.luluku.pw,⭕ proxinode
+  - DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
+  - DOMAIN-SUFFIX,startpage.com,⭕ proxinode
+  - DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,steamcommunity.com,⭕ proxinode
+  - DOMAIN-SUFFIX,symauth.com,⭕ proxinode
+  - DOMAIN-SUFFIX,symcb.com,⭕ proxinode
+  - DOMAIN-SUFFIX,symcd.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tapbots.net,⭕ proxinode
+  - DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
+  - DOMAIN-SUFFIX,techcrunch.com,⭕ proxinode
+  - DOMAIN-SUFFIX,techsmith.com,⭕ proxinode
+  - DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
+  - DOMAIN-SUFFIX,theverge.com,⭕ proxinode
+  - DOMAIN-SUFFIX,time.com,⭕ proxinode
+  - DOMAIN-SUFFIX,timeinc.net,⭕ proxinode
+  - DOMAIN-SUFFIX,tiny.cc,⭕ proxinode
+  - DOMAIN-SUFFIX,tinypic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tmblr.co,⭕ proxinode
+  - DOMAIN-SUFFIX,todoist.com,⭕ proxinode
+  - DOMAIN-SUFFIX,trello.com,⭕ proxinode
+  - DOMAIN-SUFFIX,trustasiassl.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tumblr.co,⭕ proxinode
+  - DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tweetdeck.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tweetmarker.net,⭕ proxinode
+  - DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
+  - DOMAIN-SUFFIX,txmblr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,typekit.net,⭕ proxinode
+  - DOMAIN-SUFFIX,ubertags.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ublock.org,⭕ proxinode
+  - DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ulyssesapp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,urchin.com,⭕ proxinode
+  - DOMAIN-SUFFIX,usertrust.com,⭕ proxinode
+  - DOMAIN-SUFFIX,v.gd,⭕ proxinode
+  - DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
+  - DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
+  - DOMAIN-SUFFIX,vimeocdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,vine.co,⭕ proxinode
+  - DOMAIN-SUFFIX,vivaldi.com,⭕ proxinode
+  - DOMAIN-SUFFIX,vox-cdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,vsco.co,⭕ proxinode
+  - DOMAIN-SUFFIX,vultr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,w.org,⭕ proxinode
+  - DOMAIN-SUFFIX,w3schools.com,⭕ proxinode
+  - DOMAIN-SUFFIX,webtype.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wikiwand.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wikileaks.org,⭕ proxinode
+  - DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
+  - DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
+  - DOMAIN-SUFFIX,windows.com,⭕ proxinode
+  - DOMAIN-SUFFIX,windows.net,⭕ proxinode
+  - DOMAIN-SUFFIX,wire.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
+  - DOMAIN-SUFFIX,workflowy.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wsj.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wsj.net,⭕ proxinode
+  - DOMAIN-SUFFIX,xda-developers.com,⭕ proxinode
+  - DOMAIN-SUFFIX,xeeno.com,⭕ proxinode
+  - DOMAIN-SUFFIX,xiti.com,⭕ proxinode
+  - DOMAIN-SUFFIX,yahoo.com,⭕ proxinode
+  - DOMAIN-SUFFIX,yimg.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ying.com,⭕ proxinode
+  - DOMAIN-SUFFIX,yoyo.org,⭕ proxinode
+  - DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
+  - DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
+  - DOMAIN-SUFFIX,telegram.org,⭕ proxinode
+  - IP-CIDR,91.108.4.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.8.0/21,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.16.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.56.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,149.154.160.0/20,⭕ proxinode,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,⭕ proxinode,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,⭕ proxinode,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,⭕ proxinode,no-resolve
+  - IP-CIDR,120.232.181.162/32,⭕ proxinode,no-resolve
+  - IP-CIDR,120.241.147.226/32,⭕ proxinode,no-resolve
+  - IP-CIDR,120.253.253.226/32,⭕ proxinode,no-resolve
+  - IP-CIDR,120.253.255.162/32,⭕ proxinode,no-resolve
+  - IP-CIDR,120.253.255.34/32,⭕ proxinode,no-resolve
+  - IP-CIDR,120.253.255.98/32,⭕ proxinode,no-resolve
+  - IP-CIDR,180.163.150.162/32,⭕ proxinode,no-resolve
+  - IP-CIDR,180.163.150.34/32,⭕ proxinode,no-resolve
+  - IP-CIDR,180.163.151.162/32,⭕ proxinode,no-resolve
+  - IP-CIDR,180.163.151.34/32,⭕ proxinode,no-resolve
+  - IP-CIDR,203.208.39.0/24,⭕ proxinode,no-resolve
+  - IP-CIDR,203.208.40.0/24,⭕ proxinode,no-resolve
+  - IP-CIDR,203.208.41.0/24,⭕ proxinode,no-resolve
+  - IP-CIDR,203.208.43.0/24,⭕ proxinode,no-resolve
+  - IP-CIDR,203.208.50.0/24,⭕ proxinode,no-resolve
+  - IP-CIDR,220.181.174.162/32,⭕ proxinode,no-resolve
+  - IP-CIDR,220.181.174.226/32,⭕ proxinode,no-resolve
+  - IP-CIDR,220.181.174.34/32,⭕ proxinode,no-resolve
   - DOMAIN,injections.adguard.org,DIRECT
   - DOMAIN,local.adguard.org,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
@@ -591,7 +893,7 @@ rules:
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN-KEYWORD,-cn,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,ProxyNet
+  - MATCH,⭕ proxinode
   - DOMAIN-SUFFIX,163yun.com,DIRECT
   - DOMAIN-SUFFIX,21cn.com,DIRECT
   - DOMAIN-SUFFIX,343480.com,DIRECT
@@ -628,7 +930,7 @@ rules:
   - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
   - DOMAIN-SUFFIX,b612.net,DIRECT
   - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
-  - DOMAIN-SUFFIX,battle.net,ProxyNet
+  - DOMAIN-SUFFIX,battle.net,⭕ proxinode
   - DOMAIN-SUFFIX,bdatu.com,DIRECT
   - DOMAIN-SUFFIX,beitaichufang.com,DIRECT
   - DOMAIN-SUFFIX,biliapi.com,DIRECT
@@ -636,7 +938,7 @@ rules:
   - DOMAIN-SUFFIX,bilibili.com,DIRECT
   - DOMAIN-SUFFIX,bilibili.tv,DIRECT
   - DOMAIN-SUFFIX,bjango.com,DIRECT
-  - DOMAIN-SUFFIX,blizzard.com,ProxyNet
+  - DOMAIN-SUFFIX,blizzard.com,⭕ proxinode
   - DOMAIN-SUFFIX,bmj.com,DIRECT
   - DOMAIN-SUFFIX,booking.com,DIRECT
   - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
@@ -692,7 +994,7 @@ rules:
   - DOMAIN-SUFFIX,gandi.net,DIRECT
   - DOMAIN-SUFFIX,gazellegames.net,DIRECT
   - DOMAIN-SUFFIX,geilicdn.com,DIRECT
-  - DOMAIN-SUFFIX,getpricetag.com,ProxyNet
+  - DOMAIN-SUFFIX,getpricetag.com,⭕ proxinode
   - DOMAIN-SUFFIX,gifshow.com,DIRECT
   - DOMAIN-SUFFIX,godic.net,DIRECT
   - DOMAIN-SUFFIX,gtimg.com,DIRECT
@@ -747,7 +1049,7 @@ rules:
   - DOMAIN-SUFFIX,lofter.com,DIRECT
   - DOMAIN-SUFFIX,loli.net,DIRECT
   - DOMAIN-SUFFIX,luojilab.com,DIRECT
-  - DOMAIN-SUFFIX,m-team.cc,ProxyNet
+  - DOMAIN-SUFFIX,m-team.cc,⭕ proxinode
   - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
   - DOMAIN-SUFFIX,maoyan.com,DIRECT
   - DOMAIN-SUFFIX,maoyun.tv,DIRECT
@@ -823,7 +1125,7 @@ rules:
   - DOMAIN-SUFFIX,sagepub.com,DIRECT
   - DOMAIN-SUFFIX,sankuai.com,DIRECT
   - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
-  - DOMAIN-SUFFIX,sciencemag.org,ProxyNet
+  - DOMAIN-SUFFIX,sciencemag.org,⭕ proxinode
   - DOMAIN-SUFFIX,scomper.me,DIRECT
   - DOMAIN-SUFFIX,scopus.com,DIRECT
   - DOMAIN-SUFFIX,seafile.com,DIRECT
@@ -858,7 +1160,7 @@ rules:
   - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
   - DOMAIN-SUFFIX,takungpao.com,DIRECT
   - DOMAIN-SUFFIX,tandfonline.com,DIRECT
-  - DOMAIN-SUFFIX,teamviewer.com,ProxyNet
+  - DOMAIN-SUFFIX,teamviewer.com,⭕ proxinode
   - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
   - DOMAIN-SUFFIX,tencent.com,DIRECT
   - DOMAIN-SUFFIX,tenpay.com,DIRECT
@@ -931,257 +1233,257 @@ rules:
   - DOMAIN-SUFFIX,icloud.com.cn,DIRECT
   - DOMAIN-SUFFIX,me.com,DIRECT
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
-  - DOMAIN-SUFFIX,v2ex.com,ProxyNet
+  - DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
 # LINE
-  - DOMAIN-SUFFIX,scdn.co,ProxyNet
-  - DOMAIN-SUFFIX,line.naver.jp,ProxyNet
-  - DOMAIN-SUFFIX,line.me,ProxyNet
-  - DOMAIN-SUFFIX,line-apps.com,ProxyNet
-  - DOMAIN-SUFFIX,line-cdn.net,ProxyNet
-  - DOMAIN-SUFFIX,line-scdn.net,ProxyNet
+  - DOMAIN-SUFFIX,scdn.co,⭕ proxinode
+  - DOMAIN-SUFFIX,line.naver.jp,⭕ proxinode
+  - DOMAIN-SUFFIX,line.me,⭕ proxinode
+  - DOMAIN-SUFFIX,line-apps.com,⭕ proxinode
+  - DOMAIN-SUFFIX,line-cdn.net,⭕ proxinode
+  - DOMAIN-SUFFIX,line-scdn.net,⭕ proxinode
 
 # Google
-  - DOMAIN-KEYWORD,blogspot,ProxyNet
-  - DOMAIN-KEYWORD,google,ProxyNet
-  - DOMAIN-SUFFIX,abc.xyz,ProxyNet
-  - DOMAIN-SUFFIX,admin.recaptcha.net,ProxyNet
-  - DOMAIN-SUFFIX,ampproject.org,ProxyNet
-  - DOMAIN-SUFFIX,android.com,ProxyNet
-  - DOMAIN-SUFFIX,androidify.com,ProxyNet
-  - DOMAIN-SUFFIX,appspot.com,ProxyNet
-  - DOMAIN-SUFFIX,autodraw.com,ProxyNet
-  - DOMAIN-SUFFIX,blogger.com,ProxyNet
-  - DOMAIN-SUFFIX,capitalg.com,ProxyNet
-  - DOMAIN-SUFFIX,certificate-transparency.org,ProxyNet
-  - DOMAIN-SUFFIX,chrome.com,ProxyNet
-  - DOMAIN-SUFFIX,chromeexperiments.com,ProxyNet
-  - DOMAIN-SUFFIX,chromestatus.com,ProxyNet
-  - DOMAIN-SUFFIX,chromium.org,ProxyNet
-  - DOMAIN-SUFFIX,creativelab5.com,ProxyNet
-  - DOMAIN-SUFFIX,debug.com,ProxyNet
-  - DOMAIN-SUFFIX,deepmind.com,ProxyNet
-  - DOMAIN-SUFFIX,dialogflow.com,ProxyNet
-  - DOMAIN-SUFFIX,firebaseio.com,ProxyNet
-  - DOMAIN-SUFFIX,getmdl.io,ProxyNet
-  - DOMAIN-SUFFIX,getoutline.org,ProxyNet
-  - DOMAIN-SUFFIX,ggpht.com,ProxyNet
-  - DOMAIN-SUFFIX,gmail.com,ProxyNet
-  - DOMAIN-SUFFIX,gmodules.com,ProxyNet
-  - DOMAIN-SUFFIX,godoc.org,ProxyNet
-  - DOMAIN-SUFFIX,golang.org,ProxyNet
-  - DOMAIN-SUFFIX,gstatic.com,ProxyNet
-  - DOMAIN-SUFFIX,gv.com,ProxyNet
-  - DOMAIN-SUFFIX,gvt0.com,ProxyNet
-  - DOMAIN-SUFFIX,gvt1.com,ProxyNet
-  - DOMAIN-SUFFIX,gvt3.com,ProxyNet
-  - DOMAIN-SUFFIX,gwtproject.org,ProxyNet
-  - DOMAIN-SUFFIX,itasoftware.com,ProxyNet
-  - DOMAIN-SUFFIX,madewithcode.com,ProxyNet
-  - DOMAIN-SUFFIX,material.io,ProxyNet
-  - DOMAIN-SUFFIX,polymer-project.org,ProxyNet
-  - DOMAIN-SUFFIX,recaptcha.net,ProxyNet
-  - DOMAIN-SUFFIX,shattered.io,ProxyNet
-  - DOMAIN-SUFFIX,synergyse.com,ProxyNet
-  - DOMAIN-SUFFIX,telephony.goog,ProxyNet
-  - DOMAIN-SUFFIX,tensorflow.org,ProxyNet
-  - DOMAIN-SUFFIX,tfhub.dev,ProxyNet
-  - DOMAIN-SUFFIX,tiltbrush.com,ProxyNet
-  - DOMAIN-SUFFIX,waveprotocol.org,ProxyNet
-  - DOMAIN-SUFFIX,waymo.com,ProxyNet
-  - DOMAIN-SUFFIX,webmproject.org,ProxyNet
-  - DOMAIN-SUFFIX,webrtc.org,ProxyNet
-  - DOMAIN-SUFFIX,whatbrowser.org,ProxyNet
-  - DOMAIN-SUFFIX,widevine.com,ProxyNet
-  - DOMAIN-SUFFIX,x.company,ProxyNet
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
-  - DOMAIN-SUFFIX,youtu.be,ProxyNet
-  - DOMAIN-SUFFIX,yt.be,ProxyNet
-  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
+  - DOMAIN-KEYWORD,blogspot,⭕ proxinode
+  - DOMAIN-KEYWORD,google,⭕ proxinode
+  - DOMAIN-SUFFIX,abc.xyz,⭕ proxinode
+  - DOMAIN-SUFFIX,admin.recaptcha.net,⭕ proxinode
+  - DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
+  - DOMAIN-SUFFIX,android.com,⭕ proxinode
+  - DOMAIN-SUFFIX,androidify.com,⭕ proxinode
+  - DOMAIN-SUFFIX,appspot.com,⭕ proxinode
+  - DOMAIN-SUFFIX,autodraw.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogger.com,⭕ proxinode
+  - DOMAIN-SUFFIX,capitalg.com,⭕ proxinode
+  - DOMAIN-SUFFIX,certificate-transparency.org,⭕ proxinode
+  - DOMAIN-SUFFIX,chrome.com,⭕ proxinode
+  - DOMAIN-SUFFIX,chromeexperiments.com,⭕ proxinode
+  - DOMAIN-SUFFIX,chromestatus.com,⭕ proxinode
+  - DOMAIN-SUFFIX,chromium.org,⭕ proxinode
+  - DOMAIN-SUFFIX,creativelab5.com,⭕ proxinode
+  - DOMAIN-SUFFIX,debug.com,⭕ proxinode
+  - DOMAIN-SUFFIX,deepmind.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dialogflow.com,⭕ proxinode
+  - DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
+  - DOMAIN-SUFFIX,getmdl.io,⭕ proxinode
+  - DOMAIN-SUFFIX,getoutline.org,⭕ proxinode
+  - DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gmail.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
+  - DOMAIN-SUFFIX,godoc.org,⭕ proxinode
+  - DOMAIN-SUFFIX,golang.org,⭕ proxinode
+  - DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gv.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gvt1.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gvt3.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gwtproject.org,⭕ proxinode
+  - DOMAIN-SUFFIX,itasoftware.com,⭕ proxinode
+  - DOMAIN-SUFFIX,madewithcode.com,⭕ proxinode
+  - DOMAIN-SUFFIX,material.io,⭕ proxinode
+  - DOMAIN-SUFFIX,polymer-project.org,⭕ proxinode
+  - DOMAIN-SUFFIX,recaptcha.net,⭕ proxinode
+  - DOMAIN-SUFFIX,shattered.io,⭕ proxinode
+  - DOMAIN-SUFFIX,synergyse.com,⭕ proxinode
+  - DOMAIN-SUFFIX,telephony.goog,⭕ proxinode
+  - DOMAIN-SUFFIX,tensorflow.org,⭕ proxinode
+  - DOMAIN-SUFFIX,tfhub.dev,⭕ proxinode
+  - DOMAIN-SUFFIX,tiltbrush.com,⭕ proxinode
+  - DOMAIN-SUFFIX,waveprotocol.org,⭕ proxinode
+  - DOMAIN-SUFFIX,waymo.com,⭕ proxinode
+  - DOMAIN-SUFFIX,webmproject.org,⭕ proxinode
+  - DOMAIN-SUFFIX,webrtc.org,⭕ proxinode
+  - DOMAIN-SUFFIX,whatbrowser.org,⭕ proxinode
+  - DOMAIN-SUFFIX,widevine.com,⭕ proxinode
+  - DOMAIN-SUFFIX,x.company,⭕ proxinode
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,⭕ proxinode
+  - DOMAIN-SUFFIX,youtu.be,⭕ proxinode
+  - DOMAIN-SUFFIX,yt.be,⭕ proxinode
+  - DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
 # Clubhouse
-  - DOMAIN-SUFFIX,clubhouseapi.com,ProxyNet
-  - DOMAIN-SUFFIX,clubhouse.pubnub.com,ProxyNet
-  - DOMAIN-SUFFIX,joinclubhouse.com,ProxyNet
-  - DOMAIN-SUFFIX,ap3.agora.io,ProxyNet
+  - DOMAIN-SUFFIX,clubhouseapi.com,⭕ proxinode
+  - DOMAIN-SUFFIX,clubhouse.pubnub.com,⭕ proxinode
+  - DOMAIN-SUFFIX,joinclubhouse.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ap3.agora.io,⭕ proxinode
 # Top blocked sites
-  - DOMAIN-KEYWORD,aka,ProxyNet
-  - DOMAIN-KEYWORD,facebook,ProxyNet
-  - DOMAIN-KEYWORD,youtube,ProxyNet
-  - DOMAIN-KEYWORD,twitter,ProxyNet
-  - DOMAIN-SUFFIX,instagram.com,ProxyNet
-  - DOMAIN-SUFFIX,cdninstagram.com,ProxyNet
-  - DOMAIN-KEYWORD,instagram,ProxyNet
-  - DOMAIN-SUFFIX,instagr.am,ProxyNet
-  - DOMAIN-KEYWORD,gmail,ProxyNet
-  - DOMAIN-KEYWORD,pixiv,ProxyNet
-  - DOMAIN-SUFFIX,fb.com,ProxyNet
-  - DOMAIN-SUFFIX,meta.com,ProxyNet
-  - DOMAIN-SUFFIX,twimg.com,ProxyNet
-  - DOMAIN-SUFFIX,x.com,ProxyNet
-  - DOMAIN-SUFFIX,t.co,ProxyNet
-  - DOMAIN-SUFFIX,kenengba.com,ProxyNet
-  - DOMAIN-SUFFIX,akamai.net,ProxyNet
-  - DOMAIN-SUFFIX,whatsapp.net,ProxyNet
-  - DOMAIN-SUFFIX,whatsapp.com,ProxyNet
-  - DOMAIN-SUFFIX,snapchat.com,ProxyNet
-  - DOMAIN-SUFFIX,amazonaws.com,ProxyNet
-  - DOMAIN-SUFFIX,angularjs.org,ProxyNet
-  - DOMAIN-SUFFIX,akamaihd.net,ProxyNet
-  - DOMAIN-SUFFIX,amazon.com,ProxyNet
-  - DOMAIN-SUFFIX,bit.ly,ProxyNet
-  - DOMAIN-SUFFIX,bitbucket.org,ProxyNet
-  - DOMAIN-SUFFIX,blog.com,ProxyNet
-  - DOMAIN-SUFFIX,blogcdn.com,ProxyNet
-  - DOMAIN-SUFFIX,blogsmithmedia.com,ProxyNet
-  - DOMAIN-SUFFIX,box.net,ProxyNet
-  - DOMAIN-SUFFIX,bloomberg.com,ProxyNet
-  - DOMAIN-SUFFIX,cl.ly,ProxyNet
-  - DOMAIN-SUFFIX,cloudfront.net,ProxyNet
-  - DOMAIN-SUFFIX,cloudflare.com,ProxyNet
-  - DOMAIN-SUFFIX,cocoapods.org,ProxyNet
-  - DOMAIN-SUFFIX,dribbble.com,ProxyNet
-  - DOMAIN-SUFFIX,dropbox.com,ProxyNet
-  - DOMAIN-SUFFIX,dropboxstatic.com,ProxyNet
-  - DOMAIN-SUFFIX,dropboxusercontent.com,ProxyNet
-  - DOMAIN-SUFFIX,docker.com,ProxyNet
-  - DOMAIN-SUFFIX,duckduckgo.com,ProxyNet
-  - DOMAIN-SUFFIX,digicert.com,ProxyNet
-  - DOMAIN-SUFFIX,dnsimple.com,ProxyNet
-  - DOMAIN-SUFFIX,edgecastcdn.net,ProxyNet
-  - DOMAIN-SUFFIX,engadget.com,ProxyNet
-  - DOMAIN-SUFFIX,eurekavpt.com,ProxyNet
-  - DOMAIN-SUFFIX,fb.me,ProxyNet
-  - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
-  - DOMAIN-SUFFIX,fc2.com,ProxyNet
-  - DOMAIN-SUFFIX,feedburner.com,ProxyNet
-  - DOMAIN-SUFFIX,fabric.io,ProxyNet
-  - DOMAIN-SUFFIX,flickr.com,ProxyNet
-  - DOMAIN-SUFFIX,fastly.net,ProxyNet
-  - DOMAIN-SUFFIX,github.com,ProxyNet
-  - DOMAIN-SUFFIX,github.io,ProxyNet
-  - DOMAIN-SUFFIX,githubusercontent.com,ProxyNet
-  - DOMAIN-SUFFIX,goo.gl,ProxyNet
-  - DOMAIN-SUFFIX,godaddy.com,ProxyNet
-  - DOMAIN-SUFFIX,gravatar.com,ProxyNet
-  - DOMAIN-SUFFIX,imageshack.us,ProxyNet
-  - DOMAIN-SUFFIX,imgur.com,ProxyNet
-  - DOMAIN-SUFFIX,jshint.com,ProxyNet
-  - DOMAIN-SUFFIX,ift.tt,ProxyNet
-  - DOMAIN-SUFFIX,j.mp,ProxyNet
-  - DOMAIN-SUFFIX,kat.cr,ProxyNet
-  - DOMAIN-SUFFIX,linode.com,ProxyNet
-  - DOMAIN-SUFFIX,lithium.com,ProxyNet
-  - DOMAIN-SUFFIX,megaupload.com,ProxyNet
-  - DOMAIN-SUFFIX,mobile01.com,ProxyNet
-  - DOMAIN-SUFFIX,modmyi.com,ProxyNet
-  - DOMAIN-SUFFIX,nytimes.com,ProxyNet
-  - DOMAIN-SUFFIX,name.com,ProxyNet
-  - DOMAIN-SUFFIX,openvpn.net,ProxyNet
-  - DOMAIN-SUFFIX,openwrt.org,ProxyNet
-  - DOMAIN-SUFFIX,ow.ly,ProxyNet
-  - DOMAIN-SUFFIX,pinboard.in,ProxyNet
-  - DOMAIN-SUFFIX,ssl-images-amazon.com,ProxyNet
-  - DOMAIN-SUFFIX,sstatic.net,ProxyNet
-  - DOMAIN-SUFFIX,stackoverflow.com,ProxyNet
-  - DOMAIN-SUFFIX,staticflickr.com,ProxyNet
-  - DOMAIN-SUFFIX,squarespace.com,ProxyNet
-  - DOMAIN-SUFFIX,symcd.com,ProxyNet
-  - DOMAIN-SUFFIX,symcb.com,ProxyNet
-  - DOMAIN-SUFFIX,symauth.com,ProxyNet
-  - DOMAIN-SUFFIX,ubnt.com,ProxyNet
-  - DOMAIN-SUFFIX,thepiratebay.org,ProxyNet
-  - DOMAIN-SUFFIX,tumblr.com,ProxyNet
-  - DOMAIN-SUFFIX,twitch.tv,ProxyNet
-  - DOMAIN-SUFFIX,twitter.com,ProxyNet
-  - DOMAIN-SUFFIX,wikipedia.com,ProxyNet
-  - DOMAIN-SUFFIX,wikipedia.org,ProxyNet
-  - DOMAIN-SUFFIX,wikimedia.org,ProxyNet
-  - DOMAIN-SUFFIX,wordpress.com,ProxyNet
-  - DOMAIN-SUFFIX,wsj.com,ProxyNet
-  - DOMAIN-SUFFIX,wsj.net,ProxyNet
-  - DOMAIN-SUFFIX,wp.com,ProxyNet
-  - DOMAIN-SUFFIX,vimeo.com,ProxyNet
-  - DOMAIN-SUFFIX,tapbots.com,ProxyNet
+  - DOMAIN-KEYWORD,aka,⭕ proxinode
+  - DOMAIN-KEYWORD,facebook,⭕ proxinode
+  - DOMAIN-KEYWORD,youtube,⭕ proxinode
+  - DOMAIN-KEYWORD,twitter,⭕ proxinode
+  - DOMAIN-SUFFIX,instagram.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cdninstagram.com,⭕ proxinode
+  - DOMAIN-KEYWORD,instagram,⭕ proxinode
+  - DOMAIN-SUFFIX,instagr.am,⭕ proxinode
+  - DOMAIN-KEYWORD,gmail,⭕ proxinode
+  - DOMAIN-KEYWORD,pixiv,⭕ proxinode
+  - DOMAIN-SUFFIX,fb.com,⭕ proxinode
+  - DOMAIN-SUFFIX,meta.com,⭕ proxinode
+  - DOMAIN-SUFFIX,twimg.com,⭕ proxinode
+  - DOMAIN-SUFFIX,x.com,⭕ proxinode
+  - DOMAIN-SUFFIX,t.co,⭕ proxinode
+  - DOMAIN-SUFFIX,kenengba.com,⭕ proxinode
+  - DOMAIN-SUFFIX,akamai.net,⭕ proxinode
+  - DOMAIN-SUFFIX,whatsapp.net,⭕ proxinode
+  - DOMAIN-SUFFIX,whatsapp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,snapchat.com,⭕ proxinode
+  - DOMAIN-SUFFIX,amazonaws.com,⭕ proxinode
+  - DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
+  - DOMAIN-SUFFIX,akamaihd.net,⭕ proxinode
+  - DOMAIN-SUFFIX,amazon.com,⭕ proxinode
+  - DOMAIN-SUFFIX,bit.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
+  - DOMAIN-SUFFIX,blog.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
+  - DOMAIN-SUFFIX,box.net,⭕ proxinode
+  - DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cl.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
+  - DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
+  - DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dropbox.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dropboxstatic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dropboxusercontent.com,⭕ proxinode
+  - DOMAIN-SUFFIX,docker.com,⭕ proxinode
+  - DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
+  - DOMAIN-SUFFIX,digicert.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
+  - DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
+  - DOMAIN-SUFFIX,engadget.com,⭕ proxinode
+  - DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fb.me,⭕ proxinode
+  - DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
+  - DOMAIN-SUFFIX,fc2.com,⭕ proxinode
+  - DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fabric.io,⭕ proxinode
+  - DOMAIN-SUFFIX,flickr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fastly.net,⭕ proxinode
+  - DOMAIN-SUFFIX,github.com,⭕ proxinode
+  - DOMAIN-SUFFIX,github.io,⭕ proxinode
+  - DOMAIN-SUFFIX,githubusercontent.com,⭕ proxinode
+  - DOMAIN-SUFFIX,goo.gl,⭕ proxinode
+  - DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
+  - DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
+  - DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
+  - DOMAIN-SUFFIX,imgur.com,⭕ proxinode
+  - DOMAIN-SUFFIX,jshint.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ift.tt,⭕ proxinode
+  - DOMAIN-SUFFIX,j.mp,⭕ proxinode
+  - DOMAIN-SUFFIX,kat.cr,⭕ proxinode
+  - DOMAIN-SUFFIX,linode.com,⭕ proxinode
+  - DOMAIN-SUFFIX,lithium.com,⭕ proxinode
+  - DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
+  - DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
+  - DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
+  - DOMAIN-SUFFIX,name.com,⭕ proxinode
+  - DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
+  - DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
+  - DOMAIN-SUFFIX,ow.ly,⭕ proxinode
+  - DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
+  - DOMAIN-SUFFIX,ssl-images-amazon.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
+  - DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
+  - DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
+  - DOMAIN-SUFFIX,symcd.com,⭕ proxinode
+  - DOMAIN-SUFFIX,symcb.com,⭕ proxinode
+  - DOMAIN-SUFFIX,symauth.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
+  - DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
+  - DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
+  - DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
+  - DOMAIN-SUFFIX,twitter.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
+  - DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
+  - DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wsj.com,⭕ proxinode
+  - DOMAIN-SUFFIX,wsj.net,⭕ proxinode
+  - DOMAIN-SUFFIX,wp.com,⭕ proxinode
+  - DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
+  - DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
   - DOMAIN-SUFFIX,ykimg.com,DIRECT
-  - DOMAIN-SUFFIX,medium.com,ProxyNet
-  - DOMAIN-SUFFIX,fast.com,ProxyNet
-  - DOMAIN-SUFFIX,nflxvideo.net,ProxyNet
-  - DOMAIN-SUFFIX,linkedin.com,ProxyNet
-  - DOMAIN-SUFFIX,licdn.com,ProxyNet
-  - DOMAIN-SUFFIX,bing.com,ProxyNet
-  - DOMAIN-SUFFIX,zoom.us,ProxyNet
+  - DOMAIN-SUFFIX,medium.com,⭕ proxinode
+  - DOMAIN-SUFFIX,fast.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nflxvideo.net,⭕ proxinode
+  - DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
+  - DOMAIN-SUFFIX,licdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,bing.com,⭕ proxinode
+  - DOMAIN-SUFFIX,zoom.us,⭕ proxinode
 # SoundCloud
-  - DOMAIN-SUFFIX,soundcloud.com,ProxyNet
-  - DOMAIN-SUFFIX,sndcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
+  - DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
 # ChatGPT
-  - DOMAIN,api.statsig.com,ProxyNet
-  - DOMAIN,browser-intake-datadoghq.com,ProxyNet
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,ProxyNet
-  - DOMAIN,o33249.ingest.sentry.io,ProxyNet
-  - DOMAIN,openai-api.arkoselabs.com,ProxyNet
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,ProxyNet
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,ProxyNet
-  - DOMAIN,production-openaicom-storage.azureedge.net,ProxyNet
-  - DOMAIN,static.cloudflareinsights.com,ProxyNet
-  - DOMAIN-KEYWORD,openaicom-api,ProxyNet
-  - DOMAIN-SUFFIX,algolia.net,ProxyNet
-  - DOMAIN-SUFFIX,auth0.com,ProxyNet
-  - DOMAIN-SUFFIX,cdn.cloudflare.net,ProxyNet
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,ProxyNet
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,ProxyNet
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,ProxyNet
-  - DOMAIN-SUFFIX,events.statsigapi.net,ProxyNet
-  - DOMAIN-SUFFIX,featuregates.org,ProxyNet
-  - DOMAIN-SUFFIX,host.livekit.cloud,ProxyNet
-  - DOMAIN-SUFFIX,identrust.com,ProxyNet
-  - DOMAIN-SUFFIX,intercom.io,ProxyNet
-  - DOMAIN-SUFFIX,intercomcdn.com,ProxyNet
-  - DOMAIN-SUFFIX,launchdarkly.com,ProxyNet
-  - DOMAIN-SUFFIX,oaistatic.com,ProxyNet
-  - DOMAIN-SUFFIX,oaiusercontent.com,ProxyNet
-  - DOMAIN-SUFFIX,observeit.net,ProxyNet
-  - DOMAIN-SUFFIX,openai.com,ProxyNet
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,ProxyNet
-  - DOMAIN-SUFFIX,openaicom.imgix.net,ProxyNet
-  - DOMAIN-SUFFIX,poe.com,ProxyNet
-  - DOMAIN-SUFFIX,segment.io,ProxyNet
-  - DOMAIN-SUFFIX,sentry.io,ProxyNet
-  - DOMAIN-SUFFIX,stripe.com,ProxyNet
-  - DOMAIN-SUFFIX,turn.livekit.cloud,ProxyNet
-  - IP-CIDR,24.199.123.28/32,ProxyNet,no-resolve
-  - IP-CIDR,45.76.214.191/32,ProxyNet,no-resolve
-  - IP-CIDR,64.23.132.171/32,ProxyNet,no-resolve
-  - IP-CIDR,143.198.200.27/32,ProxyNet,no-resolve
-  - IP-CIDR,159.89.204.203/32,ProxyNet,no-resolve
+  - DOMAIN,api.statsig.com,⭕ proxinode
+  - DOMAIN,browser-intake-datadoghq.com,⭕ proxinode
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,⭕ proxinode
+  - DOMAIN,o33249.ingest.sentry.io,⭕ proxinode
+  - DOMAIN,openai-api.arkoselabs.com,⭕ proxinode
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,⭕ proxinode
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,⭕ proxinode
+  - DOMAIN,production-openaicom-storage.azureedge.net,⭕ proxinode
+  - DOMAIN,static.cloudflareinsights.com,⭕ proxinode
+  - DOMAIN-KEYWORD,openaicom-api,⭕ proxinode
+  - DOMAIN-SUFFIX,algolia.net,⭕ proxinode
+  - DOMAIN-SUFFIX,auth0.com,⭕ proxinode
+  - DOMAIN-SUFFIX,cdn.cloudflare.net,⭕ proxinode
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,⭕ proxinode
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,⭕ proxinode
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,⭕ proxinode
+  - DOMAIN-SUFFIX,events.statsigapi.net,⭕ proxinode
+  - DOMAIN-SUFFIX,featuregates.org,⭕ proxinode
+  - DOMAIN-SUFFIX,host.livekit.cloud,⭕ proxinode
+  - DOMAIN-SUFFIX,identrust.com,⭕ proxinode
+  - DOMAIN-SUFFIX,intercom.io,⭕ proxinode
+  - DOMAIN-SUFFIX,intercomcdn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,launchdarkly.com,⭕ proxinode
+  - DOMAIN-SUFFIX,oaistatic.com,⭕ proxinode
+  - DOMAIN-SUFFIX,oaiusercontent.com,⭕ proxinode
+  - DOMAIN-SUFFIX,observeit.net,⭕ proxinode
+  - DOMAIN-SUFFIX,openai.com,⭕ proxinode
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,⭕ proxinode
+  - DOMAIN-SUFFIX,openaicom.imgix.net,⭕ proxinode
+  - DOMAIN-SUFFIX,poe.com,⭕ proxinode
+  - DOMAIN-SUFFIX,segment.io,⭕ proxinode
+  - DOMAIN-SUFFIX,sentry.io,⭕ proxinode
+  - DOMAIN-SUFFIX,stripe.com,⭕ proxinode
+  - DOMAIN-SUFFIX,turn.livekit.cloud,⭕ proxinode
+  - IP-CIDR,24.199.123.28/32,⭕ proxinode,no-resolve
+  - IP-CIDR,45.76.214.191/32,⭕ proxinode,no-resolve
+  - IP-CIDR,64.23.132.171/32,⭕ proxinode,no-resolve
+  - IP-CIDR,143.198.200.27/32,⭕ proxinode,no-resolve
+  - IP-CIDR,159.89.204.203/32,⭕ proxinode,no-resolve
 # Telegram
-  - DOMAIN-SUFFIX,t.me,ProxyNet
-  - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
-  - DOMAIN-SUFFIX,telegra.ph,ProxyNet
-  - DOMAIN-SUFFIX,telegram.me,ProxyNet
-  - DOMAIN-SUFFIX,telegram.org,ProxyNet
-  - DOMAIN-SUFFIX,telesco.pe,ProxyNet
-  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
-  - IP-CIDR,91.108.8.0/22,ProxyNet,no-resolve
-  - IP-CIDR,91.108.12.0/22,ProxyNet,no-resolve
-  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
-  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
-  - IP-CIDR,109.239.140.0/24,ProxyNet,no-resolve
-  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
-  - IP-CIDR,2001:B28:F23D::/48,ProxyNet,no-resolve
-  - IP-CIDR,2001:B28:F23F::/48,ProxyNet,no-resolve
-  - IP-CIDR,2001:67C:4E8::/48,ProxyNet,no-resolve
+  - DOMAIN-SUFFIX,t.me,⭕ proxinode
+  - DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
+  - DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
+  - DOMAIN-SUFFIX,telegram.me,⭕ proxinode
+  - DOMAIN-SUFFIX,telegram.org,⭕ proxinode
+  - DOMAIN-SUFFIX,telesco.pe,⭕ proxinode
+  - IP-CIDR,91.108.4.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.8.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.12.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.16.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,91.108.56.0/22,⭕ proxinode,no-resolve
+  - IP-CIDR,109.239.140.0/24,⭕ proxinode,no-resolve
+  - IP-CIDR,149.154.160.0/20,⭕ proxinode,no-resolve
+  - IP-CIDR,2001:B28:F23D::/48,⭕ proxinode,no-resolve
+  - IP-CIDR,2001:B28:F23F::/48,⭕ proxinode,no-resolve
+  - IP-CIDR,2001:67C:4E8::/48,⭕ proxinode,no-resolve
 # DNS Leak
-  - DOMAIN-SUFFIX,dnsleaktest.com,ProxyNet
-  - DOMAIN-SUFFIX,dnsleak.com,ProxyNet
-  - DOMAIN-SUFFIX,expressvpn.com,ProxyNet
-  - DOMAIN-SUFFIX,nordvpn.com,ProxyNet
-  - DOMAIN-SUFFIX,surfshark.com,ProxyNet
-  - DOMAIN-SUFFIX,ipleak.net,ProxyNet
-  - DOMAIN-SUFFIX,perfect-privacy.com,ProxyNet
-  - DOMAIN-SUFFIX,browserleaks.com,ProxyNet
-  - DOMAIN-SUFFIX,browserleaks.org,ProxyNet
-  - DOMAIN-SUFFIX,vpnunlimited.com,ProxyNet
-  - DOMAIN-SUFFIX,whoer.net,ProxyNet
-  - DOMAIN-SUFFIX,whrq.net,ProxyNet
+  - DOMAIN-SUFFIX,dnsleaktest.com,⭕ proxinode
+  - DOMAIN-SUFFIX,dnsleak.com,⭕ proxinode
+  - DOMAIN-SUFFIX,expressvpn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,nordvpn.com,⭕ proxinode
+  - DOMAIN-SUFFIX,surfshark.com,⭕ proxinode
+  - DOMAIN-SUFFIX,ipleak.net,⭕ proxinode
+  - DOMAIN-SUFFIX,perfect-privacy.com,⭕ proxinode
+  - DOMAIN-SUFFIX,browserleaks.com,⭕ proxinode
+  - DOMAIN-SUFFIX,browserleaks.org,⭕ proxinode
+  - DOMAIN-SUFFIX,vpnunlimited.com,⭕ proxinode
+  - DOMAIN-SUFFIX,whoer.net,⭕ proxinode
+  - DOMAIN-SUFFIX,whrq.net,⭕ proxinode
 # LAN
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
