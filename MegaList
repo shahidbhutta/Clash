@@ -8,8 +8,8 @@ dns:
   enable: true
   ipv6: false
   default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -184,9 +184,9 @@ proxies:
   - {name: VN_0176, server: 160.30.21.105, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, sni: std1.loadingip.com, skip-cert-verify: true}
   - {name: VN_0177, server: std1.loadingip.com, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, skip-cert-verify: true}
   - {name: GoHTTP_Android_VM, server: 10.18.20.235, port: 8080, type: http}
-  - {name: GoSocks_Android_VM, server: 10.18.20.235, port: 443, type: socks5}
+  - {name: GoSocks_Android_VM, server: 10.18.20.235, port: 1080, type: socks5}
   - {name: GoHTTP_home, server: 192.168.1.30, port: 8080, type: http}
-  - {name: GoSocks_home, server: 192.168.1.30, port: 443, type: socks5}
+  - {name: GoSocks_home, server: 192.168.1.30, port: 1080, type: socks5}
 
 
 proxy-groups:
