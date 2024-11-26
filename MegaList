@@ -80,13 +80,11 @@ proxies:
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
     cipher: auto
-    udp: true
-    tls: true
+    udp: false
+    tls: false
     servername: x114.flybar.work
     network: tcp
-    ws-opts:
-      headers:
-        Host: x114.flybar.work
+
   - name: AWS
     server: 13.60.77.103
     port: 443
