@@ -186,7 +186,7 @@ proxies:
       headers:
         Host: late-tooth.granzinhannah.workers.dev
     udp: true
-  - name: US1_0121
+  - name: US_0121
     server: 162.159.129.60
     port: 80
     type: vless
