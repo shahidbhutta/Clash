@@ -32,7 +32,61 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  
+  - name: US-Amazon-EC2
+    server: 3.78.59.177
+    port: 22222
+    type: trojan
+    password: telegram-id-directvpn
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+    alpn:
+      - http/1.1
+  - name: US-Amazon
+    server: 35.176.236.153
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+    alpn:
+      - http/1.1
+  - name: GB-Amazon
+    server: 3.9.137.149
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+
+  - name: HK-Google
+    server: 34.92.66.193
+    port: 30251
+    type: vmess
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: true
+    servername: x114.flybar.work
+    network: tcp
+    ws-opts:
+      headers:
+        Host: x114.flybar.work
   - name: AWS
     server: 13.60.77.103
     port: 443
@@ -3334,6 +3388,10 @@ proxy-groups:
   - name: ⭕ proxinode
     type: url-test
     proxies:
+      - US-Amazon-EC2
+      - US-Amazon
+      - GB-Amazon
+      - HK-Google
       - Alv2
       - Alv3
       - Alv4
