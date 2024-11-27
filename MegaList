@@ -5164,8 +5164,8 @@ proxies:
     - h3
     sni: www.bing.com
     skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
+    up: 100 Mbps
+    down: 1000 Mbps
   - name: US_Wilmington_hysteria_71
     type: hysteria
     server: 166.1.18.42
@@ -5176,8 +5176,8 @@ proxies:
     - h3
     sni: bing.com
     skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
+    up: 100 Mbps
+    down: 1000 Mbps
   - name: US_Wilmington_hysteria_81
     type: hysteria
     server: 166.1.18.42
@@ -5188,8 +5188,8 @@ proxies:
     - h3
     sni: bing.com
     skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
+    up: 100 Mbps
+    down: 1000 Mbps
   - name: Germany_None_hysteria_91
     type: hysteria
     server: 146.0.36.114
@@ -5200,8 +5200,8 @@ proxies:
     - h3
     sni: www.bing.com
     skip-cert-verify: true
-    up: 11 Mbps
-    down: 55 Mbps
+    up: 100 Mbps
+    down: 1000 Mbps
   - name: Russia_Moscow_hy_0
     type: hysteria
     server: 46.17.43.223
