@@ -85,6 +85,192 @@ proxies:
     servername: x114.flybar.work
     network: tcp
 
+  - name: TT11
+    server: 217.163.76.107
+    port: 8443
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: edgood.889876.xyz
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: edgood.889876.xyz
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: edgood.889876.xyz
+    udp: true
+
+  - name: TT10
+    server: 37.120.184.206
+    port: 1001
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT9
+    server: 103.214.68.133
+    port: 587
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT8
+    server: 45.94.31.75
+    port: 2003
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT7
+    server: 45.94.31.109
+    port: 1001
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT6
+    server: 95.164.51.24
+    port: 2501
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT5
+    server: 185.146.173.58
+    port: 8080
+    type: vless
+    uuid: e5f0a1d3-a236-43b5-9b43-36265e73f1fe
+    tls: false
+    sni: a.mifeng.us.kg
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: lc83.lebasnoo.ir.
+    network: ws
+    ws-opts:
+      path: /servernett
+      headers:
+        Host: lc83.lebasnoo.ir.
+    udp: true
+
+  - name: TT4
+    server: 185.146.173.58
+    port: 8080
+    type: vless
+    uuid: 9bb724c7-1435-4d91-a0f4-08c995e76762
+    tls: false
+    sni: a.mifeng.us.kg
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: lc82.lebasnoo.ir.
+    network: ws
+    ws-opts:
+      path: /servernett
+      headers:
+        Host: lc82.lebasnoo.ir.
+    udp: true
+
+  - name: TT3
+    server: 45.94.31.109
+    port: 2003
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT2
+    server: 95.164.116.22
+    port: 2501
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT1
+    server: 165.154.134.125
+    port: 587
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
   - name: AWS
     server: 13.60.77.103
     port: 443
@@ -3584,6 +3770,17 @@ proxy-groups:
       - Russia_Moscow_hy2_1
       - Russia_Moscow_hy2_2
       - Russia_Moscow_hy2_3
+      - TT1
+      - TT2
+      - TT3
+      - TT4
+      - TT5
+      - TT6
+      - TT7
+      - TT8
+      - TT9
+      - TT10
+      - TT11
 
     url: https://www.google.com/favicon.ico
     interval: 120
