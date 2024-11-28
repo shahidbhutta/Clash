@@ -3514,9 +3514,19 @@ proxies:
     skip-cert-verify: true
 
 proxy-groups:
-  - name: ⭕ proxinode
-    type: url-test
+  - name: ProxyNet
+    type: select
     proxies:
+      - ALL_PROXIES
+      - Alv9
+      - VMESS_List
+      - HysteriaList
+      - TT_List
+      - TRUSTED
+
+  - name: ALL_PROXIES
+      type: url-test
+      proxies:
       - US-Amazon-EC2
       - US-Amazon
       - GB-Amazon
@@ -3745,23 +3755,271 @@ proxy-groups:
       - TT7
       - TT8
       - TT9
-
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: ♻️ OK
+  - name: Alv9
+    type: url-test
+    proxies:
+    - Alv2
+    - Alv9_1
+    - Alv9_2
+    - Alv9_3
+    - Alv9_4
+    - Alv9_5
+    - Alv9_6
+    - Alv9_7
+    - Alv9_8
+    - Alv9_9
+    - Alv9_10
+    - Alv9_11
+    - Alv9_12
+    - Alv9_13
+    - Alv9_14
+    - Alv9_18
+    - Alv9_19
+    - Alv9_23
+    - Alv9_24
+    - Alv9_25
+    - Alv9_26
+    - Alv9_27
+    - Alv9_28
+    - Alv9_29
+    - Alv9_30
+    - Alv9_32
+    - Alv9_33
+    - Alv9_35
+    - Alv9_36
+    - Alv9_37
+    - Alv9_38
+    - Alv9_39
+    - Alv9_40
+    - Alv9_41
+    - Alv9_42
+    - Alv9_43
+    - Alv9_44
+    - Alv9_45
+    - Alv9_46
+    - Alv9_47
+    - Alv9_48
+    - Alv9_49
+    - Alv9_50
+    - Alv9_51
+    - Alv9_52
+    - Alv9_54
+    - Alv9_55
+    - Alv9_56
+    - Alv9_57
+    - Alv9_58
+    - Alv9_59
+    - Alv9_60
+    - Alv9_61
+    - Alv9_62
+    - Alv9_63
+    - Alv9_64
+    - Alv9_65
+    - Alv9_66
+    - Alv9_67
+    - Alv9_68
+    - Alv9_69
+    - Alv9_70
+    - Alv9_81
+    - Alv9_82
+    - Alv9_83
+    - Alv9_84
+    - Alv9_85
+    - Alv9_86
+    - Alv9_87
+    - Alv9_88
+    - Alv9_89
+    - Alv9_90
+    - Alv9_101
+    url: https://www.google.com/favicon.ico
+    interval: 120
+    tolerance: 50
+  - name: VMESS_List
+    type: url-test
+    proxies:
+      - vmess_01
+      - vmess_02
+      - Canada_vmess_03
+      - US_vmess_05
+      - US_vmess_06
+      - vmess_07
+      - US_vmess_08
+      - US_vmess_09
+      - US_vmess_010
+      - vmess_011
+      - vmess_012
+      - vmess_013
+      - vmess_014
+      - vmess_015
+      - vmess_016
+      - vmess_017
+      - vmess_019
+      - vmess_022
+      - vmess_023
+      - vmess_025
+      - vmess_026
+      - vmess_027
+      - vmess_028
+      - vmess_029
+      - vmess_030
+      - vmess_031
+      - vmess_032
+      - vmess_034
+      - vmess_037
+      - vmess_038
+      - vmess_039
+      - vmess_040
+      - vmess_041
+      - vmess_042
+      - vmess_043
+      - vmess_044
+      - vmess_045
+      - vmess_046
+      - vmess_047
+      - vmess_048
+      - vmess_049
+      - vmess_050
+      - vmess_051
+      - vmess_052
+      - vmess_053
+      - vmess_055
+      - vmess_056
+      - vmess_057
+      - vmess_058
+      - vmess_059
+      - vmess_060
+      - vmess_061
+      - US_vmess_062
+      - US_vmess_063
+      - US_vmess_064
+      - US_vmess_065
+      - US_vmess_066
+      - US_vmess_067
+      - US_vmess_068
+      - US_vmess_069
+      - US_vmess_070
+      - US_vmess_071
+      - US_vmess_082
+      - US_vmess_083
+      - US_vmess_084
+      - US_vmess_085
+      - US_vmess_086
+      - US_vmess_087
+      - US_vmess_088
+      - US_vmess_089
+      - US_vmess_090
+      - US_vmess_091
+      - vmess_22
+      - Canada_vmess_23
+      - vmess_24
+      - US_vmess_25
+      - US_vmess_26
+      - vmess_27
+      - US_vmess_28
+      - US_vmess_29
+      - vmess_220
+      - vmess_221
+      - vmess_225
+      - vmess_226
+      - vmess_227
+      - vmess_228
+      - vmess_229
+      - vmess_230
+      - vmess_231
+      - vmess_232
+      - vmess_233
+      - vmess_234
+      - vmess_238
+      - vmess_240
+      - vmess_241
+      - vmess_242
+      - vmess_243
+      - vmess_244
+      - vmess_245
+      - vmess_246
+      - vmess_247
+      - vmess_248
+      - vmess_249
+      - vmess_250
+      - vmess_251
+      - vmess_252
+      - vmess_253
+      - vmess_255
+      - vmess_256
+      - vmess_257
+      - vmess_258
+      - vmess_259
+      - vmess_260
+      - vmess_261
+      - US_vmess_262
+      - US_vmess_263
+      - US_vmess_264
+      - US_vmess_265
+      - US_vmess_266
+      - US_vmess_267
+      - US_vmess_268
+      - US_vmess_269
+      - US_vmess_270
+      - US_vmess_271
+      - US_vmess_282
+      - US_vmess_283
+      - US_vmess_284
+      - US_vmess_285
+      - US_vmess_286
+      - US_vmess_287
+      - US_vmess_288
+      - US_vmess_289
+      - US_vmess_290
+      - US_vmess_291
+    url: https://www.google.com/favicon.ico
+    interval: 120
+    tolerance: 50
+  - name: HysteriaList
+    type: url-test
+    proxies:
+      - Germany_hysteria_61
+      - US_Wilmington_hysteria_71
+      - US_Wilmington_hysteria_81
+      - Germany_hysteria_91
+      - Russia_Moscow_hy2_0
+      - Russia_Moscow_hy2_1
+      - Russia_Moscow_hy2_2
+      - Russia_Moscow_hy2_3
+    url: https://www.google.com/favicon.ico
+    interval: 120
+    tolerance: 50
+  - name: TT_List
+    type: url-test
+    proxies:
+      - TT1
+      - TT2
+      - TT3
+      - TT4
+      - TT5
+      - TT6
+      - TT7
+      - TT8
+      - TT9
+    url: https://www.google.com/favicon.ico
+    interval: 120
+    tolerance: 50
+  - name: TRUSTED
     type: url-test
     proxies:
       - AWS
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
+
 rules:
-  - DOMAIN-KEYWORD,bank,♻️ OK
-  - DOMAIN-SUFFIX,hbl.com,♻️ OK
-  - DOMAIN-SUFFIX,mobilinkbank.com,♻️ OK
-  - DOMAIN-SUFFIX,wise.com,♻️ OK
-  - DOMAIN-SUFFIX,ubldigital.com,♻️ OK
+  - DOMAIN-KEYWORD,bank,TRUSTED
+  - DOMAIN-SUFFIX,hbl.com,TRUSTED
+  - DOMAIN-SUFFIX,mobilinkbank.com,TRUSTED
+  - DOMAIN-SUFFIX,wise.com,TRUSTED
+  - DOMAIN-SUFFIX,ubldigital.com,TRUSTED
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
@@ -3769,31 +4027,31 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,DIRECT
   - DOMAIN-SUFFIX,alicdn.com,DIRECT
   - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
-  - DOMAIN,cdn.angruo.com,⭕ proxinode
+  - DOMAIN,cdn.angruo.com,ProxyNet
   - DOMAIN,download.jetbrains.com,DIRECT
   - DOMAIN,file-igamecj.akamaized.net,DIRECT
   - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
   - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
   - DOMAIN,speedtest.macpaw.com,DIRECT
-  - DOMAIN,beiyong.starnetcn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,services.googleapis.cn,⭕ proxinode
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,⭕ proxinode
+  - DOMAIN,beiyong.starnetcn.com,ProxyNet
+  - DOMAIN-SUFFIX,services.googleapis.cn,ProxyNet
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,⭕ proxinode
-  - DOMAIN,developer.apple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,digicert.com,⭕ proxinode
-  - DOMAIN,ocsp.apple.com,⭕ proxinode
-  - DOMAIN,ocsp.comodoca.com,⭕ proxinode
-  - DOMAIN,ocsp.usertrust.com,⭕ proxinode
-  - DOMAIN,ocsp.sectigo.com,⭕ proxinode
-  - DOMAIN,ocsp.verisign.net,⭕ proxinode
-  - DOMAIN-SUFFIX,apple-dns.net,⭕ proxinode
-  - DOMAIN,testflight.apple.com,⭕ proxinode
-  - DOMAIN,sandbox.itunes.apple.com,⭕ proxinode
-  - DOMAIN,itunes.apple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,apps.apple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blobstore.apple.com,⭕ proxinode
-  - DOMAIN,cvws.icloud-content.com,⭕ proxinode
+  - DOMAIN,safebrowsing.googleapis.com,ProxyNet
+  - DOMAIN,developer.apple.com,ProxyNet
+  - DOMAIN-SUFFIX,digicert.com,ProxyNet
+  - DOMAIN,ocsp.apple.com,ProxyNet
+  - DOMAIN,ocsp.comodoca.com,ProxyNet
+  - DOMAIN,ocsp.usertrust.com,ProxyNet
+  - DOMAIN,ocsp.sectigo.com,ProxyNet
+  - DOMAIN,ocsp.verisign.net,ProxyNet
+  - DOMAIN-SUFFIX,apple-dns.net,ProxyNet
+  - DOMAIN,testflight.apple.com,ProxyNet
+  - DOMAIN,sandbox.itunes.apple.com,ProxyNet
+  - DOMAIN,itunes.apple.com,ProxyNet
+  - DOMAIN-SUFFIX,apps.apple.com,ProxyNet
+  - DOMAIN-SUFFIX,blobstore.apple.com,ProxyNet
+  - DOMAIN,cvws.icloud-content.com,ProxyNet
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
   - DOMAIN-SUFFIX,icloud.com,DIRECT
@@ -3935,20 +4193,20 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,DIRECT
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
-  - DOMAIN-KEYWORD,amazon,⭕ proxinode
-  - DOMAIN-KEYWORD,google,⭕ proxinode
-  - DOMAIN-KEYWORD,gmail,⭕ proxinode
-  - DOMAIN-KEYWORD,youtube,⭕ proxinode
-  - DOMAIN-KEYWORD,facebook,⭕ proxinode
-  - DOMAIN-SUFFIX,fb.me,⭕ proxinode
-  - DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
-  - DOMAIN-KEYWORD,twitter,⭕ proxinode
-  - DOMAIN-KEYWORD,instagram,⭕ proxinode
-  - DOMAIN-KEYWORD,dropbox,⭕ proxinode
-  - DOMAIN-SUFFIX,twimg.com,⭕ proxinode
-  - DOMAIN-KEYWORD,blogspot,⭕ proxinode
-  - DOMAIN-SUFFIX,youtu.be,⭕ proxinode
-  - DOMAIN-KEYWORD,whatsapp,⭕ proxinode
+  - DOMAIN-KEYWORD,amazon,ProxyNet
+  - DOMAIN-KEYWORD,google,ProxyNet
+  - DOMAIN-KEYWORD,gmail,ProxyNet
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-KEYWORD,facebook,ProxyNet
+  - DOMAIN-SUFFIX,fb.me,ProxyNet
+  - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
+  - DOMAIN-KEYWORD,twitter,ProxyNet
+  - DOMAIN-KEYWORD,instagram,ProxyNet
+  - DOMAIN-KEYWORD,dropbox,ProxyNet
+  - DOMAIN-SUFFIX,twimg.com,ProxyNet
+  - DOMAIN-KEYWORD,blogspot,ProxyNet
+  - DOMAIN-SUFFIX,youtu.be,ProxyNet
+  - DOMAIN-KEYWORD,whatsapp,ProxyNet
   - DOMAIN-KEYWORD,admarvel,REJECT
   - DOMAIN-KEYWORD,admaster,REJECT
   - DOMAIN-KEYWORD,adsage,REJECT
@@ -3976,304 +4234,304 @@ rules:
   - DOMAIN-SUFFIX,vungle.com,REJECT
   - DOMAIN-KEYWORD,wlmonitor,REJECT
   - DOMAIN-KEYWORD,zjtoolbar,REJECT
-  - DOMAIN-SUFFIX,9to5mac.com,⭕ proxinode
-  - DOMAIN-SUFFIX,abpchina.org,⭕ proxinode
-  - DOMAIN-SUFFIX,adblockplus.org,⭕ proxinode
-  - DOMAIN-SUFFIX,adobe.com,⭕ proxinode
-  - DOMAIN-SUFFIX,akamaized.net,⭕ proxinode
-  - DOMAIN-SUFFIX,alfredapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,amplitude.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,android.com,⭕ proxinode
-  - DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
-  - DOMAIN-SUFFIX,aolcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,apkpure.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appledaily.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appshopper.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appspot.com,⭕ proxinode
-  - DOMAIN-SUFFIX,arcgis.com,⭕ proxinode
-  - DOMAIN-SUFFIX,archive.org,⭕ proxinode
-  - DOMAIN-SUFFIX,armorgames.com,⭕ proxinode
-  - DOMAIN-SUFFIX,aspnetcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,att.com,⭕ proxinode
-  - DOMAIN-SUFFIX,awsstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,azureedge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,azurewebsites.net,⭕ proxinode
-  - DOMAIN-SUFFIX,bing.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bintray.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bit.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bit.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
-  - DOMAIN-SUFFIX,bjango.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bkrtx.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blog.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogger.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogspot.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogspot.hk,⭕ proxinode
-  - DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,box.com,⭕ proxinode
-  - DOMAIN-SUFFIX,box.net,⭕ proxinode
-  - DOMAIN-SUFFIX,cachefly.net,⭕ proxinode
-  - DOMAIN-SUFFIX,chromium.org,⭕ proxinode
-  - DOMAIN-SUFFIX,cl.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudmagic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cmail19.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cnet.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
-  - DOMAIN-SUFFIX,comodoca.com,⭕ proxinode
-  - DOMAIN-SUFFIX,crashlytics.com,⭕ proxinode
-  - DOMAIN-SUFFIX,culturedcode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,d.pr,⭕ proxinode
-  - DOMAIN-SUFFIX,danilo.to,⭕ proxinode
-  - DOMAIN-SUFFIX,dayone.me,⭕ proxinode
-  - DOMAIN-SUFFIX,db.tt,⭕ proxinode
-  - DOMAIN-SUFFIX,deskconnect.com,⭕ proxinode
-  - DOMAIN-SUFFIX,disq.us,⭕ proxinode
-  - DOMAIN-SUFFIX,disqus.com,⭕ proxinode
-  - DOMAIN-SUFFIX,disquscdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,docker.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
-  - DOMAIN-SUFFIX,droplr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dueapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dytt8.net,⭕ proxinode
-  - DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,edgekey.net,⭕ proxinode
-  - DOMAIN-SUFFIX,edgesuite.net,⭕ proxinode
-  - DOMAIN-SUFFIX,engadget.com,⭕ proxinode
-  - DOMAIN-SUFFIX,entrust.net,⭕ proxinode
-  - DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,evernote.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fabric.io,⭕ proxinode
-  - DOMAIN-SUFFIX,fast.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fastly.net,⭕ proxinode
-  - DOMAIN-SUFFIX,fc2.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedly.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedsportal.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fiftythree.com,⭕ proxinode
-  - DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
-  - DOMAIN-SUFFIX,flexibits.com,⭕ proxinode
-  - DOMAIN-SUFFIX,flickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,flipboard.com,⭕ proxinode
-  - DOMAIN-SUFFIX,g.co,⭕ proxinode
-  - DOMAIN-SUFFIX,gabia.net,⭕ proxinode
-  - DOMAIN-SUFFIX,geni.us,⭕ proxinode
-  - DOMAIN-SUFFIX,gfx.ms,⭕ proxinode
-  - DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ghostnoteapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,git.io,⭕ proxinode
-  - DOMAIN-KEYWORD,github,⭕ proxinode
-  - DOMAIN-SUFFIX,globalsign.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
-  - DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,golang.org,⭕ proxinode
-  - DOMAIN-SUFFIX,gongm.in,⭕ proxinode
-  - DOMAIN-SUFFIX,goo.gl,⭕ proxinode
-  - DOMAIN-SUFFIX,goodreaders.com,⭕ proxinode
-  - DOMAIN-SUFFIX,goodreads.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
-  - DOMAIN-SUFFIX,hockeyapp.net,⭕ proxinode
-  - DOMAIN-SUFFIX,hotmail.com,⭕ proxinode
-  - DOMAIN-SUFFIX,icons8.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ifixit.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ift.tt,⭕ proxinode
-  - DOMAIN-SUFFIX,ifttt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,iherb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
-  - DOMAIN-SUFFIX,img.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,imgur.com,⭕ proxinode
-  - DOMAIN-SUFFIX,imore.com,⭕ proxinode
-  - DOMAIN-SUFFIX,instapaper.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ipn.li,⭕ proxinode
-  - DOMAIN-SUFFIX,is.gd,⭕ proxinode
-  - DOMAIN-SUFFIX,issuu.com,⭕ proxinode
-  - DOMAIN-SUFFIX,itgonglun.com,⭕ proxinode
-  - DOMAIN-SUFFIX,itun.es,⭕ proxinode
-  - DOMAIN-SUFFIX,ixquick.com,⭕ proxinode
-  - DOMAIN-SUFFIX,j.mp,⭕ proxinode
-  - DOMAIN-SUFFIX,js.revsci.net,⭕ proxinode
-  - DOMAIN-SUFFIX,jshint.com,⭕ proxinode
-  - DOMAIN-SUFFIX,jtvnw.net,⭕ proxinode
-  - DOMAIN-SUFFIX,justgetflux.com,⭕ proxinode
-  - DOMAIN-SUFFIX,kat.cr,⭕ proxinode
-  - DOMAIN-SUFFIX,klip.me,⭕ proxinode
-  - DOMAIN-SUFFIX,libsyn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
-  - DOMAIN-SUFFIX,line-apps.com,⭕ proxinode
-  - DOMAIN-SUFFIX,linode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,lithium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,littlehj.com,⭕ proxinode
-  - DOMAIN-SUFFIX,live.com,⭕ proxinode
-  - DOMAIN-SUFFIX,live.net,⭕ proxinode
-  - DOMAIN-SUFFIX,livefilestore.com,⭕ proxinode
-  - DOMAIN-SUFFIX,llnwd.net,⭕ proxinode
-  - DOMAIN-SUFFIX,macid.co,⭕ proxinode
-  - DOMAIN-SUFFIX,macromedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,macrumors.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mashable.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mathjax.org,⭕ proxinode
-  - DOMAIN-SUFFIX,medium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mega.co.nz,⭕ proxinode
-  - DOMAIN-SUFFIX,mega.nz,⭕ proxinode
-  - DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
-  - DOMAIN-SUFFIX,microsofttranslator.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mindnode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
-  - DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,msedge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,myfontastic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,name.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nextmedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nsstatic.net,⭕ proxinode
-  - DOMAIN-SUFFIX,nssurge.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nyt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
-  - DOMAIN-SUFFIX,omnigroup.com,⭕ proxinode
-  - DOMAIN-SUFFIX,onedrive.com,⭕ proxinode
-  - DOMAIN-SUFFIX,onenote.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ooyala.com,⭕ proxinode
-  - DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
-  - DOMAIN-SUFFIX,orkut.com,⭕ proxinode
-  - DOMAIN-SUFFIX,osxdaily.com,⭕ proxinode
-  - DOMAIN-SUFFIX,outlook.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ow.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,paddleapi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,parallels.com,⭕ proxinode
-  - DOMAIN-SUFFIX,parse.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pdfexpert.com,⭕ proxinode
-  - DOMAIN-SUFFIX,periscope.tv,⭕ proxinode
-  - DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
-  - DOMAIN-SUFFIX,pinterest.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pixelmator.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pixiv.net,⭕ proxinode
-  - DOMAIN-SUFFIX,playpcesor.com,⭕ proxinode
-  - DOMAIN-SUFFIX,playstation.com,⭕ proxinode
-  - DOMAIN-SUFFIX,playstation.com.hk,⭕ proxinode
-  - DOMAIN-SUFFIX,playstation.net,⭕ proxinode
-  - DOMAIN-SUFFIX,playstationnetwork.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pushwoosh.com,⭕ proxinode
-  - DOMAIN-SUFFIX,rime.im,⭕ proxinode
-  - DOMAIN-SUFFIX,servebom.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sfx.ms,⭕ proxinode
-  - DOMAIN-SUFFIX,shadowsocks.org,⭕ proxinode
-  - DOMAIN-SUFFIX,sharethis.com,⭕ proxinode
-  - DOMAIN-SUFFIX,shazam.com,⭕ proxinode
-  - DOMAIN-SUFFIX,skype.com,⭕ proxinode
-  - DOMAIN-SUFFIX,smartdns⭕ proxinode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,smartmailcloud.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sony.com,⭕ proxinode
-  - DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sourceforge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,spotify.com,⭕ proxinode
-  - DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
-  - DOMAIN-SUFFIX,st.luluku.pw,⭕ proxinode
-  - DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
-  - DOMAIN-SUFFIX,startpage.com,⭕ proxinode
-  - DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,steamcommunity.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symauth.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcd.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tapbots.net,⭕ proxinode
-  - DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
-  - DOMAIN-SUFFIX,techcrunch.com,⭕ proxinode
-  - DOMAIN-SUFFIX,techsmith.com,⭕ proxinode
-  - DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
-  - DOMAIN-SUFFIX,theverge.com,⭕ proxinode
-  - DOMAIN-SUFFIX,time.com,⭕ proxinode
-  - DOMAIN-SUFFIX,timeinc.net,⭕ proxinode
-  - DOMAIN-SUFFIX,tiny.cc,⭕ proxinode
-  - DOMAIN-SUFFIX,tinypic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tmblr.co,⭕ proxinode
-  - DOMAIN-SUFFIX,todoist.com,⭕ proxinode
-  - DOMAIN-SUFFIX,trello.com,⭕ proxinode
-  - DOMAIN-SUFFIX,trustasiassl.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tumblr.co,⭕ proxinode
-  - DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tweetdeck.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tweetmarker.net,⭕ proxinode
-  - DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
-  - DOMAIN-SUFFIX,txmblr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,typekit.net,⭕ proxinode
-  - DOMAIN-SUFFIX,ubertags.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ublock.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ulyssesapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,urchin.com,⭕ proxinode
-  - DOMAIN-SUFFIX,usertrust.com,⭕ proxinode
-  - DOMAIN-SUFFIX,v.gd,⭕ proxinode
-  - DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vimeocdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vine.co,⭕ proxinode
-  - DOMAIN-SUFFIX,vivaldi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vox-cdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vsco.co,⭕ proxinode
-  - DOMAIN-SUFFIX,vultr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,w.org,⭕ proxinode
-  - DOMAIN-SUFFIX,w3schools.com,⭕ proxinode
-  - DOMAIN-SUFFIX,webtype.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikiwand.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikileaks.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,windows.com,⭕ proxinode
-  - DOMAIN-SUFFIX,windows.net,⭕ proxinode
-  - DOMAIN-SUFFIX,wire.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
-  - DOMAIN-SUFFIX,workflowy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.net,⭕ proxinode
-  - DOMAIN-SUFFIX,xda-developers.com,⭕ proxinode
-  - DOMAIN-SUFFIX,xeeno.com,⭕ proxinode
-  - DOMAIN-SUFFIX,xiti.com,⭕ proxinode
-  - DOMAIN-SUFFIX,yahoo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,yimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ying.com,⭕ proxinode
-  - DOMAIN-SUFFIX,yoyo.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
-  - DOMAIN-SUFFIX,telegram.org,⭕ proxinode
-  - IP-CIDR,91.108.4.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.8.0/21,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.16.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.56.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,149.154.160.0/20,⭕ proxinode,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,⭕ proxinode,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,⭕ proxinode,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,⭕ proxinode,no-resolve
-  - IP-CIDR,120.232.181.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.241.147.226/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.253.226/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.255.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.255.34/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.255.98/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.150.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.150.34/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.151.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.151.34/32,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.39.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.40.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.41.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.43.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.50.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,220.181.174.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,220.181.174.226/32,⭕ proxinode,no-resolve
-  - IP-CIDR,220.181.174.34/32,⭕ proxinode,no-resolve
+  - DOMAIN-SUFFIX,9to5mac.com,ProxyNet
+  - DOMAIN-SUFFIX,abpchina.org,ProxyNet
+  - DOMAIN-SUFFIX,adblockplus.org,ProxyNet
+  - DOMAIN-SUFFIX,adobe.com,ProxyNet
+  - DOMAIN-SUFFIX,akamaized.net,ProxyNet
+  - DOMAIN-SUFFIX,alfredapp.com,ProxyNet
+  - DOMAIN-SUFFIX,amplitude.com,ProxyNet
+  - DOMAIN-SUFFIX,ampproject.org,ProxyNet
+  - DOMAIN-SUFFIX,android.com,ProxyNet
+  - DOMAIN-SUFFIX,angularjs.org,ProxyNet
+  - DOMAIN-SUFFIX,aolcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,apkpure.com,ProxyNet
+  - DOMAIN-SUFFIX,appledaily.com,ProxyNet
+  - DOMAIN-SUFFIX,appshopper.com,ProxyNet
+  - DOMAIN-SUFFIX,appspot.com,ProxyNet
+  - DOMAIN-SUFFIX,arcgis.com,ProxyNet
+  - DOMAIN-SUFFIX,archive.org,ProxyNet
+  - DOMAIN-SUFFIX,armorgames.com,ProxyNet
+  - DOMAIN-SUFFIX,aspnetcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,att.com,ProxyNet
+  - DOMAIN-SUFFIX,awsstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,azureedge.net,ProxyNet
+  - DOMAIN-SUFFIX,azurewebsites.net,ProxyNet
+  - DOMAIN-SUFFIX,bing.com,ProxyNet
+  - DOMAIN-SUFFIX,bintray.com,ProxyNet
+  - DOMAIN-SUFFIX,bit.com,ProxyNet
+  - DOMAIN-SUFFIX,bit.ly,ProxyNet
+  - DOMAIN-SUFFIX,bitbucket.org,ProxyNet
+  - DOMAIN-SUFFIX,bjango.com,ProxyNet
+  - DOMAIN-SUFFIX,bkrtx.com,ProxyNet
+  - DOMAIN-SUFFIX,blog.com,ProxyNet
+  - DOMAIN-SUFFIX,blogcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,blogger.com,ProxyNet
+  - DOMAIN-SUFFIX,blogsmithmedia.com,ProxyNet
+  - DOMAIN-SUFFIX,blogspot.com,ProxyNet
+  - DOMAIN-SUFFIX,blogspot.hk,ProxyNet
+  - DOMAIN-SUFFIX,bloomberg.com,ProxyNet
+  - DOMAIN-SUFFIX,box.com,ProxyNet
+  - DOMAIN-SUFFIX,box.net,ProxyNet
+  - DOMAIN-SUFFIX,cachefly.net,ProxyNet
+  - DOMAIN-SUFFIX,chromium.org,ProxyNet
+  - DOMAIN-SUFFIX,cl.ly,ProxyNet
+  - DOMAIN-SUFFIX,cloudflare.com,ProxyNet
+  - DOMAIN-SUFFIX,cloudfront.net,ProxyNet
+  - DOMAIN-SUFFIX,cloudmagic.com,ProxyNet
+  - DOMAIN-SUFFIX,cmail19.com,ProxyNet
+  - DOMAIN-SUFFIX,cnet.com,ProxyNet
+  - DOMAIN-SUFFIX,cocoapods.org,ProxyNet
+  - DOMAIN-SUFFIX,comodoca.com,ProxyNet
+  - DOMAIN-SUFFIX,crashlytics.com,ProxyNet
+  - DOMAIN-SUFFIX,culturedcode.com,ProxyNet
+  - DOMAIN-SUFFIX,d.pr,ProxyNet
+  - DOMAIN-SUFFIX,danilo.to,ProxyNet
+  - DOMAIN-SUFFIX,dayone.me,ProxyNet
+  - DOMAIN-SUFFIX,db.tt,ProxyNet
+  - DOMAIN-SUFFIX,deskconnect.com,ProxyNet
+  - DOMAIN-SUFFIX,disq.us,ProxyNet
+  - DOMAIN-SUFFIX,disqus.com,ProxyNet
+  - DOMAIN-SUFFIX,disquscdn.com,ProxyNet
+  - DOMAIN-SUFFIX,dnsimple.com,ProxyNet
+  - DOMAIN-SUFFIX,docker.com,ProxyNet
+  - DOMAIN-SUFFIX,dribbble.com,ProxyNet
+  - DOMAIN-SUFFIX,droplr.com,ProxyNet
+  - DOMAIN-SUFFIX,duckduckgo.com,ProxyNet
+  - DOMAIN-SUFFIX,dueapp.com,ProxyNet
+  - DOMAIN-SUFFIX,dytt8.net,ProxyNet
+  - DOMAIN-SUFFIX,edgecastcdn.net,ProxyNet
+  - DOMAIN-SUFFIX,edgekey.net,ProxyNet
+  - DOMAIN-SUFFIX,edgesuite.net,ProxyNet
+  - DOMAIN-SUFFIX,engadget.com,ProxyNet
+  - DOMAIN-SUFFIX,entrust.net,ProxyNet
+  - DOMAIN-SUFFIX,eurekavpt.com,ProxyNet
+  - DOMAIN-SUFFIX,evernote.com,ProxyNet
+  - DOMAIN-SUFFIX,fabric.io,ProxyNet
+  - DOMAIN-SUFFIX,fast.com,ProxyNet
+  - DOMAIN-SUFFIX,fastly.net,ProxyNet
+  - DOMAIN-SUFFIX,fc2.com,ProxyNet
+  - DOMAIN-SUFFIX,feedburner.com,ProxyNet
+  - DOMAIN-SUFFIX,feedly.com,ProxyNet
+  - DOMAIN-SUFFIX,feedsportal.com,ProxyNet
+  - DOMAIN-SUFFIX,fiftythree.com,ProxyNet
+  - DOMAIN-SUFFIX,firebaseio.com,ProxyNet
+  - DOMAIN-SUFFIX,flexibits.com,ProxyNet
+  - DOMAIN-SUFFIX,flickr.com,ProxyNet
+  - DOMAIN-SUFFIX,flipboard.com,ProxyNet
+  - DOMAIN-SUFFIX,g.co,ProxyNet
+  - DOMAIN-SUFFIX,gabia.net,ProxyNet
+  - DOMAIN-SUFFIX,geni.us,ProxyNet
+  - DOMAIN-SUFFIX,gfx.ms,ProxyNet
+  - DOMAIN-SUFFIX,ggpht.com,ProxyNet
+  - DOMAIN-SUFFIX,ghostnoteapp.com,ProxyNet
+  - DOMAIN-SUFFIX,git.io,ProxyNet
+  - DOMAIN-KEYWORD,github,ProxyNet
+  - DOMAIN-SUFFIX,globalsign.com,ProxyNet
+  - DOMAIN-SUFFIX,gmodules.com,ProxyNet
+  - DOMAIN-SUFFIX,godaddy.com,ProxyNet
+  - DOMAIN-SUFFIX,golang.org,ProxyNet
+  - DOMAIN-SUFFIX,gongm.in,ProxyNet
+  - DOMAIN-SUFFIX,goo.gl,ProxyNet
+  - DOMAIN-SUFFIX,goodreaders.com,ProxyNet
+  - DOMAIN-SUFFIX,goodreads.com,ProxyNet
+  - DOMAIN-SUFFIX,gravatar.com,ProxyNet
+  - DOMAIN-SUFFIX,gstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt0.com,ProxyNet
+  - DOMAIN-SUFFIX,hockeyapp.net,ProxyNet
+  - DOMAIN-SUFFIX,hotmail.com,ProxyNet
+  - DOMAIN-SUFFIX,icons8.com,ProxyNet
+  - DOMAIN-SUFFIX,ifixit.com,ProxyNet
+  - DOMAIN-SUFFIX,ift.tt,ProxyNet
+  - DOMAIN-SUFFIX,ifttt.com,ProxyNet
+  - DOMAIN-SUFFIX,iherb.com,ProxyNet
+  - DOMAIN-SUFFIX,imageshack.us,ProxyNet
+  - DOMAIN-SUFFIX,img.ly,ProxyNet
+  - DOMAIN-SUFFIX,imgur.com,ProxyNet
+  - DOMAIN-SUFFIX,imore.com,ProxyNet
+  - DOMAIN-SUFFIX,instapaper.com,ProxyNet
+  - DOMAIN-SUFFIX,ipn.li,ProxyNet
+  - DOMAIN-SUFFIX,is.gd,ProxyNet
+  - DOMAIN-SUFFIX,issuu.com,ProxyNet
+  - DOMAIN-SUFFIX,itgonglun.com,ProxyNet
+  - DOMAIN-SUFFIX,itun.es,ProxyNet
+  - DOMAIN-SUFFIX,ixquick.com,ProxyNet
+  - DOMAIN-SUFFIX,j.mp,ProxyNet
+  - DOMAIN-SUFFIX,js.revsci.net,ProxyNet
+  - DOMAIN-SUFFIX,jshint.com,ProxyNet
+  - DOMAIN-SUFFIX,jtvnw.net,ProxyNet
+  - DOMAIN-SUFFIX,justgetflux.com,ProxyNet
+  - DOMAIN-SUFFIX,kat.cr,ProxyNet
+  - DOMAIN-SUFFIX,klip.me,ProxyNet
+  - DOMAIN-SUFFIX,libsyn.com,ProxyNet
+  - DOMAIN-SUFFIX,linkedin.com,ProxyNet
+  - DOMAIN-SUFFIX,line-apps.com,ProxyNet
+  - DOMAIN-SUFFIX,linode.com,ProxyNet
+  - DOMAIN-SUFFIX,lithium.com,ProxyNet
+  - DOMAIN-SUFFIX,littlehj.com,ProxyNet
+  - DOMAIN-SUFFIX,live.com,ProxyNet
+  - DOMAIN-SUFFIX,live.net,ProxyNet
+  - DOMAIN-SUFFIX,livefilestore.com,ProxyNet
+  - DOMAIN-SUFFIX,llnwd.net,ProxyNet
+  - DOMAIN-SUFFIX,macid.co,ProxyNet
+  - DOMAIN-SUFFIX,macromedia.com,ProxyNet
+  - DOMAIN-SUFFIX,macrumors.com,ProxyNet
+  - DOMAIN-SUFFIX,mashable.com,ProxyNet
+  - DOMAIN-SUFFIX,mathjax.org,ProxyNet
+  - DOMAIN-SUFFIX,medium.com,ProxyNet
+  - DOMAIN-SUFFIX,mega.co.nz,ProxyNet
+  - DOMAIN-SUFFIX,mega.nz,ProxyNet
+  - DOMAIN-SUFFIX,megaupload.com,ProxyNet
+  - DOMAIN-SUFFIX,microsofttranslator.com,ProxyNet
+  - DOMAIN-SUFFIX,mindnode.com,ProxyNet
+  - DOMAIN-SUFFIX,mobile01.com,ProxyNet
+  - DOMAIN-SUFFIX,modmyi.com,ProxyNet
+  - DOMAIN-SUFFIX,msedge.net,ProxyNet
+  - DOMAIN-SUFFIX,myfontastic.com,ProxyNet
+  - DOMAIN-SUFFIX,name.com,ProxyNet
+  - DOMAIN-SUFFIX,nextmedia.com,ProxyNet
+  - DOMAIN-SUFFIX,nsstatic.net,ProxyNet
+  - DOMAIN-SUFFIX,nssurge.com,ProxyNet
+  - DOMAIN-SUFFIX,nyt.com,ProxyNet
+  - DOMAIN-SUFFIX,nytimes.com,ProxyNet
+  - DOMAIN-SUFFIX,omnigroup.com,ProxyNet
+  - DOMAIN-SUFFIX,onedrive.com,ProxyNet
+  - DOMAIN-SUFFIX,onenote.com,ProxyNet
+  - DOMAIN-SUFFIX,ooyala.com,ProxyNet
+  - DOMAIN-SUFFIX,openvpn.net,ProxyNet
+  - DOMAIN-SUFFIX,openwrt.org,ProxyNet
+  - DOMAIN-SUFFIX,orkut.com,ProxyNet
+  - DOMAIN-SUFFIX,osxdaily.com,ProxyNet
+  - DOMAIN-SUFFIX,outlook.com,ProxyNet
+  - DOMAIN-SUFFIX,ow.ly,ProxyNet
+  - DOMAIN-SUFFIX,paddleapi.com,ProxyNet
+  - DOMAIN-SUFFIX,parallels.com,ProxyNet
+  - DOMAIN-SUFFIX,parse.com,ProxyNet
+  - DOMAIN-SUFFIX,pdfexpert.com,ProxyNet
+  - DOMAIN-SUFFIX,periscope.tv,ProxyNet
+  - DOMAIN-SUFFIX,pinboard.in,ProxyNet
+  - DOMAIN-SUFFIX,pinterest.com,ProxyNet
+  - DOMAIN-SUFFIX,pixelmator.com,ProxyNet
+  - DOMAIN-SUFFIX,pixiv.net,ProxyNet
+  - DOMAIN-SUFFIX,playpcesor.com,ProxyNet
+  - DOMAIN-SUFFIX,playstation.com,ProxyNet
+  - DOMAIN-SUFFIX,playstation.com.hk,ProxyNet
+  - DOMAIN-SUFFIX,playstation.net,ProxyNet
+  - DOMAIN-SUFFIX,playstationnetwork.com,ProxyNet
+  - DOMAIN-SUFFIX,pushwoosh.com,ProxyNet
+  - DOMAIN-SUFFIX,rime.im,ProxyNet
+  - DOMAIN-SUFFIX,servebom.com,ProxyNet
+  - DOMAIN-SUFFIX,sfx.ms,ProxyNet
+  - DOMAIN-SUFFIX,shadowsocks.org,ProxyNet
+  - DOMAIN-SUFFIX,sharethis.com,ProxyNet
+  - DOMAIN-SUFFIX,shazam.com,ProxyNet
+  - DOMAIN-SUFFIX,skype.com,ProxyNet
+  - DOMAIN-SUFFIX,smartdnsProxyNet.com,ProxyNet
+  - DOMAIN-SUFFIX,smartmailcloud.com,ProxyNet
+  - DOMAIN-SUFFIX,sndcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,sony.com,ProxyNet
+  - DOMAIN-SUFFIX,soundcloud.com,ProxyNet
+  - DOMAIN-SUFFIX,sourceforge.net,ProxyNet
+  - DOMAIN-SUFFIX,spotify.com,ProxyNet
+  - DOMAIN-SUFFIX,squarespace.com,ProxyNet
+  - DOMAIN-SUFFIX,sstatic.net,ProxyNet
+  - DOMAIN-SUFFIX,st.luluku.pw,ProxyNet
+  - DOMAIN-SUFFIX,stackoverflow.com,ProxyNet
+  - DOMAIN-SUFFIX,startpage.com,ProxyNet
+  - DOMAIN-SUFFIX,staticflickr.com,ProxyNet
+  - DOMAIN-SUFFIX,steamcommunity.com,ProxyNet
+  - DOMAIN-SUFFIX,symauth.com,ProxyNet
+  - DOMAIN-SUFFIX,symcb.com,ProxyNet
+  - DOMAIN-SUFFIX,symcd.com,ProxyNet
+  - DOMAIN-SUFFIX,tapbots.com,ProxyNet
+  - DOMAIN-SUFFIX,tapbots.net,ProxyNet
+  - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
+  - DOMAIN-SUFFIX,techcrunch.com,ProxyNet
+  - DOMAIN-SUFFIX,techsmith.com,ProxyNet
+  - DOMAIN-SUFFIX,thepiratebay.org,ProxyNet
+  - DOMAIN-SUFFIX,theverge.com,ProxyNet
+  - DOMAIN-SUFFIX,time.com,ProxyNet
+  - DOMAIN-SUFFIX,timeinc.net,ProxyNet
+  - DOMAIN-SUFFIX,tiny.cc,ProxyNet
+  - DOMAIN-SUFFIX,tinypic.com,ProxyNet
+  - DOMAIN-SUFFIX,tmblr.co,ProxyNet
+  - DOMAIN-SUFFIX,todoist.com,ProxyNet
+  - DOMAIN-SUFFIX,trello.com,ProxyNet
+  - DOMAIN-SUFFIX,trustasiassl.com,ProxyNet
+  - DOMAIN-SUFFIX,tumblr.co,ProxyNet
+  - DOMAIN-SUFFIX,tumblr.com,ProxyNet
+  - DOMAIN-SUFFIX,tweetdeck.com,ProxyNet
+  - DOMAIN-SUFFIX,tweetmarker.net,ProxyNet
+  - DOMAIN-SUFFIX,twitch.tv,ProxyNet
+  - DOMAIN-SUFFIX,txmblr.com,ProxyNet
+  - DOMAIN-SUFFIX,typekit.net,ProxyNet
+  - DOMAIN-SUFFIX,ubertags.com,ProxyNet
+  - DOMAIN-SUFFIX,ublock.org,ProxyNet
+  - DOMAIN-SUFFIX,ubnt.com,ProxyNet
+  - DOMAIN-SUFFIX,ulyssesapp.com,ProxyNet
+  - DOMAIN-SUFFIX,urchin.com,ProxyNet
+  - DOMAIN-SUFFIX,usertrust.com,ProxyNet
+  - DOMAIN-SUFFIX,v.gd,ProxyNet
+  - DOMAIN-SUFFIX,v2ex.com,ProxyNet
+  - DOMAIN-SUFFIX,vimeo.com,ProxyNet
+  - DOMAIN-SUFFIX,vimeocdn.com,ProxyNet
+  - DOMAIN-SUFFIX,vine.co,ProxyNet
+  - DOMAIN-SUFFIX,vivaldi.com,ProxyNet
+  - DOMAIN-SUFFIX,vox-cdn.com,ProxyNet
+  - DOMAIN-SUFFIX,vsco.co,ProxyNet
+  - DOMAIN-SUFFIX,vultr.com,ProxyNet
+  - DOMAIN-SUFFIX,w.org,ProxyNet
+  - DOMAIN-SUFFIX,w3schools.com,ProxyNet
+  - DOMAIN-SUFFIX,webtype.com,ProxyNet
+  - DOMAIN-SUFFIX,wikiwand.com,ProxyNet
+  - DOMAIN-SUFFIX,wikileaks.org,ProxyNet
+  - DOMAIN-SUFFIX,wikimedia.org,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.com,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.org,ProxyNet
+  - DOMAIN-SUFFIX,windows.com,ProxyNet
+  - DOMAIN-SUFFIX,windows.net,ProxyNet
+  - DOMAIN-SUFFIX,wire.com,ProxyNet
+  - DOMAIN-SUFFIX,wordpress.com,ProxyNet
+  - DOMAIN-SUFFIX,workflowy.com,ProxyNet
+  - DOMAIN-SUFFIX,wp.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.net,ProxyNet
+  - DOMAIN-SUFFIX,xda-developers.com,ProxyNet
+  - DOMAIN-SUFFIX,xeeno.com,ProxyNet
+  - DOMAIN-SUFFIX,xiti.com,ProxyNet
+  - DOMAIN-SUFFIX,yahoo.com,ProxyNet
+  - DOMAIN-SUFFIX,yimg.com,ProxyNet
+  - DOMAIN-SUFFIX,ying.com,ProxyNet
+  - DOMAIN-SUFFIX,yoyo.org,ProxyNet
+  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
+  - DOMAIN-SUFFIX,telegra.ph,ProxyNet
+  - DOMAIN-SUFFIX,telegram.org,ProxyNet
+  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.8.0/21,ProxyNet,no-resolve
+  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
+  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,ProxyNet,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,ProxyNet,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,ProxyNet,no-resolve
+  - IP-CIDR,120.232.181.162/32,ProxyNet,no-resolve
+  - IP-CIDR,120.241.147.226/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.253.226/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.255.162/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.255.34/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.255.98/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.150.162/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.150.34/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.151.162/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.151.34/32,ProxyNet,no-resolve
+  - IP-CIDR,203.208.39.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.40.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.41.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.43.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.50.0/24,ProxyNet,no-resolve
+  - IP-CIDR,220.181.174.162/32,ProxyNet,no-resolve
+  - IP-CIDR,220.181.174.226/32,ProxyNet,no-resolve
+  - IP-CIDR,220.181.174.34/32,ProxyNet,no-resolve
   - DOMAIN,injections.adguard.org,DIRECT
   - DOMAIN,local.adguard.org,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
@@ -4288,7 +4546,7 @@ rules:
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN-KEYWORD,-cn,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,⭕ proxinode
+  - MATCH,ProxyNet
   - DOMAIN-SUFFIX,163yun.com,DIRECT
   - DOMAIN-SUFFIX,21cn.com,DIRECT
   - DOMAIN-SUFFIX,343480.com,DIRECT
@@ -4325,7 +4583,7 @@ rules:
   - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
   - DOMAIN-SUFFIX,b612.net,DIRECT
   - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
-  - DOMAIN-SUFFIX,battle.net,⭕ proxinode
+  - DOMAIN-SUFFIX,battle.net,ProxyNet
   - DOMAIN-SUFFIX,bdatu.com,DIRECT
   - DOMAIN-SUFFIX,beitaichufang.com,DIRECT
   - DOMAIN-SUFFIX,biliapi.com,DIRECT
@@ -4333,7 +4591,7 @@ rules:
   - DOMAIN-SUFFIX,bilibili.com,DIRECT
   - DOMAIN-SUFFIX,bilibili.tv,DIRECT
   - DOMAIN-SUFFIX,bjango.com,DIRECT
-  - DOMAIN-SUFFIX,blizzard.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blizzard.com,ProxyNet
   - DOMAIN-SUFFIX,bmj.com,DIRECT
   - DOMAIN-SUFFIX,booking.com,DIRECT
   - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
@@ -4389,7 +4647,7 @@ rules:
   - DOMAIN-SUFFIX,gandi.net,DIRECT
   - DOMAIN-SUFFIX,gazellegames.net,DIRECT
   - DOMAIN-SUFFIX,geilicdn.com,DIRECT
-  - DOMAIN-SUFFIX,getpricetag.com,⭕ proxinode
+  - DOMAIN-SUFFIX,getpricetag.com,ProxyNet
   - DOMAIN-SUFFIX,gifshow.com,DIRECT
   - DOMAIN-SUFFIX,godic.net,DIRECT
   - DOMAIN-SUFFIX,gtimg.com,DIRECT
@@ -4444,7 +4702,7 @@ rules:
   - DOMAIN-SUFFIX,lofter.com,DIRECT
   - DOMAIN-SUFFIX,loli.net,DIRECT
   - DOMAIN-SUFFIX,luojilab.com,DIRECT
-  - DOMAIN-SUFFIX,m-team.cc,⭕ proxinode
+  - DOMAIN-SUFFIX,m-team.cc,ProxyNet
   - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
   - DOMAIN-SUFFIX,maoyan.com,DIRECT
   - DOMAIN-SUFFIX,maoyun.tv,DIRECT
@@ -4520,7 +4778,7 @@ rules:
   - DOMAIN-SUFFIX,sagepub.com,DIRECT
   - DOMAIN-SUFFIX,sankuai.com,DIRECT
   - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
-  - DOMAIN-SUFFIX,sciencemag.org,⭕ proxinode
+  - DOMAIN-SUFFIX,sciencemag.org,ProxyNet
   - DOMAIN-SUFFIX,scomper.me,DIRECT
   - DOMAIN-SUFFIX,scopus.com,DIRECT
   - DOMAIN-SUFFIX,seafile.com,DIRECT
@@ -4555,7 +4813,7 @@ rules:
   - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
   - DOMAIN-SUFFIX,takungpao.com,DIRECT
   - DOMAIN-SUFFIX,tandfonline.com,DIRECT
-  - DOMAIN-SUFFIX,teamviewer.com,⭕ proxinode
+  - DOMAIN-SUFFIX,teamviewer.com,ProxyNet
   - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
   - DOMAIN-SUFFIX,tencent.com,DIRECT
   - DOMAIN-SUFFIX,tenpay.com,DIRECT
@@ -4627,248 +4885,248 @@ rules:
   - DOMAIN-SUFFIX,icloud.com.cn,DIRECT
   - DOMAIN-SUFFIX,me.com,DIRECT
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
-  - DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
-  - DOMAIN-SUFFIX,scdn.co,⭕ proxinode
-  - DOMAIN-SUFFIX,line.naver.jp,⭕ proxinode
-  - DOMAIN-SUFFIX,line.me,⭕ proxinode
-  - DOMAIN-SUFFIX,line-apps.com,⭕ proxinode
-  - DOMAIN-SUFFIX,line-cdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,line-scdn.net,⭕ proxinode
-  - DOMAIN-KEYWORD,blogspot,⭕ proxinode
-  - DOMAIN-KEYWORD,google,⭕ proxinode
-  - DOMAIN-SUFFIX,abc.xyz,⭕ proxinode
-  - DOMAIN-SUFFIX,admin.recaptcha.net,⭕ proxinode
-  - DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,android.com,⭕ proxinode
-  - DOMAIN-SUFFIX,androidify.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appspot.com,⭕ proxinode
-  - DOMAIN-SUFFIX,autodraw.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogger.com,⭕ proxinode
-  - DOMAIN-SUFFIX,capitalg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,certificate-transparency.org,⭕ proxinode
-  - DOMAIN-SUFFIX,chrome.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chromeexperiments.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chromestatus.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chromium.org,⭕ proxinode
-  - DOMAIN-SUFFIX,creativelab5.com,⭕ proxinode
-  - DOMAIN-SUFFIX,debug.com,⭕ proxinode
-  - DOMAIN-SUFFIX,deepmind.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dialogflow.com,⭕ proxinode
-  - DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
-  - DOMAIN-SUFFIX,getmdl.io,⭕ proxinode
-  - DOMAIN-SUFFIX,getoutline.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gmail.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
-  - DOMAIN-SUFFIX,godoc.org,⭕ proxinode
-  - DOMAIN-SUFFIX,golang.org,⭕ proxinode
-  - DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gv.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt1.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt3.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gwtproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,itasoftware.com,⭕ proxinode
-  - DOMAIN-SUFFIX,madewithcode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,material.io,⭕ proxinode
-  - DOMAIN-SUFFIX,polymer-project.org,⭕ proxinode
-  - DOMAIN-SUFFIX,recaptcha.net,⭕ proxinode
-  - DOMAIN-SUFFIX,shattered.io,⭕ proxinode
-  - DOMAIN-SUFFIX,synergyse.com,⭕ proxinode
-  - DOMAIN-SUFFIX,telephony.goog,⭕ proxinode
-  - DOMAIN-SUFFIX,tensorflow.org,⭕ proxinode
-  - DOMAIN-SUFFIX,tfhub.dev,⭕ proxinode
-  - DOMAIN-SUFFIX,tiltbrush.com,⭕ proxinode
-  - DOMAIN-SUFFIX,waveprotocol.org,⭕ proxinode
-  - DOMAIN-SUFFIX,waymo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,webmproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,webrtc.org,⭕ proxinode
-  - DOMAIN-SUFFIX,whatbrowser.org,⭕ proxinode
-  - DOMAIN-SUFFIX,widevine.com,⭕ proxinode
-  - DOMAIN-SUFFIX,x.company,⭕ proxinode
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,⭕ proxinode
-  - DOMAIN-SUFFIX,youtu.be,⭕ proxinode
-  - DOMAIN-SUFFIX,yt.be,⭕ proxinode
-  - DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,clubhouseapi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,clubhouse.pubnub.com,⭕ proxinode
-  - DOMAIN-SUFFIX,joinclubhouse.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ap3.agora.io,⭕ proxinode
-  - DOMAIN-KEYWORD,aka,⭕ proxinode
-  - DOMAIN-KEYWORD,facebook,⭕ proxinode
-  - DOMAIN-KEYWORD,youtube,⭕ proxinode
-  - DOMAIN-KEYWORD,twitter,⭕ proxinode
-  - DOMAIN-SUFFIX,instagram.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cdninstagram.com,⭕ proxinode
-  - DOMAIN-KEYWORD,instagram,⭕ proxinode
-  - DOMAIN-SUFFIX,instagr.am,⭕ proxinode
-  - DOMAIN-KEYWORD,gmail,⭕ proxinode
-  - DOMAIN-KEYWORD,pixiv,⭕ proxinode
-  - DOMAIN-SUFFIX,fb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,meta.com,⭕ proxinode
-  - DOMAIN-SUFFIX,twimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,x.com,⭕ proxinode
-  - DOMAIN-SUFFIX,t.co,⭕ proxinode
-  - DOMAIN-SUFFIX,kenengba.com,⭕ proxinode
-  - DOMAIN-SUFFIX,akamai.net,⭕ proxinode
-  - DOMAIN-SUFFIX,whatsapp.net,⭕ proxinode
-  - DOMAIN-SUFFIX,whatsapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,snapchat.com,⭕ proxinode
-  - DOMAIN-SUFFIX,amazonaws.com,⭕ proxinode
-  - DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
-  - DOMAIN-SUFFIX,akamaihd.net,⭕ proxinode
-  - DOMAIN-SUFFIX,amazon.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bit.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
-  - DOMAIN-SUFFIX,blog.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,box.net,⭕ proxinode
-  - DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cl.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
-  - DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dropbox.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dropboxstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dropboxusercontent.com,⭕ proxinode
-  - DOMAIN-SUFFIX,docker.com,⭕ proxinode
-  - DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,digicert.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,engadget.com,⭕ proxinode
-  - DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fb.me,⭕ proxinode
-  - DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,fc2.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fabric.io,⭕ proxinode
-  - DOMAIN-SUFFIX,flickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fastly.net,⭕ proxinode
-  - DOMAIN-SUFFIX,github.com,⭕ proxinode
-  - DOMAIN-SUFFIX,github.io,⭕ proxinode
-  - DOMAIN-SUFFIX,githubusercontent.com,⭕ proxinode
-  - DOMAIN-SUFFIX,goo.gl,⭕ proxinode
-  - DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
-  - DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
-  - DOMAIN-SUFFIX,imgur.com,⭕ proxinode
-  - DOMAIN-SUFFIX,jshint.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ift.tt,⭕ proxinode
-  - DOMAIN-SUFFIX,j.mp,⭕ proxinode
-  - DOMAIN-SUFFIX,kat.cr,⭕ proxinode
-  - DOMAIN-SUFFIX,linode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,lithium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
-  - DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
-  - DOMAIN-SUFFIX,name.com,⭕ proxinode
-  - DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ow.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
-  - DOMAIN-SUFFIX,ssl-images-amazon.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
-  - DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
-  - DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcd.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symauth.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
-  - DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
-  - DOMAIN-SUFFIX,twitter.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.net,⭕ proxinode
-  - DOMAIN-SUFFIX,wp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
+  - DOMAIN-SUFFIX,v2ex.com,ProxyNet
+  - DOMAIN-SUFFIX,scdn.co,ProxyNet
+  - DOMAIN-SUFFIX,line.naver.jp,ProxyNet
+  - DOMAIN-SUFFIX,line.me,ProxyNet
+  - DOMAIN-SUFFIX,line-apps.com,ProxyNet
+  - DOMAIN-SUFFIX,line-cdn.net,ProxyNet
+  - DOMAIN-SUFFIX,line-scdn.net,ProxyNet
+  - DOMAIN-KEYWORD,blogspot,ProxyNet
+  - DOMAIN-KEYWORD,google,ProxyNet
+  - DOMAIN-SUFFIX,abc.xyz,ProxyNet
+  - DOMAIN-SUFFIX,admin.recaptcha.net,ProxyNet
+  - DOMAIN-SUFFIX,ampproject.org,ProxyNet
+  - DOMAIN-SUFFIX,android.com,ProxyNet
+  - DOMAIN-SUFFIX,androidify.com,ProxyNet
+  - DOMAIN-SUFFIX,appspot.com,ProxyNet
+  - DOMAIN-SUFFIX,autodraw.com,ProxyNet
+  - DOMAIN-SUFFIX,blogger.com,ProxyNet
+  - DOMAIN-SUFFIX,capitalg.com,ProxyNet
+  - DOMAIN-SUFFIX,certificate-transparency.org,ProxyNet
+  - DOMAIN-SUFFIX,chrome.com,ProxyNet
+  - DOMAIN-SUFFIX,chromeexperiments.com,ProxyNet
+  - DOMAIN-SUFFIX,chromestatus.com,ProxyNet
+  - DOMAIN-SUFFIX,chromium.org,ProxyNet
+  - DOMAIN-SUFFIX,creativelab5.com,ProxyNet
+  - DOMAIN-SUFFIX,debug.com,ProxyNet
+  - DOMAIN-SUFFIX,deepmind.com,ProxyNet
+  - DOMAIN-SUFFIX,dialogflow.com,ProxyNet
+  - DOMAIN-SUFFIX,firebaseio.com,ProxyNet
+  - DOMAIN-SUFFIX,getmdl.io,ProxyNet
+  - DOMAIN-SUFFIX,getoutline.org,ProxyNet
+  - DOMAIN-SUFFIX,ggpht.com,ProxyNet
+  - DOMAIN-SUFFIX,gmail.com,ProxyNet
+  - DOMAIN-SUFFIX,gmodules.com,ProxyNet
+  - DOMAIN-SUFFIX,godoc.org,ProxyNet
+  - DOMAIN-SUFFIX,golang.org,ProxyNet
+  - DOMAIN-SUFFIX,gstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,gv.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt0.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt1.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt3.com,ProxyNet
+  - DOMAIN-SUFFIX,gwtproject.org,ProxyNet
+  - DOMAIN-SUFFIX,itasoftware.com,ProxyNet
+  - DOMAIN-SUFFIX,madewithcode.com,ProxyNet
+  - DOMAIN-SUFFIX,material.io,ProxyNet
+  - DOMAIN-SUFFIX,polymer-project.org,ProxyNet
+  - DOMAIN-SUFFIX,recaptcha.net,ProxyNet
+  - DOMAIN-SUFFIX,shattered.io,ProxyNet
+  - DOMAIN-SUFFIX,synergyse.com,ProxyNet
+  - DOMAIN-SUFFIX,telephony.goog,ProxyNet
+  - DOMAIN-SUFFIX,tensorflow.org,ProxyNet
+  - DOMAIN-SUFFIX,tfhub.dev,ProxyNet
+  - DOMAIN-SUFFIX,tiltbrush.com,ProxyNet
+  - DOMAIN-SUFFIX,waveprotocol.org,ProxyNet
+  - DOMAIN-SUFFIX,waymo.com,ProxyNet
+  - DOMAIN-SUFFIX,webmproject.org,ProxyNet
+  - DOMAIN-SUFFIX,webrtc.org,ProxyNet
+  - DOMAIN-SUFFIX,whatbrowser.org,ProxyNet
+  - DOMAIN-SUFFIX,widevine.com,ProxyNet
+  - DOMAIN-SUFFIX,x.company,ProxyNet
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
+  - DOMAIN-SUFFIX,youtu.be,ProxyNet
+  - DOMAIN-SUFFIX,yt.be,ProxyNet
+  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
+  - DOMAIN-SUFFIX,clubhouseapi.com,ProxyNet
+  - DOMAIN-SUFFIX,clubhouse.pubnub.com,ProxyNet
+  - DOMAIN-SUFFIX,joinclubhouse.com,ProxyNet
+  - DOMAIN-SUFFIX,ap3.agora.io,ProxyNet
+  - DOMAIN-KEYWORD,aka,ProxyNet
+  - DOMAIN-KEYWORD,facebook,ProxyNet
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-KEYWORD,twitter,ProxyNet
+  - DOMAIN-SUFFIX,instagram.com,ProxyNet
+  - DOMAIN-SUFFIX,cdninstagram.com,ProxyNet
+  - DOMAIN-KEYWORD,instagram,ProxyNet
+  - DOMAIN-SUFFIX,instagr.am,ProxyNet
+  - DOMAIN-KEYWORD,gmail,ProxyNet
+  - DOMAIN-KEYWORD,pixiv,ProxyNet
+  - DOMAIN-SUFFIX,fb.com,ProxyNet
+  - DOMAIN-SUFFIX,meta.com,ProxyNet
+  - DOMAIN-SUFFIX,twimg.com,ProxyNet
+  - DOMAIN-SUFFIX,x.com,ProxyNet
+  - DOMAIN-SUFFIX,t.co,ProxyNet
+  - DOMAIN-SUFFIX,kenengba.com,ProxyNet
+  - DOMAIN-SUFFIX,akamai.net,ProxyNet
+  - DOMAIN-SUFFIX,whatsapp.net,ProxyNet
+  - DOMAIN-SUFFIX,whatsapp.com,ProxyNet
+  - DOMAIN-SUFFIX,snapchat.com,ProxyNet
+  - DOMAIN-SUFFIX,amazonaws.com,ProxyNet
+  - DOMAIN-SUFFIX,angularjs.org,ProxyNet
+  - DOMAIN-SUFFIX,akamaihd.net,ProxyNet
+  - DOMAIN-SUFFIX,amazon.com,ProxyNet
+  - DOMAIN-SUFFIX,bit.ly,ProxyNet
+  - DOMAIN-SUFFIX,bitbucket.org,ProxyNet
+  - DOMAIN-SUFFIX,blog.com,ProxyNet
+  - DOMAIN-SUFFIX,blogcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,blogsmithmedia.com,ProxyNet
+  - DOMAIN-SUFFIX,box.net,ProxyNet
+  - DOMAIN-SUFFIX,bloomberg.com,ProxyNet
+  - DOMAIN-SUFFIX,cl.ly,ProxyNet
+  - DOMAIN-SUFFIX,cloudfront.net,ProxyNet
+  - DOMAIN-SUFFIX,cloudflare.com,ProxyNet
+  - DOMAIN-SUFFIX,cocoapods.org,ProxyNet
+  - DOMAIN-SUFFIX,dribbble.com,ProxyNet
+  - DOMAIN-SUFFIX,dropbox.com,ProxyNet
+  - DOMAIN-SUFFIX,dropboxstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,dropboxusercontent.com,ProxyNet
+  - DOMAIN-SUFFIX,docker.com,ProxyNet
+  - DOMAIN-SUFFIX,duckduckgo.com,ProxyNet
+  - DOMAIN-SUFFIX,digicert.com,ProxyNet
+  - DOMAIN-SUFFIX,dnsimple.com,ProxyNet
+  - DOMAIN-SUFFIX,edgecastcdn.net,ProxyNet
+  - DOMAIN-SUFFIX,engadget.com,ProxyNet
+  - DOMAIN-SUFFIX,eurekavpt.com,ProxyNet
+  - DOMAIN-SUFFIX,fb.me,ProxyNet
+  - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
+  - DOMAIN-SUFFIX,fc2.com,ProxyNet
+  - DOMAIN-SUFFIX,feedburner.com,ProxyNet
+  - DOMAIN-SUFFIX,fabric.io,ProxyNet
+  - DOMAIN-SUFFIX,flickr.com,ProxyNet
+  - DOMAIN-SUFFIX,fastly.net,ProxyNet
+  - DOMAIN-SUFFIX,github.com,ProxyNet
+  - DOMAIN-SUFFIX,github.io,ProxyNet
+  - DOMAIN-SUFFIX,githubusercontent.com,ProxyNet
+  - DOMAIN-SUFFIX,goo.gl,ProxyNet
+  - DOMAIN-SUFFIX,godaddy.com,ProxyNet
+  - DOMAIN-SUFFIX,gravatar.com,ProxyNet
+  - DOMAIN-SUFFIX,imageshack.us,ProxyNet
+  - DOMAIN-SUFFIX,imgur.com,ProxyNet
+  - DOMAIN-SUFFIX,jshint.com,ProxyNet
+  - DOMAIN-SUFFIX,ift.tt,ProxyNet
+  - DOMAIN-SUFFIX,j.mp,ProxyNet
+  - DOMAIN-SUFFIX,kat.cr,ProxyNet
+  - DOMAIN-SUFFIX,linode.com,ProxyNet
+  - DOMAIN-SUFFIX,lithium.com,ProxyNet
+  - DOMAIN-SUFFIX,megaupload.com,ProxyNet
+  - DOMAIN-SUFFIX,mobile01.com,ProxyNet
+  - DOMAIN-SUFFIX,modmyi.com,ProxyNet
+  - DOMAIN-SUFFIX,nytimes.com,ProxyNet
+  - DOMAIN-SUFFIX,name.com,ProxyNet
+  - DOMAIN-SUFFIX,openvpn.net,ProxyNet
+  - DOMAIN-SUFFIX,openwrt.org,ProxyNet
+  - DOMAIN-SUFFIX,ow.ly,ProxyNet
+  - DOMAIN-SUFFIX,pinboard.in,ProxyNet
+  - DOMAIN-SUFFIX,ssl-images-amazon.com,ProxyNet
+  - DOMAIN-SUFFIX,sstatic.net,ProxyNet
+  - DOMAIN-SUFFIX,stackoverflow.com,ProxyNet
+  - DOMAIN-SUFFIX,staticflickr.com,ProxyNet
+  - DOMAIN-SUFFIX,squarespace.com,ProxyNet
+  - DOMAIN-SUFFIX,symcd.com,ProxyNet
+  - DOMAIN-SUFFIX,symcb.com,ProxyNet
+  - DOMAIN-SUFFIX,symauth.com,ProxyNet
+  - DOMAIN-SUFFIX,ubnt.com,ProxyNet
+  - DOMAIN-SUFFIX,thepiratebay.org,ProxyNet
+  - DOMAIN-SUFFIX,tumblr.com,ProxyNet
+  - DOMAIN-SUFFIX,twitch.tv,ProxyNet
+  - DOMAIN-SUFFIX,twitter.com,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.com,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.org,ProxyNet
+  - DOMAIN-SUFFIX,wikimedia.org,ProxyNet
+  - DOMAIN-SUFFIX,wordpress.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.net,ProxyNet
+  - DOMAIN-SUFFIX,wp.com,ProxyNet
+  - DOMAIN-SUFFIX,vimeo.com,ProxyNet
+  - DOMAIN-SUFFIX,tapbots.com,ProxyNet
   - DOMAIN-SUFFIX,ykimg.com,DIRECT
-  - DOMAIN-SUFFIX,medium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fast.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nflxvideo.net,⭕ proxinode
-  - DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
-  - DOMAIN-SUFFIX,licdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bing.com,⭕ proxinode
-  - DOMAIN-SUFFIX,zoom.us,⭕ proxinode
-  - DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
-  - DOMAIN,api.statsig.com,⭕ proxinode
-  - DOMAIN,browser-intake-datadoghq.com,⭕ proxinode
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,⭕ proxinode
-  - DOMAIN,o33249.ingest.sentry.io,⭕ proxinode
-  - DOMAIN,openai-api.arkoselabs.com,⭕ proxinode
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,⭕ proxinode
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,⭕ proxinode
-  - DOMAIN,production-openaicom-storage.azureedge.net,⭕ proxinode
-  - DOMAIN,static.cloudflareinsights.com,⭕ proxinode
-  - DOMAIN-KEYWORD,openaicom-api,⭕ proxinode
-  - DOMAIN-SUFFIX,algolia.net,⭕ proxinode
-  - DOMAIN-SUFFIX,auth0.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cdn.cloudflare.net,⭕ proxinode
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,⭕ proxinode
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,⭕ proxinode
-  - DOMAIN-SUFFIX,events.statsigapi.net,⭕ proxinode
-  - DOMAIN-SUFFIX,featuregates.org,⭕ proxinode
-  - DOMAIN-SUFFIX,host.livekit.cloud,⭕ proxinode
-  - DOMAIN-SUFFIX,identrust.com,⭕ proxinode
-  - DOMAIN-SUFFIX,intercom.io,⭕ proxinode
-  - DOMAIN-SUFFIX,intercomcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,launchdarkly.com,⭕ proxinode
-  - DOMAIN-SUFFIX,oaistatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,oaiusercontent.com,⭕ proxinode
-  - DOMAIN-SUFFIX,observeit.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openai.com,⭕ proxinode
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openaicom.imgix.net,⭕ proxinode
-  - DOMAIN-SUFFIX,poe.com,⭕ proxinode
-  - DOMAIN-SUFFIX,segment.io,⭕ proxinode
-  - DOMAIN-SUFFIX,sentry.io,⭕ proxinode
-  - DOMAIN-SUFFIX,stripe.com,⭕ proxinode
-  - DOMAIN-SUFFIX,turn.livekit.cloud,⭕ proxinode
-  - IP-CIDR,24.199.123.28/32,⭕ proxinode,no-resolve
-  - IP-CIDR,45.76.214.191/32,⭕ proxinode,no-resolve
-  - IP-CIDR,64.23.132.171/32,⭕ proxinode,no-resolve
-  - IP-CIDR,143.198.200.27/32,⭕ proxinode,no-resolve
-  - IP-CIDR,159.89.204.203/32,⭕ proxinode,no-resolve
-  - DOMAIN-SUFFIX,t.me,⭕ proxinode
-  - DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
-  - DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
-  - DOMAIN-SUFFIX,telegram.me,⭕ proxinode
-  - DOMAIN-SUFFIX,telegram.org,⭕ proxinode
-  - DOMAIN-SUFFIX,telesco.pe,⭕ proxinode
-  - IP-CIDR,91.108.4.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.8.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.12.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.16.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.56.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,109.239.140.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,149.154.160.0/20,⭕ proxinode,no-resolve
-  - IP-CIDR,2001:B28:F23D::/48,⭕ proxinode,no-resolve
-  - IP-CIDR,2001:B28:F23F::/48,⭕ proxinode,no-resolve
-  - IP-CIDR,2001:67C:4E8::/48,⭕ proxinode,no-resolve
-  - DOMAIN-SUFFIX,dnsleaktest.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dnsleak.com,⭕ proxinode
-  - DOMAIN-SUFFIX,expressvpn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nordvpn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,surfshark.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ipleak.net,⭕ proxinode
-  - DOMAIN-SUFFIX,perfect-privacy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,browserleaks.com,⭕ proxinode
-  - DOMAIN-SUFFIX,browserleaks.org,⭕ proxinode
-  - DOMAIN-SUFFIX,vpnunlimited.com,⭕ proxinode
-  - DOMAIN-SUFFIX,whoer.net,⭕ proxinode
-  - DOMAIN-SUFFIX,whrq.net,⭕ proxinode
+  - DOMAIN-SUFFIX,medium.com,ProxyNet
+  - DOMAIN-SUFFIX,fast.com,ProxyNet
+  - DOMAIN-SUFFIX,nflxvideo.net,ProxyNet
+  - DOMAIN-SUFFIX,linkedin.com,ProxyNet
+  - DOMAIN-SUFFIX,licdn.com,ProxyNet
+  - DOMAIN-SUFFIX,bing.com,ProxyNet
+  - DOMAIN-SUFFIX,zoom.us,ProxyNet
+  - DOMAIN-SUFFIX,soundcloud.com,ProxyNet
+  - DOMAIN-SUFFIX,sndcdn.com,ProxyNet
+  - DOMAIN,api.statsig.com,ProxyNet
+  - DOMAIN,browser-intake-datadoghq.com,ProxyNet
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,ProxyNet
+  - DOMAIN,o33249.ingest.sentry.io,ProxyNet
+  - DOMAIN,openai-api.arkoselabs.com,ProxyNet
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,ProxyNet
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,ProxyNet
+  - DOMAIN,production-openaicom-storage.azureedge.net,ProxyNet
+  - DOMAIN,static.cloudflareinsights.com,ProxyNet
+  - DOMAIN-KEYWORD,openaicom-api,ProxyNet
+  - DOMAIN-SUFFIX,algolia.net,ProxyNet
+  - DOMAIN-SUFFIX,auth0.com,ProxyNet
+  - DOMAIN-SUFFIX,cdn.cloudflare.net,ProxyNet
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,ProxyNet
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,ProxyNet
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,ProxyNet
+  - DOMAIN-SUFFIX,events.statsigapi.net,ProxyNet
+  - DOMAIN-SUFFIX,featuregates.org,ProxyNet
+  - DOMAIN-SUFFIX,host.livekit.cloud,ProxyNet
+  - DOMAIN-SUFFIX,identrust.com,ProxyNet
+  - DOMAIN-SUFFIX,intercom.io,ProxyNet
+  - DOMAIN-SUFFIX,intercomcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,launchdarkly.com,ProxyNet
+  - DOMAIN-SUFFIX,oaistatic.com,ProxyNet
+  - DOMAIN-SUFFIX,oaiusercontent.com,ProxyNet
+  - DOMAIN-SUFFIX,observeit.net,ProxyNet
+  - DOMAIN-SUFFIX,openai.com,ProxyNet
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,ProxyNet
+  - DOMAIN-SUFFIX,openaicom.imgix.net,ProxyNet
+  - DOMAIN-SUFFIX,poe.com,ProxyNet
+  - DOMAIN-SUFFIX,segment.io,ProxyNet
+  - DOMAIN-SUFFIX,sentry.io,ProxyNet
+  - DOMAIN-SUFFIX,stripe.com,ProxyNet
+  - DOMAIN-SUFFIX,turn.livekit.cloud,ProxyNet
+  - IP-CIDR,24.199.123.28/32,ProxyNet,no-resolve
+  - IP-CIDR,45.76.214.191/32,ProxyNet,no-resolve
+  - IP-CIDR,64.23.132.171/32,ProxyNet,no-resolve
+  - IP-CIDR,143.198.200.27/32,ProxyNet,no-resolve
+  - IP-CIDR,159.89.204.203/32,ProxyNet,no-resolve
+  - DOMAIN-SUFFIX,t.me,ProxyNet
+  - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
+  - DOMAIN-SUFFIX,telegra.ph,ProxyNet
+  - DOMAIN-SUFFIX,telegram.me,ProxyNet
+  - DOMAIN-SUFFIX,telegram.org,ProxyNet
+  - DOMAIN-SUFFIX,telesco.pe,ProxyNet
+  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.8.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.12.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
+  - IP-CIDR,109.239.140.0/24,ProxyNet,no-resolve
+  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
+  - IP-CIDR,2001:B28:F23D::/48,ProxyNet,no-resolve
+  - IP-CIDR,2001:B28:F23F::/48,ProxyNet,no-resolve
+  - IP-CIDR,2001:67C:4E8::/48,ProxyNet,no-resolve
+  - DOMAIN-SUFFIX,dnsleaktest.com,ProxyNet
+  - DOMAIN-SUFFIX,dnsleak.com,ProxyNet
+  - DOMAIN-SUFFIX,expressvpn.com,ProxyNet
+  - DOMAIN-SUFFIX,nordvpn.com,ProxyNet
+  - DOMAIN-SUFFIX,surfshark.com,ProxyNet
+  - DOMAIN-SUFFIX,ipleak.net,ProxyNet
+  - DOMAIN-SUFFIX,perfect-privacy.com,ProxyNet
+  - DOMAIN-SUFFIX,browserleaks.com,ProxyNet
+  - DOMAIN-SUFFIX,browserleaks.org,ProxyNet
+  - DOMAIN-SUFFIX,vpnunlimited.com,ProxyNet
+  - DOMAIN-SUFFIX,whoer.net,ProxyNet
+  - DOMAIN-SUFFIX,whrq.net,ProxyNet
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
