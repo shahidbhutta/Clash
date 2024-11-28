@@ -85,7 +85,7 @@ proxies:
     servername: x114.flybar.work
     network: tcp
 
-  - name: TT11
+  - name: TT9
     server: 217.163.76.107
     port: 8443
     type: vless
@@ -102,7 +102,7 @@ proxies:
         Host: edgood.889876.xyz
     udp: true
 
-  - name: TT10
+  - name: TT8
     server: 37.120.184.206
     port: 1001
     type: vless
@@ -119,7 +119,7 @@ proxies:
         Host: a.mifeng.us.kg
     udp: true
 
-  - name: TT9
+  - name: TT7
     server: 103.214.68.133
     port: 587
     type: vless
@@ -136,7 +136,7 @@ proxies:
         Host: a.mifeng.us.kg
     udp: true
 
-  - name: TT8
+  - name: TT6
     server: 45.94.31.75
     port: 2003
     type: vless
@@ -153,7 +153,7 @@ proxies:
         Host: a.mifeng.us.kg
     udp: true
 
-  - name: TT7
+  - name: TT5
     server: 45.94.31.109
     port: 1001
     type: vless
@@ -170,7 +170,7 @@ proxies:
         Host: a.mifeng.us.kg
     udp: true
 
-  - name: TT6
+  - name: TT4
     server: 95.164.51.24
     port: 2501
     type: vless
@@ -185,40 +185,6 @@ proxies:
       path: /?ed=2560
       headers:
         Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT5
-    server: 185.146.173.58
-    port: 8080
-    type: vless
-    uuid: e5f0a1d3-a236-43b5-9b43-36265e73f1fe
-    tls: false
-    sni: a.mifeng.us.kg
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: lc83.lebasnoo.ir.
-    network: ws
-    ws-opts:
-      path: /servernett
-      headers:
-        Host: lc83.lebasnoo.ir.
-    udp: true
-
-  - name: TT4
-    server: 185.146.173.58
-    port: 8080
-    type: vless
-    uuid: 9bb724c7-1435-4d91-a0f4-08c995e76762
-    tls: false
-    sni: a.mifeng.us.kg
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: lc82.lebasnoo.ir.
-    network: ws
-    ws-opts:
-      path: /servernett
-      headers:
-        Host: lc82.lebasnoo.ir.
     udp: true
 
   - name: TT3
@@ -3779,8 +3745,6 @@ proxy-groups:
       - TT7
       - TT8
       - TT9
-      - TT10
-      - TT11
 
     url: https://www.google.com/favicon.ico
     interval: 120
