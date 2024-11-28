@@ -3517,16 +3517,16 @@ proxy-groups:
   - name: ProxyNet
     type: select
     proxies:
-      - ALL_PROXIES
-      - Alv9
-      - VMESS_List
-      - HysteriaList
-      - TT_List
-      - TRUSTED
+      - ALL-Listed
+      - Alv9-List
+      - VMESS-List
+      - Hysteria-List
+      - TT-List
+      - Personal
 
-  - name: ALL_PROXIES
-      type: url-test
-      proxies:
+  - name: ALL-Listed
+    type: url-test
+    proxies:
       - US-Amazon-EC2
       - US-Amazon
       - GB-Amazon
@@ -3758,7 +3758,8 @@ proxy-groups:
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: Alv9
+
+  - name: Alv9-List
     type: url-test
     proxies:
     - Alv2
@@ -3837,7 +3838,7 @@ proxy-groups:
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: VMESS_List
+  - name: VMESS-List
     type: url-test
     proxies:
       - vmess_01
@@ -3977,7 +3978,7 @@ proxy-groups:
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: HysteriaList
+  - name: Hysteria-List
     type: url-test
     proxies:
       - Germany_hysteria_61
@@ -3991,7 +3992,7 @@ proxy-groups:
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: TT_List
+  - name: TT-List
     type: url-test
     proxies:
       - TT1
@@ -4006,7 +4007,7 @@ proxy-groups:
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: TRUSTED
+  - name: Personal
     type: url-test
     proxies:
       - AWS
@@ -4015,11 +4016,11 @@ proxy-groups:
     tolerance: 50
 
 rules:
-  - DOMAIN-KEYWORD,bank,TRUSTED
-  - DOMAIN-SUFFIX,hbl.com,TRUSTED
-  - DOMAIN-SUFFIX,mobilinkbank.com,TRUSTED
-  - DOMAIN-SUFFIX,wise.com,TRUSTED
-  - DOMAIN-SUFFIX,ubldigital.com,TRUSTED
+  - DOMAIN-KEYWORD,bank,Personal
+  - DOMAIN-SUFFIX,hbl.com,Personal
+  - DOMAIN-SUFFIX,mobilinkbank.com,Personal
+  - DOMAIN-SUFFIX,wise.com,Personal
+  - DOMAIN-SUFFIX,ubldigital.com,Personal
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
