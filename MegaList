@@ -85,6 +85,57 @@ proxies:
     servername: x114.flybar.work
     network: tcp
 
+  - name: TT12
+    server: 188.42.145.140
+    port: 443
+    type: vless
+    uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+    tls: true
+    sni: g1.youyuan.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: g1.youyuan.us.kg
+    network: ws
+    ws-opts:
+      path: /telegram.v2ray_apha.spacefp
+      headers:
+        Host: g1.youyuan.us.kg
+    udp: true
+
+  - name: TT11
+    server: 185.146.173.58
+    port: 8080
+    type: vless
+    uuid: 801e6d41-930e-4eb8-bd7d-547404198deb
+    tls: false
+    sni: lc83.lebasnoo.ir
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: lc83.lebasnoo.ir
+    network: ws
+    ws-opts:
+      path: /servernett
+      headers:
+        Host: lc83.lebasnoo.ir
+    udp: true
+
+  - name: TT10
+    server: 140.248.129.207
+    port: 80
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    sni: amir55.ir
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: amir55.ir
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: amir55.ir
+    udp: true
+
   - name: TT9
     server: 217.163.76.107
     port: 8443
@@ -3949,6 +4000,9 @@ proxy-groups:
       - TT7
       - TT8
       - TT9
+      - TT10
+      - TT11
+      - TT12
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
