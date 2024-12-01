@@ -135,23 +135,6 @@ proxies:
         Host: 13.gcr.dns04.com
     udp: true
 
-  - name: NEW7
-    server: 52.231.38.95
-    port: 443
-    type: vless
-    uuid: f6f995056-7802-4a1d-bff7-61678e626c3f
-    tls: true
-    sni: bnnm.azurewebsites.net
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: bnnm.azurewebsites.net
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: bnnm.azurewebsites.net
-    udp: true
-
   - name: NEW8
     server: 207.90.237.199
     port: 80
@@ -396,7 +379,7 @@ proxies:
     servername: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
     network: ws
     ws-opts:
-      path: Telegram channel : @pandavpntc
+      path: "Telegram channel : @pandavpntc"
       headers:
         Host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
     udp: true
@@ -4168,7 +4151,7 @@ proxy-groups:
       - VMESS-List
       - Hysteria-List
       - TT-List
-      - NEW-LIST
+      - NEW-List
       - Personal
 
   - name: ALL-Listed
@@ -4397,6 +4380,43 @@ proxy-groups:
       - TT7
       - TT8
       - TT9
+      - NEW1
+      - NEW2
+      - NEW3
+      - NEW4
+      - NEW5
+      - NEW6
+      - NEW8
+      - NEW9
+      - NEW10
+      - NEW11
+      - NEW12
+      - NEW13
+      - NEW14
+      - NEW15
+      - NEW16
+      - NEW17
+      - NEW18
+      - NEW19
+      - NEW20
+      - NEW21
+      - NEW22
+      - NEW23
+      - NEW24
+      - NEW25
+      - NEW26
+      - NEW27
+      - NEW28
+      - NEW29
+      - NEW30
+      - NEW31
+      - NEW32
+      - NEW33
+      - NEW34
+      - NEW35
+      - NEW36
+      - NEW37
+      - NEW38
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
@@ -4668,7 +4688,6 @@ proxy-groups:
       - NEW4
       - NEW5
       - NEW6
-      - NEW7
       - NEW8
       - NEW9
       - NEW10
