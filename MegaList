@@ -911,21 +911,6 @@ proxies:
       headers:
         Host: a.mifeng.us.kg
     udp: true
-  - name: AWS
-    server: 13.60.77.103
-    port: 443
-    type: vless
-    uuid: 91aba0ee-e545-439d-a735-db7429ed9332
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: 13.60.77.103
-    network: ws
-    ws-opts:
-      path: /klzkutwwllpgfjvoldypohmw
-      headers:
-        Host: 13.60.77.103
-    udp: true
   - name: Alv2
     server: 104.21.238.100
     port: 443
@@ -4152,7 +4137,6 @@ proxy-groups:
       - Hysteria-List
       - TT-List
       - NEW-List
-      - Personal
 
   - name: ALL-Listed
     type: url-test
@@ -4671,14 +4655,6 @@ proxy-groups:
     interval: 120
     tolerance: 50
 
-  - name: Personal
-    type: url-test
-    proxies:
-      - AWS
-    url: https://www.google.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
   - name: NEW-List
     type: url-test
     proxies:
@@ -4726,11 +4702,6 @@ proxy-groups:
 
 
 rules:
-  - DOMAIN-KEYWORD,bank,Personal
-  - DOMAIN-SUFFIX,hbl.com,Personal
-  - DOMAIN-SUFFIX,mobilinkbank.com,Personal
-  - DOMAIN-SUFFIX,wise.com,Personal
-  - DOMAIN-SUFFIX,ubldigital.com,Personal
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
