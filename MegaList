@@ -708,209 +708,6 @@ proxies:
     servername: x114.flybar.work
     network: tcp
 
-  - name: TT12
-    server: 188.42.145.140
-    port: 443
-    type: vless
-    uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
-    tls: true
-    sni: g1.youyuan.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: g1.youyuan.us.kg
-    network: ws
-    ws-opts:
-      path: /telegram.v2ray_apha.spacefp
-      headers:
-        Host: g1.youyuan.us.kg
-    udp: true
-
-  - name: TT11
-    server: 185.146.173.58
-    port: 8080
-    type: vless
-    uuid: 801e6d41-930e-4eb8-bd7d-547404198deb
-    tls: false
-    sni: lc83.lebasnoo.ir
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: lc83.lebasnoo.ir
-    network: ws
-    ws-opts:
-      path: /servernett
-      headers:
-        Host: lc83.lebasnoo.ir
-    udp: true
-
-  - name: TT10
-    server: 140.248.129.207
-    port: 80
-    type: vless
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    sni: amir55.ir
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: amir55.ir
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: amir55.ir
-    udp: true
-
-  - name: TT9
-    server: 217.163.76.107
-    port: 8443
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: edgood.889876.xyz
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: edgood.889876.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: edgood.889876.xyz
-    udp: true
-
-  - name: TT8
-    server: 37.120.184.206
-    port: 1001
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT7
-    server: 103.214.68.133
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT6
-    server: 45.94.31.75
-    port: 2003
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT5
-    server: 45.94.31.109
-    port: 1001
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT4
-    server: 95.164.51.24
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT3
-    server: 45.94.31.109
-    port: 2003
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT2
-    server: 95.164.116.22
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: TT1
-    server: 165.154.134.125
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
   - name: Alv2
     server: 104.21.238.100
     port: 443
@@ -4355,15 +4152,6 @@ proxy-groups:
       - Germany_hysteria
       - US_Wilmington_hysteria
       - Russia_Moscow_hysteria
-      - TT1
-      - TT2
-      - TT3
-      - TT4
-      - TT5
-      - TT6
-      - TT7
-      - TT8
-      - TT9
       - NEW1
       - NEW2
       - NEW3
@@ -4401,7 +4189,7 @@ proxy-groups:
       - NEW36
       - NEW37
       - NEW38
-    url: https://www.google.com/favicon.ico
+    url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
 
@@ -4481,7 +4269,7 @@ proxy-groups:
     - Alv9_89
     - Alv9_90
     - Alv9_101
-    url: https://www.google.com/favicon.ico
+    url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
 
@@ -4622,7 +4410,7 @@ proxy-groups:
       - US_vmess_289
       - US_vmess_290
       - US_vmess_291
-    url: https://www.google.com/favicon.ico
+    url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
 
@@ -4632,26 +4420,7 @@ proxy-groups:
       - Germany_hysteria
       - US_Wilmington_hysteria
       - Russia_Moscow_hysteria
-    url: https://www.google.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
-  - name: TT-List
-    type: url-test
-    proxies:
-      - TT1
-      - TT2
-      - TT3
-      - TT4
-      - TT5
-      - TT6
-      - TT7
-      - TT8
-      - TT9
-      - TT10
-      - TT11
-      - TT12
-    url: https://www.google.com/favicon.ico
+    url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
 
@@ -4695,11 +4464,9 @@ proxy-groups:
       - NEW36
       - NEW37
       - NEW38
-    url: https://www.google.com/favicon.ico
+    url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
-
-
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
