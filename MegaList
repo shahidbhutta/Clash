@@ -3932,7 +3932,6 @@ proxy-groups:
       - Alv9-List
       - VMESS-List
       - Hysteria-List
-      - TT-List
       - NEW-List
 
   - name: ALL-Listed
