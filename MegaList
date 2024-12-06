@@ -4456,6 +4456,21 @@ proxy-groups:
       - NEW36
       - NEW37
       - NEW38
+      - Friday1
+      - Friday2
+      - Friday3
+      - Friday4
+      - Friday5
+      - Friday6
+      - Friday7
+      - Friday8
+      - Friday9
+      - Friday10
+      - Friday11
+      - Friday12
+      - Friday13
+      - Friday14
+      - Friday15
     url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
