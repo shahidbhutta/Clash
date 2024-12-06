@@ -32,6 +32,251 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
+  - name: Friday15
+    type: vmess
+    server: 168.100.6.46    
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz
+
+  - name: Friday14
+    server: 3.21.176.65
+    port: 22222
+    type: trojan
+    password: telegram-id-directvpn
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+    alpn:
+      - http/1.1
+ 
+
+  - name: Friday13
+    server: 172.67.171.49
+    port: 443
+    type: trojan
+    password: 03793bc4-e0e9-4527-b0ff-8fe1ce7aaf3d
+    cipher: none
+    udp: true
+    tls: true
+    sni: us1.trojanvpn.xyz
+    network: ws
+    skip-cert-verify: false
+    client-fingerprint: random
+    ws-opts:
+      path: /
+      headers:
+        Host: us1.trojanvpn.xyz
+
+  - name: Friday12
+    server: 195.133.11.229
+    port: 443
+    type: trojan
+    password: PU3f7528NtNXnQqb9X263rGSD
+    cipher: none
+    udp: true
+    tls: true
+    sni: get.fragmentary.info
+    network: ws
+    skip-cert-verify: false
+    client-fingerprint: random
+    ws-opts:
+      path: /socks5tobefree
+      headers:
+        Host: get.fragmentary.info
+
+  - name: Friday11
+    server: 185.146.173.42
+    port: 443
+    type: trojan
+    password: 542f66d8-6b06-4340-a829-76d23db7ca80
+    cipher: none
+    udp: true
+    tls: true
+    sni: fr1.trojanvpn.xyz
+    network: ws
+    skip-cert-verify: false
+    client-fingerprint: random
+    ws-opts:
+      path: /
+      headers:
+        Host: fr1.trojanvpn.xyz
+        
+
+  - name: Friday10
+    server: 140.248.139.207
+    port: 80
+    type: vless
+    uuid: 0fa9cf4a-7061-5239-9da9-f89a88b56390
+    tls: false
+    skip-cert-verify: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ELiV2--ELENA.COM
+    udp: true
+
+  - name: Friday9
+    type: vless
+    server: 212.192.13.51
+    port: 8307
+    uuid: d5285e2d-f110-4bd9-a15a-36febf08428d
+    tls: false
+    skip-cert-verify: true
+    udp: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      
+  - name: Friday8
+    type: vless
+    server: 172.233.174.18
+    port: 80
+    uuid: ef27e62d-91bd-4676-b9ce-8743a73eda07
+    tls: true
+    sni: zula.ir
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: tcp
+    servername: zula.ir # REALITY servername
+    reality-opts:
+      public-key: BVimgXtKkQ2Q6EpG8uKYTpySrNxEeIqVhdsxi5U5qRU
+      short-id: 94aa1bdc # optional
+
+  - name: Friday7
+    type: vless
+    server: 172.233.178.68
+    port: 80
+    uuid: ef27e62d-91bd-4676-b9ce-8743a73eda07
+    tls: true
+    sni: zula.ir
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: tcp
+    servername: zula.ir # REALITY servername
+    reality-opts:
+      public-key: BVimgXtKkQ2Q6EpG8uKYTpySrNxEeIqVhdsxi5U5qRU
+      short-id: 94aa1bdc # optional
+
+  - name: Friday6
+    type: vless
+    server: 172.233.175.94
+    port: 80
+    uuid: ef27e62d-91bd-4676-b9ce-8743a73eda07
+    tls: true
+    sni: zula.ir
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: tcp
+    servername: zula.ir # REALITY servername
+    reality-opts:
+      public-key: BVimgXtKkQ2Q6EpG8uKYTpySrNxEeIqVhdsxi5U5qRU
+      short-id: 94aa1bdc # optional
+
+  - name: Friday5
+    type: vless
+    server: 172.235.143.101
+    port: 80
+    uuid: ef27e62d-91bd-4676-b9ce-8743a73eda07
+    tls: true
+    sni: zula.ir
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: tcp
+    servername: zula.ir # REALITY servername
+    reality-opts:
+      public-key: BVimgXtKkQ2Q6EpG8uKYTpySrNxEeIqVhdsxi5U5qRU
+      short-id: 94aa1bdc # optional
+
+  - name: Friday4
+    type: vless
+    server: 172.66.47.142
+    port: 443
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: true
+    sni: ers-5HT.paGes.dev
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /iGEuUkpVCbbe4l6w?ed=2560
+      headers:
+        Host: ers-5HT.paGes.dev
+    alpn:
+      - h2
+      - http/1.1
+
+  - name: Friday3
+    type: vless
+    server: 172.66.47.181
+    port: 443
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: true
+    sni: v2nGfaSt-Jcr.pagEs.Dev
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /iGEuUkpVCbbe4l6w?ed=2560
+      headers:
+        Host: v2nGfaSt-Jcr.pagEs.Dev
+
+  - name: Friday2
+    type: vless
+    server: 108.128.250.82
+    port: 22222
+    uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+    tls: true
+    sni: telegram-channel-vlessconfig.sohala.uk
+    skip-cert-verify: false
+    udp: true
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /telegram-channel-vlessconfig-ws
+      headers:
+        Host: telegram-channel-vlessconfig.sohala.uk
+  
+  - name: Friday1
+    type: vless
+    server: 185.146.173.185
+    port: 2053
+    uuid: 315161b3-4c8a-47eb-87e2-1576c5b26983
+    network: grpc
+    tls: true
+    sni: Ehhdheh.vshsbsbb-jzjsjb-vdhsh-mahdi-irancel.ir
+    skip-cert-verify: false
+    udp: true
+    flow:
+    client-fingerprint: chrome
+    servername: Ehhdheh.vshsbsbb-jzjsjb-vdhsh-mahdi-irancel.ir
+    grpc-opts:
+      grpc-service-name: "Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-"
+    #reality-opts:
+    #  public-key: CrrQSjAG_YkHLwvM2M-7XkKJilgL5upBKCp0od0tLhE
+    #  short-id: 10f897e26c4b9478
 
   - name: NEW1
     server: 103.214.68.133
@@ -166,7 +411,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW10
     type: vmess
@@ -182,7 +427,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW11
     type: vmess
@@ -198,7 +443,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW12
     type: vmess
@@ -214,7 +459,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW13
     type: vmess
@@ -230,7 +475,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW14
     type: vmess
@@ -246,7 +491,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW15
     type: vmess
@@ -262,7 +507,7 @@ proxies:
     ws-opts:
       path: "/github.com/Alvin9999"                             
       headers:
-        Host: ip18.6929198.xyz9
+        Host: ip18.6929198.xyz
 
   - name: NEW16
     server: 188.114.97.3
@@ -542,7 +787,7 @@ proxies:
     server: 103.136.68.253
     port: 3732
     type: vless
-    uuid: 4ead13d1-f307-49b0-a828-a205a80ab570
+    uuid: a1e35002-e7bb-4e79-9925-634422526455
     tls: false
     sni: ""
     skip-cert-verify: true
@@ -3933,6 +4178,29 @@ proxy-groups:
       - VMESS-List
       - Hysteria-List
       - NEW-List
+      - Friday-List
+
+  - name: Friday-List
+    type: url-test
+    proxies:
+      - Friday1
+      - Friday2
+      - Friday3
+      - Friday4
+      - Friday5
+      - Friday6
+      - Friday7
+      - Friday8
+      - Friday9
+      - Friday10
+      - Friday11
+      - Friday12
+      - Friday13
+      - Friday14
+      - Friday15
+    url: https://www.youtube.com/generate_204
+    interval: 120
+    tolerance: 50
 
   - name: ALL-Listed
     type: url-test
