@@ -4783,7 +4783,6 @@ proxy-groups:
   - name: ALL-Listed
     type: url-test
     proxies:
-      - ALL-Listed
       - Alv9-List
       - VMESS-List
       - Hysteria-List
