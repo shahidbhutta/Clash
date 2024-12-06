@@ -32,31 +32,6 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: SS1
-    type: ss
-    server: h-k02.loveroise.com
-    port: 54002
-    cipher: chacha20-ietf-poly1305
-    password: "09833a6f-4d46-426e-87fe-7793a5489f84"
-    udp: true
-
-  - name: SS2
-    type: ss
-    server: j-p04.loveroise.com
-    port: 54012
-    cipher: chacha20-ietf-poly1305
-    password: "09833a6f-4d46-426e-87fe-7793a5489f84"
-    udp: true
-
-  - name: SS3
-    type: ss
-    server: h-k01.loveroise.com
-    port: 54000
-    cipher: chacha20-ietf-poly1305
-    password: "09833a6f-4d46-426e-87fe-7793a5489f84"
-    udp: true
-
-
   - name: Barry38
     type: vless
     server: 31.44.0.122
@@ -4804,7 +4779,6 @@ proxy-groups:
       - NEW-List
       - Friday-List
       - Barry-List
-      - SS-List
 
   - name: ALL-Listed
     type: url-test
@@ -4816,7 +4790,6 @@ proxy-groups:
       - NEW-List
       - Friday-List
       - Barry-List
-      - SS-List
     url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
@@ -4862,16 +4835,6 @@ proxy-groups:
       - Barry36
       - Barry37
       - Barry38
-    url: https://www.youtube.com/generate_204
-    interval: 120
-    tolerance: 50
-
-  - name: SS-List
-    type: url-test
-    proxies:
-      - SS1
-      - SS2
-      - SS3
     url: https://www.youtube.com/generate_204
     interval: 120
     tolerance: 50
