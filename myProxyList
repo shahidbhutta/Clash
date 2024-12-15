@@ -1164,6 +1164,17 @@ proxy-groups:
       - Hysteria-List
       - NEW-List
       - ProxyPool
+      - Best-of-ALL
+
+- name: Best-of-ALL
+    type: url-test
+    proxies:
+      - Hysteria-List
+      - NEW-List
+      - ProxyPool
+    url: https://www.youtube.com/favicon.ico
+    interval: 30
+    tolerance: 10
 
   - name: Hysteria-List
     type: url-test
