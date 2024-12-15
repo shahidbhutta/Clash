@@ -32,3545 +32,1214 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  
-  - name: AWS
-    server: 13.60.77.103
-    port: 443
-    type: vless
-    uuid: 91aba0ee-e545-439d-a735-db7429ed9332
-    tls: true
+
+  - name: PP14
+    type: vmess
+    server: 162.159.45.238
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    udp: True
+    tls: False
+    skip-cert-verify: False
+    servername: m20.155857.xyz
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        Host: m20.155857.xyz
+
+  - name: PP13
+    type: vmess
+    server: 162.159.45.208
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    udp: True
+    tls: False
+    skip-cert-verify: False
+    servername: m20.155857.xyz
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        Host: m20.155857.xyz
+
+  - name: PP12
+    type: vmess
+    server: 162.159.45.219
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    udp: True
+    tls: False
+    skip-cert-verify: False
+    servername: m20.155857.xyz
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        Host: m20.155857.xyz
+
+  - name: PP11
+    type: vmess
+    server: 162.159.45.246
+    port: 8880
+    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
+    alterId: 0
+    cipher: auto
+    udp: True
+    tls: False
+    skip-cert-verify: False
+    servername: m20.155857.xyz
+    network: ws
+    ws-opts:
+      path: /github.com/Alvin9999
+      headers:
+        Host: m20.155857.xyz
+
+
+  - name: PP10
+    type: vmess
+    server: 183.236.48.158
+    port: 45402
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    udp: True
+    tls: False
     skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: 13.60.77.103
-    network: ws
-    ws-opts:
-      path: /klzkutwwllpgfjvoldypohmw
-      headers:
-        Host: 13.60.77.103
-    udp: true
-  - name: Alv2
-    server: 104.21.238.100
-    port: 443
-    type: vmess
-    uuid: 2c15ec31-54f6-4cc7-aa9b-e906c6889bab
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: xray2.6016725.xyz
-    network: ws
-    ws-opts:
-      v2ray-http-upgrade-fast-open: true
-      v2ray-http-upgrade: true
-      early-data-header-name: Sec-WebSocket-Protocol
-      path: github.com/Alvin9999
-      headers:
-        Host: xray2.6016725.xyz
-  - name: Alv3
-    server: 104.21.238.200
-    port: 8443
-    type: vmess
-    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: http1.9290254.xyz
-    network: ws
-    ws-opts:
-      v2ray-http-upgrade-fast-open: true
-      v2ray-http-upgrade: true
-      early-data-header-name: Sec-WebSocket-Protocol
-      path: github.com/Alvin9999
-      headers:
-        Host: http1.9290254.xyz
-  - name: Alv4
-    server: 104.21.238.201
-    port: 8443
-    type: vmess
-    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: http1.9290254.xyz
-    network: ws
-    ws-opts:
-      v2ray-http-upgrade-fast-open: true
-      v2ray-http-upgrade: true
-      early-data-header-name: Sec-WebSocket-Protocol
-      path: github.com/Alvin9999
-      headers:
-        Host: http1.9290254.xyz
-  - name: Alv5
-    server: 104.21.238.202
-    port: 8443
-    type: vmess
-    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: http1.9290254.xyz
-    network: ws
-    ws-opts:
-      v2ray-http-upgrade-fast-open: true
-      v2ray-http-upgrade: true
-      early-data-header-name: Sec-WebSocket-Protocol
-      path: github.com/Alvin9999
-      headers:
-        Host: http1.9290254.xyz
-  - name: Alv6
-    server: 104.21.238.203
-    port: 8443
-    type: vmess
-    uuid: 9201ffaa-6ca3-4f57-8b1f-266a2f390e43
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    servername: http1.9290254.xyz
-    network: ws
-    ws-opts:
-      v2ray-http-upgrade-fast-open: true
-      v2ray-http-upgrade: true
-      early-data-header-name: Sec-WebSocket-Protocol
-      path: github.com/Alvin9999
-      headers:
-        Host: http1.9290254.xyz
-  - name: Tr1
-    server: 104.18.37.111
+
+  - name: PP9
+    server: loving-boa.treefrog761.one
     port: 443
     type: trojan
-    password: bpb-trojan
-    cipher: none
+    password: "3648425794742788096"
     udp: true
-    tls: true
-    sni: mindroom-5cz.pages.dev
-    fp: chrome
+    skip-cert-verify: false
+    sni: loving-boa.treefrog761.one
+
+  - name: PP8
+    server: prime-gator.treefrog761.one
+    port: 443
+    type: trojan
+    password: "3648425794742788096"
+    udp: true
+    skip-cert-verify: false
+    sni: prime-gator.treefrog761.one
+    
+  - name: PP7
+    server: 151.101.64.155
+    port: 80
+    type: vless
+    uuid: 64ccb313-d2bd-4b44-a6fd-522a14c819fd
+    tls: false
+    udp: true
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: iranvpn.com
     network: ws
     ws-opts:
-      path: /trC8BM8bTsAF0AnLYL?ed=2560
+      path: /?ed=1024
       headers:
-        Host: mindroom-5cz.pages.dev
-  - name: VLSS
-    server: 188.42.145.159
+        Host: iranvpn.com
+
+  - name: PP6
+    server: 104.24.92.113
     port: 443
     type: vless
-    uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
-    cipher: none
-    udp: true
+    uuid: 968f8967-1361-41d5-9769-f6624ef58694
     tls: true
-    sni: VIrgiNiavPn-nL.pagEs.dEv
-    fp: chrome
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: tvmez.pages.dev
     network: ws
     ws-opts:
-      path: /
+      path: /?ed=2560
       headers:
-        Host: VIrgiNiavPn-nL.pagEs.dEv
-  - name: RO_0062
-    server: 45.85.119.138
-    port: 8880
+        Host: tvmez.pages.dev
+
+  - name: PP5
+    server: 104.24.185.182
+    port: 443
     type: vless
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
-    tls: false
+    uuid: 968f8967-1361-41d5-9769-f6624ef58694
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: tvmez.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: tvmez.pages.dev
+
+  - name: PP4
+    server: 104.24.59.181
+    port: 443
+    type: vless
+    uuid: 968f8967-1361-41d5-9769-f6624ef58694
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: tvmez.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: tvmez.pages.dev
+
+  - name: PP3
+    server: 104.24.23.51
+    port: 443
+    type: vless
+    uuid: 968f8967-1361-41d5-9769-f6624ef58694
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: tvmez.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: tvmez.pages.dev
+
+  - name: PP2
+    server: 172.64.144.132
+    port: 443
+    type: vless
+    uuid: 968f8967-1361-41d5-9769-f6624ef58694
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: tvmez.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: tvmez.pages.dev
+
+  - name: PP1
+    server: 103.21.244.106
+    port: 443
+    type: vless
+    uuid: 968f8967-1361-41d5-9769-f6624ef58694
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: tvmez.pages.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: tvmez.pages.dev
+
+  - name: NEW1
+    server: 103.214.68.133
+    port: 587
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: late-tooth.granzinhannah.workers.dev
-    alpn:
-      - h2
-      - http/1.1
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW2
+    server: 45.94.31.75
+    port: 2003
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW3
+    server: 95.164.51.24
+    port: 2501
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW4
+    server: 95.164.116.22
+    port: 2501
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
       headers:
-        Host: late-tooth.granzinhannah.workers.dev
+        Host: a.mifeng.us.kg
     udp: true
-  - name: US_0121
-    server: 162.159.129.60
-    port: 80
+
+  - name: NEW5
+    server: 94.182.136.181
+    port: 22222
     type: vless
-    uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-    tls: false
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    alpn:
-      - http/1.1
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
-      path: /Telegram-Xv2ry2?ed=512
+      path: /?ed=2560
       headers:
-        Host: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+        Host: a.mifeng.us.kg
     udp: true
-  - name: NL_0060
-    server: 2.58.56.31
-    port: 3001
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: NL_0061
-    server: 194.246.81.62
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: US1_0080
-    server: 104.19.48.236
-    port: 80
-    type: vless
-    uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7
-    tls: false
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: v2ra1.ecrgpk.workers.dev
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /@VPNHTTPInjectorfree
-      headers:
-        Host: v2ra1.ecrgpk.workers.dev
-    udp: true
-  - name: US_0123
-    server: 157.254.227.37
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-    udp: true
-  - name: US_0142
-    server: 165.154.134.125
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
-      headers:
-        Host: vless.ifx.us.kg
-  - name: RU_0065
-    server: 91.219.150.221
-    port: 8080
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: US_0147
-    server: 157.254.227.37
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
-      headers:
-        Host: vless.ifx.us.kg
-  - name: FR_0026
-    server: 77.221.152.41
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: AT_9c8d4_0001
-    server: 94.177.8.26
-    port: 130
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: juzi8186.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: juzi8186.5112233.xyz
-  - name: AT_9c8d4_0002
-    server: 212.183.88.242
+
+  - name: NEW6
+    server: 92.223.84.84
     port: 443
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    uuid: f2004126-5865-4980-b6dd-2211dbaadf10
     tls: true
+    sni: gcore.com
     skip-cert-verify: false
-    servername: dw.ylks.xyz
+    client-fingerprint: random
+    servername: gcore.com
     network: ws
     ws-opts:
-      path: /blue
+      path: /?ed=2560
       headers:
-        Host: dw.ylks.xyz
-  - name: CA_9c8d4_0003
-    server: 23.162.200.227
-    port: 443
+        Host: 13.gcr.dns04.com
+    udp: true
+
+  - name: NEW8
+    server: 207.90.237.199
+    port: 80
+    type: vless
+    uuid: 4ead13d1-f307-49b0-a828-a205a80ab570
+    tls: false
+    sni: ""
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ""
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+    udp: true
+
+  - name: NEW9
     type: vmess
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+    server: 190.93.247.23    
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
     alterId: 0
     cipher: auto
-    tls: true
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW10
+    type: vmess
+    server: 190.93.246.196    
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW11
+    type: vmess
+    server: 190.93.246.178   
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW12
+    type: vmess
+    server: 190.93.245.174   
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW13
+    type: vmess
+    server: 190.93.245.103  
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW14
+    type: vmess
+    server: 190.93.244.33 
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW15
+    type: vmess
+    server: 190.93.244.228
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW16
+    server: 188.114.97.3
+    port: 80
+    type: vless
+    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    sni: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
     skip-cert-verify: true
+    client-fingerprint: random
+    servername: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
     network: ws
     ws-opts:
-      path: /linkvws
+      path: /09EpH4tzdpaF2F6Q?ed=2560
       headers:
-        Host: 23.162.200.227
-  - name: CN_9c8d4_0004
-    server: 183.236.48.163
-    port: 40002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: CR_9c8d4_0005
-    server: 190.93.246.152
-    port: 8880
+        Host: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    udp: true
+
+  - name: NEW17
+    server: 172.67.212.189
+    port: 80
     type: vless
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
+    uuid: 9f09dc7b-ab90-4669-80b7-acebfc4b37e9
     tls: false
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: late-tooth.granzinhannah.workers.dev
-    alpn:
-      - h3
-      - h2
-      - http/1.1
+    sni: worker-falling-mud-ab97.msv2ray.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-falling-mud-ab97.msv2ray.workers.dev
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: late-tooth.granzinhannah.workers.dev
+        Host: worker-falling-mud-ab97.msv2ray.workers.dev
     udp: true
-  - name: CR_9c8d4_0006
-    server: 190.93.246.152
+
+  - name: NEW18
+    server: 172.67.2.238
     port: 8880
     type: vless
-    uuid: f0d584bc-342f-4443-ba24-79e4d0e504b1
+    uuid: 9f70a4c0-f727-47fb-ba7d-d604dba9669c
     tls: false
+    sni: worker-red-hall-b97b.xehipor887.workers.Dev
     skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: late-tooth.granzinhannah.workers.dev
+    client-fingerprint: random
+    servername: worker-red-hall-b97b.xehipor887.workers.Dev
     network: ws
     ws-opts:
-      path: /@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      path: /?ed=2560
       headers:
-        Host: late-tooth.granzinhannah.workers.dev
+        Host: worker-red-hall-b97b.xehipor887.workers.Dev
     udp: true
-  - name: CR_9c8d4_0007
-    server: 190.93.246.129
-    port: 443
+
+  - name: NEW19
+    server: 151.101.130.132
+    port: 80
     type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    sni: taalijavan.ir
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: taalijavan.ir
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /GGPPfZ3NKyOoKNiK?ed=2560
       headers:
-        Host: aw.ylks.xyz
-  - name: CR_9c8d4_0008
-    server: 190.93.246.114
-    port: 443
+        Host: taalijavan.ir
+    udp: true
+
+
+  - name: NEW20
+    server: 104.27.115.175
+    port: 8880
     type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
+    uuid: 71c2cdc1-abd3-4e74-905a-a8fd621fe497
+    tls: false
+    sni: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /
       headers:
-        Host: aw.ylks.xyz
-  - name: CR_9c8d4_0009
-    server: 190.93.244.38
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: CR_9c8d4_0010
-    server: 190.93.247.74
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lv.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lv.kpcloud.eu.org
-  - name: CR_9c8d4_0011
-    server: 190.93.244.95
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: CR_9c8d4_0012
-    server: 190.93.247.34
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: av.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: av.ylks.xyz
-  - name: CR_9c8d4_0013
-    server: 190.93.244.18
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: CR_9c8d4_0014
-    server: 190.93.245.244
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: CR_9c8d4_0015
-    server: 190.93.246.60
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: FR_9c8d4_0016
-    server: 77.221.152.41
-    port: 2501
+        Host: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
+    udp: true
+
+  - name: NEW21
+    server: 104.21.86.235
+    port: 80
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    servername: vless.ifx.us.kg
+    tls: false
+    sni: c.lkzb-0t0.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: c.lkzb-0t0.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c.lkzb-0t0.workers.dev
+    udp: true
+
+  - name: NEW22
+    server: 104.21.42.56
+    port: 80
+    type: vless
+    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
+    tls: false
+    sni: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    network: ws
+    ws-opts:
+      path: "Telegram channel : @pandavpntc"
+      headers:
+        Host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    udp: true
+
+  - name: NEW23
+    server: 104.21.30.5
+    port: 80
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    sni: a.mifeng.us.kg
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+
+  - name: NEW24
+    server: 104.21.23.185
+    port: 80
+    type: vless
+    uuid: 9f09dc7b-ab90-4669-80b7-acebfc4b37e9
+    tls: false
+    sni: worker-falling-mud-ab97.msv2ray.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-falling-mud-ab97.msv2ray.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: worker-falling-mud-ab97.msv2ray.workers.dev
+    udp: true
+
+  - name: NEW25
+    server: 104.18.27.94
+    port: 80
+    type: vless
+    uuid: 66b2ba80-81b5-4580-8d1b-901d34dda0e3
+    tls: false
+    sni: ppal03.ms-albin-runolfsdottir.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ppal03.ms-albin-runolfsdottir.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ppal03.ms-albin-runolfsdottir.workers.dev
+    udp: true
+
+  - name: NEW26
+    server: 104.17.221.248
+    port: 80
+    type: vless
+    uuid: 58971417-4d22-402f-bb8e-e7de0324bf04
+    tls: false
+    sni: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
+    udp: true
+
+  - name: NEW27
+    server: 104.17.221.248
+    port: 80
+    type: vless
+    uuid: b8380e9e-fd36-4f98-96eb-d2b5377c69c2
+    tls: false
+    sni: esetsecuritylicense.favaj61153.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: esetsecuritylicense.favaj61153.workers.dev
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: vless.ifx.us.kg
-  - name: GB_9c8d4_0017
+        Host: esetsecuritylicense.favaj61153.workers.dev
+    udp: true
+
+  - name: NEW28
+    server: 104.17.213.241
+    port: 80
+    type: vless
+    uuid: f327e06a-b7d3-41b8-a713-76ef9f8a355e
+    tls: false
+    sni: esetsecuritylicense.djyhzmd.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: esetsecuritylicense.djyhzmd.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: esetsecuritylicense.djyhzmd.workers.dev
+    udp: true
+
+  - name: NEW29
+    server: 104.17.148.22
+    port: 8880
+    type: vless
+    uuid: 01c8e316-66bf-490a-86d5-efcc674c66c6
+    tls: false
+    sni: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    network: ws
+    ws-opts:
+      path: /Omid?ed=2560
+      headers:
+        Host: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    udp: true
+
+  - name: NEW30
+    server: 104.17.147.22
+    port: 8880
+    type: vless
+    uuid: 01c8e316-66bf-490a-86d5-efcc674c66c6
+    tls: false
+    sni: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    network: ws
+    ws-opts:
+      path: /Omid?ed=2560
+      headers:
+        Host: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    udp: true
+
+  - name: NEW31
+    server: 104.17.147.22
+    port: 80
+    type: vless
+    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    sni: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    network: ws
+    ws-opts:
+      path: /Fimfk3I0DPwhRotM?ed=2560
+      headers:
+        Host: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    udp: true
+
+  - name: NEW32
+    server: 103.136.68.253
+    port: 3732
+    type: vless
+    uuid: 4ead13d1-f307-49b0-a828-a205a80ab570
+    tls: false
+    sni: ""
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ""
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+  
+  - name: NEW33
+    server: 103.136.68.253
+    port: 3732
+    type: vless
+    uuid: 600b472f-3e43-43a0-8815-a890a607891c
+    tls: false
+    sni: ""
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ""
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+
+  - name: NEW34
+    server: 185.8.129.187
+    port: 443
+    type: vless
+    uuid: 3c36eadb-747a-4166-8db0-23fec9883ea2
+    tls: true
+    sni: "turkish.nscl.ir"
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: "turkish.nscl.ir"
+    network: ws
+    ws-opts:
+      path: /NiREvilxXx
+      headers:
+        Host: "turkish.nscl.ir"
+    alpn:
+      - http/1.1
+  
+  - name: NEW35
+    server: 104.18.12.229
+    port: 8443
+    type: vless
+    uuid: f3d01b85-4370-4f6e-8133-6a441bb3120f
+    tls: true
+    sni: pardazeshvpn-tg61.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: pardazeshvpn-tg61.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg61.pages.dev
+
+  - name: NEW36
+    server: 104.18.12.229
+    port: 8443
+    type: vless
+    uuid: 8c01bf92-44d9-49ce-8ba6-b8ec55e9f9bf
+    tls: true
+    sni: pardazeshvpn-tg58.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: pardazeshvpn-tg58.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg58.pages.dev
+  
+  - name: NEW37
+    server: 104.17.245.156
+    port: 443
+    type: vless
+    uuid: ac1ac19b-d3da-44ff-ba96-3160a306e6e8
+    tls: true
+    sni: ""
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: 83391890813327783076798370684972.v2line.net
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VLESS-WS-TLS
+      headers:
+        Host: 83391890813327783076798370684972.v2line.net
+    alpn:
+      - http/1.1
+  
+
+  - name: NEW38
+    server: 172.64.146.118
+    port: 8443
+    type: vless
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
+    tls: true
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: pardazeshvpn-tg71.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg71.pages.dev
+
+  - name: US-Amazon-EC2
+    server: 3.78.59.177
+    port: 22222
+    type: trojan
+    password: telegram-id-directvpn
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+    alpn:
+      - http/1.1
+  - name: US-Amazon
+    server: 35.176.236.153
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+    alpn:
+      - http/1.1
+  - name: GB-Amazon
+    server: 3.9.137.149
+    port: 22222
+    type: trojan
+    password: telegram-id-privatevpns
+    cipher: none
+    udp: true
+    tls: true
+    sni: trojan.burgerip.co.uk
+    network: tcp
+    skip-cert-verify: false
+    client-fingerprint: random
+
+  - name: HK-Google
+    server: 34.92.66.193
+    port: 30251
+    type: vmess
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+    alterId: 0
+    cipher: auto
+    udp: false
+    tls: false
+    servername: x114.flybar.work
+    network: tcp
+
+  - name: TT12
+    server: 188.42.145.140
+    port: 443
+    type: vless
+    uuid: f3fcb0be-c785-4791-bd88-335dd20f0c1e
+    tls: true
+    sni: g1.youyuan.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: g1.youyuan.us.kg
+    network: ws
+    ws-opts:
+      path: /telegram.v2ray_apha.spacefp
+      headers:
+        Host: g1.youyuan.us.kg
+    udp: true
+
+  - name: TT11
+    server: 185.146.173.58
+    port: 8080
+    type: vless
+    uuid: 801e6d41-930e-4eb8-bd7d-547404198deb
+    tls: false
+    sni: lc83.lebasnoo.ir
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: lc83.lebasnoo.ir
+    network: ws
+    ws-opts:
+      path: /servernett
+      headers:
+        Host: lc83.lebasnoo.ir
+    udp: true
+
+  - name: TT10
+    server: 140.248.129.207
+    port: 80
+    type: vless
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    sni: amir55.ir
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: amir55.ir
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: amir55.ir
+    udp: true
+
+  - name: TT9
     server: 217.163.76.107
     port: 8443
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: edgood.889876.xyz
     skip-cert-verify: false
-    client-fingerprint: chrome
+    client-fingerprint: random
     servername: edgood.889876.xyz
     network: ws
     ws-opts:
       path: /?ed=2048
       headers:
         Host: edgood.889876.xyz
-  - name: HK_9c8d4_0018
-    server: 219.77.65.212
-    port: 23555
+    udp: true
+
+  - name: TT8
+    server: 37.120.184.206
+    port: 1001
     type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: juzi8186.5112233.xyz
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: juzi8186.5112233.xyz
-  - name: HK_9c8d4_0019
-    server: 219.77.65.212
-    port: 23555
-    type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: juzi8186.5112233.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2560fp=random
-      headers:
-        Host: juzi8186.5112233.xyz
+        Host: a.mifeng.us.kg
     udp: true
-  - name: JP_9c8d4_0020
-    server: zmaoz.faculty.ucdavis.edu
-    port: 443
+
+  - name: TT7
+    server: 103.214.68.133
+    port: 587
     type: vless
-    uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: zmaoz.faculty.ucdavis.edu
-    network: ws
-    ws-opts:
-      path: /5Ve373mPjKg4vceF?ed
-      headers:
-        Host: Falcunargo.net
-    udp: true
-  - name: KZ_9c8d4_0021
-    server: 194.76.18.116
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
-      path: /blue
+      path: /?ed=2560
       headers:
-        Host: lw.kpcloud.eu.org
-  - name: LT_9c8d4_0022
-    server: 45.87.175.181
-    port: 8080
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 4a2rfixophdjffa8KVA4Aa
-  - name: MD_9c8d4_0023
-    server: 95.164.22.239
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT6
+    server: 45.94.31.75
     port: 2003
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: vless.ifx.us.kg
-  - name: MD_9c8d4_0024
-    server: 95.164.22.239
-    port: 2003
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT5
+    server: 45.94.31.109
+    port: 1001
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560fp=chrome
-      headers:
-        Host: vless.ifx.us.kg
-  - name: NL_9c8d4_0025
-    server: 2.58.56.31
-    port: 3001
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: vless.ifx.us.kg
-  - name: NL_9c8d4_0026
-    server: 194.246.81.62
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: NL_9c8d4_0027
-    server: 89.110.102.115
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: RU_9c8d4_0028
-    server: 188.42.145.159
-    port: 443
-    type: vless
-    uuid: 54ef4ecf-ff37-436a-be13-95c8a8a1114d
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: VIrgiNiavPn-nL.pagEs.dEv
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: VIrgiNiavPn-nL.pagEs.dEv
-  - name: RU_9c8d4_0029
-    server: 45.67.215.208
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: aw.ylks.xyz
-  - name: RU_9c8d4_0030
-    server: 91.219.150.221
-    port: 8080
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: vless.ifx.us.kg
-  - name: SE_9c8d4_0031
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT4
     server: 95.164.51.24
     port: 2501
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: vless.ifx.us.kg
-  - name: US_0032
-    server: visa.cn
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: bpb.macser.us.kg
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: TT3
+    server: 45.94.31.109
+    port: 2003
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /tr?ed=2560
-      headers:
-        Host: bpb.macser.us.kg
-  - name: US_0033
-    server: visa.cn
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: zamim340.ggff.net
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /tr?ed=2560
-      headers:
-        Host: zamim340.ggff.net
-  - name: US_0034
-    server: ip.164746.xyz
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: bpb.macser.us.kg
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /tr?ed=2560
-      headers:
-        Host: bpb.macser.us.kg
-  - name: US_0035
-    server: japan.com
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: bpb.macser.us.kg
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /tr?ed=2560
-      headers:
-        Host: bpb.macser.us.kg
-  - name: US_0036
-    server: japan.com
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: zamim340.ggff.net
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /tr?ed=2560
-      headers:
-        Host: zamim340.ggff.net
-  - name: US_0037
-    server: 151.101.65.210
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: firefox
-    servername: pooleno.ir
-    alpn:
-      - h3
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: pooleno.ir
-  - name: US_0038
-    server: 151.101.65.122
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: metrix.ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: metrix.ir
-  - name: US_0039
-    server: 198.41.208.45
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0040
-    server: 188.114.98.83
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: av.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: av.ylks.xyz
-  - name: US_0041
-    server: 199.232.32.247
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: Sanjeshp.Ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: Sanjeshp.Ir
-  - name: US_0042
-    server: 69.84.182.138
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: lu.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lu.ylks01.eu.org
-  - name: US_0043
-    server: 198.41.195.29
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0044
-    server: 141.101.123.23
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0045
-    server: 173.245.49.106
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0046
-    server: 173.245.59.178
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: av.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: av.ylks.xyz
-  - name: US_0047
-    server: 141.101.123.215
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0048
-    server: 188.114.96.120
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0049
-    server: 198.41.220.155
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0050
-    server: 188.114.97.194
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0051
-    server: 188.114.96.173
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0052
-    server: 108.162.196.151
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0053
-    server: 199.232.8.31
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: Sanjeshp.Ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: Sanjeshp.Ir
-  - name: US_0054
-    server: 141.101.122.99
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0055
-    server: 188.114.97.246
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0056
-    server: 199.232.1.255
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: Sanjeshp.Ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: Sanjeshp.Ir
-  - name: US_0057
-    server: 199.232.6.53
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: Sanjeshp.Ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: Sanjeshp.Ir
-  - name: US_0058
-    server: 188.114.98.10
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0059
-    server: 199.232.32.234
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: behdasht.hrtc.ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: behdasht.hrtc.ir
-  - name: US_0060
-    server: 173.245.58.204
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0061
-    server: 141.101.120.100
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0062
-    server: 198.62.62.185
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lu.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lu.ylks01.eu.org
-  - name: US_0063
-    server: 216.24.57.30
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.ylks.us.kg
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: lw.ylks.us.kg
-  - name: US_0064
-    server: 192.200.160.214
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0065
-    server: 198.41.195.204
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0066
-    server: 188.114.97.198
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0067
-    server: 140.248.152.40
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: Sanjeshp.Ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: Sanjeshp.Ir
-  - name: US_0068
-    server: 151.101.130.228
-    port: 443
-    type: vless
-    uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: zmaoz.faculty.ucdavis.edu
-    network: ws
-    ws-opts:
-      path: /Telegram@V2ray_Alpha/?ed=2087
-      headers:
-        Host: Falcunargo.net
+        Host: a.mifeng.us.kg
     udp: true
-  - name: US_0069
-    server: 198.41.219.248
-    port: 443
+
+  - name: TT2
+    server: 95.164.116.22
+    port: 2501
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
       headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0070
-    server: 141.101.113.186
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0071
-    server: 188.114.99.124
-    port: 443
-    type: vless
-    uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869
-    tls: true
-    skip-cert-verify: false
-    servername: aw.ylks.xyz
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: aw.ylks.xyz
-  - name: US_0072
-    server: 167.82.97.49
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: cosmocare.ir
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: cosmocare.ir
-  - name: US_0073
-    server: 198.41.221.249
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0074
-    server: 188.114.96.81
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lx.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lx.kpcloud.eu.org
-  - name: US_0075
-    server: 173.245.49.27
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0076
-    server: 151.101.130.228
-    port: 443
-    type: vless
-    uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: zmaoz.faculty.ucdavis.edu
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /Telegram@V2ray_Alpha/?ed=2087ized
-      headers:
-        Host: Falcunargo.net
+        Host: a.mifeng.us.kg
     udp: true
-  - name: US_0077
-    server: 151.101.130.228
-    port: 443
-    type: vless
-    uuid: 041f671a-63f5-4af1-a492-8cbff5797b8a
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: zmaoz.faculty.ucdavis.edu
-    alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /Telegram@V2ray_Alpha/?ed=2087fp=randomized
-      headers:
-        Host: Falcunargo.net
-    udp: true
-  - name: US_0078
-    server: 198.41.199.131
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0079
-    server: 198.41.215.31
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0080
-    server: 157.254.227.37
+
+  - name: TT1
+    server: 165.154.134.125
     port: 587
     type: vless
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     tls: true
+    sni: a.mifeng.us.kg
     skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        Host: vless.ifx.us.kg
-  - name: US_0081
-    server: 167.82.30.71
-    port: 80
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: false
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: samane.ir
-    network: ws
-    ws-opts:
-      path: /4u7lAS4nPLtz0xPz?ed=2560
-      headers:
-        Host: samane.ir
-  - name: US_0082
-    server: 172.66.47.155
-    port: 443
-    type: vless
-    uuid: 90137e2d-2a00-4acf-8c5d-a75dfb9c922b
-    tls: true
-    skip-cert-verify: false
-    servername: richu.pages.dev
-    network: ws
-    ws-opts:
-      path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io
-      headers:
-        Host: richu.pages.dev
-  - name: US_0083
-    server: 216.24.57.57
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.ylks.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: lw.ylks.us.kg
-  - name: US_0084
-    server: 38.58.56.130
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    servername: vless.ifx.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560fp=chrome
-      headers:
-        Host: vless.ifx.us.kg
-  - name: US_0085
-    server: 167.82.30.71
-    port: 80
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: false
-    skip-cert-verify: false
-    servername: samane.ir
-    network: ws
-    ws-opts:
-      path: /4u7lAS4nPLtz0xPz?ed=2560
-      headers:
-        Host: samane.ir
-  - name: US_0086
-    server: 198.41.203.245
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0087
-    server: 141.101.120.18
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0088
-    server: 162.159.129.60
-    port: 80
-    type: vless
-    uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-    tls: false
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    network: ws
-    ws-opts:
-      path: /Telegram-Xv2ry2?ed=512
-      headers:
-        Host: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+        Host: a.mifeng.us.kg
     udp: true
-  - name: US_0089
-    server: 198.41.220.45
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0090
-    server: 198.41.218.233
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0091
-    server: 198.41.214.179
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: false
-    servername: lw.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: lw.kpcloud.eu.org
-  - name: US_0092
-    server: 162.159.129.60
-    port: 80
-    type: vless
-    uuid: 7d2dfb7a-2ecc-4448-bcbe-245a2092fe85
-    tls: false
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
+
+  - name: Germany_hysteria
+    type: hysteria
+    server: 146.0.36.114
+    port: 64914
+    ports: 30000-40000
+    auth_str: dongtaiwang.com
     alpn:
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /Telegram-Xv2ry2?ed=512
-      headers:
-        Host: www.speedtest.net.nl1.78.18.432.20.20.20.20.ir.xn--g28h.dns-dynamic.net.
-    udp: true
-  - name: US_0093
-    server: 199.232.5.79
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
+    - h3
+    sni: www.bing.com
     skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: mefa.ir
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: mefa.ir
-    udp: true
-  - name: US_0094
-    server: 199.232.7.154
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: randomized
-    servername: Sanjeshp.Ir
+    up: 100 Mbps
+    down: 1000 Mbps
+
+  - name: US_Wilmington_hysteria
+    type: hysteria
+    server: 166.1.18.42
+    port: 37950
+    ports: 10000-20000
+    auth_str: dongtaiwang.com
     alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /H?ed=2560
-      headers:
-        Host: Sanjeshp.Ir
-  - name: US_0095
-    server: 172.66.45.10
-    port: 443
-    type: vless
-    uuid: 70ea7a10-de3e-4922-bc7c-4dd7c2cef882
-    tls: true
+    - h3
+    sni: bing.com
     skip-cert-verify: true
-    servername: newtunnel-2xm.pages.dev
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: newtunnel-2xm.pages.dev
-  - name: US_0096
-    server: 167.82.30.71
-    port: 80
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: false
+    up: 100 Mbps
+    down: 1000 Mbps
+
+  - name: Russia_Moscow_hysteria
+    type: hysteria2
+    server: 46.17.41.189
+    port: 50717
+    password: dongtaiwang.com
+    fast-open: true
+    sni: www.bing.com
     skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: samane.ir
-    network: ws
-    ws-opts:
-      path: /4u7lAS4nPLtz0xPz?ed=2560fp=ios
-      headers:
-        Host: samane.ir
-    udp: true
-  - name: US_0097
-    server: 104.19.48.236
-    port: 80
-    type: vless
-    uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7
-    tls: false
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: v2ra1.ecrgpk.workers.dev
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /@VPNHTTPInjectorfree
-      headers:
-        Host: v2ra1.ecrgpk.workers.dev
-    udp: true
-  - name: US_0098
-    server: 198.62.62.185
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: lu.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: lu.ylks01.eu.org
-    udp: true
-  - name: US_0099
-    server: 104.18.37.111
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: mindrOOm-5cz.pAgEs.dEV
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /trC8BM8bTsAF0AnLYL
-      headers:
-        Host: mindrOOm-5cz.pAgEs.dEV
-  - name: US_0100
-    server: 172.64.150.145
-    port: 443
-    type: trojan
-    password: bpb-trojan
-    sni: mindrOOm-5cz.pAgEs.dEV
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /trC8BM8bTsAF0AnLYL
-      headers:
-        Host: mindrOOm-5cz.pAgEs.dEV
-  - name: US_0101
-    server: 157.254.227.37
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: vless.ifx.us.kg
-    alpn:
-      - h3
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /?ed=2560fp=chrome
-      headers:
-        Host: vless.ifx.us.kg
 
-  - name: Alv9_1                    
-    type: vmess
-    server: 104.26.0.56           
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_2
-    type: vmess
-    server: 23.227.38.3         
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz
-
-  - name: Alv9_3           
-    type: vmess
-    server: 104.19.38.12                 
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_4           
-    type: vmess
-    server: 172.64.175.88                 
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_5           
-    type: vmess
-    server: 172.64.99.22               
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_6          
-    type: vmess
-    server: 104.19.21.71              
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_7          
-    type: vmess
-    server: 172.64.175.213             
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-
-  - name: Alv9_8         
-    type: vmess
-    server: 172.64.198.249            
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-
-  - name: Alv9_9        
-    type: vmess
-    server: 172.64.194.76            
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_10        
-    type: vmess
-    server: 104.19.21.63           
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_11       
-    type: vmess
-    server: 104.19.123.11           
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_12      
-    type: vmess
-    server: 104.18.57.111         
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_13      
-    type: vmess
-    server: 104.19.21.230    
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_14    
-    type: vmess
-    server: 104.19.21.230    
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-
-  - name: Alv9_15    
-    type: vmess
-    server: 104.19.46.103  
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_16   
-    type: vmess
-    server: 104.19.32.216
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_17   
-    type: vmess
-    server: 104.19.47.65
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_18   
-    type: vmess
-    server: 104.19.58.175
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_19   
-    type: vmess
-    server: 104.19.55.49
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_20   
-    type: vmess
-    server: 104.19.42.49
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_21   
-    type: vmess
-    server: 104.17.106.151
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_22  
-    type: vmess
-    server: 104.19.57.4
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_23 
-    type: vmess
-    server: 104.19.59.89
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_24 
-    type: vmess
-    server: 104.20.17.186
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-    
-  - name: Alv9_25
-    type: vmess
-    server: 104.20.25.146
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_26
-    type: vmess
-    server: 104.20.25.146
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_27
-    type: vmess
-    server: 104.26.7.132
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_28
-    type: vmess
-    server: 104.20.25.146
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_29
-    type: vmess
-    server: 104.20.17.186
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_30   
-    type: vmess
-    server: 104.19.45.11
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_31                    
-    type: vmess
-    server: 104.19.45.13                
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_32
-    type: vmess
-    server: 104.19.45.15     
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz
-
-  - name: Alv9_33           
-    type: vmess
-    server: 104.19.45.17                     
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_34           
-    type: vmess
-    server: 104.19.45.19                 
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_35           
-    type: vmess
-    server: 104.19.45.31              
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_36          
-    type: vmess
-    server: 104.19.45.35               
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_37          
-    type: vmess
-    server: 104.19.45.42             
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-
-  - name: Alv9_38         
-    type: vmess
-    server: 104.19.45.47             
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-
-  - name: Alv9_39        
-    type: vmess
-    server: 104.19.45.50            
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_40        
-    type: vmess
-    server: 104.19.45.90          
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_41       
-    type: vmess
-    server: 104.26.5.56            
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_42      
-    type: vmess
-    server: 104.26.5.66         
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_43      
-    type: vmess
-    server: 104.26.5.67
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_44    
-    type: vmess
-    server: 104.26.5.88
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-
-  - name: Alv9_45    
-    type: vmess
-    server: 104.26.5.90
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_46   
-    type: vmess
-    server: 104.26.5.103
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_47   
-    type: vmess
-    server: 104.26.5.112
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_48   
-    type: vmess
-    server: 104.26.5.113
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_49   
-    type: vmess
-    server: 104.26.5.123
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_50   
-    type: vmess
-    server: 104.26.5.145
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_51   
-    type: vmess
-    server: 162.159.140.19
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_52  
-    type: vmess
-    server: 162.159.140.33
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_53 
-    type: vmess
-    server: 162.159.140.39
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_54 
-    type: vmess
-    server: 162.159.140.45
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-    
-  - name: Alv9_55
-    type: vmess
-    server: 162.159.140.56
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_56
-    type: vmess
-    server: 162.159.140.66
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_57
-    type: vmess
-    server: 162.159.140.77
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_58
-    type: vmess
-    server: 162.159.140.89
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_59
-    type: vmess
-    server: 162.159.140.91
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_60   
-    type: vmess
-    server: 162.159.140.93
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-  - name: Alv9_61                    
-    type: vmess
-    server: 172.64.167.5               
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_62
-    type: vmess
-    server: 172.64.167.8         
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz
-
-  - name: Alv9_63           
-    type: vmess
-    server: 172.64.167.10                 
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_64           
-    type: vmess
-    server: 172.64.167.15                  
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_65           
-    type: vmess
-    server: 172.64.167.19               
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_66          
-    type: vmess
-    server: 172.64.167.22              
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_67          
-    type: vmess
-    server: 172.64.167.25               
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-
-  - name: Alv9_68         
-    type: vmess
-    server: 172.64.167.29           
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz   
-
-  - name: Alv9_69        
-    type: vmess
-    server: 172.64.167.35          
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_70        
-    type: vmess
-    server: 172.64.167.44        
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_71       
-    type: vmess
-    server: 172.64.233.7      
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-        
-  - name: Alv9_72      
-    type: vmess
-    server: 172.64.233.9      
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_73      
-    type: vmess
-    server: 172.64.233.15   
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_74    
-    type: vmess
-    server: 172.64.233.17
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz  
-
-  - name: Alv9_75    
-    type: vmess
-    server: 172.64.233.24
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_76   
-    type: vmess
-    server: 172.64.233.27
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_77   
-    type: vmess
-    server: 172.64.233.32
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_78   
-    type: vmess
-    server: 172.64.233.35
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_79   
-    type: vmess
-    server: 172.64.233.37
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_80   
-    type: vmess
-    server: 172.64.233.43
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_81   
-    type: vmess
-    server: 172.64.166.2
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_82  
-    type: vmess
-    server: 172.64.166.8
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_83 
-    type: vmess
-    server: 172.64.166.9
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_84 
-    type: vmess
-    server: 172.64.166.12
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-    
-  - name: Alv9_85
-    type: vmess
-    server: 172.64.166.16
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_86
-    type: vmess
-    server: 172.64.166.20
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_87
-    type: vmess
-    server: 172.64.166.22
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_88
-    type: vmess
-    server: 172.64.166.28
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_89
-    type: vmess
-    server: 172.64.166.32
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_90   
-    type: vmess
-    server: 172.64.166.33
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_91  
-    type: vmess
-    server: fbi.gov
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_92 
-    type: vmess
-    server: shopify.com
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-    
-  - name: Alv9_93 
-    type: vmess
-    server: icook.tw
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_94
-    type: vmess
-    server: ip.sb
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_95
-    type: vmess
-    server: japan.com
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-        
-  - name: Alv9_96
-    type: vmess
-    server: malaysia.com
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_97
-    type: vmess
-    server: russia.com
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_98
-    type: vmess
-    server: singapore.com
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_99
-    type: vmess
-    server: skk.moe
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz    
-
-  - name: Alv9_100
-    type: vmess
-    server: www.visa.com
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz 
-
-  - name: Alv9_101                   
-    type: vmess
-    server: 104.21.238.100             
-    port: 2095                                     
-    uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde       
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: c3.6016725.xyz                    
-    ws-opts:
-      path: "github.com/Alvin9999"                             
-      headers:
-        Host: c3.6016725.xyz
 proxy-groups:
-  - name: ⭕ proxinode
+  - name: ProxyNet
+    type: select
+    proxies:
+      - Hysteria-List
+      - NEW-List
+      - ProxyPool
+
+  - name: Hysteria-List
     type: url-test
     proxies:
-      - Alv2
-      - Alv3
-      - Alv4
-      - Alv5
-      - Alv6
-      - Tr1
-      - VLSS
-      - RO_0062
-      - US_0121
-      - NL_0060
-      - NL_0061
-      - US1_0080
-      - US_0123
-      - US_0142
-      - RU_0065
-      - US_0147
-      - FR_0026
-      - AT_9c8d4_0001
-      - AT_9c8d4_0002
-      - CA_9c8d4_0003
-      - CN_9c8d4_0004
-      - CR_9c8d4_0005
-      - CR_9c8d4_0006
-      - CR_9c8d4_0007
-      - CR_9c8d4_0008
-      - CR_9c8d4_0009
-      - CR_9c8d4_0010
-      - CR_9c8d4_0011
-      - CR_9c8d4_0012
-      - CR_9c8d4_0013
-      - CR_9c8d4_0014
-      - CR_9c8d4_0015
-      - FR_9c8d4_0016
-      - GB_9c8d4_0017
-      - HK_9c8d4_0018
-      - HK_9c8d4_0019
-      - JP_9c8d4_0020
-      - KZ_9c8d4_0021
-      - LT_9c8d4_0022
-      - MD_9c8d4_0023
-      - MD_9c8d4_0024
-      - NL_9c8d4_0025
-      - NL_9c8d4_0026
-      - NL_9c8d4_0027
-      - RU_9c8d4_0028
-      - RU_9c8d4_0029
-      - RU_9c8d4_0030
-      - SE_9c8d4_0031
-      - US_0032
-      - US_0033
-      - US_0034
-      - US_0035
-      - US_0036
-      - US_0037
-      - US_0038
-      - US_0039
-      - US_0040
-      - US_0041
-      - US_0042
-      - US_0043
-      - US_0044
-      - US_0045
-      - US_0046
-      - US_0047
-      - US_0048
-      - US_0049
-      - US_0050
-      - US_0051
-      - US_0052
-      - US_0053
-      - US_0054
-      - US_0055
-      - US_0056
-      - US_0057
-      - US_0058
-      - US_0059
-      - US_0060
-      - US_0061
-      - US_0062
-      - US_0063
-      - US_0064
-      - US_0065
-      - US_0066
-      - US_0067
-      - US_0068
-      - US_0069
-      - US_0070
-      - US_0071
-      - US_0072
-      - US_0073
-      - US_0074
-      - US_0075
-      - US_0076
-      - US_0077
-      - US_0078
-      - US_0079
-      - US_0080
-      - US_0081
-      - US_0082
-      - US_0083
-      - US_0084
-      - US_0085
-      - US_0086
-      - US_0087
-      - US_0088
-      - US_0089
-      - US_0090
-      - US_0091
-      - US_0092
-      - US_0093
-      - US_0094
-      - US_0095
-      - US_0096
-      - US_0097
-      - US_0098
-      - US_0099
-      - US_0100
-      - US_0101
-      - Alv9_1
-      - Alv9_2
-      - Alv9_3
-      - Alv9_4
-      - Alv9_5
-      - Alv9_6
-      - Alv9_7
-      - Alv9_8
-      - Alv9_9
-      - Alv9_10
-      - Alv9_11
-      - Alv9_12
-      - Alv9_13
-      - Alv9_14
-      - Alv9_15
-      - Alv9_16
-      - Alv9_17
-      - Alv9_18
-      - Alv9_19
-      - Alv9_20
-      - Alv9_21
-      - Alv9_22
-      - Alv9_23
-      - Alv9_24
-      - Alv9_25
-      - Alv9_26
-      - Alv9_27
-      - Alv9_28
-      - Alv9_29
-      - Alv9_30
-      - Alv9_31
-      - Alv9_32
-      - Alv9_33
-      - Alv9_34
-      - Alv9_35
-      - Alv9_36
-      - Alv9_37
-      - Alv9_38
-      - Alv9_39
-      - Alv9_40
-      - Alv9_41
-      - Alv9_42
-      - Alv9_43
-      - Alv9_44
-      - Alv9_45
-      - Alv9_46
-      - Alv9_47
-      - Alv9_48
-      - Alv9_49
-      - Alv9_50
-      - Alv9_51
-      - Alv9_52
-      - Alv9_53
-      - Alv9_54
-      - Alv9_55
-      - Alv9_56
-      - Alv9_57
-      - Alv9_58
-      - Alv9_59
-      - Alv9_60
-      - Alv9_61
-      - Alv9_62
-      - Alv9_63
-      - Alv9_64
-      - Alv9_65
-      - Alv9_66
-      - Alv9_67
-      - Alv9_68
-      - Alv9_69
-      - Alv9_70
-      - Alv9_71
-      - Alv9_72
-      - Alv9_73
-      - Alv9_74
-      - Alv9_75
-      - Alv9_76
-      - Alv9_77
-      - Alv9_78
-      - Alv9_79
-      - Alv9_80
-      - Alv9_81
-      - Alv9_82
-      - Alv9_83
-      - Alv9_84
-      - Alv9_85
-      - Alv9_86
-      - Alv9_87
-      - Alv9_88
-      - Alv9_89
-      - Alv9_90
-      - Alv9_91
-      - Alv9_92
-      - Alv9_93
-      - Alv9_94
-      - Alv9_95
-      - Alv9_96
-      - Alv9_97
-      - Alv9_98
-      - Alv9_99
-      - Alv9_100
-      - Alv9_101
-
-
+      - Germany_hysteria
+      - US_Wilmington_hysteria
+      - Russia_Moscow_hysteria
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
-  - name: ♻️ OK
+
+  - name: NEW-List
     type: url-test
     proxies:
-      - AWS
+      - NEW1
+      - NEW2
+      - NEW3
+      - NEW4
+      - NEW5
+      - NEW6
+      - NEW8
+      - NEW9
+      - NEW10
+      - NEW11
+      - NEW12
+      - NEW13
+      - NEW14
+      - NEW15
+      - NEW16
+      - NEW17
+      - NEW18
+      - NEW19
+      - NEW20
+      - NEW21
+      - NEW22
+      - NEW23
+      - NEW24
+      - NEW25
+      - NEW26
+      - NEW27
+      - NEW28
+      - NEW29
+      - NEW30
+      - NEW31
+      - NEW32
+      - NEW33
+      - NEW34
+      - NEW35
+      - NEW36
+      - NEW37
+      - NEW38
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
+
+  - name: ProxyPool
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - PP1
+      - PP2
+      - PP3
+      - PP4
+      - PP5
+      - PP6
+      - PP7
+      - PP8
+      - PP9
+      - PP10
+      - PP11
+      - PP12
+      - PP13
+      - PP14
 rules:
-  - DOMAIN-KEYWORD,bank,♻️ OK
-  - DOMAIN-SUFFIX,hbl.com,♻️ OK
-  - DOMAIN-SUFFIX,mobilinkbank.com,♻️ OK
-  - DOMAIN-SUFFIX,wise.com,♻️ OK
-  - DOMAIN-SUFFIX,ubldigital.com,♻️ OK
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
@@ -3578,31 +1247,31 @@ rules:
   - DOMAIN-SUFFIX,taobao.com,DIRECT
   - DOMAIN-SUFFIX,alicdn.com,DIRECT
   - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
-  - DOMAIN,cdn.angruo.com,⭕ proxinode
+  - DOMAIN,cdn.angruo.com,ProxyNet
   - DOMAIN,download.jetbrains.com,DIRECT
   - DOMAIN,file-igamecj.akamaized.net,DIRECT
   - DOMAIN,images-cn.ssl-images-amazon.com,DIRECT
   - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
   - DOMAIN,speedtest.macpaw.com,DIRECT
-  - DOMAIN,beiyong.starnetcn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,services.googleapis.cn,⭕ proxinode
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,⭕ proxinode
+  - DOMAIN,beiyong.starnetcn.com,ProxyNet
+  - DOMAIN-SUFFIX,services.googleapis.cn,ProxyNet
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,⭕ proxinode
-  - DOMAIN,developer.apple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,digicert.com,⭕ proxinode
-  - DOMAIN,ocsp.apple.com,⭕ proxinode
-  - DOMAIN,ocsp.comodoca.com,⭕ proxinode
-  - DOMAIN,ocsp.usertrust.com,⭕ proxinode
-  - DOMAIN,ocsp.sectigo.com,⭕ proxinode
-  - DOMAIN,ocsp.verisign.net,⭕ proxinode
-  - DOMAIN-SUFFIX,apple-dns.net,⭕ proxinode
-  - DOMAIN,testflight.apple.com,⭕ proxinode
-  - DOMAIN,sandbox.itunes.apple.com,⭕ proxinode
-  - DOMAIN,itunes.apple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,apps.apple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blobstore.apple.com,⭕ proxinode
-  - DOMAIN,cvws.icloud-content.com,⭕ proxinode
+  - DOMAIN,safebrowsing.googleapis.com,ProxyNet
+  - DOMAIN,developer.apple.com,ProxyNet
+  - DOMAIN-SUFFIX,digicert.com,ProxyNet
+  - DOMAIN,ocsp.apple.com,ProxyNet
+  - DOMAIN,ocsp.comodoca.com,ProxyNet
+  - DOMAIN,ocsp.usertrust.com,ProxyNet
+  - DOMAIN,ocsp.sectigo.com,ProxyNet
+  - DOMAIN,ocsp.verisign.net,ProxyNet
+  - DOMAIN-SUFFIX,apple-dns.net,ProxyNet
+  - DOMAIN,testflight.apple.com,ProxyNet
+  - DOMAIN,sandbox.itunes.apple.com,ProxyNet
+  - DOMAIN,itunes.apple.com,ProxyNet
+  - DOMAIN-SUFFIX,apps.apple.com,ProxyNet
+  - DOMAIN-SUFFIX,blobstore.apple.com,ProxyNet
+  - DOMAIN,cvws.icloud-content.com,ProxyNet
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
   - DOMAIN-SUFFIX,icloud.com,DIRECT
@@ -3744,20 +1413,20 @@ rules:
   - DOMAIN-SUFFIX,zhimg.com,DIRECT
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
-  - DOMAIN-KEYWORD,amazon,⭕ proxinode
-  - DOMAIN-KEYWORD,google,⭕ proxinode
-  - DOMAIN-KEYWORD,gmail,⭕ proxinode
-  - DOMAIN-KEYWORD,youtube,⭕ proxinode
-  - DOMAIN-KEYWORD,facebook,⭕ proxinode
-  - DOMAIN-SUFFIX,fb.me,⭕ proxinode
-  - DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
-  - DOMAIN-KEYWORD,twitter,⭕ proxinode
-  - DOMAIN-KEYWORD,instagram,⭕ proxinode
-  - DOMAIN-KEYWORD,dropbox,⭕ proxinode
-  - DOMAIN-SUFFIX,twimg.com,⭕ proxinode
-  - DOMAIN-KEYWORD,blogspot,⭕ proxinode
-  - DOMAIN-SUFFIX,youtu.be,⭕ proxinode
-  - DOMAIN-KEYWORD,whatsapp,⭕ proxinode
+  - DOMAIN-KEYWORD,amazon,ProxyNet
+  - DOMAIN-KEYWORD,google,ProxyNet
+  - DOMAIN-KEYWORD,gmail,ProxyNet
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-KEYWORD,facebook,ProxyNet
+  - DOMAIN-SUFFIX,fb.me,ProxyNet
+  - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
+  - DOMAIN-KEYWORD,twitter,ProxyNet
+  - DOMAIN-KEYWORD,instagram,ProxyNet
+  - DOMAIN-KEYWORD,dropbox,ProxyNet
+  - DOMAIN-SUFFIX,twimg.com,ProxyNet
+  - DOMAIN-KEYWORD,blogspot,ProxyNet
+  - DOMAIN-SUFFIX,youtu.be,ProxyNet
+  - DOMAIN-KEYWORD,whatsapp,ProxyNet
   - DOMAIN-KEYWORD,admarvel,REJECT
   - DOMAIN-KEYWORD,admaster,REJECT
   - DOMAIN-KEYWORD,adsage,REJECT
@@ -3785,304 +1454,304 @@ rules:
   - DOMAIN-SUFFIX,vungle.com,REJECT
   - DOMAIN-KEYWORD,wlmonitor,REJECT
   - DOMAIN-KEYWORD,zjtoolbar,REJECT
-  - DOMAIN-SUFFIX,9to5mac.com,⭕ proxinode
-  - DOMAIN-SUFFIX,abpchina.org,⭕ proxinode
-  - DOMAIN-SUFFIX,adblockplus.org,⭕ proxinode
-  - DOMAIN-SUFFIX,adobe.com,⭕ proxinode
-  - DOMAIN-SUFFIX,akamaized.net,⭕ proxinode
-  - DOMAIN-SUFFIX,alfredapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,amplitude.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,android.com,⭕ proxinode
-  - DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
-  - DOMAIN-SUFFIX,aolcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,apkpure.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appledaily.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appshopper.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appspot.com,⭕ proxinode
-  - DOMAIN-SUFFIX,arcgis.com,⭕ proxinode
-  - DOMAIN-SUFFIX,archive.org,⭕ proxinode
-  - DOMAIN-SUFFIX,armorgames.com,⭕ proxinode
-  - DOMAIN-SUFFIX,aspnetcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,att.com,⭕ proxinode
-  - DOMAIN-SUFFIX,awsstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,azureedge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,azurewebsites.net,⭕ proxinode
-  - DOMAIN-SUFFIX,bing.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bintray.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bit.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bit.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
-  - DOMAIN-SUFFIX,bjango.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bkrtx.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blog.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogger.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogspot.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogspot.hk,⭕ proxinode
-  - DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,box.com,⭕ proxinode
-  - DOMAIN-SUFFIX,box.net,⭕ proxinode
-  - DOMAIN-SUFFIX,cachefly.net,⭕ proxinode
-  - DOMAIN-SUFFIX,chromium.org,⭕ proxinode
-  - DOMAIN-SUFFIX,cl.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudmagic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cmail19.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cnet.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
-  - DOMAIN-SUFFIX,comodoca.com,⭕ proxinode
-  - DOMAIN-SUFFIX,crashlytics.com,⭕ proxinode
-  - DOMAIN-SUFFIX,culturedcode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,d.pr,⭕ proxinode
-  - DOMAIN-SUFFIX,danilo.to,⭕ proxinode
-  - DOMAIN-SUFFIX,dayone.me,⭕ proxinode
-  - DOMAIN-SUFFIX,db.tt,⭕ proxinode
-  - DOMAIN-SUFFIX,deskconnect.com,⭕ proxinode
-  - DOMAIN-SUFFIX,disq.us,⭕ proxinode
-  - DOMAIN-SUFFIX,disqus.com,⭕ proxinode
-  - DOMAIN-SUFFIX,disquscdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,docker.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
-  - DOMAIN-SUFFIX,droplr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dueapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dytt8.net,⭕ proxinode
-  - DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,edgekey.net,⭕ proxinode
-  - DOMAIN-SUFFIX,edgesuite.net,⭕ proxinode
-  - DOMAIN-SUFFIX,engadget.com,⭕ proxinode
-  - DOMAIN-SUFFIX,entrust.net,⭕ proxinode
-  - DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,evernote.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fabric.io,⭕ proxinode
-  - DOMAIN-SUFFIX,fast.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fastly.net,⭕ proxinode
-  - DOMAIN-SUFFIX,fc2.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedly.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedsportal.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fiftythree.com,⭕ proxinode
-  - DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
-  - DOMAIN-SUFFIX,flexibits.com,⭕ proxinode
-  - DOMAIN-SUFFIX,flickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,flipboard.com,⭕ proxinode
-  - DOMAIN-SUFFIX,g.co,⭕ proxinode
-  - DOMAIN-SUFFIX,gabia.net,⭕ proxinode
-  - DOMAIN-SUFFIX,geni.us,⭕ proxinode
-  - DOMAIN-SUFFIX,gfx.ms,⭕ proxinode
-  - DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ghostnoteapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,git.io,⭕ proxinode
-  - DOMAIN-KEYWORD,github,⭕ proxinode
-  - DOMAIN-SUFFIX,globalsign.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
-  - DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,golang.org,⭕ proxinode
-  - DOMAIN-SUFFIX,gongm.in,⭕ proxinode
-  - DOMAIN-SUFFIX,goo.gl,⭕ proxinode
-  - DOMAIN-SUFFIX,goodreaders.com,⭕ proxinode
-  - DOMAIN-SUFFIX,goodreads.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
-  - DOMAIN-SUFFIX,hockeyapp.net,⭕ proxinode
-  - DOMAIN-SUFFIX,hotmail.com,⭕ proxinode
-  - DOMAIN-SUFFIX,icons8.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ifixit.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ift.tt,⭕ proxinode
-  - DOMAIN-SUFFIX,ifttt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,iherb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
-  - DOMAIN-SUFFIX,img.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,imgur.com,⭕ proxinode
-  - DOMAIN-SUFFIX,imore.com,⭕ proxinode
-  - DOMAIN-SUFFIX,instapaper.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ipn.li,⭕ proxinode
-  - DOMAIN-SUFFIX,is.gd,⭕ proxinode
-  - DOMAIN-SUFFIX,issuu.com,⭕ proxinode
-  - DOMAIN-SUFFIX,itgonglun.com,⭕ proxinode
-  - DOMAIN-SUFFIX,itun.es,⭕ proxinode
-  - DOMAIN-SUFFIX,ixquick.com,⭕ proxinode
-  - DOMAIN-SUFFIX,j.mp,⭕ proxinode
-  - DOMAIN-SUFFIX,js.revsci.net,⭕ proxinode
-  - DOMAIN-SUFFIX,jshint.com,⭕ proxinode
-  - DOMAIN-SUFFIX,jtvnw.net,⭕ proxinode
-  - DOMAIN-SUFFIX,justgetflux.com,⭕ proxinode
-  - DOMAIN-SUFFIX,kat.cr,⭕ proxinode
-  - DOMAIN-SUFFIX,klip.me,⭕ proxinode
-  - DOMAIN-SUFFIX,libsyn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
-  - DOMAIN-SUFFIX,line-apps.com,⭕ proxinode
-  - DOMAIN-SUFFIX,linode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,lithium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,littlehj.com,⭕ proxinode
-  - DOMAIN-SUFFIX,live.com,⭕ proxinode
-  - DOMAIN-SUFFIX,live.net,⭕ proxinode
-  - DOMAIN-SUFFIX,livefilestore.com,⭕ proxinode
-  - DOMAIN-SUFFIX,llnwd.net,⭕ proxinode
-  - DOMAIN-SUFFIX,macid.co,⭕ proxinode
-  - DOMAIN-SUFFIX,macromedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,macrumors.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mashable.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mathjax.org,⭕ proxinode
-  - DOMAIN-SUFFIX,medium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mega.co.nz,⭕ proxinode
-  - DOMAIN-SUFFIX,mega.nz,⭕ proxinode
-  - DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
-  - DOMAIN-SUFFIX,microsofttranslator.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mindnode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
-  - DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,msedge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,myfontastic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,name.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nextmedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nsstatic.net,⭕ proxinode
-  - DOMAIN-SUFFIX,nssurge.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nyt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
-  - DOMAIN-SUFFIX,omnigroup.com,⭕ proxinode
-  - DOMAIN-SUFFIX,onedrive.com,⭕ proxinode
-  - DOMAIN-SUFFIX,onenote.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ooyala.com,⭕ proxinode
-  - DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
-  - DOMAIN-SUFFIX,orkut.com,⭕ proxinode
-  - DOMAIN-SUFFIX,osxdaily.com,⭕ proxinode
-  - DOMAIN-SUFFIX,outlook.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ow.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,paddleapi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,parallels.com,⭕ proxinode
-  - DOMAIN-SUFFIX,parse.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pdfexpert.com,⭕ proxinode
-  - DOMAIN-SUFFIX,periscope.tv,⭕ proxinode
-  - DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
-  - DOMAIN-SUFFIX,pinterest.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pixelmator.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pixiv.net,⭕ proxinode
-  - DOMAIN-SUFFIX,playpcesor.com,⭕ proxinode
-  - DOMAIN-SUFFIX,playstation.com,⭕ proxinode
-  - DOMAIN-SUFFIX,playstation.com.hk,⭕ proxinode
-  - DOMAIN-SUFFIX,playstation.net,⭕ proxinode
-  - DOMAIN-SUFFIX,playstationnetwork.com,⭕ proxinode
-  - DOMAIN-SUFFIX,pushwoosh.com,⭕ proxinode
-  - DOMAIN-SUFFIX,rime.im,⭕ proxinode
-  - DOMAIN-SUFFIX,servebom.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sfx.ms,⭕ proxinode
-  - DOMAIN-SUFFIX,shadowsocks.org,⭕ proxinode
-  - DOMAIN-SUFFIX,sharethis.com,⭕ proxinode
-  - DOMAIN-SUFFIX,shazam.com,⭕ proxinode
-  - DOMAIN-SUFFIX,skype.com,⭕ proxinode
-  - DOMAIN-SUFFIX,smartdns⭕ proxinode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,smartmailcloud.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sony.com,⭕ proxinode
-  - DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sourceforge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,spotify.com,⭕ proxinode
-  - DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
-  - DOMAIN-SUFFIX,st.luluku.pw,⭕ proxinode
-  - DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
-  - DOMAIN-SUFFIX,startpage.com,⭕ proxinode
-  - DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,steamcommunity.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symauth.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcd.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tapbots.net,⭕ proxinode
-  - DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
-  - DOMAIN-SUFFIX,techcrunch.com,⭕ proxinode
-  - DOMAIN-SUFFIX,techsmith.com,⭕ proxinode
-  - DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
-  - DOMAIN-SUFFIX,theverge.com,⭕ proxinode
-  - DOMAIN-SUFFIX,time.com,⭕ proxinode
-  - DOMAIN-SUFFIX,timeinc.net,⭕ proxinode
-  - DOMAIN-SUFFIX,tiny.cc,⭕ proxinode
-  - DOMAIN-SUFFIX,tinypic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tmblr.co,⭕ proxinode
-  - DOMAIN-SUFFIX,todoist.com,⭕ proxinode
-  - DOMAIN-SUFFIX,trello.com,⭕ proxinode
-  - DOMAIN-SUFFIX,trustasiassl.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tumblr.co,⭕ proxinode
-  - DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tweetdeck.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tweetmarker.net,⭕ proxinode
-  - DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
-  - DOMAIN-SUFFIX,txmblr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,typekit.net,⭕ proxinode
-  - DOMAIN-SUFFIX,ubertags.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ublock.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ulyssesapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,urchin.com,⭕ proxinode
-  - DOMAIN-SUFFIX,usertrust.com,⭕ proxinode
-  - DOMAIN-SUFFIX,v.gd,⭕ proxinode
-  - DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vimeocdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vine.co,⭕ proxinode
-  - DOMAIN-SUFFIX,vivaldi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vox-cdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vsco.co,⭕ proxinode
-  - DOMAIN-SUFFIX,vultr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,w.org,⭕ proxinode
-  - DOMAIN-SUFFIX,w3schools.com,⭕ proxinode
-  - DOMAIN-SUFFIX,webtype.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikiwand.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikileaks.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,windows.com,⭕ proxinode
-  - DOMAIN-SUFFIX,windows.net,⭕ proxinode
-  - DOMAIN-SUFFIX,wire.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
-  - DOMAIN-SUFFIX,workflowy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.net,⭕ proxinode
-  - DOMAIN-SUFFIX,xda-developers.com,⭕ proxinode
-  - DOMAIN-SUFFIX,xeeno.com,⭕ proxinode
-  - DOMAIN-SUFFIX,xiti.com,⭕ proxinode
-  - DOMAIN-SUFFIX,yahoo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,yimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ying.com,⭕ proxinode
-  - DOMAIN-SUFFIX,yoyo.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
-  - DOMAIN-SUFFIX,telegram.org,⭕ proxinode
-  - IP-CIDR,91.108.4.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.8.0/21,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.16.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.56.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,149.154.160.0/20,⭕ proxinode,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,⭕ proxinode,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,⭕ proxinode,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,⭕ proxinode,no-resolve
-  - IP-CIDR,120.232.181.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.241.147.226/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.253.226/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.255.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.255.34/32,⭕ proxinode,no-resolve
-  - IP-CIDR,120.253.255.98/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.150.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.150.34/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.151.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,180.163.151.34/32,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.39.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.40.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.41.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.43.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,203.208.50.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,220.181.174.162/32,⭕ proxinode,no-resolve
-  - IP-CIDR,220.181.174.226/32,⭕ proxinode,no-resolve
-  - IP-CIDR,220.181.174.34/32,⭕ proxinode,no-resolve
+  - DOMAIN-SUFFIX,9to5mac.com,ProxyNet
+  - DOMAIN-SUFFIX,abpchina.org,ProxyNet
+  - DOMAIN-SUFFIX,adblockplus.org,ProxyNet
+  - DOMAIN-SUFFIX,adobe.com,ProxyNet
+  - DOMAIN-SUFFIX,akamaized.net,ProxyNet
+  - DOMAIN-SUFFIX,alfredapp.com,ProxyNet
+  - DOMAIN-SUFFIX,amplitude.com,ProxyNet
+  - DOMAIN-SUFFIX,ampproject.org,ProxyNet
+  - DOMAIN-SUFFIX,android.com,ProxyNet
+  - DOMAIN-SUFFIX,angularjs.org,ProxyNet
+  - DOMAIN-SUFFIX,aolcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,apkpure.com,ProxyNet
+  - DOMAIN-SUFFIX,appledaily.com,ProxyNet
+  - DOMAIN-SUFFIX,appshopper.com,ProxyNet
+  - DOMAIN-SUFFIX,appspot.com,ProxyNet
+  - DOMAIN-SUFFIX,arcgis.com,ProxyNet
+  - DOMAIN-SUFFIX,archive.org,ProxyNet
+  - DOMAIN-SUFFIX,armorgames.com,ProxyNet
+  - DOMAIN-SUFFIX,aspnetcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,att.com,ProxyNet
+  - DOMAIN-SUFFIX,awsstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,azureedge.net,ProxyNet
+  - DOMAIN-SUFFIX,azurewebsites.net,ProxyNet
+  - DOMAIN-SUFFIX,bing.com,ProxyNet
+  - DOMAIN-SUFFIX,bintray.com,ProxyNet
+  - DOMAIN-SUFFIX,bit.com,ProxyNet
+  - DOMAIN-SUFFIX,bit.ly,ProxyNet
+  - DOMAIN-SUFFIX,bitbucket.org,ProxyNet
+  - DOMAIN-SUFFIX,bjango.com,ProxyNet
+  - DOMAIN-SUFFIX,bkrtx.com,ProxyNet
+  - DOMAIN-SUFFIX,blog.com,ProxyNet
+  - DOMAIN-SUFFIX,blogcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,blogger.com,ProxyNet
+  - DOMAIN-SUFFIX,blogsmithmedia.com,ProxyNet
+  - DOMAIN-SUFFIX,blogspot.com,ProxyNet
+  - DOMAIN-SUFFIX,blogspot.hk,ProxyNet
+  - DOMAIN-SUFFIX,bloomberg.com,ProxyNet
+  - DOMAIN-SUFFIX,box.com,ProxyNet
+  - DOMAIN-SUFFIX,box.net,ProxyNet
+  - DOMAIN-SUFFIX,cachefly.net,ProxyNet
+  - DOMAIN-SUFFIX,chromium.org,ProxyNet
+  - DOMAIN-SUFFIX,cl.ly,ProxyNet
+  - DOMAIN-SUFFIX,cloudflare.com,ProxyNet
+  - DOMAIN-SUFFIX,cloudfront.net,ProxyNet
+  - DOMAIN-SUFFIX,cloudmagic.com,ProxyNet
+  - DOMAIN-SUFFIX,cmail19.com,ProxyNet
+  - DOMAIN-SUFFIX,cnet.com,ProxyNet
+  - DOMAIN-SUFFIX,cocoapods.org,ProxyNet
+  - DOMAIN-SUFFIX,comodoca.com,ProxyNet
+  - DOMAIN-SUFFIX,crashlytics.com,ProxyNet
+  - DOMAIN-SUFFIX,culturedcode.com,ProxyNet
+  - DOMAIN-SUFFIX,d.pr,ProxyNet
+  - DOMAIN-SUFFIX,danilo.to,ProxyNet
+  - DOMAIN-SUFFIX,dayone.me,ProxyNet
+  - DOMAIN-SUFFIX,db.tt,ProxyNet
+  - DOMAIN-SUFFIX,deskconnect.com,ProxyNet
+  - DOMAIN-SUFFIX,disq.us,ProxyNet
+  - DOMAIN-SUFFIX,disqus.com,ProxyNet
+  - DOMAIN-SUFFIX,disquscdn.com,ProxyNet
+  - DOMAIN-SUFFIX,dnsimple.com,ProxyNet
+  - DOMAIN-SUFFIX,docker.com,ProxyNet
+  - DOMAIN-SUFFIX,dribbble.com,ProxyNet
+  - DOMAIN-SUFFIX,droplr.com,ProxyNet
+  - DOMAIN-SUFFIX,duckduckgo.com,ProxyNet
+  - DOMAIN-SUFFIX,dueapp.com,ProxyNet
+  - DOMAIN-SUFFIX,dytt8.net,ProxyNet
+  - DOMAIN-SUFFIX,edgecastcdn.net,ProxyNet
+  - DOMAIN-SUFFIX,edgekey.net,ProxyNet
+  - DOMAIN-SUFFIX,edgesuite.net,ProxyNet
+  - DOMAIN-SUFFIX,engadget.com,ProxyNet
+  - DOMAIN-SUFFIX,entrust.net,ProxyNet
+  - DOMAIN-SUFFIX,eurekavpt.com,ProxyNet
+  - DOMAIN-SUFFIX,evernote.com,ProxyNet
+  - DOMAIN-SUFFIX,fabric.io,ProxyNet
+  - DOMAIN-SUFFIX,fast.com,ProxyNet
+  - DOMAIN-SUFFIX,fastly.net,ProxyNet
+  - DOMAIN-SUFFIX,fc2.com,ProxyNet
+  - DOMAIN-SUFFIX,feedburner.com,ProxyNet
+  - DOMAIN-SUFFIX,feedly.com,ProxyNet
+  - DOMAIN-SUFFIX,feedsportal.com,ProxyNet
+  - DOMAIN-SUFFIX,fiftythree.com,ProxyNet
+  - DOMAIN-SUFFIX,firebaseio.com,ProxyNet
+  - DOMAIN-SUFFIX,flexibits.com,ProxyNet
+  - DOMAIN-SUFFIX,flickr.com,ProxyNet
+  - DOMAIN-SUFFIX,flipboard.com,ProxyNet
+  - DOMAIN-SUFFIX,g.co,ProxyNet
+  - DOMAIN-SUFFIX,gabia.net,ProxyNet
+  - DOMAIN-SUFFIX,geni.us,ProxyNet
+  - DOMAIN-SUFFIX,gfx.ms,ProxyNet
+  - DOMAIN-SUFFIX,ggpht.com,ProxyNet
+  - DOMAIN-SUFFIX,ghostnoteapp.com,ProxyNet
+  - DOMAIN-SUFFIX,git.io,ProxyNet
+  - DOMAIN-KEYWORD,github,ProxyNet
+  - DOMAIN-SUFFIX,globalsign.com,ProxyNet
+  - DOMAIN-SUFFIX,gmodules.com,ProxyNet
+  - DOMAIN-SUFFIX,godaddy.com,ProxyNet
+  - DOMAIN-SUFFIX,golang.org,ProxyNet
+  - DOMAIN-SUFFIX,gongm.in,ProxyNet
+  - DOMAIN-SUFFIX,goo.gl,ProxyNet
+  - DOMAIN-SUFFIX,goodreaders.com,ProxyNet
+  - DOMAIN-SUFFIX,goodreads.com,ProxyNet
+  - DOMAIN-SUFFIX,gravatar.com,ProxyNet
+  - DOMAIN-SUFFIX,gstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt0.com,ProxyNet
+  - DOMAIN-SUFFIX,hockeyapp.net,ProxyNet
+  - DOMAIN-SUFFIX,hotmail.com,ProxyNet
+  - DOMAIN-SUFFIX,icons8.com,ProxyNet
+  - DOMAIN-SUFFIX,ifixit.com,ProxyNet
+  - DOMAIN-SUFFIX,ift.tt,ProxyNet
+  - DOMAIN-SUFFIX,ifttt.com,ProxyNet
+  - DOMAIN-SUFFIX,iherb.com,ProxyNet
+  - DOMAIN-SUFFIX,imageshack.us,ProxyNet
+  - DOMAIN-SUFFIX,img.ly,ProxyNet
+  - DOMAIN-SUFFIX,imgur.com,ProxyNet
+  - DOMAIN-SUFFIX,imore.com,ProxyNet
+  - DOMAIN-SUFFIX,instapaper.com,ProxyNet
+  - DOMAIN-SUFFIX,ipn.li,ProxyNet
+  - DOMAIN-SUFFIX,is.gd,ProxyNet
+  - DOMAIN-SUFFIX,issuu.com,ProxyNet
+  - DOMAIN-SUFFIX,itgonglun.com,ProxyNet
+  - DOMAIN-SUFFIX,itun.es,ProxyNet
+  - DOMAIN-SUFFIX,ixquick.com,ProxyNet
+  - DOMAIN-SUFFIX,j.mp,ProxyNet
+  - DOMAIN-SUFFIX,js.revsci.net,ProxyNet
+  - DOMAIN-SUFFIX,jshint.com,ProxyNet
+  - DOMAIN-SUFFIX,jtvnw.net,ProxyNet
+  - DOMAIN-SUFFIX,justgetflux.com,ProxyNet
+  - DOMAIN-SUFFIX,kat.cr,ProxyNet
+  - DOMAIN-SUFFIX,klip.me,ProxyNet
+  - DOMAIN-SUFFIX,libsyn.com,ProxyNet
+  - DOMAIN-SUFFIX,linkedin.com,ProxyNet
+  - DOMAIN-SUFFIX,line-apps.com,ProxyNet
+  - DOMAIN-SUFFIX,linode.com,ProxyNet
+  - DOMAIN-SUFFIX,lithium.com,ProxyNet
+  - DOMAIN-SUFFIX,littlehj.com,ProxyNet
+  - DOMAIN-SUFFIX,live.com,ProxyNet
+  - DOMAIN-SUFFIX,live.net,ProxyNet
+  - DOMAIN-SUFFIX,livefilestore.com,ProxyNet
+  - DOMAIN-SUFFIX,llnwd.net,ProxyNet
+  - DOMAIN-SUFFIX,macid.co,ProxyNet
+  - DOMAIN-SUFFIX,macromedia.com,ProxyNet
+  - DOMAIN-SUFFIX,macrumors.com,ProxyNet
+  - DOMAIN-SUFFIX,mashable.com,ProxyNet
+  - DOMAIN-SUFFIX,mathjax.org,ProxyNet
+  - DOMAIN-SUFFIX,medium.com,ProxyNet
+  - DOMAIN-SUFFIX,mega.co.nz,ProxyNet
+  - DOMAIN-SUFFIX,mega.nz,ProxyNet
+  - DOMAIN-SUFFIX,megaupload.com,ProxyNet
+  - DOMAIN-SUFFIX,microsofttranslator.com,ProxyNet
+  - DOMAIN-SUFFIX,mindnode.com,ProxyNet
+  - DOMAIN-SUFFIX,mobile01.com,ProxyNet
+  - DOMAIN-SUFFIX,modmyi.com,ProxyNet
+  - DOMAIN-SUFFIX,msedge.net,ProxyNet
+  - DOMAIN-SUFFIX,myfontastic.com,ProxyNet
+  - DOMAIN-SUFFIX,name.com,ProxyNet
+  - DOMAIN-SUFFIX,nextmedia.com,ProxyNet
+  - DOMAIN-SUFFIX,nsstatic.net,ProxyNet
+  - DOMAIN-SUFFIX,nssurge.com,ProxyNet
+  - DOMAIN-SUFFIX,nyt.com,ProxyNet
+  - DOMAIN-SUFFIX,nytimes.com,ProxyNet
+  - DOMAIN-SUFFIX,omnigroup.com,ProxyNet
+  - DOMAIN-SUFFIX,onedrive.com,ProxyNet
+  - DOMAIN-SUFFIX,onenote.com,ProxyNet
+  - DOMAIN-SUFFIX,ooyala.com,ProxyNet
+  - DOMAIN-SUFFIX,openvpn.net,ProxyNet
+  - DOMAIN-SUFFIX,openwrt.org,ProxyNet
+  - DOMAIN-SUFFIX,orkut.com,ProxyNet
+  - DOMAIN-SUFFIX,osxdaily.com,ProxyNet
+  - DOMAIN-SUFFIX,outlook.com,ProxyNet
+  - DOMAIN-SUFFIX,ow.ly,ProxyNet
+  - DOMAIN-SUFFIX,paddleapi.com,ProxyNet
+  - DOMAIN-SUFFIX,parallels.com,ProxyNet
+  - DOMAIN-SUFFIX,parse.com,ProxyNet
+  - DOMAIN-SUFFIX,pdfexpert.com,ProxyNet
+  - DOMAIN-SUFFIX,periscope.tv,ProxyNet
+  - DOMAIN-SUFFIX,pinboard.in,ProxyNet
+  - DOMAIN-SUFFIX,pinterest.com,ProxyNet
+  - DOMAIN-SUFFIX,pixelmator.com,ProxyNet
+  - DOMAIN-SUFFIX,pixiv.net,ProxyNet
+  - DOMAIN-SUFFIX,playpcesor.com,ProxyNet
+  - DOMAIN-SUFFIX,playstation.com,ProxyNet
+  - DOMAIN-SUFFIX,playstation.com.hk,ProxyNet
+  - DOMAIN-SUFFIX,playstation.net,ProxyNet
+  - DOMAIN-SUFFIX,playstationnetwork.com,ProxyNet
+  - DOMAIN-SUFFIX,pushwoosh.com,ProxyNet
+  - DOMAIN-SUFFIX,rime.im,ProxyNet
+  - DOMAIN-SUFFIX,servebom.com,ProxyNet
+  - DOMAIN-SUFFIX,sfx.ms,ProxyNet
+  - DOMAIN-SUFFIX,shadowsocks.org,ProxyNet
+  - DOMAIN-SUFFIX,sharethis.com,ProxyNet
+  - DOMAIN-SUFFIX,shazam.com,ProxyNet
+  - DOMAIN-SUFFIX,skype.com,ProxyNet
+  - DOMAIN-SUFFIX,smartdnsProxyNet.com,ProxyNet
+  - DOMAIN-SUFFIX,smartmailcloud.com,ProxyNet
+  - DOMAIN-SUFFIX,sndcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,sony.com,ProxyNet
+  - DOMAIN-SUFFIX,soundcloud.com,ProxyNet
+  - DOMAIN-SUFFIX,sourceforge.net,ProxyNet
+  - DOMAIN-SUFFIX,spotify.com,ProxyNet
+  - DOMAIN-SUFFIX,squarespace.com,ProxyNet
+  - DOMAIN-SUFFIX,sstatic.net,ProxyNet
+  - DOMAIN-SUFFIX,st.luluku.pw,ProxyNet
+  - DOMAIN-SUFFIX,stackoverflow.com,ProxyNet
+  - DOMAIN-SUFFIX,startpage.com,ProxyNet
+  - DOMAIN-SUFFIX,staticflickr.com,ProxyNet
+  - DOMAIN-SUFFIX,steamcommunity.com,ProxyNet
+  - DOMAIN-SUFFIX,symauth.com,ProxyNet
+  - DOMAIN-SUFFIX,symcb.com,ProxyNet
+  - DOMAIN-SUFFIX,symcd.com,ProxyNet
+  - DOMAIN-SUFFIX,tapbots.com,ProxyNet
+  - DOMAIN-SUFFIX,tapbots.net,ProxyNet
+  - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
+  - DOMAIN-SUFFIX,techcrunch.com,ProxyNet
+  - DOMAIN-SUFFIX,techsmith.com,ProxyNet
+  - DOMAIN-SUFFIX,thepiratebay.org,ProxyNet
+  - DOMAIN-SUFFIX,theverge.com,ProxyNet
+  - DOMAIN-SUFFIX,time.com,ProxyNet
+  - DOMAIN-SUFFIX,timeinc.net,ProxyNet
+  - DOMAIN-SUFFIX,tiny.cc,ProxyNet
+  - DOMAIN-SUFFIX,tinypic.com,ProxyNet
+  - DOMAIN-SUFFIX,tmblr.co,ProxyNet
+  - DOMAIN-SUFFIX,todoist.com,ProxyNet
+  - DOMAIN-SUFFIX,trello.com,ProxyNet
+  - DOMAIN-SUFFIX,trustasiassl.com,ProxyNet
+  - DOMAIN-SUFFIX,tumblr.co,ProxyNet
+  - DOMAIN-SUFFIX,tumblr.com,ProxyNet
+  - DOMAIN-SUFFIX,tweetdeck.com,ProxyNet
+  - DOMAIN-SUFFIX,tweetmarker.net,ProxyNet
+  - DOMAIN-SUFFIX,twitch.tv,ProxyNet
+  - DOMAIN-SUFFIX,txmblr.com,ProxyNet
+  - DOMAIN-SUFFIX,typekit.net,ProxyNet
+  - DOMAIN-SUFFIX,ubertags.com,ProxyNet
+  - DOMAIN-SUFFIX,ublock.org,ProxyNet
+  - DOMAIN-SUFFIX,ubnt.com,ProxyNet
+  - DOMAIN-SUFFIX,ulyssesapp.com,ProxyNet
+  - DOMAIN-SUFFIX,urchin.com,ProxyNet
+  - DOMAIN-SUFFIX,usertrust.com,ProxyNet
+  - DOMAIN-SUFFIX,v.gd,ProxyNet
+  - DOMAIN-SUFFIX,v2ex.com,ProxyNet
+  - DOMAIN-SUFFIX,vimeo.com,ProxyNet
+  - DOMAIN-SUFFIX,vimeocdn.com,ProxyNet
+  - DOMAIN-SUFFIX,vine.co,ProxyNet
+  - DOMAIN-SUFFIX,vivaldi.com,ProxyNet
+  - DOMAIN-SUFFIX,vox-cdn.com,ProxyNet
+  - DOMAIN-SUFFIX,vsco.co,ProxyNet
+  - DOMAIN-SUFFIX,vultr.com,ProxyNet
+  - DOMAIN-SUFFIX,w.org,ProxyNet
+  - DOMAIN-SUFFIX,w3schools.com,ProxyNet
+  - DOMAIN-SUFFIX,webtype.com,ProxyNet
+  - DOMAIN-SUFFIX,wikiwand.com,ProxyNet
+  - DOMAIN-SUFFIX,wikileaks.org,ProxyNet
+  - DOMAIN-SUFFIX,wikimedia.org,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.com,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.org,ProxyNet
+  - DOMAIN-SUFFIX,windows.com,ProxyNet
+  - DOMAIN-SUFFIX,windows.net,ProxyNet
+  - DOMAIN-SUFFIX,wire.com,ProxyNet
+  - DOMAIN-SUFFIX,wordpress.com,ProxyNet
+  - DOMAIN-SUFFIX,workflowy.com,ProxyNet
+  - DOMAIN-SUFFIX,wp.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.net,ProxyNet
+  - DOMAIN-SUFFIX,xda-developers.com,ProxyNet
+  - DOMAIN-SUFFIX,xeeno.com,ProxyNet
+  - DOMAIN-SUFFIX,xiti.com,ProxyNet
+  - DOMAIN-SUFFIX,yahoo.com,ProxyNet
+  - DOMAIN-SUFFIX,yimg.com,ProxyNet
+  - DOMAIN-SUFFIX,ying.com,ProxyNet
+  - DOMAIN-SUFFIX,yoyo.org,ProxyNet
+  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
+  - DOMAIN-SUFFIX,telegra.ph,ProxyNet
+  - DOMAIN-SUFFIX,telegram.org,ProxyNet
+  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.8.0/21,ProxyNet,no-resolve
+  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
+  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
+  - IP-CIDR6,2001:67c:4e8::/48,ProxyNet,no-resolve
+  - IP-CIDR6,2001:b28:f23d::/48,ProxyNet,no-resolve
+  - IP-CIDR6,2001:b28:f23f::/48,ProxyNet,no-resolve
+  - IP-CIDR,120.232.181.162/32,ProxyNet,no-resolve
+  - IP-CIDR,120.241.147.226/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.253.226/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.255.162/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.255.34/32,ProxyNet,no-resolve
+  - IP-CIDR,120.253.255.98/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.150.162/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.150.34/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.151.162/32,ProxyNet,no-resolve
+  - IP-CIDR,180.163.151.34/32,ProxyNet,no-resolve
+  - IP-CIDR,203.208.39.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.40.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.41.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.43.0/24,ProxyNet,no-resolve
+  - IP-CIDR,203.208.50.0/24,ProxyNet,no-resolve
+  - IP-CIDR,220.181.174.162/32,ProxyNet,no-resolve
+  - IP-CIDR,220.181.174.226/32,ProxyNet,no-resolve
+  - IP-CIDR,220.181.174.34/32,ProxyNet,no-resolve
   - DOMAIN,injections.adguard.org,DIRECT
   - DOMAIN,local.adguard.org,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
@@ -4097,7 +1766,7 @@ rules:
   - DOMAIN-SUFFIX,cn,DIRECT
   - DOMAIN-KEYWORD,-cn,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,⭕ proxinode
+  - MATCH,ProxyNet
   - DOMAIN-SUFFIX,163yun.com,DIRECT
   - DOMAIN-SUFFIX,21cn.com,DIRECT
   - DOMAIN-SUFFIX,343480.com,DIRECT
@@ -4134,7 +1803,7 @@ rules:
   - DOMAIN-SUFFIX,awesome-hd.me,DIRECT
   - DOMAIN-SUFFIX,b612.net,DIRECT
   - DOMAIN-SUFFIX,baduziyuan.com,DIRECT
-  - DOMAIN-SUFFIX,battle.net,⭕ proxinode
+  - DOMAIN-SUFFIX,battle.net,ProxyNet
   - DOMAIN-SUFFIX,bdatu.com,DIRECT
   - DOMAIN-SUFFIX,beitaichufang.com,DIRECT
   - DOMAIN-SUFFIX,biliapi.com,DIRECT
@@ -4142,7 +1811,7 @@ rules:
   - DOMAIN-SUFFIX,bilibili.com,DIRECT
   - DOMAIN-SUFFIX,bilibili.tv,DIRECT
   - DOMAIN-SUFFIX,bjango.com,DIRECT
-  - DOMAIN-SUFFIX,blizzard.com,⭕ proxinode
+  - DOMAIN-SUFFIX,blizzard.com,ProxyNet
   - DOMAIN-SUFFIX,bmj.com,DIRECT
   - DOMAIN-SUFFIX,booking.com,DIRECT
   - DOMAIN-SUFFIX,broadcasthe.net,DIRECT
@@ -4198,7 +1867,7 @@ rules:
   - DOMAIN-SUFFIX,gandi.net,DIRECT
   - DOMAIN-SUFFIX,gazellegames.net,DIRECT
   - DOMAIN-SUFFIX,geilicdn.com,DIRECT
-  - DOMAIN-SUFFIX,getpricetag.com,⭕ proxinode
+  - DOMAIN-SUFFIX,getpricetag.com,ProxyNet
   - DOMAIN-SUFFIX,gifshow.com,DIRECT
   - DOMAIN-SUFFIX,godic.net,DIRECT
   - DOMAIN-SUFFIX,gtimg.com,DIRECT
@@ -4253,7 +1922,7 @@ rules:
   - DOMAIN-SUFFIX,lofter.com,DIRECT
   - DOMAIN-SUFFIX,loli.net,DIRECT
   - DOMAIN-SUFFIX,luojilab.com,DIRECT
-  - DOMAIN-SUFFIX,m-team.cc,⭕ proxinode
+  - DOMAIN-SUFFIX,m-team.cc,ProxyNet
   - DOMAIN-SUFFIX,madsrevolution.net,DIRECT
   - DOMAIN-SUFFIX,maoyan.com,DIRECT
   - DOMAIN-SUFFIX,maoyun.tv,DIRECT
@@ -4329,7 +1998,7 @@ rules:
   - DOMAIN-SUFFIX,sagepub.com,DIRECT
   - DOMAIN-SUFFIX,sankuai.com,DIRECT
   - DOMAIN-SUFFIX,sciencedirect.com,DIRECT
-  - DOMAIN-SUFFIX,sciencemag.org,⭕ proxinode
+  - DOMAIN-SUFFIX,sciencemag.org,ProxyNet
   - DOMAIN-SUFFIX,scomper.me,DIRECT
   - DOMAIN-SUFFIX,scopus.com,DIRECT
   - DOMAIN-SUFFIX,seafile.com,DIRECT
@@ -4364,7 +2033,7 @@ rules:
   - DOMAIN-SUFFIX,steamusercontent.com,DIRECT
   - DOMAIN-SUFFIX,takungpao.com,DIRECT
   - DOMAIN-SUFFIX,tandfonline.com,DIRECT
-  - DOMAIN-SUFFIX,teamviewer.com,⭕ proxinode
+  - DOMAIN-SUFFIX,teamviewer.com,ProxyNet
   - DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
   - DOMAIN-SUFFIX,tencent.com,DIRECT
   - DOMAIN-SUFFIX,tenpay.com,DIRECT
@@ -4436,248 +2105,248 @@ rules:
   - DOMAIN-SUFFIX,icloud.com.cn,DIRECT
   - DOMAIN-SUFFIX,me.com,DIRECT
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
-  - DOMAIN-SUFFIX,v2ex.com,⭕ proxinode
-  - DOMAIN-SUFFIX,scdn.co,⭕ proxinode
-  - DOMAIN-SUFFIX,line.naver.jp,⭕ proxinode
-  - DOMAIN-SUFFIX,line.me,⭕ proxinode
-  - DOMAIN-SUFFIX,line-apps.com,⭕ proxinode
-  - DOMAIN-SUFFIX,line-cdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,line-scdn.net,⭕ proxinode
-  - DOMAIN-KEYWORD,blogspot,⭕ proxinode
-  - DOMAIN-KEYWORD,google,⭕ proxinode
-  - DOMAIN-SUFFIX,abc.xyz,⭕ proxinode
-  - DOMAIN-SUFFIX,admin.recaptcha.net,⭕ proxinode
-  - DOMAIN-SUFFIX,ampproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,android.com,⭕ proxinode
-  - DOMAIN-SUFFIX,androidify.com,⭕ proxinode
-  - DOMAIN-SUFFIX,appspot.com,⭕ proxinode
-  - DOMAIN-SUFFIX,autodraw.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogger.com,⭕ proxinode
-  - DOMAIN-SUFFIX,capitalg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,certificate-transparency.org,⭕ proxinode
-  - DOMAIN-SUFFIX,chrome.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chromeexperiments.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chromestatus.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chromium.org,⭕ proxinode
-  - DOMAIN-SUFFIX,creativelab5.com,⭕ proxinode
-  - DOMAIN-SUFFIX,debug.com,⭕ proxinode
-  - DOMAIN-SUFFIX,deepmind.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dialogflow.com,⭕ proxinode
-  - DOMAIN-SUFFIX,firebaseio.com,⭕ proxinode
-  - DOMAIN-SUFFIX,getmdl.io,⭕ proxinode
-  - DOMAIN-SUFFIX,getoutline.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ggpht.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gmail.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gmodules.com,⭕ proxinode
-  - DOMAIN-SUFFIX,godoc.org,⭕ proxinode
-  - DOMAIN-SUFFIX,golang.org,⭕ proxinode
-  - DOMAIN-SUFFIX,gstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gv.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt0.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt1.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gvt3.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gwtproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,itasoftware.com,⭕ proxinode
-  - DOMAIN-SUFFIX,madewithcode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,material.io,⭕ proxinode
-  - DOMAIN-SUFFIX,polymer-project.org,⭕ proxinode
-  - DOMAIN-SUFFIX,recaptcha.net,⭕ proxinode
-  - DOMAIN-SUFFIX,shattered.io,⭕ proxinode
-  - DOMAIN-SUFFIX,synergyse.com,⭕ proxinode
-  - DOMAIN-SUFFIX,telephony.goog,⭕ proxinode
-  - DOMAIN-SUFFIX,tensorflow.org,⭕ proxinode
-  - DOMAIN-SUFFIX,tfhub.dev,⭕ proxinode
-  - DOMAIN-SUFFIX,tiltbrush.com,⭕ proxinode
-  - DOMAIN-SUFFIX,waveprotocol.org,⭕ proxinode
-  - DOMAIN-SUFFIX,waymo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,webmproject.org,⭕ proxinode
-  - DOMAIN-SUFFIX,webrtc.org,⭕ proxinode
-  - DOMAIN-SUFFIX,whatbrowser.org,⭕ proxinode
-  - DOMAIN-SUFFIX,widevine.com,⭕ proxinode
-  - DOMAIN-SUFFIX,x.company,⭕ proxinode
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,⭕ proxinode
-  - DOMAIN-SUFFIX,youtu.be,⭕ proxinode
-  - DOMAIN-SUFFIX,yt.be,⭕ proxinode
-  - DOMAIN-SUFFIX,ytimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,clubhouseapi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,clubhouse.pubnub.com,⭕ proxinode
-  - DOMAIN-SUFFIX,joinclubhouse.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ap3.agora.io,⭕ proxinode
-  - DOMAIN-KEYWORD,aka,⭕ proxinode
-  - DOMAIN-KEYWORD,facebook,⭕ proxinode
-  - DOMAIN-KEYWORD,youtube,⭕ proxinode
-  - DOMAIN-KEYWORD,twitter,⭕ proxinode
-  - DOMAIN-SUFFIX,instagram.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cdninstagram.com,⭕ proxinode
-  - DOMAIN-KEYWORD,instagram,⭕ proxinode
-  - DOMAIN-SUFFIX,instagr.am,⭕ proxinode
-  - DOMAIN-KEYWORD,gmail,⭕ proxinode
-  - DOMAIN-KEYWORD,pixiv,⭕ proxinode
-  - DOMAIN-SUFFIX,fb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,meta.com,⭕ proxinode
-  - DOMAIN-SUFFIX,twimg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,x.com,⭕ proxinode
-  - DOMAIN-SUFFIX,t.co,⭕ proxinode
-  - DOMAIN-SUFFIX,kenengba.com,⭕ proxinode
-  - DOMAIN-SUFFIX,akamai.net,⭕ proxinode
-  - DOMAIN-SUFFIX,whatsapp.net,⭕ proxinode
-  - DOMAIN-SUFFIX,whatsapp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,snapchat.com,⭕ proxinode
-  - DOMAIN-SUFFIX,amazonaws.com,⭕ proxinode
-  - DOMAIN-SUFFIX,angularjs.org,⭕ proxinode
-  - DOMAIN-SUFFIX,akamaihd.net,⭕ proxinode
-  - DOMAIN-SUFFIX,amazon.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bit.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,bitbucket.org,⭕ proxinode
-  - DOMAIN-SUFFIX,blog.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,blogsmithmedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,box.net,⭕ proxinode
-  - DOMAIN-SUFFIX,bloomberg.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cl.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudfront.net,⭕ proxinode
-  - DOMAIN-SUFFIX,cloudflare.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cocoapods.org,⭕ proxinode
-  - DOMAIN-SUFFIX,dribbble.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dropbox.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dropboxstatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dropboxusercontent.com,⭕ proxinode
-  - DOMAIN-SUFFIX,docker.com,⭕ proxinode
-  - DOMAIN-SUFFIX,duckduckgo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,digicert.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dnsimple.com,⭕ proxinode
-  - DOMAIN-SUFFIX,edgecastcdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,engadget.com,⭕ proxinode
-  - DOMAIN-SUFFIX,eurekavpt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fb.me,⭕ proxinode
-  - DOMAIN-SUFFIX,fbcdn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,fc2.com,⭕ proxinode
-  - DOMAIN-SUFFIX,feedburner.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fabric.io,⭕ proxinode
-  - DOMAIN-SUFFIX,flickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fastly.net,⭕ proxinode
-  - DOMAIN-SUFFIX,github.com,⭕ proxinode
-  - DOMAIN-SUFFIX,github.io,⭕ proxinode
-  - DOMAIN-SUFFIX,githubusercontent.com,⭕ proxinode
-  - DOMAIN-SUFFIX,goo.gl,⭕ proxinode
-  - DOMAIN-SUFFIX,godaddy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,gravatar.com,⭕ proxinode
-  - DOMAIN-SUFFIX,imageshack.us,⭕ proxinode
-  - DOMAIN-SUFFIX,imgur.com,⭕ proxinode
-  - DOMAIN-SUFFIX,jshint.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ift.tt,⭕ proxinode
-  - DOMAIN-SUFFIX,j.mp,⭕ proxinode
-  - DOMAIN-SUFFIX,kat.cr,⭕ proxinode
-  - DOMAIN-SUFFIX,linode.com,⭕ proxinode
-  - DOMAIN-SUFFIX,lithium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,megaupload.com,⭕ proxinode
-  - DOMAIN-SUFFIX,mobile01.com,⭕ proxinode
-  - DOMAIN-SUFFIX,modmyi.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nytimes.com,⭕ proxinode
-  - DOMAIN-SUFFIX,name.com,⭕ proxinode
-  - DOMAIN-SUFFIX,openvpn.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openwrt.org,⭕ proxinode
-  - DOMAIN-SUFFIX,ow.ly,⭕ proxinode
-  - DOMAIN-SUFFIX,pinboard.in,⭕ proxinode
-  - DOMAIN-SUFFIX,ssl-images-amazon.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sstatic.net,⭕ proxinode
-  - DOMAIN-SUFFIX,stackoverflow.com,⭕ proxinode
-  - DOMAIN-SUFFIX,staticflickr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,squarespace.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcd.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symcb.com,⭕ proxinode
-  - DOMAIN-SUFFIX,symauth.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ubnt.com,⭕ proxinode
-  - DOMAIN-SUFFIX,thepiratebay.org,⭕ proxinode
-  - DOMAIN-SUFFIX,tumblr.com,⭕ proxinode
-  - DOMAIN-SUFFIX,twitch.tv,⭕ proxinode
-  - DOMAIN-SUFFIX,twitter.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wikipedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wikimedia.org,⭕ proxinode
-  - DOMAIN-SUFFIX,wordpress.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.com,⭕ proxinode
-  - DOMAIN-SUFFIX,wsj.net,⭕ proxinode
-  - DOMAIN-SUFFIX,wp.com,⭕ proxinode
-  - DOMAIN-SUFFIX,vimeo.com,⭕ proxinode
-  - DOMAIN-SUFFIX,tapbots.com,⭕ proxinode
+  - DOMAIN-SUFFIX,v2ex.com,ProxyNet
+  - DOMAIN-SUFFIX,scdn.co,ProxyNet
+  - DOMAIN-SUFFIX,line.naver.jp,ProxyNet
+  - DOMAIN-SUFFIX,line.me,ProxyNet
+  - DOMAIN-SUFFIX,line-apps.com,ProxyNet
+  - DOMAIN-SUFFIX,line-cdn.net,ProxyNet
+  - DOMAIN-SUFFIX,line-scdn.net,ProxyNet
+  - DOMAIN-KEYWORD,blogspot,ProxyNet
+  - DOMAIN-KEYWORD,google,ProxyNet
+  - DOMAIN-SUFFIX,abc.xyz,ProxyNet
+  - DOMAIN-SUFFIX,admin.recaptcha.net,ProxyNet
+  - DOMAIN-SUFFIX,ampproject.org,ProxyNet
+  - DOMAIN-SUFFIX,android.com,ProxyNet
+  - DOMAIN-SUFFIX,androidify.com,ProxyNet
+  - DOMAIN-SUFFIX,appspot.com,ProxyNet
+  - DOMAIN-SUFFIX,autodraw.com,ProxyNet
+  - DOMAIN-SUFFIX,blogger.com,ProxyNet
+  - DOMAIN-SUFFIX,capitalg.com,ProxyNet
+  - DOMAIN-SUFFIX,certificate-transparency.org,ProxyNet
+  - DOMAIN-SUFFIX,chrome.com,ProxyNet
+  - DOMAIN-SUFFIX,chromeexperiments.com,ProxyNet
+  - DOMAIN-SUFFIX,chromestatus.com,ProxyNet
+  - DOMAIN-SUFFIX,chromium.org,ProxyNet
+  - DOMAIN-SUFFIX,creativelab5.com,ProxyNet
+  - DOMAIN-SUFFIX,debug.com,ProxyNet
+  - DOMAIN-SUFFIX,deepmind.com,ProxyNet
+  - DOMAIN-SUFFIX,dialogflow.com,ProxyNet
+  - DOMAIN-SUFFIX,firebaseio.com,ProxyNet
+  - DOMAIN-SUFFIX,getmdl.io,ProxyNet
+  - DOMAIN-SUFFIX,getoutline.org,ProxyNet
+  - DOMAIN-SUFFIX,ggpht.com,ProxyNet
+  - DOMAIN-SUFFIX,gmail.com,ProxyNet
+  - DOMAIN-SUFFIX,gmodules.com,ProxyNet
+  - DOMAIN-SUFFIX,godoc.org,ProxyNet
+  - DOMAIN-SUFFIX,golang.org,ProxyNet
+  - DOMAIN-SUFFIX,gstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,gv.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt0.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt1.com,ProxyNet
+  - DOMAIN-SUFFIX,gvt3.com,ProxyNet
+  - DOMAIN-SUFFIX,gwtproject.org,ProxyNet
+  - DOMAIN-SUFFIX,itasoftware.com,ProxyNet
+  - DOMAIN-SUFFIX,madewithcode.com,ProxyNet
+  - DOMAIN-SUFFIX,material.io,ProxyNet
+  - DOMAIN-SUFFIX,polymer-project.org,ProxyNet
+  - DOMAIN-SUFFIX,recaptcha.net,ProxyNet
+  - DOMAIN-SUFFIX,shattered.io,ProxyNet
+  - DOMAIN-SUFFIX,synergyse.com,ProxyNet
+  - DOMAIN-SUFFIX,telephony.goog,ProxyNet
+  - DOMAIN-SUFFIX,tensorflow.org,ProxyNet
+  - DOMAIN-SUFFIX,tfhub.dev,ProxyNet
+  - DOMAIN-SUFFIX,tiltbrush.com,ProxyNet
+  - DOMAIN-SUFFIX,waveprotocol.org,ProxyNet
+  - DOMAIN-SUFFIX,waymo.com,ProxyNet
+  - DOMAIN-SUFFIX,webmproject.org,ProxyNet
+  - DOMAIN-SUFFIX,webrtc.org,ProxyNet
+  - DOMAIN-SUFFIX,whatbrowser.org,ProxyNet
+  - DOMAIN-SUFFIX,widevine.com,ProxyNet
+  - DOMAIN-SUFFIX,x.company,ProxyNet
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
+  - DOMAIN-SUFFIX,youtu.be,ProxyNet
+  - DOMAIN-SUFFIX,yt.be,ProxyNet
+  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
+  - DOMAIN-SUFFIX,clubhouseapi.com,ProxyNet
+  - DOMAIN-SUFFIX,clubhouse.pubnub.com,ProxyNet
+  - DOMAIN-SUFFIX,joinclubhouse.com,ProxyNet
+  - DOMAIN-SUFFIX,ap3.agora.io,ProxyNet
+  - DOMAIN-KEYWORD,aka,ProxyNet
+  - DOMAIN-KEYWORD,facebook,ProxyNet
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-KEYWORD,twitter,ProxyNet
+  - DOMAIN-SUFFIX,instagram.com,ProxyNet
+  - DOMAIN-SUFFIX,cdninstagram.com,ProxyNet
+  - DOMAIN-KEYWORD,instagram,ProxyNet
+  - DOMAIN-SUFFIX,instagr.am,ProxyNet
+  - DOMAIN-KEYWORD,gmail,ProxyNet
+  - DOMAIN-KEYWORD,pixiv,ProxyNet
+  - DOMAIN-SUFFIX,fb.com,ProxyNet
+  - DOMAIN-SUFFIX,meta.com,ProxyNet
+  - DOMAIN-SUFFIX,twimg.com,ProxyNet
+  - DOMAIN-SUFFIX,x.com,ProxyNet
+  - DOMAIN-SUFFIX,t.co,ProxyNet
+  - DOMAIN-SUFFIX,kenengba.com,ProxyNet
+  - DOMAIN-SUFFIX,akamai.net,ProxyNet
+  - DOMAIN-SUFFIX,whatsapp.net,ProxyNet
+  - DOMAIN-SUFFIX,whatsapp.com,ProxyNet
+  - DOMAIN-SUFFIX,snapchat.com,ProxyNet
+  - DOMAIN-SUFFIX,amazonaws.com,ProxyNet
+  - DOMAIN-SUFFIX,angularjs.org,ProxyNet
+  - DOMAIN-SUFFIX,akamaihd.net,ProxyNet
+  - DOMAIN-SUFFIX,amazon.com,ProxyNet
+  - DOMAIN-SUFFIX,bit.ly,ProxyNet
+  - DOMAIN-SUFFIX,bitbucket.org,ProxyNet
+  - DOMAIN-SUFFIX,blog.com,ProxyNet
+  - DOMAIN-SUFFIX,blogcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,blogsmithmedia.com,ProxyNet
+  - DOMAIN-SUFFIX,box.net,ProxyNet
+  - DOMAIN-SUFFIX,bloomberg.com,ProxyNet
+  - DOMAIN-SUFFIX,cl.ly,ProxyNet
+  - DOMAIN-SUFFIX,cloudfront.net,ProxyNet
+  - DOMAIN-SUFFIX,cloudflare.com,ProxyNet
+  - DOMAIN-SUFFIX,cocoapods.org,ProxyNet
+  - DOMAIN-SUFFIX,dribbble.com,ProxyNet
+  - DOMAIN-SUFFIX,dropbox.com,ProxyNet
+  - DOMAIN-SUFFIX,dropboxstatic.com,ProxyNet
+  - DOMAIN-SUFFIX,dropboxusercontent.com,ProxyNet
+  - DOMAIN-SUFFIX,docker.com,ProxyNet
+  - DOMAIN-SUFFIX,duckduckgo.com,ProxyNet
+  - DOMAIN-SUFFIX,digicert.com,ProxyNet
+  - DOMAIN-SUFFIX,dnsimple.com,ProxyNet
+  - DOMAIN-SUFFIX,edgecastcdn.net,ProxyNet
+  - DOMAIN-SUFFIX,engadget.com,ProxyNet
+  - DOMAIN-SUFFIX,eurekavpt.com,ProxyNet
+  - DOMAIN-SUFFIX,fb.me,ProxyNet
+  - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
+  - DOMAIN-SUFFIX,fc2.com,ProxyNet
+  - DOMAIN-SUFFIX,feedburner.com,ProxyNet
+  - DOMAIN-SUFFIX,fabric.io,ProxyNet
+  - DOMAIN-SUFFIX,flickr.com,ProxyNet
+  - DOMAIN-SUFFIX,fastly.net,ProxyNet
+  - DOMAIN-SUFFIX,github.com,ProxyNet
+  - DOMAIN-SUFFIX,github.io,ProxyNet
+  - DOMAIN-SUFFIX,githubusercontent.com,ProxyNet
+  - DOMAIN-SUFFIX,goo.gl,ProxyNet
+  - DOMAIN-SUFFIX,godaddy.com,ProxyNet
+  - DOMAIN-SUFFIX,gravatar.com,ProxyNet
+  - DOMAIN-SUFFIX,imageshack.us,ProxyNet
+  - DOMAIN-SUFFIX,imgur.com,ProxyNet
+  - DOMAIN-SUFFIX,jshint.com,ProxyNet
+  - DOMAIN-SUFFIX,ift.tt,ProxyNet
+  - DOMAIN-SUFFIX,j.mp,ProxyNet
+  - DOMAIN-SUFFIX,kat.cr,ProxyNet
+  - DOMAIN-SUFFIX,linode.com,ProxyNet
+  - DOMAIN-SUFFIX,lithium.com,ProxyNet
+  - DOMAIN-SUFFIX,megaupload.com,ProxyNet
+  - DOMAIN-SUFFIX,mobile01.com,ProxyNet
+  - DOMAIN-SUFFIX,modmyi.com,ProxyNet
+  - DOMAIN-SUFFIX,nytimes.com,ProxyNet
+  - DOMAIN-SUFFIX,name.com,ProxyNet
+  - DOMAIN-SUFFIX,openvpn.net,ProxyNet
+  - DOMAIN-SUFFIX,openwrt.org,ProxyNet
+  - DOMAIN-SUFFIX,ow.ly,ProxyNet
+  - DOMAIN-SUFFIX,pinboard.in,ProxyNet
+  - DOMAIN-SUFFIX,ssl-images-amazon.com,ProxyNet
+  - DOMAIN-SUFFIX,sstatic.net,ProxyNet
+  - DOMAIN-SUFFIX,stackoverflow.com,ProxyNet
+  - DOMAIN-SUFFIX,staticflickr.com,ProxyNet
+  - DOMAIN-SUFFIX,squarespace.com,ProxyNet
+  - DOMAIN-SUFFIX,symcd.com,ProxyNet
+  - DOMAIN-SUFFIX,symcb.com,ProxyNet
+  - DOMAIN-SUFFIX,symauth.com,ProxyNet
+  - DOMAIN-SUFFIX,ubnt.com,ProxyNet
+  - DOMAIN-SUFFIX,thepiratebay.org,ProxyNet
+  - DOMAIN-SUFFIX,tumblr.com,ProxyNet
+  - DOMAIN-SUFFIX,twitch.tv,ProxyNet
+  - DOMAIN-SUFFIX,twitter.com,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.com,ProxyNet
+  - DOMAIN-SUFFIX,wikipedia.org,ProxyNet
+  - DOMAIN-SUFFIX,wikimedia.org,ProxyNet
+  - DOMAIN-SUFFIX,wordpress.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.com,ProxyNet
+  - DOMAIN-SUFFIX,wsj.net,ProxyNet
+  - DOMAIN-SUFFIX,wp.com,ProxyNet
+  - DOMAIN-SUFFIX,vimeo.com,ProxyNet
+  - DOMAIN-SUFFIX,tapbots.com,ProxyNet
   - DOMAIN-SUFFIX,ykimg.com,DIRECT
-  - DOMAIN-SUFFIX,medium.com,⭕ proxinode
-  - DOMAIN-SUFFIX,fast.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nflxvideo.net,⭕ proxinode
-  - DOMAIN-SUFFIX,linkedin.com,⭕ proxinode
-  - DOMAIN-SUFFIX,licdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,bing.com,⭕ proxinode
-  - DOMAIN-SUFFIX,zoom.us,⭕ proxinode
-  - DOMAIN-SUFFIX,soundcloud.com,⭕ proxinode
-  - DOMAIN-SUFFIX,sndcdn.com,⭕ proxinode
-  - DOMAIN,api.statsig.com,⭕ proxinode
-  - DOMAIN,browser-intake-datadoghq.com,⭕ proxinode
-  - DOMAIN,chat.openai.com.cdn.cloudflare.net,⭕ proxinode
-  - DOMAIN,o33249.ingest.sentry.io,⭕ proxinode
-  - DOMAIN,openai-api.arkoselabs.com,⭕ proxinode
-  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,⭕ proxinode
-  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,⭕ proxinode
-  - DOMAIN,production-openaicom-storage.azureedge.net,⭕ proxinode
-  - DOMAIN,static.cloudflareinsights.com,⭕ proxinode
-  - DOMAIN-KEYWORD,openaicom-api,⭕ proxinode
-  - DOMAIN-SUFFIX,algolia.net,⭕ proxinode
-  - DOMAIN-SUFFIX,auth0.com,⭕ proxinode
-  - DOMAIN-SUFFIX,cdn.cloudflare.net,⭕ proxinode
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,⭕ proxinode
-  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,⭕ proxinode
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,⭕ proxinode
-  - DOMAIN-SUFFIX,events.statsigapi.net,⭕ proxinode
-  - DOMAIN-SUFFIX,featuregates.org,⭕ proxinode
-  - DOMAIN-SUFFIX,host.livekit.cloud,⭕ proxinode
-  - DOMAIN-SUFFIX,identrust.com,⭕ proxinode
-  - DOMAIN-SUFFIX,intercom.io,⭕ proxinode
-  - DOMAIN-SUFFIX,intercomcdn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,launchdarkly.com,⭕ proxinode
-  - DOMAIN-SUFFIX,oaistatic.com,⭕ proxinode
-  - DOMAIN-SUFFIX,oaiusercontent.com,⭕ proxinode
-  - DOMAIN-SUFFIX,observeit.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openai.com,⭕ proxinode
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,⭕ proxinode
-  - DOMAIN-SUFFIX,openaicom.imgix.net,⭕ proxinode
-  - DOMAIN-SUFFIX,poe.com,⭕ proxinode
-  - DOMAIN-SUFFIX,segment.io,⭕ proxinode
-  - DOMAIN-SUFFIX,sentry.io,⭕ proxinode
-  - DOMAIN-SUFFIX,stripe.com,⭕ proxinode
-  - DOMAIN-SUFFIX,turn.livekit.cloud,⭕ proxinode
-  - IP-CIDR,24.199.123.28/32,⭕ proxinode,no-resolve
-  - IP-CIDR,45.76.214.191/32,⭕ proxinode,no-resolve
-  - IP-CIDR,64.23.132.171/32,⭕ proxinode,no-resolve
-  - IP-CIDR,143.198.200.27/32,⭕ proxinode,no-resolve
-  - IP-CIDR,159.89.204.203/32,⭕ proxinode,no-resolve
-  - DOMAIN-SUFFIX,t.me,⭕ proxinode
-  - DOMAIN-SUFFIX,tdesktop.com,⭕ proxinode
-  - DOMAIN-SUFFIX,telegra.ph,⭕ proxinode
-  - DOMAIN-SUFFIX,telegram.me,⭕ proxinode
-  - DOMAIN-SUFFIX,telegram.org,⭕ proxinode
-  - DOMAIN-SUFFIX,telesco.pe,⭕ proxinode
-  - IP-CIDR,91.108.4.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.8.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.12.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.16.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,91.108.56.0/22,⭕ proxinode,no-resolve
-  - IP-CIDR,109.239.140.0/24,⭕ proxinode,no-resolve
-  - IP-CIDR,149.154.160.0/20,⭕ proxinode,no-resolve
-  - IP-CIDR,2001:B28:F23D::/48,⭕ proxinode,no-resolve
-  - IP-CIDR,2001:B28:F23F::/48,⭕ proxinode,no-resolve
-  - IP-CIDR,2001:67C:4E8::/48,⭕ proxinode,no-resolve
-  - DOMAIN-SUFFIX,dnsleaktest.com,⭕ proxinode
-  - DOMAIN-SUFFIX,dnsleak.com,⭕ proxinode
-  - DOMAIN-SUFFIX,expressvpn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,nordvpn.com,⭕ proxinode
-  - DOMAIN-SUFFIX,surfshark.com,⭕ proxinode
-  - DOMAIN-SUFFIX,ipleak.net,⭕ proxinode
-  - DOMAIN-SUFFIX,perfect-privacy.com,⭕ proxinode
-  - DOMAIN-SUFFIX,browserleaks.com,⭕ proxinode
-  - DOMAIN-SUFFIX,browserleaks.org,⭕ proxinode
-  - DOMAIN-SUFFIX,vpnunlimited.com,⭕ proxinode
-  - DOMAIN-SUFFIX,whoer.net,⭕ proxinode
-  - DOMAIN-SUFFIX,whrq.net,⭕ proxinode
+  - DOMAIN-SUFFIX,medium.com,ProxyNet
+  - DOMAIN-SUFFIX,fast.com,ProxyNet
+  - DOMAIN-SUFFIX,nflxvideo.net,ProxyNet
+  - DOMAIN-SUFFIX,linkedin.com,ProxyNet
+  - DOMAIN-SUFFIX,licdn.com,ProxyNet
+  - DOMAIN-SUFFIX,bing.com,ProxyNet
+  - DOMAIN-SUFFIX,zoom.us,ProxyNet
+  - DOMAIN-SUFFIX,soundcloud.com,ProxyNet
+  - DOMAIN-SUFFIX,sndcdn.com,ProxyNet
+  - DOMAIN,api.statsig.com,ProxyNet
+  - DOMAIN,browser-intake-datadoghq.com,ProxyNet
+  - DOMAIN,chat.openai.com.cdn.cloudflare.net,ProxyNet
+  - DOMAIN,o33249.ingest.sentry.io,ProxyNet
+  - DOMAIN,openai-api.arkoselabs.com,ProxyNet
+  - DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,ProxyNet
+  - DOMAIN,openaicomproductionae4b.blob.core.windows.net,ProxyNet
+  - DOMAIN,production-openaicom-storage.azureedge.net,ProxyNet
+  - DOMAIN,static.cloudflareinsights.com,ProxyNet
+  - DOMAIN-KEYWORD,openaicom-api,ProxyNet
+  - DOMAIN-SUFFIX,algolia.net,ProxyNet
+  - DOMAIN-SUFFIX,auth0.com,ProxyNet
+  - DOMAIN-SUFFIX,cdn.cloudflare.net,ProxyNet
+  - DOMAIN-SUFFIX,challenges.cloudflare.com,ProxyNet
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud,ProxyNet
+  - DOMAIN-SUFFIX,client-api.arkoselabs.com,ProxyNet
+  - DOMAIN-SUFFIX,events.statsigapi.net,ProxyNet
+  - DOMAIN-SUFFIX,featuregates.org,ProxyNet
+  - DOMAIN-SUFFIX,host.livekit.cloud,ProxyNet
+  - DOMAIN-SUFFIX,identrust.com,ProxyNet
+  - DOMAIN-SUFFIX,intercom.io,ProxyNet
+  - DOMAIN-SUFFIX,intercomcdn.com,ProxyNet
+  - DOMAIN-SUFFIX,launchdarkly.com,ProxyNet
+  - DOMAIN-SUFFIX,oaistatic.com,ProxyNet
+  - DOMAIN-SUFFIX,oaiusercontent.com,ProxyNet
+  - DOMAIN-SUFFIX,observeit.net,ProxyNet
+  - DOMAIN-SUFFIX,openai.com,ProxyNet
+  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,ProxyNet
+  - DOMAIN-SUFFIX,openaicom.imgix.net,ProxyNet
+  - DOMAIN-SUFFIX,poe.com,ProxyNet
+  - DOMAIN-SUFFIX,segment.io,ProxyNet
+  - DOMAIN-SUFFIX,sentry.io,ProxyNet
+  - DOMAIN-SUFFIX,stripe.com,ProxyNet
+  - DOMAIN-SUFFIX,turn.livekit.cloud,ProxyNet
+  - IP-CIDR,24.199.123.28/32,ProxyNet,no-resolve
+  - IP-CIDR,45.76.214.191/32,ProxyNet,no-resolve
+  - IP-CIDR,64.23.132.171/32,ProxyNet,no-resolve
+  - IP-CIDR,143.198.200.27/32,ProxyNet,no-resolve
+  - IP-CIDR,159.89.204.203/32,ProxyNet,no-resolve
+  - DOMAIN-SUFFIX,t.me,ProxyNet
+  - DOMAIN-SUFFIX,tdesktop.com,ProxyNet
+  - DOMAIN-SUFFIX,telegra.ph,ProxyNet
+  - DOMAIN-SUFFIX,telegram.me,ProxyNet
+  - DOMAIN-SUFFIX,telegram.org,ProxyNet
+  - DOMAIN-SUFFIX,telesco.pe,ProxyNet
+  - IP-CIDR,91.108.4.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.8.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.12.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.16.0/22,ProxyNet,no-resolve
+  - IP-CIDR,91.108.56.0/22,ProxyNet,no-resolve
+  - IP-CIDR,109.239.140.0/24,ProxyNet,no-resolve
+  - IP-CIDR,149.154.160.0/20,ProxyNet,no-resolve
+  - IP-CIDR,2001:B28:F23D::/48,ProxyNet,no-resolve
+  - IP-CIDR,2001:B28:F23F::/48,ProxyNet,no-resolve
+  - IP-CIDR,2001:67C:4E8::/48,ProxyNet,no-resolve
+  - DOMAIN-SUFFIX,dnsleaktest.com,ProxyNet
+  - DOMAIN-SUFFIX,dnsleak.com,ProxyNet
+  - DOMAIN-SUFFIX,expressvpn.com,ProxyNet
+  - DOMAIN-SUFFIX,nordvpn.com,ProxyNet
+  - DOMAIN-SUFFIX,surfshark.com,ProxyNet
+  - DOMAIN-SUFFIX,ipleak.net,ProxyNet
+  - DOMAIN-SUFFIX,perfect-privacy.com,ProxyNet
+  - DOMAIN-SUFFIX,browserleaks.com,ProxyNet
+  - DOMAIN-SUFFIX,browserleaks.org,ProxyNet
+  - DOMAIN-SUFFIX,vpnunlimited.com,ProxyNet
+  - DOMAIN-SUFFIX,whoer.net,ProxyNet
+  - DOMAIN-SUFFIX,whrq.net,ProxyNet
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
   - IP-CIDR,172.16.0.0/12,DIRECT
