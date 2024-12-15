@@ -1166,7 +1166,7 @@ proxy-groups:
       - ProxyPool
       - Best-of-ALL
 
-- name: Best-of-ALL
+  - name: Best-of-ALL
     type: url-test
     proxies:
       - Hysteria-List
