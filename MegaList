@@ -2000,7 +2000,7 @@ proxy-groups:
     type: select
     proxies:
       - Hysteria-List
-      - NEW-List
+      - Node-List
       - ProxyPool
       - Best-of-All
 
@@ -2008,7 +2008,7 @@ proxy-groups:
     type: url-test
     proxies:
       - Hysteria-List
-      - NEW-List
+      - Stable-List
       - ProxyPool
     url: https://www.youtube.com/favicon.ico
     interval: 30
@@ -2024,46 +2024,46 @@ proxy-groups:
     interval: 120
     tolerance: 50
 
-  - name: NEW-List
+  - name: Stable-List
     type: url-test
     proxies:
-      - NEW1
-      - NEW2
-      - NEW3
-      - NEW4
-      - NEW5
-      - NEW6
-      - NEW8
-      - NEW9
-      - NEW10
-      - NEW11
-      - NEW12
-      - NEW13
-      - NEW14
-      - NEW15
-      - NEW16
-      - NEW17
-      - NEW18
-      - NEW19
-      - NEW20
-      - NEW21
-      - NEW22
-      - NEW23
-      - NEW24
-      - NEW25
-      - NEW26
-      - NEW27
-      - NEW28
-      - NEW29
-      - NEW30
-      - NEW31
-      - NEW32
-      - NEW33
-      - NEW34
-      - NEW35
-      - NEW36
-      - NEW37
-      - NEW38
+      - Node1
+      - Node2
+      - Node3
+      - Node4
+      - Node5
+      - Node6
+      - Node8
+      - Node9
+      - Node10
+      - Node11
+      - Node12
+      - Node13
+      - Node14
+      - Node15
+      - Node16
+      - Node17
+      - Node18
+      - Node19
+      - Node20
+      - Node21
+      - Node22
+      - Node23
+      - Node24
+      - Node25
+      - Node26
+      - Node27
+      - Node28
+      - Node29
+      - Node30
+      - Node31
+      - Node32
+      - Node33
+      - Node34
+      - Node35
+      - Node36
+      - Node37
+      - Node38
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
