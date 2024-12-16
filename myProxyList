@@ -2286,7 +2286,399 @@ proxies:
     flow: xtls-rprx-vision
     client-fingerprint: chrome
 
-
+  - name: Ex1
+    port: 80
+    server: 104.21.86.235
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: c.lkzb-0t0.workers.dev
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    client-fingerprint: chrome
+  - name: Ex11
+    port: 80
+    server: 104.21.42.56
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "Telegram channel : @pandavpntc"
+      headers:
+        host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
+    client-fingerprint: chrome
+  - name: Ex12
+    port: 80
+    server: 172.67.197.154
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: proxiiraniii.fiseye5589.workers.dev
+    uuid: 6ad08747-42b9-4618-8f11-ac47de0da0f8
+    client-fingerprint: chrome
+  - name: Ex13
+    port: 80
+    server: 172.67.157.34
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "Telegram channel : @pandavpntc"
+      headers:
+        host: worker-raspy-brook-56e8.c6fdd365ba5e8d.workers.Dev
+    uuid: 4370b863-8869-4434-8f48-5e7fcf3f6632
+    client-fingerprint: chrome
+  - name: Ex14
+    port: 80
+    server: 104.17.147.22
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /Fimfk3I0DPwhRotM?ed=2560
+      headers:
+        host: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    client-fingerprint: chrome
+  - name: Ex15
+    port: 8443
+    server: 104.18.12.229
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: pardazeshvpn-tg71.pages.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048
+      headers:
+        host: pardazeshvpn-tg71.pages.dev
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
+    client-fingerprint: chrome
+  - name: Ex16
+    port: 80
+    server: 188.114.96.1
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /09EpH4tzdpaF2F6Q?ed=2560
+      headers:
+        host: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    client-fingerprint: chrome
+  - name: Ex17
+    port: 443
+    server: 162.159.44.129
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: cc.ailicf.us.kg
+    skip-cert-verify: true
+    ws-opts:
+      path: /b5cdabf0-e04
+      headers:
+        host: cc.ailicf.us.kg
+    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+    client-fingerprint: chrome
+  - name: Ex18
+    port: 443
+    server: 20.211.64.15
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: bdfgfrtt7.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: bdfgfrtt7.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: Ex19
+    port: 2053
+    server: 205.233.181.36
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: rix.tgzdyz2.top
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: rix.tgzdyz2.top
+    uuid: b9dad5ed-74da-4a43-8145-90d06df1f890
+    client-fingerprint: chrome
+  - name: Ex2
+    port: 8080
+    server: x1sweden.thanks-devefun-team-omg-i-needed-free-c-im-sure-you-are-the-bes.link
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+    uuid: 237b4fb7-feb3-4ecd-b6d7-c6aa055c4466
+    client-fingerprint: chrome
+  - name: Ex20
+    port: 443
+    server: b-corsairs.com
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: zmaoz.faculty.ucdavis.edu.
+    skip-cert-verify: true
+    ws-opts:
+      path: /olem/ws?@V2ray_Alpha-d=4096
+      headers:
+        host: fonmelo.com
+    alpn:
+      - h2,http/1.1
+    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
+    client-fingerprint: chrome
+  - name: Ex21
+    port: 443
+    server: b-corsairs.com
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: zmaoz.faculty.ucdavis.edu.
+    skip-cert-verify: true
+    ws-opts:
+      path: /olem/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn-d=4096
+      headers:
+        host: fonmelo.com
+    alpn:
+      - h2,http/1.1
+    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
+    client-fingerprint: chrome
+  - name: Ex22
+    port: 443
+    server: zmaoz.faculty.ucdavis.edu
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: zmaoz.faculty.ucdavis.edu.
+    skip-cert-verify: true
+    ws-opts:
+      path: /olem/ws?ed=4096
+      headers:
+        host: fonmelo.com
+    alpn:
+      - h2,http/1.1
+    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
+    client-fingerprint: chrome
+  - name: Ex23
+    port: 443
+    server: hajlab.ucdavis.edu
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: hajlab.ucdavis.edu
+    skip-cert-verify: true
+    ws-opts:
+      path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
+      headers:
+        host: joinxvproxybedeeee.ir
+    uuid: 3c5e2ab8-02b8-44ad-8b41-6f6ccfc09a93
+    client-fingerprint: chrome
+  - name: Ex24
+    port: 443
+    server: high.work.lzg.me
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+      headers:
+        host: high.work.lzg.me
+    uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+    client-fingerprint: chrome
+  - name: Ex25
+    port: 443
+    server: hajlab.ucdavis.edu
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: hajlab.ucdavis.edu
+    skip-cert-verify: true
+    ws-opts:
+      path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
+      headers:
+        host: joinxvproxybedee.ir
+    uuid: 6719f34a-73f7-4bd8-9be4-2b89654912f0
+    client-fingerprint: chrome
+  - name: Ex26
+    port: 443
+    server: bdfgfrtt7.azurewebsites.net
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: bdfgfrtt7.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: bdfgfrtt7.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: Ex27
+    port: 443
+    server: hkklo.azurewebsites.net
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: hkklo.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: hkklo.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: Ex28
+    port: 443
+    server: py.pl
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: py.pl
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=1024
+      headers:
+        host: trickshow.silaber.net
+    uuid: 9b7645aa-91f4-4f6d-98d9-c22f4ce8784f
+    client-fingerprint: chrome
+  - name: Ex29
+    port: 2114
+    server: v.bazibede.ir
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: v.bazibede.ir
+    skip-cert-verify: true
+    uuid: 557161bb-1ce5-984f-6ff7-85c57baf70b8
+    client-fingerprint: chrome
+  - name: Ex3
+    port: 80
+    server: 92.222.181.77
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /websocket
+      headers:
+        host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    uuid: f4859fc9-dc44-11ee-b9ba-00505603e70d
+    client-fingerprint: chrome
+  - name: Ex30
+    port: 8081
+    server: 5.223.41.114
+    type: vless
+    network: tcp
+    udp: true
+    skip-cert-verify: true
+    uuid: ab954190-4554-4c09-9dfe-dc264069e9ee
+    client-fingerprint: chrome
+  - name: Ex31
+    port: 8443
+    server: 92.114.17.23
+    type: vless
+    network: tcp
+    udp: true
+    skip-cert-verify: true
+    uuid: c2a2beb3-403a-4bc0-8bf5-7f6788a7b281
+    client-fingerprint: chrome
+  - name: Ex32
+    port: 443
+    server: izmaogtw.top
+    type: vless
+    network: http
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    uuid: 47f50770-e3a5-459d-8163-193f035ac71d
+    client-fingerprint: chrome
+  - name: Ex5
+    port: 80
+    server: 172.67.137.156
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: c.lkzb-0t0.workers.dev
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    client-fingerprint: chrome
+  - name: Ex6
+    port: 80
+    server: 162.159.250.246
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: vpnshield5554.vpnvpnfree5.workers.dev
+    uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
+    client-fingerprint: chrome
+  - name: Ex7
+    port: 80
+    server: 172.67.157.34
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: "Telegram channel : @pandavpntc"
+      headers:
+        host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
+    client-fingerprint: chrome
+  - name: Ex9
+    port: 80
+    server: 104.21.86.235
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: c.lkzb-0t0.workers.dev
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    client-fingerprint: chrome
 
 
 proxy-groups:
@@ -2298,6 +2690,7 @@ proxy-groups:
       - NewArrival-List
       - ProxyPool
       - Best-of-All
+      - Extra-List
 
   - name: Best-of-All
     type: url-test
@@ -2306,6 +2699,43 @@ proxy-groups:
       - NEW-List
       - NewArrival-List
       - ProxyPool
+      - Extra-List
+    url: https://www.youtube.com/favicon.ico
+    interval: 30
+    tolerance: 10
+  
+  - name: Extra-List
+    type: url-test
+    proxies:
+      - Ex1
+      - Ex11
+      - Ex12
+      - Ex13
+      - Ex14
+      - Ex15
+      - Ex16
+      - Ex17
+      - Ex18
+      - Ex19
+      - Ex2
+      - Ex20
+      - Ex21
+      - Ex22
+      - Ex23
+      - Ex24
+      - Ex25
+      - Ex26
+      - Ex27
+      - Ex28
+      - Ex29
+      - Ex3
+      - Ex30
+      - Ex31
+      - Ex32
+      - Ex5
+      - Ex6
+      - Ex7
+      - Ex9
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
