@@ -10,7 +10,6 @@ dns:
   default-nameserver:
     - tls://8.8.4.4:853
     - tls://8.8.8.8:853
-    - tls://223.5.5.5:853
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   use-hosts: true
@@ -3725,17 +3724,17 @@ proxies:
     server: 104.18.12.229
     port: 8443
     type: vless
-    uuid: 8c01bf92-44d9-49ce-8ba6-b8ec55e9f9bf
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
     tls: true
-    sni: pardazeshvpn-tg58.pages.dev
+    sni: pardazeshvpn-tg71.pages.dev
     skip-cert-verify: false
-    client-fingerprint: random
-    servername: pardazeshvpn-tg58.pages.dev
+    client-fingerprint: chrome
+    servername: pardazeshvpn-tg71.pages.dev
     network: ws
     ws-opts:
       path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
       headers:
-        Host: pardazeshvpn-tg58.pages.dev
+        Host: pardazeshvpn-tg71.pages.dev
   
   - name: NEW37
     server: 104.17.245.156
@@ -4064,12 +4063,271 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
 
+  - name: NewArrival-1
+    server: 104.24.200.13
+    port: 8880
+    type: vless
+    uuid: c58905af-2040-413e-adbc-0e81cc8eb35f
+    tls: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: vless.behradmirzaei1388.workers.dev
+
+  - name: NewArrival-2
+    server: 104.18.12.229
+    port: 8443
+    type: vless
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
+    tls: true
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    servername: pardazeshvpn-tg71.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg71.pages.dev
+
+  - name: NewArrival-3
+    server: 104.18.13.229
+    port: 8443
+    type: vless
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
+    tls: true
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    servername: pardazeshvpn-tg71.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg71.pages.dev
+
+  - name: NewArrival-4
+    server: 89.187.169.72
+    port: 443
+    type: vless
+    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: www.cloudflare.com
+    network: tcp
+    reality-opts:
+      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
+      short-id: 01b200e90e250221
+
+  - name: NewArrival-5
+    server: 20.211.64.15
+    port: 443
+    type: vless
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    tls: true
+    sni: "bdfgfrtt7.azurewebsites.net"
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    servername: bdfgfrtt7.azurewebsites.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: bdfgfrtt7.azurewebsites.net
+  
+  - name: NewArrival-6
+    server: 89.187.169.71
+    port: 443
+    type: vless
+    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: www.cloudflare.com
+    network: tcp
+    reality-opts:
+      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
+      short-id: 01b200e90e250221
+  
+  - name: NewArrival-7
+    server: 162.159.44.129
+    port: 80
+    type: vless
+    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+    tls: false
+    skip-cert-verify: false
+    servername: cc.ailicf.us.kg
+    network: ws
+    ws-opts:
+      path: /b5cdabf0-e04
+      headers:
+        Host: cc.ailicf.us.kg
+
+  - name: NewArrival-8
+    port: 2082
+    server: 172.67.128.244
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: m543.hosseinpool10.workers.dev
+    uuid: 5181717e-892b-45a9-a8b7-e6d5fac1c77b
+    client-fingerprint: chrome
+  - name: NewArrival-9
+    port: 80
+    server: 172.67.132.72
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: workerr.aasihmin.workers.dev
+    uuid: dc00f1f8-05b2-4bc0-b851-d4dfe5089329
+    client-fingerprint: chrome
+
+  - name: NewArrival-10
+    port: 80
+    server: 172.67.193.80
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /K3xgkEyQmb7pPhho?ed=2560
+      headers:
+        host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
+    uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
+    client-fingerprint: chrome
+  - name: NewArrival-11
+    port: 80
+    server: 172.67.193.80
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /cm08G2LS63hBrLzw?ed=2560
+      headers:
+        host: BroKEn-bAR-5948.nepOg45969.WoRkERS.deV
+    uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
+    client-fingerprint: chrome
+  - name: NewArrival-12
+    port: 80
+    server: 104.21.90.15
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /K3xgkEyQmb7pPhho?ed=2560
+      headers:
+        host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
+    uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
+    client-fingerprint: chrome
+  - name: NewArrival-13
+    port: 80
+    server: 104.21.90.15
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /tOj9lnucgd7YnZNP?ed=2560
+      headers:
+        host: bRokeN-BaR-5948.nEpoG45969.WORKers.DeV
+    uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
+    client-fingerprint: chrome
+  - name: NewArrival-14
+    port: 443
+    server: 162.159.44.129
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: cc.ailicf.us.kg
+    skip-cert-verify: true
+    ws-opts:
+      path: /b5cdabf0-e04
+      headers:
+        host: cc.ailicf.us.kg
+    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+    client-fingerprint: chrome
+  - name: NewArrival-15
+    port: 2082
+    server: 104.21.1.90
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: m543.hosseinpool10.workers.dev
+    uuid: 5181717e-892b-45a9-a8b7-e6d5fac1c77b
+    client-fingerprint: chrome
+  - name: NewArrival-16
+    port: 443
+    server: 108.162.195.129
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: cc.ailicf.us.kg
+    skip-cert-verify: true
+    ws-opts:
+      path: /b5cdabf0-e04
+      headers:
+        host: cc.ailicf.us.kg
+    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+    client-fingerprint: chrome
+  - name: NewArrival-17
+    port: 443
+    server: 172.64.35.129
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: cc.ailicf.us.kg
+    skip-cert-verify: true
+    ws-opts:
+      path: /b5cdabf0-e04
+      headers:
+        host: cc.ailicf.us.kg
+    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+    client-fingerprint: chrome
+  - name: NewArrival-18
+    port: 80
+    server: 172.64.35.129
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /b5cdabf0-e04
+      headers:
+        host: cc.ailicf.us.kg
+    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
+    client-fingerprint: chrome
 proxy-groups:
   - name: ProxyNet
     type: select
     proxies:
       - Hysteria-List
       - NEW-List
+      - NewArrival-List
       - ProxyPool
       - ProxyPool2
       - Best-of-All
@@ -4079,8 +4337,34 @@ proxy-groups:
     proxies:
       - Hysteria-List
       - NEW-List
+      - NewArrival-List
       - ProxyPool
       - ProxyPool2
+    url: https://www.youtube.com/favicon.ico
+    interval: 30
+    tolerance: 10
+
+  - name: NewArrival-List
+    type: url-test
+    proxies:
+      - NewArrival-1
+      - NewArrival-2
+      - NewArrival-3
+      - NewArrival-4
+      - NewArrival-5
+      - NewArrival-6
+      - NewArrival-7
+      - NewArrival-8
+      - NewArrival-9
+      - NewArrival-10
+      - NewArrival-11
+      - NewArrival-12
+      - NewArrival-13
+      - NewArrival-14
+      - NewArrival-15
+      - NewArrival-16
+      - NewArrival-17
+      - NewArrival-18
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
