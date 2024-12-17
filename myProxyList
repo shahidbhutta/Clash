@@ -1960,7 +1960,7 @@ proxies:
         Host: a.mifeng.us.kg
     udp: true
 
-  - name: Germany_hysteria
+  - name: DE-1
     type: hysteria
     server: 146.0.36.114
     port: 64914
@@ -1973,20 +1973,7 @@ proxies:
     up: 100 Mbps
     down: 1000 Mbps
 
-  - name: US_Wilmington_hysteria
-    type: hysteria
-    server: 166.1.18.42
-    port: 37950
-    ports: 10000-20000
-    auth_str: dongtaiwang.com
-    alpn:
-    - h3
-    sni: bing.com
-    skip-cert-verify: true
-    up: 100 Mbps
-    down: 1000 Mbps
-
-  - name: Russia_Moscow_hysteria
+  - name: RU-1
     type: hysteria2
     server: 46.17.41.189
     port: 50717
@@ -1994,6 +1981,30 @@ proxies:
     fast-open: true
     sni: www.bing.com
     skip-cert-verify: true
+
+  
+  - {name: CA-1, server: cucc.abyssvpn.com, port: 31107, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: CA-2, server: cucc.abyssvpn.com, port: 31161, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: CA-3, server: bgp.abyssvpn.com, port: 31161, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: CA-4, server: cmcc.abyssvpn.com, port: 31161, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: HK-1, server: bgp.abyssvpn.com, port: 31113, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: HK-2, server: cmcc.abyssvpn.com, port: 31200, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: HK-3, server: cmcc.abyssvpn.com, port: 31112, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: HK-4, server: cmcc.abyssvpn.com, port: 31113, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: HK-5, server: cucc.abyssvpn.com, port: 31111, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: HK-6, server: cucc.abyssvpn.com, port: 31113, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: IN-1, server: bgp.abyssvpn.com, port: 31153, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: IN-2, server: bgp.abyssvpn.com, port: 31154, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: IN-3, server: cucc.abyssvpn.com, port: 31153, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: IN-4, server: cucc.abyssvpn.com, port: 31154, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: KR-1, server: cmcc.abyssvpn.com, port: 31155, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: KR-2, server: bgp.abyssvpn.com, port: 31155, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: KR-3, server: cucc.abyssvpn.com, port: 31155, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: NL-1, server: cmcc.abyssvpn.com, port: 31119, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: SG-1, server: cmcc.abyssvpn.com, port: 31102, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: TW-1, server: cucc.abyssvpn.com, port: 31101, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+  - {name: VN-1, server: bgp.abyssvpn.com, port: 31103, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
+
 
   - name: NewArrival-1
     server: 104.24.200.13
@@ -2680,7 +2691,7 @@ proxies:
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     client-fingerprint: chrome
 
-
+  
 proxy-groups:
   - name: ProxyNet
     type: select
@@ -2771,10 +2782,30 @@ proxy-groups:
   - name: Hysteria-List
     type: url-test
     proxies:
-      - Germany_hysteria
-      - US_Wilmington_hysteria
-      - Russia_Moscow_hysteria
-    url: https://www.google.com/favicon.ico
+      - DE-1
+      - RU-1
+      - CA-1
+      - CA-2
+      - CA-3
+      - CA-4
+      - HK-1
+      - HK-2
+      - HK-3
+      - HK-4
+      - HK-5
+      - HK-6
+      - IN-1
+      - IN-2
+      - IN-3
+      - IN-4
+      - KR-1
+      - KR-2
+      - KR-3
+      - NL-1
+      - SG-1
+      - TW-1
+      - VN-1
+    url: https://www.youtube.com/favicon.ico
     interval: 120
     tolerance: 50
 
