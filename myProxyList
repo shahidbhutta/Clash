@@ -1,1189 +1,82 @@
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
-bind-address: "*"
-mode: rule
+mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  default-nameserver:
-    - tls://8.8.4.4:853
-    - tls://8.8.8.8:853
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  nameserver:
-    - tls://8.8.4.4:853
-    - tls://8.8.8.8:853
-    - tls://1.0.0.1:853
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - ns1.no-ip.com
-    - ns2.no-ip.com
-    - ns3.no-ip.com
-    - ns4.no-ip.com
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+external-controller: :9090
 proxies:
 
-  - name: CN-1
-    server: 183.236.48.158
-    port: 45402
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-  - name: CN-2
-    server: 183.236.51.23
-    port: 41020
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: CN-3
-    server: jp1.tiljkc.top
-    port: 38953
-    type: vmess
-    uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-  - name: CY-4
-    server: www.csgo.com
+  - name: EP1
     port: 443
+    server: 51.158.243.62
     type: vless
-    uuid: 4a1abb8d-812e-41d8-b398-4cba9933805d
+    network: tcp
     tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: server17.aibox.tv
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /ws/
-      headers:
-        Host: server17.aibox.tv
-  - name: DE-5
-    server: 49.13.126.136
-    port: 54031
-    type: vmess
-    uuid: 8990eb2e-510d-4431-ad8d-b5c488d03936
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: http
-    http-opts:
-      method: GET
-      path:
-        - /
-      headers:
-        Host:
-          - fast.com
-  - name: FR-6
-    server: 51.15.15.82
-    port: 989
-    type: ss
-    cipher: aes-256-cfb
-    password: f8f7aCzcPKbsF8p3
-  - name: HK-7
-    server: 218.190.230.207
-    port: 42534
-    type: trojan
-    password: aa6ddd2f-d1cf-4a52-ba1b-2640c41a7856
-    sni: hk12.bilibili.com
-    skip-cert-verify: true
-  - name: IN-8
-    server: prime-gator.treefrog761.one
-    port: 443
-    type: trojan
-    password: '3648425794742788096'
-    sni: prime-gator.treefrog761.one
-    skip-cert-verify: false
-  - name: NL-9
-    server: 77.246.97.187
-    port: 7749
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: 7kJQs2RYHhViTYWaf1RobB
-  - name: US-10
-    server: cf.cishanjichang.me
-    port: 443
-    type: vless
-    uuid: 89b90001-4206-4871-a99d-1744d48f215b
-    tls: true
-    skip-cert-verify: false
-    servername: gbr.cishanjichang.me
-    network: grpc
-    grpc-opts:
-      grpc-mode: multi
-      grpc-service-name: swordnewnew
-  - name: US-11
-    server: 162.159.45.246
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
     udp: true
-  - name: US-12
-    server: cf.cishanjichang.me
+    servername: cloudflare.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: 1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0
+      short-id: "42"
+    uuid: fd17fd03-844b-4c4b-9551-27f2b055d4f8
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+  - name: EP2
     port: 443
+    server: 51.158.243.62
     type: vless
-    uuid: 89b90001-4206-4871-a99d-1744d48f215b
+    network: tcp
     tls: true
-    skip-cert-verify: false
-    servername: ghk.jintianpaolu.tech
-    network: grpc
-    grpc-opts:
-      grpc-mode: multi
-      grpc-service-name: swordnewnew
-  - name: US-13
-    server: 162.159.45.238
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
     udp: true
-  - name: US-14
-    server: 162.159.45.219
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
+    servername: cloudflare.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: 1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0
+      short-id: "42"
+    uuid: fd17fd03-844b-4c4b-9551-27f2b055d4f8
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+  - name: EP3
+    port: 443
+    server: 51.158.243.62
+    type: vless
+    network: tcp
+    tls: true
     udp: true
-  - name: US-15
-    server: 162.159.45.208
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
+    servername: cloudflare.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: 1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0
+      short-id: "42"
+    uuid: fd17fd03-844b-4c4b-9551-27f2b055d4f8
+    flow: xtls-rprx-vision
+    client-fingerprint: random
+  - name: EP4
+    port: 80
+    server: 103.71.22.43
+    type: vless
     network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
     udp: true
-  - name: US-16
-    server: 104.24.92.113
-    port: 443
-    type: vless
-    uuid: 968f8967-1361-41d5-9769-f6624ef58694
-    tls: true
     skip-cert-verify: true
+    ws-opts:
+      path: /@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1
+    uuid: dc475b28-cd4d-4135-8889-f0b5a2285df8
     client-fingerprint: random
-    servername: tvmez.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: tvmez.pages.dev
-  - name: US-17
-    server: 104.24.23.51
+  - name: EP5
     port: 443
+    server: 135.148.177.196
     type: vless
-    uuid: 968f8967-1361-41d5-9769-f6624ef58694
+    network: tcp
     tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: tvmez.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: tvmez.pages.dev
-  - name: US-18
-    server: 103.21.244.106
-    port: 443
-    type: vless
-    uuid: 968f8967-1361-41d5-9769-f6624ef58694
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: tvmez.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: tvmez.pages.dev
-  - name: US-19
-    server: 104.21.64.1
-    port: 2086
-    type: vless
-    uuid: 7320522d-56c1-4e35-9fa7-88a151d76828
-    tls: false
-    skip-cert-verify: false
-    servername: 07fd36f0-yuv2ray3131331456346534643.cocefob714.workers.dev
-    network: ws
-    ws-opts:
-      path: /DdAtLiofda1FCcda?ed=2560
-      headers:
-        Host: 07fd36f0-yuv2ray3131331456346534643.cocefob714.workers.dev
-  - name: US-20
-    server: 104.24.59.181
-    port: 443
-    type: vless
-    uuid: 968f8967-1361-41d5-9769-f6624ef58694
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: tvmez.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: tvmez.pages.dev
-  - name: US-21
-    server: www.wto.org
-    port: 443
-    type: vless
-    uuid: 4a1abb8d-812e-41d8-b398-4cba9933805d
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: server17.aibox.tv
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /ws/
-      headers:
-        Host: server17.aibox.tv
-  - name: US-22
-    server: log.bpminecraft.com
-    port: 443
-    type: vless
-    uuid: 4a1abb8d-812e-41d8-b398-4cba9933805d
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: server17.aibox.tv
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /ws/
-      headers:
-        Host: server17.aibox.tv
-  - name: US-23
-    server: www.visa.com.hk
-    port: 443
-    type: vless
-    uuid: 4a1abb8d-812e-41d8-b398-4cba9933805d
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: server17.aibox.tv
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /ws/
-      headers:
-        Host: server17.aibox.tv
-  - name: US-24
-    server: 104.24.185.182
-    port: 443
-    type: vless
-    uuid: 968f8967-1361-41d5-9769-f6624ef58694
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: tvmez.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: tvmez.pages.dev
-  - name: US-25
-    server: 162.159.45.246
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-26
-    server: www.gco.gov.qa
-    port: 443
-    type: vless
-    uuid: 4a1abb8d-812e-41d8-b398-4cba9933805d
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: server17.aibox.tv
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: /ws/
-      headers:
-        Host: server17.aibox.tv
-  - name: US-27
-    server: 172.64.40.169
-    port: 80
-    type: vless
-    uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-    tls: false
-    skip-cert-verify: false
-    servername: worker-winter-meadow-e881.test55.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: worker-winter-meadow-e881.test55.workers.dev
-  - name: US-28
-    server: 151.101.64.155
-    port: 80
-    type: vless
-    uuid: 64ccb313-d2bd-4b44-a6fd-522a14c819fd
-    tls: false
-    skip-cert-verify: false
-    servername: iranvpn.com.
-    network: ws
-    ws-opts:
-      path: /?ed=1024
-      headers:
-        Host: iranvpn.com.
-  - name: US-29
-    server: polproxy.fastly80.hosting-ip.com
-    port: 80
-    type: vless
-    uuid: 7f1dd75a-c845-405f-a6c0-12d10edea16b
-    tls: false
-    skip-cert-verify: false
-    servername: moienam.com
-    network: ws
-    ws-opts:
-      path: >-
-        /telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram?ed=2048
-      headers:
-        Host: moienam.com
-  - name: US-30
-    server: speedtest.net
-    port: 80
-    type: vless
-    uuid: 8e4cc007-f3fb-4804-8c98-774ac4397a9a
-    tls: false
-    skip-cert-verify: false
-    servername: >-
-      JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-    network: ws
-    ws-opts:
-      path: >-
-        /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev?ed=2480
-      headers:
-        Host: >-
-          JOIN.unlimiteddev.4.4.4.4.wWw.CloudFlare.cOm.wWw.SpeedTeSt.cOm.Home.iRan.0.0.0.0.Hide.my.IP.xXx.333.22.1.CDN.Free.unlimiteddev.DDNS1-IP.nEt
-  - name: US-31
-    server: 151.101.2.165
-    port: 80
-    type: vless
-    uuid: 4de0d632-c6c5-4284-ad93-7024fce7fd4c
-    tls: false
-    skip-cert-verify: false
-    servername: XpnTeam.ir
-    network: ws
-    ws-opts:
-      path: >-
-        /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
-      headers:
-        Host: XpnTeam.ir
-  - name: US-32
-    server: 151.101.2.133
-    port: 443
-    type: vless
-    uuid: 7f1dd75a-c845-405f-a6c0-12d10edea16b
-    tls: true
-    skip-cert-verify: false
-    servername: live.wkrq.com
-    network: ws
-    ws-opts:
-      path: >-
-        /telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram-@polproxy,telegram?ed=2048
-      headers:
-        Host: moienam.com
-  - name: US-33
-    server: speedtest.net
-    port: 80
-    type: vless
-    uuid: c7953896-7bb2-4ce2-c7ca-117b2678b47f
-    tls: false
-    skip-cert-verify: false
-    servername: foffmelo.com
-    network: ws
-    ws-opts:
-      path: /olem/ws?ed=1024
-      headers:
-        Host: foffmelo.com
-  - name: US-34
-    server: 172.64.144.132
-    port: 443
-    type: vless
-    uuid: 968f8967-1361-41d5-9769-f6624ef58694
-    tls: true
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: tvmez.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: tvmez.pages.dev
-  - name: US-35
-    server: speedtest.net
-    port: 80
-    type: vless
-    uuid: 4de0d632-c6c5-4284-ad93-7024fce7fd4c
-    tls: false
-    skip-cert-verify: false
-    servername: XpnTeam.ir
-    network: ws
-    ws-opts:
-      path: >-
-        /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
-      headers:
-        Host: XpnTeam.ir
-  - name: US-36
-    server: 79.110.53.169
-    port: 8080
-    type: ss
-    cipher: rc4-md5
-    password: 14fFPrbezE3HDZzsMOr6
     udp: true
-  - name: US-37
-    server: 104.21.238.44
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-38
-    server: 162.159.45.141
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-39
-    server: 104.18.114.219
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-40
-    server: 104.21.238.195
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e1.285581.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e1.285581.xyz
-  - name: US-41
-    server: 104.21.238.203
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-42
-    server: 104.18.114.200
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-43
-    server: 104.18.114.88
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-44
-    server: 104.18.114.31
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-45
-    server: 104.18.114.143
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m1.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m1.155857.xyz
-  - name: US-46
-    server: 104.21.238.27
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-47
-    server: 104.18.114.242
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m1.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m1.155857.xyz
-  - name: US-48
-    server: 104.21.238.128
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-49
-    server: 104.21.238.113
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-50
-    server: 151.101.194.133
-    port: 443
-    type: vless
-    uuid: da2a8660-bf54-41d2-aeeb-b7ea85fbdf60
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: mio.splashthat.com
+    servername: 147135001178.sec22org.com
+    skip-cert-verify: true
     alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: >-
-        /telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80
-      headers:
-        Host: Hajmoji216.net
-  - name: US-51
-    server: 104.21.238.193
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-52
-    server: 104.18.114.178
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-53
-    server: 104.18.114.14
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e1.285581.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e1.285581.xyz
-  - name: US-54
-    server: 162.159.45.100
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-55
-    server: 104.21.238.236
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-56
-    server: 104.21.238.46
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e1.285581.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e1.285581.xyz
-  - name: US-57
-    server: 104.18.114.147
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-58
-    server: 104.18.114.42
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-59
-    server: 104.21.238.97
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m1.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m1.155857.xyz
-  - name: US-60
-    server: b-corsairs.com
-    port: 443
-    type: vless
-    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
-    tls: true
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: zmaoz.faculty.ucdavis.edu.
-    alpn:
-      - h2
-      - http/1.1
-    network: ws
-    ws-opts:
-      path: >-
-        /olem/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn-d=4096
-      headers:
-        Host: fonmelo.com
-  - name: US-61
-    server: 104.26.0.124
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-62
-    server: 104.18.114.3
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m1.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m1.155857.xyz
-  - name: US-63
-    server: 104.18.114.97
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m1.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m1.155857.xyz
-  - name: US-64
-    server: 104.18.114.119
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e1.285581.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e1.285581.xyz
-  - name: US-65
-    server: 104.26.0.149
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-66
-    server: 104.26.0.5
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e1.285581.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e1.285581.xyz
-  - name: US-67
-    server: 104.26.0.133
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-68
-    server: 104.26.0.3
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-69
-    server: 104.21.238.10
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m20.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m20.155857.xyz
-  - name: US-0
-    server: 104.26.0.118
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m1.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m1.155857.xyz
-  - name: US-1
-    server: 104.26.0.98
-    port: 2086
-    type: vmess
-    uuid: 7d92ffc9-02e1-4087-8a46-cc4d76560917
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: e1.285581.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: e1.285581.xyz
-  - name: US-2
-    server: 104.26.0.12
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-3
-    server: 104.26.0.40
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
-  - name: US-4
-    server: 104.26.0.103
-    port: 8880
-    type: vmess
-    uuid: 90f8f4dc-8092-4355-9047-05f506f5e9ab
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    servername: m8.155857.xyz
-    network: ws
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        Host: m8.155857.xyz
+      - h2,http/1.1
+    uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
+    client-fingerprint: random
   
   - name: NEW1
-    server: 103.214.68.133
-    port: 587
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: NEW2
-    server: 45.94.31.75
-    port: 2003
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: NEW3
-    server: 95.164.51.24
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: NEW4
-    server: 95.164.116.22
-    port: 2501
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: NEW5
-    server: 94.182.136.181
-    port: 22222
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: true
-    sni: a.mifeng.us.kg
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-  - name: NEW6
-    server: 92.223.84.84
-    port: 443
-    type: vless
-    uuid: f2004126-5865-4980-b6dd-2211dbaadf10
-    tls: true
-    sni: gcore.com
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: gcore.com
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: 13.gcr.dns04.com
-    udp: true
-
-  - name: NEW8
     server: 207.90.237.199
     port: 80
     type: vless
@@ -1200,205 +93,7 @@ proxies:
         Host: ""
     udp: true
 
-  - name: NEW9
-    type: vmess
-    server: 190.93.247.23    
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW10
-    type: vmess
-    server: 190.93.246.196    
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW11
-    type: vmess
-    server: 190.93.246.178   
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW12
-    type: vmess
-    server: 190.93.245.174   
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW13
-    type: vmess
-    server: 190.93.245.103  
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW14
-    type: vmess
-    server: 190.93.244.33 
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW15
-    type: vmess
-    server: 190.93.244.228
-    port: 2082                                     
-    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    servername: ip18.6929198.xyz              
-    ws-opts:
-      path: "/github.com/Alvin9999"                             
-      headers:
-        Host: ip18.6929198.xyz9
-
-  - name: NEW16
-    server: 188.114.97.3
-    port: 80
-    type: vless
-    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: false
-    sni: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
-    network: ws
-    ws-opts:
-      path: /09EpH4tzdpaF2F6Q?ed=2560
-      headers:
-        Host: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
-    udp: true
-
-  - name: NEW17
-    server: 172.67.212.189
-    port: 80
-    type: vless
-    uuid: 9f09dc7b-ab90-4669-80b7-acebfc4b37e9
-    tls: false
-    sni: worker-falling-mud-ab97.msv2ray.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: worker-falling-mud-ab97.msv2ray.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: worker-falling-mud-ab97.msv2ray.workers.dev
-    udp: true
-
-  - name: NEW18
-    server: 172.67.2.238
-    port: 8880
-    type: vless
-    uuid: 9f70a4c0-f727-47fb-ba7d-d604dba9669c
-    tls: false
-    sni: worker-red-hall-b97b.xehipor887.workers.Dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: worker-red-hall-b97b.xehipor887.workers.Dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: worker-red-hall-b97b.xehipor887.workers.Dev
-    udp: true
-
-  - name: NEW19
-    server: 151.101.130.132
-    port: 80
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: false
-    sni: taalijavan.ir
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: taalijavan.ir
-    network: ws
-    ws-opts:
-      path: /GGPPfZ3NKyOoKNiK?ed=2560
-      headers:
-        Host: taalijavan.ir
-    udp: true
-
-
-  - name: NEW20
-    server: 104.27.115.175
-    port: 8880
-    type: vless
-    uuid: 71c2cdc1-abd3-4e74-905a-a8fd621fe497
-    tls: false
-    sni: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
-    udp: true
-
-  - name: NEW21
+  - name: NEW2
     server: 104.21.86.235
     port: 80
     type: vless
@@ -1414,294 +109,6 @@ proxies:
       headers:
         Host: c.lkzb-0t0.workers.dev
     udp: true
-
-  - name: NEW22
-    server: 104.21.42.56
-    port: 80
-    type: vless
-    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
-    tls: false
-    sni: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
-    network: ws
-    ws-opts:
-      path: "Telegram channel : @pandavpntc"
-      headers:
-        Host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
-    udp: true
-
-  - name: NEW23
-    server: 104.21.30.5
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    sni: a.mifeng.us.kg
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: a.mifeng.us.kg
-    network: ws
-    ws-opts:
-      path: telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
-      headers:
-        Host: a.mifeng.us.kg
-    udp: true
-
-
-  - name: NEW24
-    server: 104.21.23.185
-    port: 80
-    type: vless
-    uuid: 9f09dc7b-ab90-4669-80b7-acebfc4b37e9
-    tls: false
-    sni: worker-falling-mud-ab97.msv2ray.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: worker-falling-mud-ab97.msv2ray.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: worker-falling-mud-ab97.msv2ray.workers.dev
-    udp: true
-
-  - name: NEW25
-    server: 104.18.27.94
-    port: 80
-    type: vless
-    uuid: 66b2ba80-81b5-4580-8d1b-901d34dda0e3
-    tls: false
-    sni: ppal03.ms-albin-runolfsdottir.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: ppal03.ms-albin-runolfsdottir.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ppal03.ms-albin-runolfsdottir.workers.dev
-    udp: true
-
-  - name: NEW26
-    server: 104.17.221.248
-    port: 80
-    type: vless
-    uuid: 58971417-4d22-402f-bb8e-e7de0324bf04
-    tls: false
-    sni: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
-    udp: true
-
-  - name: NEW27
-    server: 104.17.221.248
-    port: 80
-    type: vless
-    uuid: b8380e9e-fd36-4f98-96eb-d2b5377c69c2
-    tls: false
-    sni: esetsecuritylicense.favaj61153.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: esetsecuritylicense.favaj61153.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: esetsecuritylicense.favaj61153.workers.dev
-    udp: true
-
-  - name: NEW28
-    server: 104.17.213.241
-    port: 80
-    type: vless
-    uuid: f327e06a-b7d3-41b8-a713-76ef9f8a355e
-    tls: false
-    sni: esetsecuritylicense.djyhzmd.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: esetsecuritylicense.djyhzmd.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: esetsecuritylicense.djyhzmd.workers.dev
-    udp: true
-
-  - name: NEW29
-    server: 104.17.148.22
-    port: 8880
-    type: vless
-    uuid: 01c8e316-66bf-490a-86d5-efcc674c66c6
-    tls: false
-    sni: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
-    network: ws
-    ws-opts:
-      path: /Omid?ed=2560
-      headers:
-        Host: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
-    udp: true
-
-  - name: NEW30
-    server: 104.17.147.22
-    port: 8880
-    type: vless
-    uuid: 01c8e316-66bf-490a-86d5-efcc674c66c6
-    tls: false
-    sni: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
-    network: ws
-    ws-opts:
-      path: /Omid?ed=2560
-      headers:
-        Host: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
-    udp: true
-
-  - name: NEW31
-    server: 104.17.147.22
-    port: 80
-    type: vless
-    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
-    tls: false
-    sni: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
-    network: ws
-    ws-opts:
-      path: /Fimfk3I0DPwhRotM?ed=2560
-      headers:
-        Host: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
-    udp: true
-
-  - name: NEW32
-    server: 103.136.68.253
-    port: 3732
-    type: vless
-    uuid: 4ead13d1-f307-49b0-a828-a205a80ab570
-    tls: false
-    sni: ""
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: ""
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ""
-  
-  - name: NEW33
-    server: 103.136.68.253
-    port: 3732
-    type: vless
-    uuid: 600b472f-3e43-43a0-8815-a890a607891c
-    tls: false
-    sni: ""
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: ""
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: ""
-
-  - name: NEW34
-    server: 185.8.129.187
-    port: 443
-    type: vless
-    uuid: 3c36eadb-747a-4166-8db0-23fec9883ea2
-    tls: true
-    sni: "turkish.nscl.ir"
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: "turkish.nscl.ir"
-    network: ws
-    ws-opts:
-      path: /NiREvilxXx
-      headers:
-        Host: "turkish.nscl.ir"
-    alpn:
-      - http/1.1
-  
-  - name: NEW35
-    server: 104.18.12.229
-    port: 8443
-    type: vless
-    uuid: f3d01b85-4370-4f6e-8133-6a441bb3120f
-    tls: true
-    sni: pardazeshvpn-tg61.pages.dev
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: pardazeshvpn-tg61.pages.dev
-    network: ws
-    ws-opts:
-      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
-      headers:
-        Host: pardazeshvpn-tg61.pages.dev
-
-  - name: NEW36
-    server: 104.18.12.229
-    port: 8443
-    type: vless
-    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
-    tls: true
-    sni: pardazeshvpn-tg71.pages.dev
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: pardazeshvpn-tg71.pages.dev
-    network: ws
-    ws-opts:
-      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
-      headers:
-        Host: pardazeshvpn-tg71.pages.dev
-  
-  - name: NEW37
-    server: 104.17.245.156
-    port: 443
-    type: vless
-    uuid: ac1ac19b-d3da-44ff-ba96-3160a306e6e8
-    tls: true
-    sni: ""
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: 83391890813327783076798370684972.v2line.net
-    network: ws
-    ws-opts:
-      path: /V2LINE-TELEGRAM-CHANNEL-VLESS-WS-TLS
-      headers:
-        Host: 83391890813327783076798370684972.v2line.net
-    alpn:
-      - http/1.1
-  
-
-  - name: NEW38
-    server: 172.64.146.118
-    port: 8443
-    type: vless
-    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
-    tls: true
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: false
-    client-fingerprint: random
-    servername: pardazeshvpn-tg71.pages.dev
-    network: ws
-    ws-opts:
-      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
-      headers:
-        Host: pardazeshvpn-tg71.pages.dev
 
   - name: US-Amazon-EC2
     server: 3.78.59.177
@@ -1982,75 +389,7 @@ proxies:
     sni: www.bing.com
     skip-cert-verify: true
 
-  
-  - {name: CA-1, server: cucc.abyssvpn.com, port: 31107, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: CA-2, server: cucc.abyssvpn.com, port: 31161, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: CA-3, server: bgp.abyssvpn.com, port: 31161, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: CA-4, server: cmcc.abyssvpn.com, port: 31161, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: HK-1, server: bgp.abyssvpn.com, port: 31113, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: HK-2, server: cmcc.abyssvpn.com, port: 31200, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: HK-3, server: cmcc.abyssvpn.com, port: 31112, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: HK-4, server: cmcc.abyssvpn.com, port: 31113, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: HK-5, server: cucc.abyssvpn.com, port: 31111, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: HK-6, server: cucc.abyssvpn.com, port: 31113, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: IN-1, server: bgp.abyssvpn.com, port: 31153, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: IN-2, server: bgp.abyssvpn.com, port: 31154, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: IN-3, server: cucc.abyssvpn.com, port: 31153, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: IN-4, server: cucc.abyssvpn.com, port: 31154, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: KR-1, server: cmcc.abyssvpn.com, port: 31155, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: KR-2, server: bgp.abyssvpn.com, port: 31155, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: KR-3, server: cucc.abyssvpn.com, port: 31155, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: NL-1, server: cmcc.abyssvpn.com, port: 31119, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: SG-1, server: cmcc.abyssvpn.com, port: 31102, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: TW-1, server: cucc.abyssvpn.com, port: 31101, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-  - {name: VN-1, server: bgp.abyssvpn.com, port: 31103, type: hysteria2, password: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, auth: c2e4bd65-1f9b-4cf5-9077-1a477130dde8, skip-cert-verify: true, udp: true}
-
-
   - name: NewArrival-1
-    server: 104.24.200.13
-    port: 8880
-    type: vless
-    uuid: c58905af-2040-413e-adbc-0e81cc8eb35f
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: vless.behradmirzaei1388.workers.dev
-
-  - name: NewArrival-2
-    server: 104.18.12.229
-    port: 8443
-    type: vless
-    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
-    tls: true
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: pardazeshvpn-tg71.pages.dev
-    network: ws
-    ws-opts:
-      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
-      headers:
-        Host: pardazeshvpn-tg71.pages.dev
-
-  - name: NewArrival-3
-    server: 104.18.13.229
-    port: 8443
-    type: vless
-    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
-    tls: true
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: pardazeshvpn-tg71.pages.dev
-    network: ws
-    ws-opts:
-      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
-      headers:
-        Host: pardazeshvpn-tg71.pages.dev
-
-  - name: NewArrival-4
     server: 89.187.169.72
     port: 443
     type: vless
@@ -2067,7 +406,7 @@ proxies:
       public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
       short-id: 01b200e90e250221
 
-  - name: NewArrival-5
+  - name: NewArrival-2
     server: 20.211.64.15
     port: 443
     type: vless
@@ -2083,51 +422,7 @@ proxies:
       headers:
         Host: bdfgfrtt7.azurewebsites.net
   
-  - name: NewArrival-6
-    server: 89.187.169.71
-    port: 443
-    type: vless
-    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
-      short-id: 01b200e90e250221
-  
-  - name: NewArrival-7
-    server: 162.159.44.129
-    port: 80
-    type: vless
-    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-    tls: false
-    skip-cert-verify: false
-    servername: cc.ailicf.us.kg
-    network: ws
-    ws-opts:
-      path: /b5cdabf0-e04
-      headers:
-        Host: cc.ailicf.us.kg
-
-  - name: NewArrival-8
-    port: 2082
-    server: 172.67.128.244
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: m543.hosseinpool10.workers.dev
-    uuid: 5181717e-892b-45a9-a8b7-e6d5fac1c77b
-    client-fingerprint: chrome
-  - name: NewArrival-9
+  - name: NewArrival-3
     port: 80
     server: 172.67.132.72
     type: vless
@@ -2141,7 +436,7 @@ proxies:
     uuid: dc00f1f8-05b2-4bc0-b851-d4dfe5089329
     client-fingerprint: chrome
 
-  - name: NewArrival-10
+  - name: NewArrival-4
     port: 80
     server: 172.67.193.80
     type: vless
@@ -2154,7 +449,7 @@ proxies:
         host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-11
+  - name: NewArrival-5
     port: 80
     server: 172.67.193.80
     type: vless
@@ -2167,7 +462,7 @@ proxies:
         host: BroKEn-bAR-5948.nepOg45969.WoRkERS.deV
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-12
+  - name: NewArrival-6
     port: 80
     server: 104.21.90.15
     type: vless
@@ -2180,7 +475,7 @@ proxies:
         host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-13
+  - name: NewArrival-7
     port: 80
     server: 104.21.90.15
     type: vless
@@ -2193,95 +488,8 @@ proxies:
         host: bRokeN-BaR-5948.nEpoG45969.WORKers.DeV
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-14
-    port: 443
-    server: 162.159.44.129
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cc.ailicf.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /b5cdabf0-e04
-      headers:
-        host: cc.ailicf.us.kg
-    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-    client-fingerprint: chrome
-  - name: NewArrival-15
-    port: 2082
-    server: 104.21.1.90
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: m543.hosseinpool10.workers.dev
-    uuid: 5181717e-892b-45a9-a8b7-e6d5fac1c77b
-    client-fingerprint: chrome
-  - name: NewArrival-16
-    port: 443
-    server: 108.162.195.129
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cc.ailicf.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /b5cdabf0-e04
-      headers:
-        host: cc.ailicf.us.kg
-    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-    client-fingerprint: chrome
-  - name: NewArrival-17
-    port: 443
-    server: 172.64.35.129
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cc.ailicf.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /b5cdabf0-e04
-      headers:
-        host: cc.ailicf.us.kg
-    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-    client-fingerprint: chrome
-  - name: NewArrival-18
-    port: 80
-    server: 172.64.35.129
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /b5cdabf0-e04
-      headers:
-        host: cc.ailicf.us.kg
-    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-    client-fingerprint: chrome
-
-  - name: NewArrival-19
-    port: 443
-    server: 89.187.169.71
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: www.cloudflare.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
-      short-id: 01b200e90e250221
-    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-
-  - name: NewArrival-20
+  
+  - name: NewArrival-8
     port: 443
     server: 89.187.169.72
     type: vless
@@ -2310,102 +518,7 @@ proxies:
         host: c.lkzb-0t0.workers.dev
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     client-fingerprint: chrome
-  - name: Ex11
-    port: 80
-    server: 104.21.42.56
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: "Telegram channel : @pandavpntc"
-      headers:
-        host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
-    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
-    client-fingerprint: chrome
-  - name: Ex12
-    port: 80
-    server: 172.67.197.154
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: proxiiraniii.fiseye5589.workers.dev
-    uuid: 6ad08747-42b9-4618-8f11-ac47de0da0f8
-    client-fingerprint: chrome
-  - name: Ex13
-    port: 80
-    server: 172.67.157.34
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: "Telegram channel : @pandavpntc"
-      headers:
-        host: worker-raspy-brook-56e8.c6fdd365ba5e8d.workers.Dev
-    uuid: 4370b863-8869-4434-8f48-5e7fcf3f6632
-    client-fingerprint: chrome
-  - name: Ex14
-    port: 80
-    server: 104.17.147.22
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /Fimfk3I0DPwhRotM?ed=2560
-      headers:
-        host: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
-    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
-    client-fingerprint: chrome
-  - name: Ex15
-    port: 8443
-    server: 104.18.12.229
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: pardazeshvpn-tg71.pages.dev
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048
-      headers:
-        host: pardazeshvpn-tg71.pages.dev
-    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
-    client-fingerprint: chrome
-  - name: Ex16
-    port: 80
-    server: 188.114.96.1
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /09EpH4tzdpaF2F6Q?ed=2560
-      headers:
-        host: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
-    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
-    client-fingerprint: chrome
-  - name: Ex17
-    port: 443
-    server: 162.159.44.129
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: cc.ailicf.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /b5cdabf0-e04
-      headers:
-        host: cc.ailicf.us.kg
-    uuid: b5cdabf0-e048-4fa2-90da-9379b1a4926e
-    client-fingerprint: chrome
-  - name: Ex18
+  - name: Ex2
     port: 443
     server: 20.211.64.15
     type: vless
@@ -2420,99 +533,8 @@ proxies:
         host: bdfgfrtt7.azurewebsites.net
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
-  - name: Ex19
-    port: 2053
-    server: 205.233.181.36
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: rix.tgzdyz2.top
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: rix.tgzdyz2.top
-    uuid: b9dad5ed-74da-4a43-8145-90d06df1f890
-    client-fingerprint: chrome
-  - name: Ex2
-    port: 8080
-    server: x1sweden.thanks-devefun-team-omg-i-needed-free-c-im-sure-you-are-the-bes.link
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    uuid: 237b4fb7-feb3-4ecd-b6d7-c6aa055c4466
-    client-fingerprint: chrome
-  - name: Ex20
-    port: 443
-    server: b-corsairs.com
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: zmaoz.faculty.ucdavis.edu.
-    skip-cert-verify: true
-    ws-opts:
-      path: /olem/ws?@V2ray_Alpha-d=4096
-      headers:
-        host: fonmelo.com
-    alpn:
-      - h2,http/1.1
-    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
-    client-fingerprint: chrome
-  - name: Ex21
-    port: 443
-    server: b-corsairs.com
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: zmaoz.faculty.ucdavis.edu.
-    skip-cert-verify: true
-    ws-opts:
-      path: /olem/ws?e@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn-d=4096
-      headers:
-        host: fonmelo.com
-    alpn:
-      - h2,http/1.1
-    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
-    client-fingerprint: chrome
-  - name: Ex22
-    port: 443
-    server: zmaoz.faculty.ucdavis.edu
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: zmaoz.faculty.ucdavis.edu.
-    skip-cert-verify: true
-    ws-opts:
-      path: /olem/ws?ed=4096
-      headers:
-        host: fonmelo.com
-    alpn:
-      - h2,http/1.1
-    uuid: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
-    client-fingerprint: chrome
-  - name: Ex23
-    port: 443
-    server: hajlab.ucdavis.edu
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: hajlab.ucdavis.edu
-    skip-cert-verify: true
-    ws-opts:
-      path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
-      headers:
-        host: joinxvproxybedeeee.ir
-    uuid: 3c5e2ab8-02b8-44ad-8b41-6f6ccfc09a93
-    client-fingerprint: chrome
-  - name: Ex24
+  
+  - name: Ex3
     port: 443
     server: high.work.lzg.me
     type: vless
@@ -2526,22 +548,8 @@ proxies:
         host: high.work.lzg.me
     uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
     client-fingerprint: chrome
-  - name: Ex25
-    port: 443
-    server: hajlab.ucdavis.edu
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: hajlab.ucdavis.edu
-    skip-cert-verify: true
-    ws-opts:
-      path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
-      headers:
-        host: joinxvproxybedee.ir
-    uuid: 6719f34a-73f7-4bd8-9be4-2b89654912f0
-    client-fingerprint: chrome
-  - name: Ex26
+ 
+  - name: Ex4
     port: 443
     server: bdfgfrtt7.azurewebsites.net
     type: vless
@@ -2556,7 +564,7 @@ proxies:
         host: bdfgfrtt7.azurewebsites.net
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
-  - name: Ex27
+  - name: Ex5
     port: 443
     server: hkklo.azurewebsites.net
     type: vless
@@ -2571,7 +579,7 @@ proxies:
         host: hkklo.azurewebsites.net
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
-  - name: Ex28
+  - name: Ex6
     port: 443
     server: py.pl
     type: vless
@@ -2586,59 +594,8 @@ proxies:
         host: trickshow.silaber.net
     uuid: 9b7645aa-91f4-4f6d-98d9-c22f4ce8784f
     client-fingerprint: chrome
-  - name: Ex29
-    port: 2114
-    server: v.bazibede.ir
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: v.bazibede.ir
-    skip-cert-verify: true
-    uuid: 557161bb-1ce5-984f-6ff7-85c57baf70b8
-    client-fingerprint: chrome
-  - name: Ex3
-    port: 80
-    server: 92.222.181.77
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /websocket
-      headers:
-        host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    uuid: f4859fc9-dc44-11ee-b9ba-00505603e70d
-    client-fingerprint: chrome
-  - name: Ex30
-    port: 8081
-    server: 5.223.41.114
-    type: vless
-    network: tcp
-    udp: true
-    skip-cert-verify: true
-    uuid: ab954190-4554-4c09-9dfe-dc264069e9ee
-    client-fingerprint: chrome
-  - name: Ex31
-    port: 8443
-    server: 92.114.17.23
-    type: vless
-    network: tcp
-    udp: true
-    skip-cert-verify: true
-    uuid: c2a2beb3-403a-4bc0-8bf5-7f6788a7b281
-    client-fingerprint: chrome
-  - name: Ex32
-    port: 443
-    server: izmaogtw.top
-    type: vless
-    network: http
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    uuid: 47f50770-e3a5-459d-8163-193f035ac71d
-    client-fingerprint: chrome
-  - name: Ex5
+  
+  - name: Ex7
     port: 80
     server: 172.67.137.156
     type: vless
@@ -2651,7 +608,7 @@ proxies:
         host: c.lkzb-0t0.workers.dev
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     client-fingerprint: chrome
-  - name: Ex6
+  - name: Ex8
     port: 80
     server: 162.159.250.246
     type: vless
@@ -2664,19 +621,7 @@ proxies:
         host: vpnshield5554.vpnvpnfree5.workers.dev
     uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
     client-fingerprint: chrome
-  - name: Ex7
-    port: 80
-    server: 172.67.157.34
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: "Telegram channel : @pandavpntc"
-      headers:
-        host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
-    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
-    client-fingerprint: chrome
+  
   - name: Ex9
     port: 80
     server: 104.21.86.235
@@ -2699,53 +644,33 @@ proxy-groups:
       - Hysteria-List
       - NEW-List
       - NewArrival-List
-      - ProxyPool
       - Best-of-All
       - Extra-List
-
-  - name: Best-of-All
+      - Epodonios
+      - Static-Server
+  - name: Epodonios
     type: url-test
     proxies:
-      - Hysteria-List
-      - NEW-List
-      - NewArrival-List
-      - ProxyPool
-      - Extra-List
+      - EP1
+      - EP2
+      - EP3
+      - EP4
+      - EP5
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
-  
+
   - name: Extra-List
     type: url-test
     proxies:
       - Ex1
-      - Ex11
-      - Ex12
-      - Ex13
-      - Ex14
-      - Ex15
-      - Ex16
-      - Ex17
-      - Ex18
-      - Ex19
       - Ex2
-      - Ex20
-      - Ex21
-      - Ex22
-      - Ex23
-      - Ex24
-      - Ex25
-      - Ex26
-      - Ex27
-      - Ex28
-      - Ex29
       - Ex3
-      - Ex30
-      - Ex31
-      - Ex32
+      - Ex4
       - Ex5
       - Ex6
       - Ex7
+      - Ex8
       - Ex9
     url: https://www.youtube.com/favicon.ico
     interval: 30
@@ -2762,19 +687,6 @@ proxy-groups:
       - NewArrival-6
       - NewArrival-7
       - NewArrival-8
-      - NewArrival-9
-      - NewArrival-10
-      - NewArrival-11
-      - NewArrival-12
-      - NewArrival-13
-      - NewArrival-14
-      - NewArrival-15
-      - NewArrival-16
-      - NewArrival-17
-      - NewArrival-18
-      - NewArrival-19
-      - NewArrival-20
- 
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -2784,28 +696,7 @@ proxy-groups:
     proxies:
       - DE-1
       - RU-1
-      - CA-1
-      - CA-2
-      - CA-3
-      - CA-4
-      - HK-1
-      - HK-2
-      - HK-3
-      - HK-4
-      - HK-5
-      - HK-6
-      - IN-1
-      - IN-2
-      - IN-3
-      - IN-4
-      - KR-1
-      - KR-2
-      - KR-3
-      - NL-1
-      - SG-1
-      - TW-1
-      - VN-1
-    url: https://www.youtube.com/favicon.ico
+    url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
 
@@ -2814,125 +705,72 @@ proxy-groups:
     proxies:
       - NEW1
       - NEW2
-      - NEW3
-      - NEW4
-      - NEW5
-      - NEW6
-      - NEW8
-      - NEW9
-      - NEW10
-      - NEW11
-      - NEW12
-      - NEW13
-      - NEW14
-      - NEW15
-      - NEW16
-      - NEW17
-      - NEW18
-      - NEW19
-      - NEW20
-      - NEW21
-      - NEW22
-      - NEW23
-      - NEW24
-      - NEW25
-      - NEW26
-      - NEW27
-      - NEW28
-      - NEW29
-      - NEW30
-      - NEW31
-      - NEW32
-      - NEW33
-      - NEW34
-      - NEW35
-      - NEW36
-      - NEW37
-      - NEW38
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
 
-  - name: ProxyPool
+  - name: Best-of-All
     type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
     proxies:
-      - CN-1
-      - CN-2
-      - CN-3
-      - CY-4
-      - DE-5
-      - FR-6
-      - HK-7
-      - IN-8
-      - NL-9
-      - US-0
-      - US-1
-      - US-2
-      - US-3
-      - US-4
-      - US-10
-      - US-11
-      - US-12
-      - US-13
-      - US-14
-      - US-15
-      - US-16
-      - US-17
-      - US-18
-      - US-19
-      - US-20
-      - US-21
-      - US-22
-      - US-23
-      - US-24
-      - US-25
-      - US-26
-      - US-27
-      - US-28
-      - US-29
-      - US-30
-      - US-31
-      - US-32
-      - US-33
-      - US-34
-      - US-35
-      - US-36
-      - US-37
-      - US-38
-      - US-39
-      - US-40
-      - US-41
-      - US-42
-      - US-43
-      - US-44
-      - US-45
-      - US-46
-      - US-47
-      - US-48
-      - US-49
-      - US-50
-      - US-51
-      - US-52
-      - US-53
-      - US-54
-      - US-55
-      - US-56
-      - US-57
-      - US-58
-      - US-59
-      - US-60
-      - US-61
-      - US-62
-      - US-63
-      - US-64
-      - US-65
-      - US-66
-      - US-67
-      - US-68
-      - US-69
+      - EP1
+      - EP2
+      - EP3
+      - EP4
+      - EP5
+      - Ex1
+      - Ex2
+      - Ex3
+      - Ex4
+      - Ex5
+      - Ex6
+      - Ex7
+      - Ex8
+      - Ex9
+      - NewArrival-1
+      - NewArrival-2
+      - NewArrival-3
+      - NewArrival-4
+      - NewArrival-5
+      - NewArrival-6
+      - NewArrival-7
+      - NewArrival-8
+      - DE-1
+      - RU-1
+      - NEW1
+      - NEW2
+    url: https://www.fast.com/favicon.ico
+    interval: 30
+    tolerance: 10
+
+  - name: Static-Server
+    type: select
+    proxies:
+      - EP1
+      - EP2
+      - EP3
+      - EP4
+      - EP5
+      - Ex1
+      - Ex2
+      - Ex3
+      - Ex4
+      - Ex5
+      - Ex6
+      - Ex7
+      - Ex8
+      - Ex9
+      - NewArrival-1
+      - NewArrival-2
+      - NewArrival-3
+      - NewArrival-4
+      - NewArrival-5
+      - NewArrival-6
+      - NewArrival-7
+      - NewArrival-8
+      - DE-1
+      - RU-1
+      - NEW1
+      - NEW2
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
@@ -3047,6 +885,8 @@ rules:
   - DOMAIN-SUFFIX,miui.com,DIRECT
   - DOMAIN-SUFFIX,miwifi.com,DIRECT
   - DOMAIN-SUFFIX,mob.com,DIRECT
+  - DOMAIN-SUFFIX,webex.com,DIRECT
+  - DOMAIN-SUFFIX,wbx2.com,DIRECT
   - DOMAIN-SUFFIX,netease.com,DIRECT
   - DOMAIN-SUFFIX,office.com,DIRECT
   - DOMAIN-SUFFIX,office365.com,DIRECT
