@@ -6,76 +6,6 @@ log-level: info
 external-controller: :9090
 proxies:
 
-  - name: EP1
-    port: 443
-    server: 51.158.243.62
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: cloudflare.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: 1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0
-      short-id: "42"
-    uuid: fd17fd03-844b-4c4b-9551-27f2b055d4f8
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-  - name: EP2
-    port: 443
-    server: 51.158.243.62
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: cloudflare.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: 1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0
-      short-id: "42"
-    uuid: fd17fd03-844b-4c4b-9551-27f2b055d4f8
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-  - name: EP3
-    port: 443
-    server: 51.158.243.62
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: cloudflare.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: 1gKloUYtea1EJfBcatiTkmJVdCbb6SfVrnL6Lz-RYj0
-      short-id: "42"
-    uuid: fd17fd03-844b-4c4b-9551-27f2b055d4f8
-    flow: xtls-rprx-vision
-    client-fingerprint: random
-  - name: EP4
-    port: 80
-    server: 103.71.22.43
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1,@VPNMEGA1
-    uuid: dc475b28-cd4d-4135-8889-f0b5a2285df8
-    client-fingerprint: random
-  - name: EP5
-    port: 443
-    server: 135.148.177.196
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: 147135001178.sec22org.com
-    skip-cert-verify: true
-    alpn:
-      - h2,http/1.1
-    uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-    client-fingerprint: random
-  
   - name: NEW1
     server: 207.90.237.199
     port: 80
@@ -646,19 +576,8 @@ proxy-groups:
       - NewArrival-List
       - Best-of-All
       - Extra-List
-      - Epodonios
       - Static-Server
-  - name: Epodonios
-    type: url-test
-    proxies:
-      - EP1
-      - EP2
-      - EP3
-      - EP4
-      - EP5
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
+
 
   - name: Extra-List
     type: url-test
@@ -712,11 +631,6 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
-      - EP1
-      - EP2
-      - EP3
-      - EP4
-      - EP5
       - Ex1
       - Ex2
       - Ex3
@@ -745,11 +659,6 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
-      - EP1
-      - EP2
-      - EP3
-      - EP4
-      - EP5
       - Ex1
       - Ex2
       - Ex3
