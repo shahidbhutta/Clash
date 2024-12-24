@@ -5,8 +5,109 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-
   - name: NEW1
+    server: 103.214.68.133
+    port: 587
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW2
+    server: 45.94.31.75
+    port: 2003
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW3
+    server: 95.164.51.24
+    port: 2501
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW4
+    server: 95.164.116.22
+    port: 2501
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW5
+    server: 94.182.136.181
+    port: 22222
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: true
+    sni: a.mifeng.us.kg
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+  - name: NEW6
+    server: 92.223.84.84
+    port: 443
+    type: vless
+    uuid: f2004126-5865-4980-b6dd-2211dbaadf10
+    tls: true
+    sni: gcore.com
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: gcore.com
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: 13.gcr.dns04.com
+    udp: true
+
+  - name: NEW8
     server: 207.90.237.199
     port: 80
     type: vless
@@ -23,7 +124,205 @@ proxies:
         Host: ""
     udp: true
 
-  - name: NEW2
+  - name: NEW9
+    type: vmess
+    server: 190.93.247.23    
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW10
+    type: vmess
+    server: 190.93.246.196    
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW11
+    type: vmess
+    server: 190.93.246.178   
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW12
+    type: vmess
+    server: 190.93.245.174   
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW13
+    type: vmess
+    server: 190.93.245.103  
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW14
+    type: vmess
+    server: 190.93.244.33 
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW15
+    type: vmess
+    server: 190.93.244.228
+    port: 2082                                     
+    uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    servername: ip18.6929198.xyz              
+    ws-opts:
+      path: "/github.com/Alvin9999"                             
+      headers:
+        Host: ip18.6929198.xyz9
+
+  - name: NEW16
+    server: 188.114.97.3
+    port: 80
+    type: vless
+    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    sni: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    network: ws
+    ws-opts:
+      path: /09EpH4tzdpaF2F6Q?ed=2560
+      headers:
+        Host: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    udp: true
+
+  - name: NEW17
+    server: 172.67.212.189
+    port: 80
+    type: vless
+    uuid: 9f09dc7b-ab90-4669-80b7-acebfc4b37e9
+    tls: false
+    sni: worker-falling-mud-ab97.msv2ray.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-falling-mud-ab97.msv2ray.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: worker-falling-mud-ab97.msv2ray.workers.dev
+    udp: true
+
+  - name: NEW18
+    server: 172.67.2.238
+    port: 8880
+    type: vless
+    uuid: 9f70a4c0-f727-47fb-ba7d-d604dba9669c
+    tls: false
+    sni: worker-red-hall-b97b.xehipor887.workers.Dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-red-hall-b97b.xehipor887.workers.Dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: worker-red-hall-b97b.xehipor887.workers.Dev
+    udp: true
+
+  - name: NEW19
+    server: 151.101.130.132
+    port: 80
+    type: vless
+    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    sni: taalijavan.ir
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: taalijavan.ir
+    network: ws
+    ws-opts:
+      path: /GGPPfZ3NKyOoKNiK?ed=2560
+      headers:
+        Host: taalijavan.ir
+    udp: true
+
+
+  - name: NEW20
+    server: 104.27.115.175
+    port: 8880
+    type: vless
+    uuid: 71c2cdc1-abd3-4e74-905a-a8fd621fe497
+    tls: false
+    sni: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: hello-world-ancient-cake-7e5a.rinop24108.workers.dev
+    udp: true
+
+  - name: NEW21
     server: 104.21.86.235
     port: 80
     type: vless
@@ -39,6 +338,295 @@ proxies:
       headers:
         Host: c.lkzb-0t0.workers.dev
     udp: true
+
+  - name: NEW22
+    server: 104.21.42.56
+    port: 80
+    type: vless
+    uuid: 2f40331a-1281-4062-a5ce-5267984dcb65
+    tls: false
+    sni: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    network: ws
+    ws-opts:
+      path: "Telegram channel : @pandavpntc"
+      headers:
+        Host: worker-red-thunder-6f87.37a49b65a5e25e.workers.dev
+    udp: true
+
+  - name: NEW23
+    server: 104.21.30.5
+    port: 80
+    type: vless
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    tls: false
+    sni: a.mifeng.us.kg
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: a.mifeng.us.kg
+    network: ws
+    ws-opts:
+      path: telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048
+      headers:
+        Host: a.mifeng.us.kg
+    udp: true
+
+
+  - name: NEW24
+    server: 104.21.23.185
+    port: 80
+    type: vless
+    uuid: 9f09dc7b-ab90-4669-80b7-acebfc4b37e9
+    tls: false
+    sni: worker-falling-mud-ab97.msv2ray.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-falling-mud-ab97.msv2ray.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: worker-falling-mud-ab97.msv2ray.workers.dev
+    udp: true
+
+  - name: NEW25
+    server: 104.18.27.94
+    port: 80
+    type: vless
+    uuid: 66b2ba80-81b5-4580-8d1b-901d34dda0e3
+    tls: false
+    sni: ppal03.ms-albin-runolfsdottir.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ppal03.ms-albin-runolfsdottir.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ppal03.ms-albin-runolfsdottir.workers.dev
+    udp: true
+
+  - name: NEW26
+    server: 104.17.221.248
+    port: 80
+    type: vless
+    uuid: 58971417-4d22-402f-bb8e-e7de0324bf04
+    tls: false
+    sni: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        Host: worker-shrill-fog-2116-hamedan.helap20157.workers.dev
+    udp: true
+
+  - name: NEW27
+    server: 104.17.221.248
+    port: 80
+    type: vless
+    uuid: b8380e9e-fd36-4f98-96eb-d2b5377c69c2
+    tls: false
+    sni: esetsecuritylicense.favaj61153.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: esetsecuritylicense.favaj61153.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: esetsecuritylicense.favaj61153.workers.dev
+    udp: true
+
+  - name: NEW28
+    server: 104.17.213.241
+    port: 80
+    type: vless
+    uuid: f327e06a-b7d3-41b8-a713-76ef9f8a355e
+    tls: false
+    sni: esetsecuritylicense.djyhzmd.workers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: esetsecuritylicense.djyhzmd.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: esetsecuritylicense.djyhzmd.workers.dev
+    udp: true
+
+  - name: NEW29
+    server: 104.17.148.22
+    port: 8880
+    type: vless
+    uuid: 01c8e316-66bf-490a-86d5-efcc674c66c6
+    tls: false
+    sni: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    network: ws
+    ws-opts:
+      path: /Omid?ed=2560
+      headers:
+        Host: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    udp: true
+
+  - name: NEW30
+    server: 104.17.147.22
+    port: 8880
+    type: vless
+    uuid: 01c8e316-66bf-490a-86d5-efcc674c66c6
+    tls: false
+    sni: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    network: ws
+    ws-opts:
+      path: /Omid?ed=2560
+      headers:
+        Host: m.6.site.org.ir.com.site.xn--fhq0la447aac5504dea701axr1g.antishop.sbs.
+    udp: true
+
+  - name: NEW31
+    server: 104.17.147.22
+    port: 80
+    type: vless
+    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    tls: false
+    sni: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    network: ws
+    ws-opts:
+      path: /Fimfk3I0DPwhRotM?ed=2560
+      headers:
+        Host: bitTeR-DarKNeSs-3199.waKoCi1200.WORkers.dev
+    udp: true
+
+  - name: NEW32
+    server: 103.136.68.253
+    port: 3732
+    type: vless
+    uuid: 4ead13d1-f307-49b0-a828-a205a80ab570
+    tls: false
+    sni: ""
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ""
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+  
+  - name: NEW33
+    server: 103.136.68.253
+    port: 3732
+    type: vless
+    uuid: 600b472f-3e43-43a0-8815-a890a607891c
+    tls: false
+    sni: ""
+    skip-cert-verify: true
+    client-fingerprint: random
+    servername: ""
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ""
+
+  - name: NEW34
+    server: 185.8.129.187
+    port: 443
+    type: vless
+    uuid: 3c36eadb-747a-4166-8db0-23fec9883ea2
+    tls: true
+    sni: "turkish.nscl.ir"
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: "turkish.nscl.ir"
+    network: ws
+    ws-opts:
+      path: /NiREvilxXx
+      headers:
+        Host: "turkish.nscl.ir"
+    alpn:
+      - http/1.1
+  
+  - name: NEW35
+    server: 104.18.12.229
+    port: 8443
+    type: vless
+    uuid: f3d01b85-4370-4f6e-8133-6a441bb3120f
+    tls: true
+    sni: pardazeshvpn-tg61.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: pardazeshvpn-tg61.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg61.pages.dev
+
+  - name: NEW36
+    server: 104.18.12.229
+    port: 8443
+    type: vless
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
+    tls: true
+    sni: pardazeshvpn-tg71.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    servername: pardazeshvpn-tg71.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg71.pages.dev
+  
+  - name: NEW37
+    server: 104.17.245.156
+    port: 443
+    type: vless
+    uuid: ac1ac19b-d3da-44ff-ba96-3160a306e6e8
+    tls: true
+    sni: ""
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: 83391890813327783076798370684972.v2line.net
+    network: ws
+    ws-opts:
+      path: /V2LINE-TELEGRAM-CHANNEL-VLESS-WS-TLS
+      headers:
+        Host: 83391890813327783076798370684972.v2line.net
+    alpn:
+      - http/1.1
+  
+
+  - name: NEW38
+    server: 172.64.146.118
+    port: 8443
+    type: vless
+    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
+    tls: true
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: false
+    client-fingerprint: random
+    servername: pardazeshvpn-tg71.pages.dev
+    network: ws
+    ws-opts:
+      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      headers:
+        Host: pardazeshvpn-tg71.pages.dev
+
 
   - name: US-Amazon-EC2
     server: 3.78.59.177
@@ -624,6 +1212,41 @@ proxy-groups:
     proxies:
       - NEW1
       - NEW2
+      - NEW3
+      - NEW4
+      - NEW5
+      - NEW6
+      - NEW8
+      - NEW9
+      - NEW10
+      - NEW11
+      - NEW12
+      - NEW13
+      - NEW14
+      - NEW15
+      - NEW16
+      - NEW17
+      - NEW18
+      - NEW19
+      - NEW20
+      - NEW21
+      - NEW22
+      - NEW23
+      - NEW24
+      - NEW25
+      - NEW26
+      - NEW27
+      - NEW28
+      - NEW29
+      - NEW30
+      - NEW31
+      - NEW32
+      - NEW33
+      - NEW34
+      - NEW35
+      - NEW36
+      - NEW37
+      - NEW38
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
@@ -652,6 +1275,41 @@ proxy-groups:
       - RU-1
       - NEW1
       - NEW2
+      - NEW3
+      - NEW4
+      - NEW5
+      - NEW6
+      - NEW8
+      - NEW9
+      - NEW10
+      - NEW11
+      - NEW12
+      - NEW13
+      - NEW14
+      - NEW15
+      - NEW16
+      - NEW17
+      - NEW18
+      - NEW19
+      - NEW20
+      - NEW21
+      - NEW22
+      - NEW23
+      - NEW24
+      - NEW25
+      - NEW26
+      - NEW27
+      - NEW28
+      - NEW29
+      - NEW30
+      - NEW31
+      - NEW32
+      - NEW33
+      - NEW34
+      - NEW35
+      - NEW36
+      - NEW37
+      - NEW38
     url: https://www.fast.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -680,6 +1338,41 @@ proxy-groups:
       - RU-1
       - NEW1
       - NEW2
+      - NEW3
+      - NEW4
+      - NEW5
+      - NEW6
+      - NEW8
+      - NEW9
+      - NEW10
+      - NEW11
+      - NEW12
+      - NEW13
+      - NEW14
+      - NEW15
+      - NEW16
+      - NEW17
+      - NEW18
+      - NEW19
+      - NEW20
+      - NEW21
+      - NEW22
+      - NEW23
+      - NEW24
+      - NEW25
+      - NEW26
+      - NEW27
+      - NEW28
+      - NEW29
+      - NEW30
+      - NEW31
+      - NEW32
+      - NEW33
+      - NEW34
+      - NEW35
+      - NEW36
+      - NEW37
+      - NEW38
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
