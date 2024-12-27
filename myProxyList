@@ -1465,10 +1465,10 @@ rules:
   - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
   - DOMAIN,speedtest.macpaw.com,DIRECT
   - DOMAIN,beiyong.starnetcn.com,ProxyNet
-  - DOMAIN-SUFFIX,services.googleapis.cn,Hysteria-List
+  - DOMAIN-SUFFIX,services.googleapis.cn,ProxyNet
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,Hysteria-List
+  - DOMAIN,safebrowsing.googleapis.com,ProxyNet
   - DOMAIN,developer.apple.com,ProxyNet
   - DOMAIN-SUFFIX,digicert.com,ProxyNet
   - DOMAIN,ocsp.apple.com,ProxyNet
@@ -1627,10 +1627,10 @@ rules:
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
   - DOMAIN-KEYWORD,amazon,ProxyNet
-  - DOMAIN-KEYWORD,google,Hysteria-List
+  - DOMAIN-KEYWORD,google,ProxyNet
   - DOMAIN-KEYWORD,gmail,ProxyNet
-  - DOMAIN-KEYWORD,youtube,Hysteria-List
-  - DOMAIN-KEYWORD,facebook,Hysteria-List
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-KEYWORD,facebook,ProxyNet
   - DOMAIN-SUFFIX,fb.me,ProxyNet
   - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
   - DOMAIN-KEYWORD,twitter,ProxyNet
@@ -2326,7 +2326,7 @@ rules:
   - DOMAIN-SUFFIX,line-cdn.net,ProxyNet
   - DOMAIN-SUFFIX,line-scdn.net,ProxyNet
   - DOMAIN-KEYWORD,blogspot,ProxyNet
-  - DOMAIN-KEYWORD,google,Hysteria-List
+  - DOMAIN-KEYWORD,google,ProxyNet
   - DOMAIN-SUFFIX,abc.xyz,ProxyNet
   - DOMAIN-SUFFIX,admin.recaptcha.net,ProxyNet
   - DOMAIN-SUFFIX,ampproject.org,ProxyNet
@@ -2386,8 +2386,8 @@ rules:
   - DOMAIN-SUFFIX,joinclubhouse.com,ProxyNet
   - DOMAIN-SUFFIX,ap3.agora.io,ProxyNet
   - DOMAIN-KEYWORD,aka,ProxyNet
-  - DOMAIN-KEYWORD,facebook,Hysteria-List
-  - DOMAIN-KEYWORD,youtube,Hysteria-List
+  - DOMAIN-KEYWORD,facebook,ProxyNet
+  - DOMAIN-KEYWORD,youtube,ProxyNet
   - DOMAIN-KEYWORD,twitter,ProxyNet
   - DOMAIN-SUFFIX,instagram.com,ProxyNet
   - DOMAIN-SUFFIX,cdninstagram.com,ProxyNet
