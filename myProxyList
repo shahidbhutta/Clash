@@ -5,6 +5,44 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - name: CN-1
+    server: 183.236.48.158
+    port: 45402
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+  - name: CN-2
+    server: 183.236.51.23
+    port: 41020
+    type: vmess
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+  - name: US-27
+    server: 172.64.40.169
+    port: 80
+    type: vless
+    uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
+    tls: false
+    skip-cert-verify: false
+    servername: worker-winter-meadow-e881.test55.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: worker-winter-meadow-e881.test55.workers.dev
+  - name: FR-6
+    server: 51.15.15.82
+    port: 989
+    type: ss
+    cipher: aes-256-cfb
+    password: f8f7aCzcPKbsF8p3
+  
   - name: AlvinSingbox-1
     port: 34077
     server: 185.22.155.105
@@ -1230,6 +1268,7 @@ proxy-groups:
       - NewArrival-List
       - Extra-List
       - Epidonios-List
+      - ProxyPool-List
       - Best-of-All
       - Static-Server
 
@@ -1260,6 +1299,16 @@ proxy-groups:
       - NewArrival-6
       - NewArrival-7
       - NewArrival-8
+    url: https://www.youtube.com/favicon.ico
+    interval: 30
+    tolerance: 10
+  - name: ProxyPool-List
+    type: url-test
+    proxies:
+      - CN-1
+      - CN-2
+      - US-27
+      - FR-6
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1350,6 +1399,10 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - CN-1
+      - CN-2
+      - US-27
+      - FR-6
       - twserver
       - 110mbps
       - 111mbps
@@ -1437,6 +1490,10 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - CN-1
+      - CN-2
+      - US-27
+      - FR-6
       - twserver
       - 110mbps
       - 111mbps
