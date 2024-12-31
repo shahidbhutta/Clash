@@ -6,24 +6,23 @@ log-level: info
 external-controller: :9090
 proxies:
   - name: AlvinSingbox-1
-    port: 61831
-    server: 108.181.5.18
+    port: 34077
+    server: 185.22.155.105
     type: vless
     network: tcp
     flow: xtls-rprx-vision
     udp: true
     tls: true
-    servername: www.yahoo.com
+    servername: aws.amazon.com
     skip-cert-verify: false
     reality-opts:
-      public-key: DreQUK_jtC1rXKOjFXPIUbiU38icZVbQPDZ1bMxLdEY
-      short-id: a8395691
-    uuid: 04fae3bc-f139-4ae4-80c2-843b5d17d17a
+      public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
+    uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
     client-fingerprint: chrome
 
   - name: twserver
     port: 56870
-    server: 36.226.252.19
+    server: 36.226.244.225
     type: vless
     network: tcp
     flow: xtls-rprx-vision
@@ -921,8 +920,8 @@ proxies:
       - h3
     sni: bing.com
     skip-cert-verify: true
-    up: "11 Mbps"
-    down: "55 Mbps"
+    up: "100 Mbps"
+    down: "500 Mbps"
 
   - name: AlvinQuick-2                    
     type: hysteria
@@ -934,8 +933,8 @@ proxies:
       - h3
     sni: www.bing.com
     skip-cert-verify: true
-    up: "11 Mbps"
-    down: "55 Mbps"
+    up: "100 Mbps"
+    down: "500 Mbps"
 
   - name: AlvinSingbox-2                    
     type: hysteria
@@ -949,8 +948,8 @@ proxies:
     skip-cert-verify: true
     obfs: dongtaiwang.com
     obfs-password: dongtaiwang.com
-    up: "11 Mbps"
-    down: "55 Mbps"
+    up: "100 Mbps"
+    down: "500 Mbps"
 
   - name: DE-1
     type: hysteria
