@@ -5,6 +5,208 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - name: TW-TLS-1
+    port: 443
+    server: 103.137.63.2
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: high.work.lzg.me
+    skip-cert-verify: true
+    ws-opts:
+      path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+      headers:
+        host: high.work.lzg.me
+    uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+    client-fingerprint: random
+  - name: SG-TLS-1
+    port: 443
+    server: 13.67.9.5
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: shg2.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: shg2.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: HK-TLS-1
+    port: 443
+    server: 13.75.34.176
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: hkklo.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: hkklo.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: US-WS-1
+    port: 2082
+    server: 159.112.235.174
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: workerr.schodog1.workers.dev
+    uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
+    client-fingerprint: chrome
+  - name: AE-REALITY-1
+    port: 443
+    server: 181.215.205.99
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: adobe.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: ljzfoaXVBSNu3tw58-B0WNViso1aA9JSCX9GUcMDu0k
+      short-id: 4048A3da
+    uuid: 71b60539-19bf-4282-b09f-7596ffc3cc8b
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: KR-REALITY-1
+    port: 59167
+    server: 193.122.97.28
+    type: vless
+    network: tcp
+    udp: true
+    servername: www.sega.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: d9cGLVBrDFS02L2OvkqyqwFZ1Ux3AHs28ehl4Rwiyl0
+      short-id: adef9bdb
+    uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
+    client-fingerprint: chrome
+  - name: HK-TLS-2
+    port: 443
+    server: 20.189.104.97
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: dee33.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: dee33.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: JP-TLS-1
+    port: 443
+    server: 20.210.64.11
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: vsdfee.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: vsdfee.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: AU-TLS-1
+    port: 443
+    server: 20.211.64.15
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: bdfgfrtt7.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: bdfgfrtt7.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: AU-TLS-2
+    port: 443
+    server: 20.42.228.160
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: sdfee4.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: sdfee4.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: KR-TLS-1
+    port: 443
+    server: bnnm.azurewebsites.net
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+    alpn:
+      - http/1.1
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: JP-TLS-2
+    port: 443
+    server: vsdfee.azurewebsites.net
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+    alpn:
+      - http/1.1
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  - name: SG-TCP-NONE
+    port: 8081
+    server: 5.223.41.114
+    type: vless
+    network: tcp
+    tcp-http-opts:
+      - headerType: http
+    udp: true
+    skip-cert-verify: true
+    uuid: ab954190-4554-4c09-9dfe-dc264069e9ee
+    client-fingerprint: chrome
+  - name: TLS-5
+    port: 443
+    server: 3.122.62.145
+    type: vmess
+    network: ws
+    tls: true
+    udp: true
+    version: "2"
+    servername: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /ylks
+      headers:
+        host: nl.zhuk.us.kg
+    cipher: auto
+    uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+    alterId: 0
   - name: CN-1
     server: 183.236.48.158
     port: 45402
@@ -1262,6 +1464,7 @@ proxy-groups:
       - Extra-List
       - Epidonios-List
       - ProxyPool-List
+      - NewYear-List
       - Best-of-All
       - Static-Server
 
@@ -1304,6 +1507,27 @@ proxy-groups:
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
+
+  - name: NewYear-List
+    type: url-test
+    proxies:
+      - TW-TLS-1
+      - SG-TLS-1
+      - HK-TLS-1
+      - US-WS-1
+      - AE-REALITY-1
+      - KR-REALITY-1
+      - HK-TLS-2
+      - JP-TLS-1
+      - AU-TLS-1
+      - AU-TLS-2
+      - KR-TLS-1
+      - JP-TLS-2
+      - SG-TCP-NONE
+      - TLS-5
+    url: https://www.fast.com/favicon.ico
+    interval: 120
+    tolerance: 50
 
   - name: Epidonios-List
     type: url-test
@@ -1391,6 +1615,20 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - TW-TLS-1
+      - SG-TLS-1
+      - HK-TLS-1
+      - US-WS-1
+      - AE-REALITY-1
+      - KR-REALITY-1
+      - HK-TLS-2
+      - JP-TLS-1
+      - AU-TLS-1
+      - AU-TLS-2
+      - KR-TLS-1
+      - JP-TLS-2
+      - SG-TCP-NONE
+      - TLS-5
       - CN-1
       - CN-2
       - US-27
@@ -1481,6 +1719,20 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - TW-TLS-1
+      - SG-TLS-1
+      - HK-TLS-1
+      - US-WS-1
+      - AE-REALITY-1
+      - KR-REALITY-1
+      - HK-TLS-2
+      - JP-TLS-1
+      - AU-TLS-1
+      - AU-TLS-2
+      - KR-TLS-1
+      - JP-TLS-2
+      - SG-TCP-NONE
+      - TLS-5
       - CN-1
       - CN-2
       - US-27
