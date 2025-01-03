@@ -5,6 +5,21 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - name: Alvin-Xray-1
+    port: 37898
+    server: 1.162.18.226
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.yahoo.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: v6uWJJmVGFPd0K040QK3PJHCbPc74kXFoQmAhpu30jQ
+      short-id: e12d7fdb
+    uuid: ec302de4-6b3d-4f03-a228-3c6d303ed370
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
   - name: TW-TLS-1
     port: 443
     server: 103.137.63.2
@@ -183,10 +198,14 @@ proxies:
     port: 8081
     server: 5.223.41.114
     type: vless
+    tls: false
+    udp: false
+    xudp: false
     network: tcp
-    tcp-http-opts:
-      - headerType: http
-    udp: true
+    headerType : http
+    servername : www.speedtest.net
+    sni : www.speedtest.net
+    host : www.speedtest.net
     skip-cert-verify: true
     uuid: ab954190-4554-4c09-9dfe-dc264069e9ee
     client-fingerprint: chrome
@@ -1564,6 +1583,7 @@ proxy-groups:
       - AlvinQuick-2
       - AlvinSingbox-1
       - AlvinSingbox-2
+      - Alvin-Xray-1
     url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
@@ -1675,6 +1695,7 @@ proxy-groups:
       - AlvinQuick-2
       - AlvinSingbox-1
       - AlvinSingbox-2
+      - Alvin-Xray-1
       - NEW1
       - NEW2
       - NEW3
@@ -1779,6 +1800,7 @@ proxy-groups:
       - AlvinQuick-2
       - AlvinSingbox-1
       - AlvinSingbox-2
+      - Alvin-Xray-1
       - NEW1
       - NEW2
       - NEW3
