@@ -5,6 +5,36 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - name: UltraSurf-2
+    port: 22298
+    server: 185.226.172.156
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.yahoo.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: 9gabR4G0GdHtht5oD1D9wSCjGs76bMT7zWEaSh6LBGM
+      short-id: 8e256e4d
+    uuid: 9c2c632a-c88f-478f-afea-629764427d51
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: UltraSurf-1
+    port: 25835
+    server: 185.22.153.73
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.yahoo.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: JaUyzihmZ70WZdjNflneJnr99G-TXXtqDBeSNAQzHBc
+      short-id: aff1f4dc
+    uuid: af7f07dc-d726-4b1e-967d-dbb6c594999f
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
   - name: Alvin-Xray-1
     port: 37898
     server: 1.162.18.226
@@ -1577,6 +1607,8 @@ proxy-groups:
   - name: Alvin-List
     type: url-test
     proxies:
+      - UltraSurf-1
+      - UltraSurf-2
       - DE-1
       - AlvinHy2-1
       - AlvinQuick-1
@@ -1635,6 +1667,8 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - UltraSurf-1
+      - UltraSurf-2
       - TW-TLS-1
       - SG-TLS-1
       - HK-TLS-1
@@ -1740,6 +1774,8 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - UltraSurf-1
+      - UltraSurf-2
       - TW-TLS-1
       - SG-TLS-1
       - HK-TLS-1
