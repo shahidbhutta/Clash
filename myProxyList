@@ -1,11 +1,89 @@
-port: 7890
-socks-port: 7891
+mixed-port: 7890
 allow-lan: true
-mode: Rule
+bind-address: "*"
+mode: rule
 log-level: info
-external-controller: :9090
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver:
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+    - tls://1.0.0.1:853
+  fallback:
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - ns1.no-ip.com
+    - ns2.no-ip.com
+    - ns3.no-ip.com
+    - ns4.no-ip.com
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
-
+  - {name: AM_01, server: 188.164.159.91, port: 2083, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: CN_03, server: 183.236.51.23, port: 54104, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
+  - {name: CN_04, server: 120.232.217.96, port: 21332, type: trojan, password: 7daf833c-37b9-4afc-8495-96590f03f781, sni: 120.232.217.96, skip-cert-verify: true}
+  - {name: CN_05, server: 42.192.52.227, port: 22889, type: socks5, username: zeaslity, password: lovemm.23}
+  - {name: FR_07, server: 88.218.78.95, port: 8443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: JP_08, server: 103.116.7.103, port: 2083, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: NL_09, server: 146.190.16.108, port: 23701, type: vless, uuid: 677a41e5-dbe6-429b-8f91-cc014b1ae1bd, tls: false, skip-cert-verify: false, servername: Speedtest.net, network: http, http-opts: {method: GET, path: [/], headers: {Host: [Speedtest.net]}}}
+  - {name: NL_10, server: 185.204.109.190, port: 8443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: SC_12, server: 154.197.64.67, port: 443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: SE_14, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
+  - {name: SG_15, server: 206.238.236.134, port: 443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: TR_16, server: 95.164.116.22, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
+  - {name: US_18, server: 167.82.0.37, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_19, server: 151.101.194.133, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: teleirani.ir, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
+  - {name: US_20, server: 167.82.85.155, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: teleirani.ir, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
+  - {name: US_21, server: 167.82.1.102, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
+  - {name: US_22, server: 167.82.0.141, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_23, server: 167.82.0.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_24, server: 167.82.1.119, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, client-fingerprint: random, servername: teleirani.ir, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
+  - {name: US_25, server: 167.82.0.46, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_26, server: 167.82.0.9, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_27, server: 167.82.0.14, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_28, server: 167.82.0.1, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayja1?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_29, server: 167.82.1.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_30, server: 167.82.0.242, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
+  - {name: US_31, server: 167.82.0.226, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
+  - {name: US_32, server: 167.82.0.47, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
+  - {name: US_33, server: 167.82.0.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_34, server: 167.82.1.121, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
+  - {name: US_35, server: 167.82.72.38, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_36, server: 167.82.66.165, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
+  - {name: US_37, server: 167.82.65.71, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_38, server: 167.82.71.3, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_39, server: 167.82.70.214, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_40, server: 198.41.216.118, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
+  - {name: US_41, server: 167.82.65.80, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_43, server: 167.82.72.38, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_45, server: 198.41.192.239, port: 443, type: vless, uuid: e7934134-5395-47a7-bd90-f68a467e3971, tls: true, skip-cert-verify: false, servername: usb.warpo.me, network: ws, ws-opts: {path: /bing, headers: {Host: usb.warpo.me}}}
+  - {name: US_46, server: 141.101.123.208, port: 443, type: vless, uuid: 8e63cfe4-8855-4334-9619-a5d403bf2b8e, tls: true, skip-cert-verify: false, servername: usa.warpo.me, network: ws, ws-opts: {path: /bing, headers: {Host: usa.warpo.me}}}
+  - {name: US_47, server: 167.82.0.242, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_48, server: 199.232.214.133, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}}
+  - {name: US_50, server: 108.165.152.80, port: 2083, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
+  - {name: US_51, server: 151.101.2.216, port: 80, type: vmess, uuid: c69f3029-ae1e-45ca-aa08-70970f14dfd2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /racevpn, headers: {Host: telegram-ISVvpn.ir}}}
+  - {name: US_52, server: 167.82.0.0, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_53, server: 167.82.65.119, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
+  - {name: US_56, server: 167.82.1.136, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
+  - {name: US_57, server: 167.82.1.111, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
+  - {name: US_58, server: 173.245.49.53, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
+  - {name: US_59, server: 103.21.244.190, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
+  - {name: US_61, server: 35.89.145.123, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_62, server: 35.94.52.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: US_63, server: 154.17.229.206, port: 443, type: vless, uuid: f232ea17-b79f-4e64-d130-d3ce92b8e5b1, tls: true, skip-cert-verify: false, servername: dousa.monv.me, network: ws, ws-opts: {path: /bing, headers: {Host: dousa.monv.me}}}
+  
   - name: SK-VL-TCP-RLT
     port: 59167
     server: 193.122.97.28
@@ -1724,6 +1802,58 @@ proxy-groups:
       - CN-2-2
       - CN-2-3
       - US-27
+      - AM_01
+      - CN_03
+      - CN_04
+      - CN_05
+      - FR_07
+      - JP_08
+      - NL_09
+      - NL_10
+      - SC_12
+      - SE_14
+      - SG_15
+      - TR_16
+      - US_18
+      - US_19
+      - US_20
+      - US_21
+      - US_22
+      - US_23
+      - US_24
+      - US_25
+      - US_26
+      - US_27
+      - US_28
+      - US_29
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
+      - US_40
+      - US_41
+      - US_43
+      - US_45
+      - US_46
+      - US_47
+      - US_48
+      - US_50
+      - US_51
+      - US_52
+      - US_53
+      - US_56
+      - US_57
+      - US_58
+      - US_59
+      - US_61
+      - US_62
+      - US_63
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1898,6 +2028,58 @@ proxy-groups:
       - CN-2-2
       - CN-2-3
       - US-27
+      - AM_01
+      - CN_03
+      - CN_04
+      - CN_05
+      - FR_07
+      - JP_08
+      - NL_09
+      - NL_10
+      - SC_12
+      - SE_14
+      - SG_15
+      - TR_16
+      - US_18
+      - US_19
+      - US_20
+      - US_21
+      - US_22
+      - US_23
+      - US_24
+      - US_25
+      - US_26
+      - US_27
+      - US_28
+      - US_29
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
+      - US_40
+      - US_41
+      - US_43
+      - US_45
+      - US_46
+      - US_47
+      - US_48
+      - US_50
+      - US_51
+      - US_52
+      - US_53
+      - US_56
+      - US_57
+      - US_58
+      - US_59
+      - US_61
+      - US_62
+      - US_63
       - twserver
       - 110mbps
       - 111mbps
@@ -2023,6 +2205,58 @@ proxy-groups:
       - CN-2-2
       - CN-2-3
       - US-27
+      - AM_01
+      - CN_03
+      - CN_04
+      - CN_05
+      - FR_07
+      - JP_08
+      - NL_09
+      - NL_10
+      - SC_12
+      - SE_14
+      - SG_15
+      - TR_16
+      - US_18
+      - US_19
+      - US_20
+      - US_21
+      - US_22
+      - US_23
+      - US_24
+      - US_25
+      - US_26
+      - US_27
+      - US_28
+      - US_29
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
+      - US_40
+      - US_41
+      - US_43
+      - US_45
+      - US_46
+      - US_47
+      - US_48
+      - US_50
+      - US_51
+      - US_52
+      - US_53
+      - US_56
+      - US_57
+      - US_58
+      - US_59
+      - US_61
+      - US_62
+      - US_63
       - twserver
       - 110mbps
       - 111mbps
