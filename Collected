@@ -23,11 +23,16 @@ dns:
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
   nameserver:
     - 223.5.5.5
     - 114.114.114.114
     - 119.29.29.29
     - 180.76.76.76
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+    - tls://1.0.0.1:853
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -109,13 +114,14 @@ proxies:
     type: vless
     network: tcp
     udp: true
+    tls: true
     servername: aws.amazon.com
     skip-cert-verify: true
     reality-opts:
       public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
     uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
     flow: xtls-rprx-vision
-    client-fingerprint: random
+    client-fingerprint: chrome
   - name: SG-TLS-1
     port: 443
     server: 13.67.9.5
@@ -130,7 +136,7 @@ proxies:
       headers:
         host: shg2.azurewebsites.net
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    client-fingerprint: random
+    client-fingerprint: chrome
   - name: NEW1
     port: 587
     server: 103.214.68.133
