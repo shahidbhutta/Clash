@@ -1,345 +1,13 @@
-mixed-port: 7890
+port: 7890
+socks-port: 7891
 allow-lan: true
-bind-address: "*"
-mode: rule
+mode: Rule
 log-level: info
-external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  default-nameserver:
-    - tls://8.8.4.4:853
-    - tls://8.8.8.8:853
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  use-hosts: true
-  nameserver:
-    - tls://8.8.4.4:853
-    - tls://8.8.8.8:853
-    - tls://1.0.0.1:853
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - ns1.no-ip.com
-    - ns2.no-ip.com
-    - ns3.no-ip.com
-    - ns4.no-ip.com
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+external-controller: :9090
 proxies:
-  - {name: SE_100MBPS, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
-  - {name: AM_01, server: 188.164.159.91, port: 2083, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: CN_03, server: 183.236.51.23, port: 54104, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
-  - {name: CN_04, server: 120.232.217.96, port: 21332, type: trojan, password: 7daf833c-37b9-4afc-8495-96590f03f781, sni: 120.232.217.96, skip-cert-verify: true}
-  - {name: CN_05, server: 42.192.52.227, port: 22889, type: socks5, username: zeaslity, password: lovemm.23}
-  - {name: FR_07, server: 88.218.78.95, port: 8443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: JP_08, server: 103.116.7.103, port: 2083, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: NL_09, server: 146.190.16.108, port: 23701, type: vless, uuid: 677a41e5-dbe6-429b-8f91-cc014b1ae1bd, tls: false, skip-cert-verify: false, servername: Speedtest.net, network: http, http-opts: {method: GET, path: [/], headers: {Host: [Speedtest.net]}}}
-  - {name: NL_10, server: 185.204.109.190, port: 8443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: SC_12, server: 154.197.64.67, port: 443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: SE_14, server: 95.164.51.24, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
-  - {name: SG_15, server: 206.238.236.134, port: 443, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: TR_16, server: 95.164.116.22, port: 2501, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_18, server: 167.82.0.37, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_19, server: 151.101.194.133, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: teleirani.ir, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_20, server: 167.82.85.155, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, client-fingerprint: chrome, servername: teleirani.ir, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_21, server: 167.82.1.102, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_22, server: 167.82.0.141, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_23, server: 167.82.0.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_24, server: 167.82.1.119, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, client-fingerprint: random, servername: teleirani.ir, alpn: [h2, http/1.1], network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_25, server: 167.82.0.46, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_26, server: 167.82.0.9, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_27, server: 167.82.0.14, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_28, server: 167.82.0.1, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayja1?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_29, server: 167.82.1.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_30, server: 167.82.0.242, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
-  - {name: US_31, server: 167.82.0.226, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
-  - {name: US_32, server: 167.82.0.47, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
-  - {name: US_33, server: 167.82.0.103, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_34, server: 167.82.1.121, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
-  - {name: US_35, server: 167.82.72.38, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_36, server: 167.82.66.165, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1?ed=2560", headers: {Host: teleirani.ir}}}
-  - {name: US_37, server: 167.82.65.71, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_38, server: 167.82.71.3, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_39, server: 167.82.70.214, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_40, server: 198.41.216.118, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_41, server: 167.82.65.80, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_43, server: 167.82.72.38, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_45, server: 198.41.192.239, port: 443, type: vless, uuid: e7934134-5395-47a7-bd90-f68a467e3971, tls: true, skip-cert-verify: false, servername: usb.warpo.me, network: ws, ws-opts: {path: /bing, headers: {Host: usb.warpo.me}}}
-  - {name: US_46, server: 141.101.123.208, port: 443, type: vless, uuid: 8e63cfe4-8855-4334-9619-a5d403bf2b8e, tls: true, skip-cert-verify: false, servername: usa.warpo.me, network: ws, ws-opts: {path: /bing, headers: {Host: usa.warpo.me}}}
-  - {name: US_47, server: 167.82.0.242, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_48, server: 199.232.214.133, port: 443, type: vmess, uuid: e5852393-ca52-4c90-a237-d63cbbb57f21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/farcry?ed=2560", headers: {Host: loki.oracle}}}
-  - {name: US_50, server: 108.165.152.80, port: 2083, type: trojan, password: SSorg, sni: sstjj.esslh.filegear-sg.me, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sstjj.esslh.filegear-sg.me}}}
-  - {name: US_51, server: 151.101.2.216, port: 80, type: vmess, uuid: c69f3029-ae1e-45ca-aa08-70970f14dfd2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /racevpn, headers: {Host: telegram-ISVvpn.ir}}}
-  - {name: US_52, server: 167.82.0.0, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: /, headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_53, server: 167.82.65.119, port: 80, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: false, skip-cert-verify: false, servername: edge.validbv3528.ir, network: ws, ws-opts: {path: "/vless-ws/@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayjab1@Azarbayja1/?ed=2560", headers: {Host: edge.validbv3528.ir}}}
-  - {name: US_56, server: 167.82.1.136, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_57, server: 167.82.1.111, port: 80, type: vless, uuid: 253ef561-9e57-4336-befd-878ddd30df01, tls: false, skip-cert-verify: false, servername: teleirani.ir, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: teleirani.ir}}}
-  - {name: US_58, server: 173.245.49.53, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_59, server: 103.21.244.190, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, skip-cert-verify: false, servername: a.mifeng.us.kg, network: ws, ws-opts: {path: "/telegram-_-_-_-_-__-free_shekan-_-_-_-/?ed=2048", headers: {Host: a.mifeng.us.kg}}}
-  - {name: US_61, server: 35.89.145.123, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_62, server: 35.94.52.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: US_63, server: 154.17.229.206, port: 443, type: vless, uuid: f232ea17-b79f-4e64-d130-d3ce92b8e5b1, tls: true, skip-cert-verify: false, servername: dousa.monv.me, network: ws, ws-opts: {path: /bing, headers: {Host: dousa.monv.me}}}
-  - {name: DE_64, server: 2na9noed62ec.dopraxrocks.com, port: 80, type: vless, uuid: 01b12c3c-4d96-45c3-88ef-f1360804d7b0, tls: false, skip-cert-verify: false, servername: speedtest.net, network: http, http-opts: {method: GET, path: [/], headers: {Host: [speedtest.net]}}}
-  - name: Tested1
-    port: 443
-    server: 46.254.92.33
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: mmdserver.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: mmdserver.us.kg
-    uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-    client-fingerprint: random
-  - name: Tested2
-    port: 443
-    server: 92.60.74.100
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: mmdserver.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048fp=ios
-      headers:
-        host: mmdserver.us.kg
-    uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-    client-fingerprint: random
-  - name: Tested3
-    port: 1633
-    server: 185.161.251.211
-    type: vless
-    network: tcp
-    udp: true
-    servername: stackoverflow.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
-      short-id: 9bc0a55a5379c0ed
-    uuid: b0946f8f-7b76-4eaf-8c9f-ca6175360dd9
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: Tested4
-    port: 8080
-    server: 94.250.246.200
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: a.mifeng.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: a.mifeng.us.kg
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    client-fingerprint: random
-  - name: Tested5
-    port: 5650
-    server: 91.107.189.190
-    type: vless
-    network: tcp
-    udp: true
-    servername: refersion.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: o6-d1-GMZlIpW1yNIvKtwYNxTotEiVzfbSzUTsV7bnU
-    uuid: 184997d9-a803-4e6d-ef6f-ed338d09e8ec
-    client-fingerprint: chrome
-  - name: Tested6
-    port: 443
-    server: 192.0.54.235
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: mmdserver.us.kg
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: mmdserver.us.kg
-    uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd
-    client-fingerprint: random
-  - name: SK-VL-TCP-RLT
-    port: 59167
-    server: 193.122.97.28
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: www.sega.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: d9cGLVBrDFS02L2OvkqyqwFZ1Ux3AHs28ehl4Rwiyl0
-      short-id: adef9bdb
-    uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
-    client-fingerprint: chrome
-  - name: NL-VL-TCP-RLT
-    port: 443
-    server: 140.82.57.15
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: www.survive.org.uk
-    skip-cert-verify: true
-    reality-opts:
-      public-key: gZLTRrh9Z0TIvMoXHB7_ih3EN6Zn0IuLstFFZ0y7Ryc
-      short-id: cc61d4
-    alpn:
-      - http/1.1
-    uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: test1
-    type: hysteria2
-    server: 204.216.108.5
-    port: 2024
-    password: sysadmin.sysadmin
-    fast-open: true
-    sni: 204-216-108-5.nip.io
-    skip-cert-verify: true
-
-  - name: US-HY2-UDP-TLS-1
-    port: 443
-    server: 66.135.11.68
-    type: hysteria2
-    udp: true
-    obfs: salamander
-    password: 4e9ee29b39a28277
-    skip-cert-verify: true
-    obfs-password: 13f7ba5f
-  - name: US-HY2-UDP-TLS-2
-    port: 443
-    server: 45.76.0.86
-    type: hysteria2
-    udp: true
-    sni: 45.76.0.86
-    obfs: salamander
-    password: 1f17cdf0578a2860
-    skip-cert-verify: true
-    obfs-password: 4b817757
-  - name: US-HY2-UDP-TLS-3
-    port: 443
-    server: 45.76.0.86
-    type: hysteria2
-    udp: true
-    obfs: salamander
-    password: 1f17cdf0578a2860
-    skip-cert-verify: true
-    obfs-password: 4b817757
-  - name: US-HY2-UDP-TLS-4
-    port: 443
-    server: 207.148.22.93
-    type: hysteria2
-    udp: true
-    sni: vkvd127.mycdn.me
-    obfs: salamander
-    password: 9bb452b106ffc217
-    skip-cert-verify: true
-    obfs-password: cd29099d
-  - name: US-HY2-UDP-TLS-5
-    port: 443
-    server: 66.135.11.68
-    type: hysteria2
-    udp: true
-    sni: 66.135.11.68
-    obfs: salamander
-    password: 4e9ee29b39a28277
-    skip-cert-verify: true
-    obfs-password: 13f7ba5f
-  - name: US-HY2-UDP-TLS-6
-    port: 443
-    server: 45.76.0.86
-    type: hysteria2
-    udp: true
-    sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    obfs: salamander
-    password: 1f17cdf0578a2860
-    skip-cert-verify: true
-    obfs-password: 4b817757
-  - name: US-HY2-UDP-TLS-7
-    port: 443
-    server: 66.135.11.68
-    type: hysteria2
-    udp: true
-    sni: wrmelmwxlf.gktevlrqznwqqqozy6hgvqxwfmfs vgvs6c7kjnrubuh.cc
-    obfs: salamander
-    password: 4e9ee29b39a28277
-    skip-cert-verify: true
-    obfs-password: 13f7ba5f
-  - name: US-HY2-UDP-TLS-8
-    port: 443
-    server: 207.148.22.93
-    type: hysteria2
-    udp: true
-    obfs: salamander
-    password: 9bb452b106ffc217
-    skip-cert-verify: true
-    obfs-password: cd29099d
-  - name: US-HY2-UDP-TLS-9
-    port: 443
-    server: 207.148.22.93
-    type: hysteria2
-    udp: true
-    sni: 207.148.22.93
-    obfs: salamander
-    password: 9bb452b106ffc217
-    skip-cert-verify: true
-    obfs-password: cd29099d
-  - name: US-HY2-UDP-TLS-10
-    port: 443
-    server: 45.76.0.86
-    type: hysteria2
-    udp: true
-    sni: vkvd127.mycdn.me
-    obfs: salamander
-    password: 1f17cdf0578a2860
-    skip-cert-verify: true
-    obfs-password: 4b817757
-  - name: US-HY2-UDP-TLS-11
-    port: 443
-    server: 192.227.231.142
-    type: hysteria2
-    udp: true
-    password: sysadmin.sysadmin
-    skip-cert-verify: true
-
-  - name: BR-HY2-UDP-TLS
-    port: 444
-    server: 167.234.249.46
-    type: hysteria2
-    udp: true
-    sni: a.961229.xyz
-    password: sysadmin.sysadmin
-    skip-cert-verify: true
-
-  - name: SE-HY2-UDP-TLS
-    port: 443
-    server: 70.34.207.153
-    type: hysteria2
-    udp: true
-    sni: 70.34.207.153
-    obfs: salamander
-    password: 18240b2dfdd76484
-    skip-cert-verify: true
-    obfs-password: d2648ec2
-
-  
   - name: UltraSurf-2
-    port: 20528
-    server: 5.199.143.87
+    port: 22298
+    server: 185.226.172.156
     type: vless
     network: tcp
     tls: true
@@ -347,13 +15,13 @@ proxies:
     servername: www.yahoo.com
     skip-cert-verify: true
     reality-opts:
-      public-key: ueID_PZUuaL5bsu5vjCd8rLmHl3IUb-uj0jRRcSu_x0
-      short-id: c9edda54
-    uuid: f6bcf3c9-d99f-4f5f-bad1-51c16aa9563c
+      public-key: 9gabR4G0GdHtht5oD1D9wSCjGs76bMT7zWEaSh6LBGM
+      short-id: 8e256e4d
+    uuid: 9c2c632a-c88f-478f-afea-629764427d51
     flow: xtls-rprx-vision
     client-fingerprint: chrome
   - name: UltraSurf-1
-    port: 25090
+    port: 25835
     server: 185.22.153.73
     type: vless
     network: tcp
@@ -369,7 +37,7 @@ proxies:
     client-fingerprint: chrome
   - name: Alvin-Xray-1
     port: 37898
-    server: 1.162.51.106
+    server: 1.162.18.226
     type: vless
     network: tcp
     tls: true
@@ -597,7 +265,7 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: true
-  - name: CN-2-1
+  - name: CN-2
     server: 183.236.51.23
     port: 41020
     type: vmess
@@ -606,8 +274,6 @@ proxies:
     cipher: auto
     tls: false
     skip-cert-verify: false
-  - {name: CN-2-2, server: 183.236.51.23, port: 54104, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: CN-2-3, server: 183.236.51.23, port: 56601, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true}
   - name: US-27
     server: 172.64.40.169
     port: 80
@@ -750,6 +416,160 @@ proxies:
     skip-cert-verify: true
     uuid: 5e371df2-32d8-4431-ac7d-2f22c9d3cdd8
     client-fingerprint: random
+  - name: 38mbps
+    port: 443
+    server: 141.148.229.106
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: de.bolagskontaktstockholm.se
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        host: de.bolagskontaktstockholm.se
+    uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
+    client-fingerprint: random
+  - name: 42mbps
+    port: 59167
+    server: 193.122.97.28
+    type: vless
+    network: tcp
+    udp: true
+    servername: www.sega.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: d9cGLVBrDFS02L2OvkqyqwFZ1Ux3AHs28ehl4Rwiyl0
+      short-id: adef9bdb
+    uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
+    client-fingerprint: chrome
+  - name: 43mbps
+    port: 443
+    server: 195.211.24.243
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: apple.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: -ALxkpd7Wi7WKs1dXND7yqoYQfJW8d4BctjfXIy0L1M
+      short-id: b5ed878b
+    uuid: 71b60539-19bf-4282-b09f-7596ffc3cc8b
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: 47mbps
+    port: 443
+    server: 140.82.57.15
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: www.survive.org.uk
+    skip-cert-verify: true
+    reality-opts:
+      public-key: gZLTRrh9Z0TIvMoXHB7_ih3EN6Zn0IuLstFFZ0y7Ryc
+      short-id: cc61d4
+    alpn:
+      - http/1.1
+    uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: 51mbps
+    port: 9393
+    server: 185.231.181.176
+    type: vless
+    network: tcp
+    udp: true
+    skip-cert-verify: true
+    uuid: 4f53514e-bf21-4d46-8c11-3ac9297927a6
+    client-fingerprint: random
+  - name: 63mbps
+    port: 9393
+    server: 185.226.116.224
+    type: vless
+    network: tcp
+    udp: true
+    skip-cert-verify: true
+    uuid: 4f53514e-bf21-4d46-8c11-3ac9297927a6
+    client-fingerprint: random
+  - name: 71mbps
+    port: 2030
+    server: 217.182.105.238
+    type: vless
+    network: grpc
+    udp: true
+    servername: refersion.com
+    skip-cert-verify: true
+    grpc-opts: {}
+    reality-opts:
+      public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+      short-id: 7fe29733
+    uuid: 51d85bb4-bb4e-491a-ac15-9c5f5633f1d0
+    client-fingerprint: chrome
+  - name: 76mbps
+    port: 443
+    server: 47.251.95.178
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: 147135001195.sec22org.com
+    skip-cert-verify: true
+    uuid: ea286109-d20f-415e-849e-4af20ab04b65
+    client-fingerprint: random
+  - name: 77mbps
+    port: 443
+    server: 147.135.4.2
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: 147135004002.sec20org.com
+    skip-cert-verify: true
+    alpn:
+      - h2,http/1.1
+    uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+    client-fingerprint: random
+  - name: 78mbps
+    port: 8080
+    server: 37.152.191.159
+    type: vless
+    network: tcp
+    udp: true
+    skip-cert-verify: true
+    uuid: 9a7f0c6e-cb73-4baf-ad31-ac5f9af851c3
+    client-fingerprint: random
+  - name: 79mbps
+    port: 80
+    server: 152.42.230.97
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /Tharuwa-PAID
+      headers:
+        host: zoom.us
+    uuid: bea95e21-67f0-4192-957e-693222b421be
+    client-fingerprint: random
+  - name: 99mbps
+    port: 443
+    server: 130.61.39.13
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: de.bolagskontaktstockholm.se
+    skip-cert-verify: true
+    ws-opts:
+      path: /ws
+      headers:
+        host: de.bolagskontaktstockholm.se
+    uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8
+    client-fingerprint: random
+
 
   - name: NEW1
     server: 103.214.68.133
@@ -1413,17 +1233,18 @@ proxies:
     up: "100 Mbps"
     down: "500 Mbps"
 
-  - name: AlvinHy-1
+  - name: DE-1
     type: hysteria
-    server: 185.22.155.71
-    port: 15424
+    server: 146.0.36.114
+    port: 64914
+    ports: 30000-40000
     auth_str: dongtaiwang.com
     alpn:
-      - h3
+    - h3
     sni: www.bing.com
     skip-cert-verify: true
-    up: "100 Mbps"
-    down: "500 Mbps"
+    up: 100 Mbps
+    down: 1000 Mbps
 
   - name: AlvinHy2-1
     type: hysteria2
@@ -1681,11 +1502,123 @@ proxies:
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     client-fingerprint: chrome
 
-  
+  - name: Good1
+    type: vless
+    server: 172.67.204.84
+    port: 8080
+    uuid: 350ba876-0706-4525-b342-f70062cb24f8
+    network: ws
+    tls: false
+    client-fingerprint: random
+    ws-opts:
+      path: /telegram---VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram--VPNCUSTOMIZE--telegram----VPNCUSTOMIZE
+      headers:
+        host: seyyed.webdade.ip-ddns.com
+    ip-version: dual
+  - name: Good2
+    type: vless
+    server: 104.21.64.1
+    port: 443
+    uuid: aa51e273-1e4a-47a6-9f44-76a35062395d
+    network: ws
+    tls: true
+    servername: back-us1.uni-verse.top
+    client-fingerprint: random
+    ws-opts:
+      path: /nanliang
+      headers:
+        host: back-us1.uni-verse.top
+    ip-version: dual
+  - name: Good3
+    type: vless
+    server: 151.101.0.155
+    port: 80
+    uuid: 350ba876-0706-4525-b342-f70062cb24f8
+    network: ws
+    tls: false
+    ws-opts:
+      path: /telegram,@ELiV2RAY--telegram,@ELiV2RAY--telegram,@ELiV2RAY--telegram,@ELiV2RAY--telegram,@ELiV2RAY--telegram,@ELiV2RAY
+      headers:
+        host: JoinBede--ELiV2-RAY.ir
+    ip-version: dual
+  - name: Good4
+    type: vless
+    server: 104.21.80.1
+    port: 443
+    uuid: aa51e273-1e4a-47a6-9f44-76a35062395d
+    network: ws
+    tls: true
+    servername: back-us1.uni-verse.top
+    client-fingerprint: random
+    ws-opts:
+      path: /nanliang
+      headers:
+        host: back-us1.uni-verse.top
+    ip-version: dual
+  - name: Good5
+    type: vless
+    server: 104.21.16.1
+    port: 443
+    uuid: aa51e273-1e4a-47a6-9f44-76a35062395d
+    network: ws
+    tls: true
+    servername: back-us1.uni-verse.top
+    client-fingerprint: random
+    ws-opts:
+      path: /nanliang
+      headers:
+        host: back-us1.uni-verse.top
+    ip-version: dual
+  - name: Good6
+    type: vless
+    server: 104.21.32.1
+    port: 443
+    uuid: aa51e273-1e4a-47a6-9f44-76a35062395d
+    network: ws
+    tls: true
+    servername: back-us1.uni-verse.top
+    client-fingerprint: random
+    ws-opts:
+      path: /nanliang
+      headers:
+        host: back-us1.uni-verse.top
+    ip-version: dual
+  - name: Good7
+    type: vless
+    server: 172.67.204.84
+    port: 2087
+    uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
+    network: ws
+    tls: true
+    servername: Tp813N171b.AnA-sOfT.iR
+    alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        host: Tp813N171b.AnA-sOfT.iR
+    ip-version: dual
+  - name: Good8
+    type: vless
+    server: 151.101.2.228
+    port: 443
+    uuid: 3e3f884d-6d4c-4aa6-b87f-b19470a97705
+    network: ws
+    tls: true
+    servername: fishlab.ucdavis.edu
+    client-fingerprint: randomized
+    ws-opts:
+      path: /@UnlimitedDev----@UnlimitedDev-----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev----@UnlimitedDev
+      headers:
+        host: JoinBede--Unlimiteddev--Unlimiteddev.iR.
+    ip-version: dual
 proxy-groups:
   - name: ProxyNet
     type: select
     proxies:
+      - Good-List
       - Alvin-List
       - NEW-List
       - NewArrival-List
@@ -1693,24 +1626,23 @@ proxy-groups:
       - Epidonios-List
       - ProxyPool-List
       - NewYear-List
-      - Hysteria-List
-      - Tested-List
       - Best-of-All
       - Static-Server
-      
-  - name: Tested-List
+    
+  - name: Good-List
     type: url-test
     proxies:
-      - Tested1
-      - Tested2
-      - Tested3
-      - Tested4
-      - Tested5
-      - Tested6
+      - Good1
+      - Good2
+      - Good3
+      - Good4
+      - Good5
+      - Good6
+      - Good7
+      - Good8
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
-
   - name: Extra-List
     type: url-test
     proxies:
@@ -1745,63 +1677,8 @@ proxy-groups:
     type: url-test
     proxies:
       - CN-1
-      - CN-2-1
-      - CN-2-2
-      - CN-2-3
+      - CN-2
       - US-27
-      - AM_01
-      - CN_03
-      - CN_04
-      - CN_05
-      - FR_07
-      - JP_08
-      - NL_09
-      - NL_10
-      - SC_12
-      - SE_14
-      - SG_15
-      - TR_16
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_25
-      - US_26
-      - US_27
-      - US_28
-      - US_29
-      - US_30
-      - US_31
-      - US_32
-      - US_33
-      - US_34
-      - US_35
-      - US_36
-      - US_37
-      - US_38
-      - US_39
-      - US_40
-      - US_41
-      - US_43
-      - US_45
-      - US_46
-      - US_47
-      - US_48
-      - US_50
-      - US_51
-      - US_52
-      - US_53
-      - US_56
-      - US_57
-      - US_58
-      - US_59
-      - US_61
-      - US_62
-      - US_63
-      - DE_64
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1837,39 +1714,28 @@ proxy-groups:
       - 161mbps
       - 170mbps
       - 210mbps
+      - 38mbps
+      - 42mbps
+      - 43mbps
+      - 47mbps
+      - 51mbps
+      - 63mbps
+      - 71mbps
+      - 76mbps
+      - 77mbps
+      - 78mbps
+      - 79mbps
+      - 99mbps
     url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
 
-
-  - name: Hysteria-List
-    type: url-test
-    proxies:
-      - US-HY2-UDP-TLS-1
-      - US-HY2-UDP-TLS-2
-      - US-HY2-UDP-TLS-3
-      - US-HY2-UDP-TLS-4
-      - US-HY2-UDP-TLS-5
-      - US-HY2-UDP-TLS-6
-      - US-HY2-UDP-TLS-7
-      - US-HY2-UDP-TLS-8
-      - US-HY2-UDP-TLS-9
-      - US-HY2-UDP-TLS-10
-      - US-HY2-UDP-TLS-11
-      - BR-HY2-UDP-TLS
-      - SE-HY2-UDP-TLS
-      - test1
-      - SK-VL-TCP-RLT
-      - NL-VL-TCP-RLT
-    url: https://www.fast.com/favicon.ico
-    interval: 120
-    tolerance: 50
   - name: Alvin-List
     type: url-test
     proxies:
       - UltraSurf-1
       - UltraSurf-2
-      - AlvinHy-1
+      - DE-1
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
@@ -1927,29 +1793,14 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
-      - Tested1
-      - Tested2
-      - Tested3
-      - Tested4
-      - Tested5
-      - Tested6
-      - SE_100MBPS
-      - SK-VL-TCP-RLT
-      - NL-VL-TCP-RLT
-      - US-HY2-UDP-TLS-1
-      - US-HY2-UDP-TLS-2
-      - US-HY2-UDP-TLS-3
-      - US-HY2-UDP-TLS-4
-      - US-HY2-UDP-TLS-5
-      - US-HY2-UDP-TLS-6
-      - US-HY2-UDP-TLS-7
-      - US-HY2-UDP-TLS-8
-      - US-HY2-UDP-TLS-9
-      - US-HY2-UDP-TLS-10
-      - US-HY2-UDP-TLS-11
-      - BR-HY2-UDP-TLS
-      - SE-HY2-UDP-TLS
-      - test1
+      - Good1
+      - Good2
+      - Good3
+      - Good4
+      - Good5
+      - Good6
+      - Good7
+      - Good8
       - UltraSurf-1
       - UltraSurf-2
       - TW-TLS-1
@@ -1967,63 +1818,8 @@ proxy-groups:
       - SG-TCP-NONE
       - TLS-5
       - CN-1
-      - CN-2-1
-      - CN-2-2
-      - CN-2-3
+      - CN-2
       - US-27
-      - AM_01
-      - CN_03
-      - CN_04
-      - CN_05
-      - FR_07
-      - JP_08
-      - NL_09
-      - NL_10
-      - SC_12
-      - SE_14
-      - SG_15
-      - TR_16
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_25
-      - US_26
-      - US_27
-      - US_28
-      - US_29
-      - US_30
-      - US_31
-      - US_32
-      - US_33
-      - US_34
-      - US_35
-      - US_36
-      - US_37
-      - US_38
-      - US_39
-      - US_40
-      - US_41
-      - US_43
-      - US_45
-      - US_46
-      - US_47
-      - US_48
-      - US_50
-      - US_51
-      - US_52
-      - US_53
-      - US_56
-      - US_57
-      - US_58
-      - US_59
-      - US_61
-      - US_62
-      - US_63
-      - DE_64
       - twserver
       - 110mbps
       - 111mbps
@@ -2032,6 +1828,18 @@ proxy-groups:
       - 161mbps
       - 170mbps
       - 210mbps
+      - 38mbps
+      - 42mbps
+      - 43mbps
+      - 47mbps
+      - 51mbps
+      - 63mbps
+      - 71mbps
+      - 76mbps
+      - 77mbps
+      - 78mbps
+      - 79mbps
+      - 99mbps
       - Ex1
       - Ex2
       - Ex3
@@ -2049,7 +1857,7 @@ proxy-groups:
       - NewArrival-6
       - NewArrival-7
       - NewArrival-8
-      - AlvinHy-1
+      - DE-1
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
@@ -2100,29 +1908,14 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
-      - Tested1
-      - Tested2
-      - Tested3
-      - Tested4
-      - Tested5
-      - Tested6
-      - SE_100MBPS
-      - SK-VL-TCP-RLT
-      - NL-VL-TCP-RLT
-      - US-HY2-UDP-TLS-1
-      - US-HY2-UDP-TLS-2
-      - US-HY2-UDP-TLS-3
-      - US-HY2-UDP-TLS-4
-      - US-HY2-UDP-TLS-5
-      - US-HY2-UDP-TLS-6
-      - US-HY2-UDP-TLS-7
-      - US-HY2-UDP-TLS-8
-      - US-HY2-UDP-TLS-9
-      - US-HY2-UDP-TLS-10
-      - US-HY2-UDP-TLS-11
-      - BR-HY2-UDP-TLS
-      - SE-HY2-UDP-TLS
-      - test1
+      - Good1
+      - Good2
+      - Good3
+      - Good4
+      - Good5
+      - Good6
+      - Good7
+      - Good8
       - UltraSurf-1
       - UltraSurf-2
       - TW-TLS-1
@@ -2140,63 +1933,8 @@ proxy-groups:
       - SG-TCP-NONE
       - TLS-5
       - CN-1
-      - CN-2-1
-      - CN-2-2
-      - CN-2-3
+      - CN-2
       - US-27
-      - AM_01
-      - CN_03
-      - CN_04
-      - CN_05
-      - FR_07
-      - JP_08
-      - NL_09
-      - NL_10
-      - SC_12
-      - SE_14
-      - SG_15
-      - TR_16
-      - US_18
-      - US_19
-      - US_20
-      - US_21
-      - US_22
-      - US_23
-      - US_24
-      - US_25
-      - US_26
-      - US_27
-      - US_28
-      - US_29
-      - US_30
-      - US_31
-      - US_32
-      - US_33
-      - US_34
-      - US_35
-      - US_36
-      - US_37
-      - US_38
-      - US_39
-      - US_40
-      - US_41
-      - US_43
-      - US_45
-      - US_46
-      - US_47
-      - US_48
-      - US_50
-      - US_51
-      - US_52
-      - US_53
-      - US_56
-      - US_57
-      - US_58
-      - US_59
-      - US_61
-      - US_62
-      - US_63
-      - DE_64
       - twserver
       - 110mbps
       - 111mbps
@@ -2205,6 +1943,18 @@ proxy-groups:
       - 161mbps
       - 170mbps
       - 210mbps
+      - 38mbps
+      - 42mbps
+      - 43mbps
+      - 47mbps
+      - 51mbps
+      - 63mbps
+      - 71mbps
+      - 76mbps
+      - 77mbps
+      - 78mbps
+      - 79mbps
+      - 99mbps
       - Ex1
       - Ex2
       - Ex3
@@ -2222,7 +1972,7 @@ proxy-groups:
       - NewArrival-6
       - NewArrival-7
       - NewArrival-8
-      - AlvinHy-1
+      - DE-1
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
