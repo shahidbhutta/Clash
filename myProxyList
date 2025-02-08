@@ -287,21 +287,7 @@ proxies:
       path: /
       headers:
         Host: worker-winter-meadow-e881.test55.workers.dev
-  - name: AlvinSingbox-1
-    port: 34077
-    server: 185.22.155.105
-    type: vless
-    network: tcp
-    flow: xtls-rprx-vision
-    udp: true
-    tls: true
-    servername: aws.amazon.com
-    skip-cert-verify: false
-    reality-opts:
-      public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
-    uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
-    client-fingerprint: chrome
-
+  
   - name: twserver
     port: 56870
     server: 36.226.244.225
@@ -1194,8 +1180,8 @@ proxies:
 
   - name: AlvinQuick-1                     
     type: hysteria
-    server: 195.154.184.5
-    port: 22787
+    server: 185.22.155.71
+    port: 15424
     ports: 30000-40000
     auth_str: dongtaiwang.com
     alpn:
@@ -1208,8 +1194,7 @@ proxies:
   - name: AlvinQuick-2                    
     type: hysteria
     server: 208.87.243.151
-    port: 38670
-    ports: 10000-20000
+    port: 17549
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -1218,10 +1203,25 @@ proxies:
     up: "100 Mbps"
     down: "500 Mbps"
 
+  - name: AlvinSingbox-1
+    port: 34077
+    server: 185.22.155.105
+    type: vless
+    network: tcp
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: aws.amazon.com
+    skip-cert-verify: false
+    reality-opts:
+      public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
+    uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
+    client-fingerprint: chrome
+
   - name: AlvinSingbox-2                    
     type: hysteria
     server: 195.154.200.178
-    port: 10312
+    port: 34911
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -1235,8 +1235,8 @@ proxies:
 
   - name: DE-1
     type: hysteria
-    server: 146.0.36.114
-    port: 64914
+    server: 185.22.155.71
+    port: 15424
     ports: 30000-40000
     auth_str: dongtaiwang.com
     alpn:
