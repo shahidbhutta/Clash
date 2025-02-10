@@ -287,7 +287,21 @@ proxies:
       path: /
       headers:
         Host: worker-winter-meadow-e881.test55.workers.dev
-  
+  - name: AlvinSingbox-1
+    port: 34077
+    server: 185.22.155.105
+    type: vless
+    network: tcp
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: aws.amazon.com
+    skip-cert-verify: false
+    reality-opts:
+      public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
+    uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
+    client-fingerprint: chrome
+
   - name: twserver
     port: 56870
     server: 36.226.244.225
@@ -1180,8 +1194,8 @@ proxies:
 
   - name: AlvinQuick-1                     
     type: hysteria
-    server: 185.22.155.71
-    port: 15424
+    server: 195.154.184.5
+    port: 22787
     ports: 30000-40000
     auth_str: dongtaiwang.com
     alpn:
@@ -1194,7 +1208,8 @@ proxies:
   - name: AlvinQuick-2                    
     type: hysteria
     server: 208.87.243.151
-    port: 17549
+    port: 38670
+    ports: 10000-20000
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -1203,25 +1218,10 @@ proxies:
     up: "100 Mbps"
     down: "500 Mbps"
 
-  - name: AlvinSingbox-1
-    port: 34077
-    server: 185.22.155.105
-    type: vless
-    network: tcp
-    flow: xtls-rprx-vision
-    udp: true
-    tls: true
-    servername: aws.amazon.com
-    skip-cert-verify: false
-    reality-opts:
-      public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
-    uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
-    client-fingerprint: chrome
-
   - name: AlvinSingbox-2                    
     type: hysteria
     server: 195.154.200.178
-    port: 34911
+    port: 10312
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -1235,8 +1235,8 @@ proxies:
 
   - name: DE-1
     type: hysteria
-    server: 185.22.155.71
-    port: 15424
+    server: 146.0.36.114
+    port: 64914
     ports: 30000-40000
     auth_str: dongtaiwang.com
     alpn:
@@ -1502,13 +1502,363 @@ proxies:
     uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
     client-fingerprint: chrome
 
-  - {name: Good1, server: 185.121.134.12, port: 31639, type: hysteria2, password: ce188549-d5ab-4c9c-9395-d01ba47e6af5, auth: ce188549-d5ab-4c9c-9395-d01ba47e6af5, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
-  - {name: Good2, server: 185.121.134.12, port: 31639, type: hysteria2, password: 2421eeb2-1c7e-4c55-8c12-5ec97a10b08a, auth: 2421eeb2-1c7e-4c55-8c12-5ec97a10b08a, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
-  - {name: Good3, server: 185.121.134.12, port: 31639, type: hysteria2, password: 61ffdd34-ae73-4465-ac1a-3705862e21d6, auth: 61ffdd34-ae73-4465-ac1a-3705862e21d6, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
-  - {name: Good4, server: 185.121.134.12, port: 31639, type: hysteria2, password: 1ba79617-fb66-4679-ada8-ada68d486033, auth: 1ba79617-fb66-4679-ada8-ada68d486033, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
-  - {name: Good5, server: 195.58.49.42, port: 28153, type: hysteria2, password: 0fcb8d77-1d47-4d99-99e9-390de700a1d8, auth: 0fcb8d77-1d47-4d99-99e9-390de700a1d8, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: Good6, server: 46.254.92.33, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
-  - {name: Good7, server: 192.0.54.235, port: 443, type: vless, uuid: 41abecd9-8096-4142-a75c-4e1d36d990bd, tls: true, skip-cert-verify: false, servername: mmdserver.us.kg, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mmdserver.us.kg}}, udp: true}
+  - name: Good01
+    type: vless
+    server: 95.179.159.217
+    port: 22671
+    uuid: ebc5660f-bb9b-415c-94ab-d3630189ceb9
+    network: tcp
+    tls: false
+    ip-version: dual
+  - name: Good02
+    type: vless
+    server: 20.42.228.160
+    port: 443
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    network: ws
+    tls: true
+    servername: sdfee4.azurewebsites.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        host: sdfee4.azurewebsites.net
+    ip-version: dual
+  - name: Good03
+    type: vless
+    server: 91.107.249.239
+    port: 80
+    uuid: 25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2
+    network: ws
+    tls: false
+    client-fingerprint: chrome
+    ws-opts:
+      path: /stream/
+      headers:
+        host: anchor.fm
+    ip-version: dual
+  - name: Good04
+    type: vless
+    server: 51.81.18.62
+    port: 443
+    uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
+    network: tcp
+    tls: true
+    servername: 147135011033.sec21org.com
+    client-fingerprint: chrome
+    ip-version: dual
+  - name: Good05
+    type: vless
+    server: 91.107.144.35
+    port: 80
+    uuid: 25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2
+    network: ws
+    tls: false
+    client-fingerprint: chrome
+    ws-opts:
+      path: /stream/
+      headers:
+        host: anchor.fm
+    ip-version: dual
+  - name: Good06
+    type: trojan
+    server: 103.44.255.81
+    port: 443
+    password: ouo
+    skip-cert-verify: false
+    tls: true
+    servername: tr.koxok.us.kg
+    fingerprint: random
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: tr.koxok.us.kg
+    ip-version: dual
+  - name: Good07
+    type: vless
+    server: 5.75.202.111
+    port: 80
+    uuid: 25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2
+    network: ws
+    tls: false
+    client-fingerprint: chrome
+    ws-opts:
+      path: /stream/
+      headers:
+        host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+    ip-version: dual
+  - name: Good08
+    type: vless
+    server: 51.81.78.51
+    port: 443
+    uuid: ea286109-d20f-415e-849e-4af20ab04b65
+    network: tcp
+    tls: true
+    servername: 147135001195.sec22org.com
+    alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    ip-version: dual
+  - name: Good09
+    type: vless
+    server: 185.161.251.211
+    port: 1633
+    uuid: b6e0fefb-5686-4f7b-9e3c-e212ef4b3ef7
+    network: tcp
+    tls: true
+    servername: stackoverflow.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
+      short-id: 9bc0a55a5379c0ed
+    ip-version: dual
+    udp: true
+  - name: Good10
+    type: vless
+    server: 138.199.166.63
+    port: 1825
+    uuid: 9d0047a8-8e7f-4f3a-8764-bf2db6249ed2
+    network: tcp
+    tls: true
+    servername: stackoverflow.com
+    alpn:
+      - h2
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: '-UyKPBVzFFcYIP_m5gbAPILmHo32MKvVIIhC_S2I6Cc'
+      short-id: 9d43b089
+    ip-version: dual
+    udp: true
+  - name: Good11
+    type: vless
+    server: 45.67.215.44
+    port: 2096
+    uuid: 4337e327-c77e-4ae3-a376-0374fb82eca1
+    network: ws
+    tls: true
+    servername: Join-Channel-Te1egram-EiiiM.danesh-bonyan.Store
+    client-fingerprint: random
+    ws-opts:
+      path: join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.
+      headers:
+        host: eiiim.danesh-bonyan.Store
+    ip-version: dual
+  - name: Good12
+    type: vless
+    server: 156.226.174.90
+    port: 25585
+    uuid: ad80be46-fe43-4a1c-b54d-00e64fe37b73
+    network: tcp
+    tls: true
+    servername: yahoo.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: PeBC_tJjIk236cDe3NUZQfbWQZBgy4c-8aJWNQuL4mE
+      short-id: 2ca90ee3
+    ip-version: dual
+    udp: true
+  - name: Good13
+    type: vless
+    server: 146.103.41.166
+    port: 23055
+    uuid: 90cadcb1-5955-4ddc-c846-a40f06cbed39
+    network: tcp
+    tls: true
+    servername: vpn.pnm1.com
+    alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    ip-version: dual
+
+  - name: Good14
+    type: vless
+    server: 159.112.235.174
+    port: 2082
+    uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
+    tls: false
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: workerr.schodog1.workers.dev
+    ip-version: dual
+
+  - name: Slow01
+    type: vless
+    server: bnnm.azurewebsites.net
+    port: 443
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    network: ws
+    tls: true
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+    ip-version: dual
+  - name: Slow02
+    type: vless
+    server: 31.59.111.49
+    port: 33718
+    uuid: 46f5c1a7-9c75-4b47-c105-c58831a550a7
+    network: tcp
+    tls: true
+    servername: icloud.cdn-apple.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+    ip-version: dual
+    udp: true
+  - name: Slow03
+    type: vless
+    server: 94.237.102.180
+    port: 443
+    uuid: b823c194-de2b-4b0e-bcf1-c8d04af0f694
+    network: tcp
+    tls: true
+    servername: www.refersion.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jG1boY63MivlimbwqJZPX1RfcQTtoPSOjMJz2YEWOns
+      short-id: f7caf4
+    ip-version: dual
+    udp: true
+  - name: Slow04
+    type: vless
+    server: hdfy4d1cpi.iraniancpi.uk
+    port: 443
+    uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+    network: tcp
+    tls: true
+    servername: www.survive.org.uk
+    flow: xtls-rprx-vision
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: gZLTRrh9Z0TIvMoXHB7_ih3EN6Zn0IuLstFFZ0y7Ryc
+      short-id: cc61d4
+    ip-version: dual
+    udp: true
+  - name: Slow05
+    type: vless
+    server: 15.204.151.84
+    port: 443
+    uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+    network: tcp
+    tls: true
+    servername: 147135004002.sec20org.com
+    alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    ip-version: dual
+  - name: Slow06
+    type: vless
+    server: 95.141.205.39
+    port: 7557
+    uuid: 2e3bb27c-ab28-4ddb-9e33-7c5874b4d25a
+    network: tcp
+    tls: false
+    client-fingerprint: chrome
+    ip-version: dual
+  - name: Slow07
+    type: vless
+    server: 49.13.192.48
+    port: 2083
+    uuid: 95e9b8bd-f802-49b1-8be3-36ad801a7fe8
+    network: grpc
+    tls: true
+    servername: www.cdn77.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: wOmjhFY8A0ePI29U00Ic3VTgYZGSe8iY8bu7QlYpiRU
+      short-id: 73e4feeb0580
+    grpc-opts: {}
+    ip-version: dual
+    udp: true
+  - name: Slow08
+    type: vless
+    server: 91.107.169.101
+    port: 443
+    uuid: e33354bf-3227-4ba1-f21c-0b9b72854c3f
+    network: grpc
+    tls: true
+    servername: www.cdn77.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: cj94tgjXDkgM-h1YbsI6sr1azoQZ6YRK1WqpM5WJNUw
+    grpc-opts: {}
+    ip-version: dual
+    udp: true
+  - name: Slow09
+    type: vless
+    server: 140.82.57.15
+    port: 443
+    uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
+    network: tcp
+    tls: true
+    servername: www.survive.org.uk
+    flow: xtls-rprx-vision
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: gZLTRrh9Z0TIvMoXHB7_ih3EN6Zn0IuLstFFZ0y7Ryc
+      short-id: cc61d4
+    ip-version: dual
+    udp: true
+  - name: Slow10
+    type: vless
+    server: 209.227.230.243
+    port: 443
+    uuid: 253f59da-b708-4404-cebe-3854aad88880
+    network: grpc
+    tls: true
+    servername: wordpress.org
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: gH_h3-mo0stXouQX61J22W14N9-RlRjwo6BQgAcUay4
+      short-id: c5508bd7
+    grpc-opts: {}
+    ip-version: dual
+    udp: true
+  - name: Slow11
+    type: vless
+    server: gkkui8.azurewebsites.net
+    port: 443
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    network: ws
+    tls: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+    ip-version: dual
+  - name: Slow12
+    type: vless
+    server: 104.215.58.230
+    port: 443
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    network: ws
+    tls: true
+    servername: gkkui8.azurewebsites.net
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        host: gkkui8.azurewebsites.net
+    ip-version: dual
 
 proxy-groups:
   - name: ProxyNet
@@ -1528,13 +1878,38 @@ proxy-groups:
   - name: Good-List
     type: url-test
     proxies:
-      - Good1
-      - Good2
-      - Good3
-      - Good4
-      - Good5
-      - Good6
-      - Good7
+      - Good01
+      - Good02
+      - Good03
+      - Good04
+      - Good05
+      - Good06
+      - Good07
+      - Good08
+      - Good09
+      - Good10
+      - Good11
+      - Good12
+      - Good13
+      - Good14
+    url: https://www.youtube.com/favicon.ico
+    interval: 30
+    tolerance: 10
+  - name: Slow-List
+    type: url-test
+    proxies:
+      - Slow01
+      - Slow02
+      - Slow03
+      - Slow04
+      - Slow05
+      - Slow06
+      - Slow07
+      - Slow08
+      - Slow09
+      - Slow10
+      - Slow11
+      - Slow12
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1688,13 +2063,32 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
-      - Good1
-      - Good2
-      - Good3
-      - Good4
-      - Good5
-      - Good6
-      - Good7
+      - Good01
+      - Good02
+      - Good03
+      - Good04
+      - Good05
+      - Good06
+      - Good07
+      - Good08
+      - Good09
+      - Good10
+      - Good11
+      - Good12
+      - Good13
+      - Good14
+      - Slow01
+      - Slow02
+      - Slow03
+      - Slow04
+      - Slow05
+      - Slow06
+      - Slow07
+      - Slow08
+      - Slow09
+      - Slow10
+      - Slow11
+      - Slow12
       - UltraSurf-1
       - UltraSurf-2
       - TW-TLS-1
@@ -1802,13 +2196,32 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
-      - Good1
-      - Good2
-      - Good3
-      - Good4
-      - Good5
-      - Good6
-      - Good7
+      - Good01
+      - Good02
+      - Good03
+      - Good04
+      - Good05
+      - Good06
+      - Good07
+      - Good08
+      - Good09
+      - Good10
+      - Good11
+      - Good12
+      - Good13
+      - Good14
+      - Slow01
+      - Slow02
+      - Slow03
+      - Slow04
+      - Slow05
+      - Slow06
+      - Slow07
+      - Slow08
+      - Slow09
+      - Slow10
+      - Slow11
+      - Slow12
       - UltraSurf-1
       - UltraSurf-2
       - TW-TLS-1
