@@ -4,7 +4,97 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+    - 119.29.29.29
+    - 180.76.76.76
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+    - tls://1.0.0.1:853
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - router.asus.com
+    - localhost.sec.qq.com
+    - localhost.ptlogin2.qq.com
+    - +.msftconnecttest.com
+  tun:
+    enable: true
+    stack: system
+    auto-route: true
+    auto-detect-interface: true
+    dns-hijack:
+      - 114.114.114.114
+      - 180.76.76.76
+      - 119.29.29.29
+      - 223.5.5.5
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.0.0.1
 proxies:
+  - name: SE-HY2
+    port: 443
+    server: 70.34.207.153
+    type: hysteria2
+    udp: true
+    sni: 70.34.207.153
+    obfs: salamander
+    password: 18240b2dfdd76484
+    skip-cert-verify: true
+    obfs-password: d2648ec2
+  - name: US-HY2-3
+    port: 443
+    server: 207.148.22.93
+    type: hysteria2
+    udp: true
+    sni: vkvd127.mycdn.me
+    obfs: salamander
+    password: 9bb452b106ffc217
+    skip-cert-verify: true
+    obfs-password: cd29099d
+  - name: US-HY2-2
+    port: 443
+    server: 66.135.11.68
+    type: hysteria2
+    udp: true
+    sni: 66.135.11.68
+    obfs: salamander
+    password: 4e9ee29b39a28277
+    skip-cert-verify: true
+    obfs-password: 13f7ba5f
+  - name: US-HY2-1
+    type: hysteria2
+    server: 45.76.0.86
+    port: 443
+    udp: true
+    obfs: salamander
+    obfs-password: 4b817757
+    password: 1f17cdf0578a2860
+    fast-open: true
+    sni: 45.76.0.86
+    skip-cert-verify: true
+
+
+
   - name: TW-TLS-1
     port: 443
     server: 103.137.63.2
@@ -1239,13 +1329,12 @@ proxies:
     type: hysteria2
     server: 46.17.41.189
     port: 50717
-    ports: 30000-40000
     password: dongtaiwang.com
     fast-open: true
     sni: www.bing.com
     skip-cert-verify: true
 
-  - name: NewArrival-1
+  - name: NewA-1
     server: 89.187.169.72
     port: 443
     type: vless
@@ -1262,7 +1351,7 @@ proxies:
       public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
       short-id: 01b200e90e250221
 
-  - name: NewArrival-2
+  - name: NewA-2
     server: 20.211.64.15
     port: 443
     type: vless
@@ -1278,7 +1367,7 @@ proxies:
       headers:
         Host: bdfgfrtt7.azurewebsites.net
   
-  - name: NewArrival-3
+  - name: NewA-3
     port: 80
     server: 172.67.132.72
     type: vless
@@ -1292,7 +1381,7 @@ proxies:
     uuid: dc00f1f8-05b2-4bc0-b851-d4dfe5089329
     client-fingerprint: chrome
 
-  - name: NewArrival-4
+  - name: NewA-4
     port: 80
     server: 172.67.193.80
     type: vless
@@ -1305,7 +1394,7 @@ proxies:
         host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-5
+  - name: NewA-5
     port: 80
     server: 172.67.193.80
     type: vless
@@ -1318,7 +1407,7 @@ proxies:
         host: BroKEn-bAR-5948.nepOg45969.WoRkERS.deV
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-6
+  - name: NewA-6
     port: 80
     server: 104.21.90.15
     type: vless
@@ -1331,7 +1420,7 @@ proxies:
         host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
-  - name: NewArrival-7
+  - name: NewA-7
     port: 80
     server: 104.21.90.15
     type: vless
@@ -1345,7 +1434,7 @@ proxies:
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
   
-  - name: NewArrival-8
+  - name: NewA-8
     port: 443
     server: 89.187.169.72
     type: vless
@@ -1857,7 +1946,7 @@ proxy-groups:
       - Good-List
       - Alvin-List
       - NEW-List
-      - NewArrival-List
+      - NewA-List
       - Extra-List
       - Epidonios-List
       - ProxyPool-List
@@ -1919,17 +2008,17 @@ proxy-groups:
     interval: 30
     tolerance: 10
 
-  - name: NewArrival-List
+  - name: NewA-List
     type: url-test
     proxies:
-      - NewArrival-1
-      - NewArrival-2
-      - NewArrival-3
-      - NewArrival-4
-      - NewArrival-5
-      - NewArrival-6
-      - NewArrival-7
-      - NewArrival-8
+      - NewA-1
+      - NewA-2
+      - NewA-3
+      - NewA-4
+      - NewA-5
+      - NewA-6
+      - NewA-7
+      - NewA-8
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -2001,6 +2090,10 @@ proxy-groups:
       - AlvinQuick-2
       - AlvinSingbox-1
       - AlvinSingbox-2
+      - US-HY2-1
+      - US-HY2-2
+      - US-HY2-3
+      - SE-HY2
     url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
@@ -2124,14 +2217,14 @@ proxy-groups:
       - Ex7
       - Ex8
       - Ex9
-      - NewArrival-1
-      - NewArrival-2
-      - NewArrival-3
-      - NewArrival-4
-      - NewArrival-5
-      - NewArrival-6
-      - NewArrival-7
-      - NewArrival-8
+      - NewA-1
+      - NewA-2
+      - NewA-3
+      - NewA-4
+      - NewA-5
+      - NewA-6
+      - NewA-7
+      - NewA-8
       - DE-1
       - AlvinVLESS
       - AlvinVMESS
@@ -2140,6 +2233,10 @@ proxy-groups:
       - AlvinQuick-2
       - AlvinSingbox-1
       - AlvinSingbox-2
+      - US-HY2-1
+      - US-HY2-2
+      - US-HY2-3
+      - SE-HY2
       - NEW1
       - NEW2
       - NEW3
@@ -2256,14 +2353,14 @@ proxy-groups:
       - Ex7
       - Ex8
       - Ex9
-      - NewArrival-1
-      - NewArrival-2
-      - NewArrival-3
-      - NewArrival-4
-      - NewArrival-5
-      - NewArrival-6
-      - NewArrival-7
-      - NewArrival-8
+      - NewA-1
+      - NewA-2
+      - NewA-3
+      - NewA-4
+      - NewA-5
+      - NewA-6
+      - NewA-7
+      - NewA-8
       - DE-1
       - AlvinVLESS
       - AlvinVMESS
@@ -2272,6 +2369,10 @@ proxy-groups:
       - AlvinQuick-2
       - AlvinSingbox-1
       - AlvinSingbox-2
+      - US-HY2-1
+      - US-HY2-2
+      - US-HY2-3
+      - SE-HY2
       - NEW1
       - NEW2
       - NEW3
