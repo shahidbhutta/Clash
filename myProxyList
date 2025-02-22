@@ -742,19 +742,19 @@ proxies:
 
   - name: NEW16
     server: 188.114.97.3
-    port: 80
+    port: 8080
     type: vless
-    uuid: 90b3cbba-e6ac-485a-9481-976a0415eab9
+    uuid: 260c4900-69a9-465c-8c3a-272eb1b4ec00
     tls: false
-    sni: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    sni: ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev
     skip-cert-verify: true
     client-fingerprint: random
-    servername: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+    servername: ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev
     network: ws
     ws-opts:
-      path: /09EpH4tzdpaF2F6Q?ed=2560
+      path: /0URHFxBSQcqVmgqm
       headers:
-        Host: biTter-DArkNEsS-3199.wAKoCi1200.WorkERS.dEv
+        Host: ShaHrAmcOnfIgWoRKERcjsA9898.CoNfIGshaHrAmcOnfIg.woRKeRs.dev
     udp: true
 
   - name: NEW17
@@ -1116,19 +1116,20 @@ proxies:
   
   - name: NEW38
     server: 172.64.146.118
-    port: 8443
+    port: 8880
     type: vless
-    uuid: efc993f4-14e9-43cd-9b57-e8a9a1fe8aa5
-    tls: true
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: false
+    uuid: 25af9eb2-3310-4f2b-bc82-ebea62ba7906
+    tls: false
+    udp: true
+    sni: "config-proxy-vl.telegram-config-proxy.workers.dev"
+    skip-cert-verify: true
     client-fingerprint: random
-    servername: pardazeshvpn-tg71.pages.dev
+    servername: config-proxy-vl.telegram-config-proxy.workers.dev
     network: ws
     ws-opts:
-      path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048"
+      path: "/?ed=2560"
       headers:
-        Host: pardazeshvpn-tg71.pages.dev
+        Host: config-proxy-vl.telegram-config-proxy.workers.dev
 
   - name: AlvinVMESS
     port: 17479
@@ -1684,13 +1685,15 @@ proxies:
     port: 443
     uuid: 253f59da-b708-4404-cebe-3854aad88880
     network: grpc
+    mode: gun
     tls: true
     servername: wordpress.org
     client-fingerprint: firefox
     reality-opts:
       public-key: gH_h3-mo0stXouQX61J22W14N9-RlRjwo6BQgAcUay4
       short-id: c5508bd7
-    grpc-opts: {}
+    grpc-opts: 
+      path: vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl
     ip-version: dual
     udp: true
   - name: Slow11
