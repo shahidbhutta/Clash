@@ -9,18 +9,18 @@ dns:
   listen: 0.0.0.0:53
   ipv6: false
   default-nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
     - tls://8.8.4.4:853
     - tls://8.8.8.8:853
+    - 223.5.5.5
+    - 114.114.114.114
   nameserver:
+    - tls://8.8.4.4:853
+    - tls://8.8.8.8:853
+    - tls://1.0.0.1:853
     - 223.5.5.5
     - 114.114.114.114
     - 119.29.29.29
     - 180.76.76.76
-    - tls://8.8.4.4:853
-    - tls://8.8.8.8:853
-    - tls://1.0.0.1:853
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -51,6 +51,90 @@ dns:
       - 1.1.1.1
       - 1.0.0.1
 proxies:
+  - name: VL-TcpRLT-1
+    type: vless
+    server: 13.61.150.147
+    port: 8443
+    uuid: 73c732f2-d435-4197-9f33-0d7c1f47d3a9
+    network: tcp
+    tls: true
+    servername: zula.ir
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    ip-version: dual
+    udp: true
+  - name: VL-TcpRLT-2
+    type: vless
+    server: 95.164.62.158
+    port: 1142
+    uuid: 03588a25-b81d-40b1-bda4-7bb7700281ac
+    network: tcp
+    tls: true
+    servername: stackoverflow.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ULEKhRXed87x1kNaVVq4l8ANWDwmcoxetjclnShfhWM
+      short-id: 4374d295a4f9dd83
+    ip-version: dual
+    udp: true
+  - name: VL-TcpTLS
+    type: vless
+    server: 91.107.250.208
+    port: 443
+    uuid: 9e55e24c-8de9-4357-8a37-9cf1212c6491
+    network: tcp
+    tls: true
+    servername: mods.lnmarketplace.net
+    flow: xtls-rprx-vision
+    alpn:
+      - h2
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    ip-version: dual
+  - name: VL-WsNone-1
+    type: vless
+    server: 45.149.12.206
+    port: 80
+    uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+    network: ws
+    tls: false
+    client-fingerprint: random
+    ws-opts:
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+      headers:
+        host: pormang.webhost99.workers.dev
+    ip-version: dual
+  - name: VL-WsNone-2
+    type: vless
+    server: 45.149.12.232
+    port: 80
+    uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+    network: ws
+    tls: false
+    client-fingerprint: random
+    ws-opts:
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+      headers:
+        host: pormang.webhost99.workers.dev
+    ip-version: dual
+  - name: VL-WsNone-3
+    type: vless
+    server: 45.149.12.128
+    port: 80
+    uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+    network: ws
+    tls: false
+    client-fingerprint: random
+    ws-opts:
+      path: /
+      headers:
+        host: pormang.webhost99.workers.dev
+    ip-version: dual
+
   - name: SE-HY2
     port: 443
     server: 70.34.207.153
@@ -1720,7 +1804,7 @@ proxy-groups:
       - NewA-List
       - Extra-List
       - Epidonios-List
-      - ProxyPool-List
+      - BarryFar-List
       - NewYear-List
       - Best-of-All
       - Static-Server
@@ -1784,12 +1868,15 @@ proxy-groups:
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
-  - name: ProxyPool-List
+  - name: BarryFar-List
     type: url-test
     proxies:
-      - CN-1
-      - CN-2
-      - US-27
+      - VL-TcpRLT-1
+      - VL-TcpRLT-2
+      - VL-TcpTLS
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1899,6 +1986,12 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - VL-TcpRLT-1
+      - VL-TcpRLT-2
+      - VL-TcpTLS
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
       - Good01
       - Good02
       - Good03
@@ -2018,6 +2111,12 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - VL-TcpRLT-1
+      - VL-TcpRLT-2
+      - VL-TcpTLS
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
       - Good01
       - Good02
       - Good03
