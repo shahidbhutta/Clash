@@ -51,6 +51,38 @@ dns:
       - 1.1.1.1
       - 1.0.0.1
 proxies:
+  - name: RU_speednode_0047
+    type: vless
+    server: 185.174.138.197
+    port: 8080
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: false
+    servername: a.xn--i-sx6a60i.us.kg.
+    ws-opts:
+      path: /
+      headers:
+        host: a.xn--i-sx6a60i.us.kg.
+    ip-version: dual
+  - name: DigitalOcean
+    type: hysteria2
+    server: 143.198.235.49
+    port: 443
+    tls: false
+    password: iMqY3uG_5pgEj3hCfyHB-0vB
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: DongTaiWang
+    type: hysteria2
+    server: 195.154.33.70
+    port: 13861
+    tls: true
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
   - name: VL-TcpRLT-1
     type: vless
     server: 13.61.150.147
@@ -1865,6 +1897,9 @@ proxy-groups:
       - NewA-3
       - NewA-5
       - NewA-6
+      - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1986,6 +2021,9 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
       - VL-TcpRLT-1
       - VL-TcpRLT-2
       - VL-TcpTLS
@@ -2111,6 +2149,9 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
       - VL-TcpRLT-1
       - VL-TcpRLT-2
       - VL-TcpTLS
