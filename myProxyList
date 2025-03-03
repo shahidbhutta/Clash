@@ -51,6 +51,73 @@ dns:
       - 1.1.1.1
       - 1.0.0.1
 proxies:
+  - name: DE_HTTP_High
+    type: vless
+    server: 45.76.87.24
+    port: 80
+    uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
+    network: http
+    tls: false
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: a.mifeng.us.kg
+    http-opts:
+      path: 
+        - "/Hello!"
+      headers:
+        host: 
+          - "2002:0000:0000::1"
+    ip-version: dual
+
+  - name: SK_TLS_High
+    type: vless
+    server: 94.250.246.200
+    port: 8080
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: a.mifeng.us.kg
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: a.mifeng.us.kg
+    ip-version: dual
+
+  - name: DE_High
+    type: vless
+    server: 156.238.18.163
+    port: 2095
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    network: ws
+    tls: false
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: redw.pooriam.ir
+    ws-opts:
+      path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      headers:
+        host: redw.pooriam.ir
+    ip-version: dual
+
+
+  - name: CA_High
+    type: vless
+    server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+    port: 80
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    network: ws
+    tls: true
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: Join--E-L-i-V-2-R-A-Y.net
+    ws-opts:
+      path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+      headers:
+        host: Join--E-L-i-V-2-R-A-Y.net
+    ip-version: dual
+
   - name: RU_speednode_0047
     type: vless
     server: 185.174.138.197
@@ -176,7 +243,9 @@ proxies:
     obfs: salamander
     password: 18240b2dfdd76484
     skip-cert-verify: true
+    tfo: false
     obfs-password: d2648ec2
+
   - name: US-HY2-3
     port: 443
     server: 207.148.22.93
@@ -1259,7 +1328,7 @@ proxies:
       host: www.bing.com
       path: github.com/Alvin9999
     cipher: auto
-    uuid: af7f07dc-d726-4b1e-967d-dbb6c594999f
+    uuid: af7f07dc-d726-4b1e-967d-dbb6c59999f
     alterId: 0
 
 
@@ -1840,9 +1909,10 @@ proxy-groups:
       - Epidonios-List
       - BarryFar-List
       - NewYear-List
+      - HighSpeed-List
       - Best-of-All
       - Static-Server
-    
+  
   - name: Good-List
     type: url-test
     proxies:
@@ -2019,6 +2089,25 @@ proxy-groups:
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
+
+  - name: HighSpeed-List
+    type: url-test
+    proxies:
+      - AlvinQuick-2
+      - DigitalOcean
+      - DongTaiWang
+      - JP-TLS-1
+      - SE-HY2
+      - AlvinSingbox-1
+      - RU_speednode_0047
+      - US-WS-1
+      - DE_HTTP_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
+    url: https://www.youtube.com/favicon.ico
+    interval: 30
+    tolerance: 10
 
   - name: Best-of-All
     type: url-test
