@@ -239,11 +239,11 @@ proxies:
     server: 70.34.207.153
     type: hysteria2
     udp: true
-    sni: 70.34.207.153
-    obfs: salamander
+    servername: 70.34.207.153
     password: 18240b2dfdd76484
     skip-cert-verify: true
     tfo: false
+    obfs: salamander
     obfs-password: d2648ec2
 
   - name: US-HY2-3
@@ -1380,15 +1380,13 @@ proxies:
   - name: AlvinSingbox-1
     type: hysteria
     server: 195.154.200.178
-    port: 34911
+    port: 44557
     auth_str: dongtaiwang.com
     alpn:
       - h3
     tls: true
-    sni: www.bing.com
+    servername: apple.com
     skip-cert-verify: true
-    obfs: dongtaiwang.com
-    obfs-password: dongtaiwang.com
     up: "1000 Mbps"
     down: "1000 Mbps"
 
