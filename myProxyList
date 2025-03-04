@@ -77,10 +77,9 @@ proxies:
     network: ws
     tls: true
     skip-cert-verify: false
-    fingerprint: chrome
     servername: a.mifeng.us.kg
     ws-opts:
-      path: /?ed=2560
+      path: /
       headers:
         host: a.mifeng.us.kg
     ip-version: dual
