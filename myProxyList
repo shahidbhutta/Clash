@@ -1317,31 +1317,31 @@ proxies:
         Host: config-proxy-vl.telegram-config-proxy.workers.dev
 
   - name: AlvinVMESS
-    port: 24867
+    port: 10870
     server: 185.22.153.73
     type: vmess
-    version: 2
     network: ws
     tls: false
     skip-cert-verify: true
     ws-opts:
-      host: www.bing.com
       path: github.com/Alvin9999
+      headers:
+        host: www.bing.com
     cipher: auto
-    uuid: af7f07dc-d726-4b1e-967d-dbb6c59999f
+    uuid: af7f07dc-d726-4b1e-967d-dbb6c594999f
     alterId: 0
 
 
   - name: AlvinVLESS
-    server: 163.172.122.94
-    port: 19188
+    server: 195.154.56.233
+    port: 22234
     type: vless
     uuid: 22a54b72-9c39-4bb0-97d0-41bbaaca2a67
     tls: true
     udp: true
     flow: xtls-rprx-vision
     sni: "www.yahoo.com"
-    skip-cert-verify: true
+    skip-cert-verify: false
     client-fingerprint: chrome
     servername: www.yahoo.com
     network: tcp
