@@ -2090,6 +2090,7 @@ proxy-groups:
   - name: HighSpeed-List
     type: url-test
     proxies:
+      - NEW38
       - AlvinQuick-2
       - DigitalOcean
       - DongTaiWang
