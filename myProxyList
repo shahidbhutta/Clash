@@ -195,42 +195,42 @@ proxies:
     ip-version: dual
   - name: VL-WsNone-1
     type: vless
-    server: 45.149.12.206
-    port: 80
-    uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+    server: 45.149.12.183
+    port: 2052
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     network: ws
     tls: false
     client-fingerprint: random
     ws-opts:
-      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+      path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
       headers:
-        host: pormang.webhost99.workers.dev
+        host: redw.pooriam.ir
     ip-version: dual
   - name: VL-WsNone-2
     type: vless
-    server: 45.149.12.232
+    server: 45.81.58.182
     port: 80
-    uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+    uuid: 2c79b667-b103-4d22-86d0-5ef23f303c06
     network: ws
     tls: false
     client-fingerprint: random
     ws-opts:
-      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1
+      path: Telegram@WangCai2/?ed=2048
       headers:
-        host: pormang.webhost99.workers.dev
+        host: japan.freenods-8d6.workers.dev
     ip-version: dual
   - name: VL-WsNone-3
     type: vless
-    server: 45.149.12.128
+    server: 45.81.58.79
     port: 80
-    uuid: e497da22-d020-40fb-a1fa-bc294066a2d2
+    uuid: 2c79b667-b103-4d22-86d0-5ef23f303c06
     network: ws
     tls: false
     client-fingerprint: random
     ws-opts:
-      path: /
+      path: /Telegram@WangCai2/?ed=2048
       headers:
-        host: pormang.webhost99.workers.dev
+        host: japan.freenods-8d6.workers.dev
     ip-version: dual
 
   - name: SE-HY2
@@ -1316,7 +1316,7 @@ proxies:
         Host: config-proxy-vl.telegram-config-proxy.workers.dev
 
   - name: AlvinVMESS
-    port: 10870
+    port: 40898
     server: 185.22.153.73
     type: vmess
     network: ws
