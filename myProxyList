@@ -2067,9 +2067,6 @@ proxy-groups:
       - RU_speednode_0047
       - DigitalOcean
       - DongTaiWang
-      - VL-TcpRLT-1
-      - VL-TcpRLT-2
-      - VL-TcpTLS
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
@@ -2195,9 +2192,6 @@ proxy-groups:
       - RU_speednode_0047
       - DigitalOcean
       - DongTaiWang
-      - VL-TcpRLT-1
-      - VL-TcpRLT-2
-      - VL-TcpTLS
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
