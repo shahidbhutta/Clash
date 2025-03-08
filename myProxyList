@@ -53,49 +53,51 @@ dns:
 proxies:
   - name: DE_HTTP_High
     type: vless
-    server: 45.76.87.24
-    port: 80
-    uuid: 446bfcde-1d2d-4f6f-a828-117487411e01
-    network: http
-    tls: false
-    skip-cert-verify: false
-    fingerprint: chrome
-    servername: a.mifeng.us.kg
-    http-opts:
-      path: 
-        - "/Hello!"
-      headers:
-        host: 
-          - "2002:0000:0000::1"
-    ip-version: dual
-
-  - name: SK_TLS_High
-    type: vless
-    server: 94.250.246.200
-    port: 8080
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: true
-    skip-cert-verify: false
-    servername: a.mifeng.us.kg
-    ws-opts:
-      path: /
-      headers:
-        host: a.mifeng.us.kg
-    ip-version: dual
-
-  - name: DE_High
-    type: vless
-    server: 156.238.18.163
-    port: 2095
+    server: 45.149.12.183
+    port: 2052
     uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     network: ws
     tls: false
+    udp: true
     skip-cert-verify: false
     fingerprint: chrome
     servername: redw.pooriam.ir
     ws-opts:
-      path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+      path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      headers:
+        host: redw.pooriam.ir
+    ip-version: dual
+
+  - name: SK_TLS_High
+    type: vless
+    server: 154.83.2.156
+    port: 8880
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    network: ws
+    tls: false
+    udp: true
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: redw.pooriam.ir
+    ws-opts:
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
+      headers:
+        host: redw.pooriam.ir
+    ip-version: dual
+
+  - name: DE_High
+    type: vless
+    server: 154.83.2.230
+    port: 8880
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    network: ws
+    tls: false
+    udp: true
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: redw.pooriam.ir
+    ws-opts:
+      path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
       headers:
         host: redw.pooriam.ir
     ip-version: dual
@@ -103,11 +105,11 @@ proxies:
 
   - name: CA_High
     type: vless
-    server: join.E-L-i-V-2-R-A-Y.fastly80-3.hosting-ip.com
+    server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
     port: 80
     uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
     network: ws
-    tls: true
+    tls: false
     skip-cert-verify: false
     fingerprint: chrome
     servername: Join--E-L-i-V-2-R-A-Y.net
