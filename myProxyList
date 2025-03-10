@@ -1310,10 +1310,8 @@ proxies:
   - name: AlvinQuick-1                     
     type: hysteria
     server: 185.22.155.71
-    port: 63717
-    ports: 40000-50000
+    port: 10803
     auth_str: dongtaiwang.com
-    obfs: dongtaiwang.com
     udp: true
     tls: true
     alpn:
@@ -1335,10 +1333,37 @@ proxies:
     up: "1000 Mbps"
     down: "1000 Mbps"
 
+  - name: AlvinQuick-3                    
+    type: hysteria
+    server: 108.181.24.77
+    port: 11512
+    ports: 20000-30000
+    udp: true
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    sni: apple.com
+    skip-cert-verify: true
+    up: "1000 Mbps"
+    down: "1000 Mbps"
+
   - name: AlvinSingbox-1
     type: hysteria
     server: 195.154.200.178
     port: 44557
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    tls: true
+    servername: apple.com
+    skip-cert-verify: true
+    up: "1000 Mbps"
+    down: "1000 Mbps"
+
+  - name: AlvinSingbox-2
+    type: hysteria
+    server: 176.32.35.226
+    port: 62003
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -1990,7 +2015,9 @@ proxy-groups:
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
+      - AlvinQuick-3
       - AlvinSingbox-1
+      - AlvinSingbox-2
       - US-HY2-1
       - US-HY2-2
       - US-HY2-3
@@ -2142,7 +2169,9 @@ proxy-groups:
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
+      - AlvinQuick-3
       - AlvinSingbox-1
+      - AlvinSingbox-2
       - US-HY2-1
       - US-HY2-2
       - US-HY2-3
@@ -2267,7 +2296,9 @@ proxy-groups:
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
+      - AlvinQuick-3
       - AlvinSingbox-1
+      - AlvinSingbox-2
       - US-HY2-1
       - US-HY2-2
       - US-HY2-3
