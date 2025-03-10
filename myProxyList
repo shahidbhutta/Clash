@@ -7,7 +7,7 @@ external-controller: :9090
 dns:
   enable: true
   listen: 0.0.0.0:53
-  ipv6: false
+  ipv6: true
   default-nameserver:
     - tls://8.8.4.4:853
     - tls://8.8.8.8:853
@@ -21,6 +21,11 @@ dns:
     - 114.114.114.114
     - 119.29.29.29
     - 180.76.76.76
+  fallback:
+    - 8.8.8.8
+    - 8.8.4.4
+    - tls://1.0.0.1:853
+    - tls://dns.google:853
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -46,10 +51,6 @@ dns:
       - 180.76.76.76
       - 119.29.29.29
       - 223.5.5.5
-      - 8.8.8.8
-      - 8.8.4.4
-      - 1.1.1.1
-      - 1.0.0.1
 proxies:
   - name: DE_HTTP_High
     type: vless
@@ -412,20 +413,21 @@ proxies:
   
 
   - name: twserver
-    port: 56870
-    server: 36.226.244.225
-    type: vless
-    network: tcp
-    flow: xtls-rprx-vision
-    udp: true
-    tls: true
-    servername: www.yahoo.com
-    skip-cert-verify: false
-    reality-opts:
-      public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
-      short-id: 239c3cef
-    uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
-    client-fingerprint: chrome
+    type: hysteria
+    server: 195.154.184.5
+    port: 22787
+    ports: 30000-40000
+    auth_str: dongtaiwang.com
+    tls: false
+    udp: false
+    alpn:
+      - h3
+    servername: bing.com
+    skip-cert-verify: true
+    up: "1000 Mbps"
+    down: "1000 Mbps"
+
+
 
   - name: 110mbps
     port: 8880
