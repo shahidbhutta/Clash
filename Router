@@ -451,16 +451,6 @@ proxies:
     uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
     client-fingerprint: chrome
   
-
-
-  - name: Good01
-    type: vless
-    server: 95.179.159.217
-    port: 22671
-    uuid: ebc5660f-bb9b-415c-94ab-d3630189ceb9
-    network: tcp
-    tls: false
-    ip-version: dual
   - name: Good02
     type: vless
     server: 20.42.228.160
@@ -478,19 +468,6 @@ proxies:
         host: sdfee4.azurewebsites.net
     ip-version: dual
 
-  - name: Good03
-    type: vless
-    server: 91.107.249.239
-    port: 80
-    uuid: 25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2
-    network: ws
-    tls: false
-    client-fingerprint: chrome
-    ws-opts:
-      path: /stream/
-      headers:
-        host: anchor.fm
-    ip-version: dual
   - name: Good04
     type: vless
     server: 51.81.18.62
@@ -501,132 +478,8 @@ proxies:
     servername: 147135011033.sec21org.com
     client-fingerprint: chrome
     ip-version: dual
-  - name: Good05
-    type: vless
-    server: 91.107.144.35
-    port: 80
-    uuid: 25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2
-    network: ws
-    tls: false
-    client-fingerprint: chrome
-    ws-opts:
-      path: /stream/
-      headers:
-        host: anchor.fm
-    ip-version: dual
-  - name: Good06
-    type: trojan
-    server: 103.44.255.81
-    port: 443
-    password: ouo
-    skip-cert-verify: false
-    tls: true
-    servername: tr.koxok.us.kg
-    fingerprint: random
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: tr.koxok.us.kg
-    ip-version: dual
-  - name: Good07
-    type: vless
-    server: 5.75.202.111
-    port: 80
-    uuid: 25b8f4b0-4f7d-400f-bc4a-f10e5b8796a2
-    network: ws
-    tls: false
-    client-fingerprint: chrome
-    ws-opts:
-      path: /stream/
-      headers:
-        host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-    ip-version: dual
-  - name: Good08
-    type: vless
-    server: 51.81.78.51
-    port: 443
-    uuid: ea286109-d20f-415e-849e-4af20ab04b65
-    network: tcp
-    tls: true
-    servername: 147135001195.sec22org.com
-    alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    ip-version: dual
-  - name: Good09
-    type: vless
-    server: 185.161.251.211
-    port: 1633
-    uuid: b6e0fefb-5686-4f7b-9e3c-e212ef4b3ef7
-    network: tcp
-    tls: true
-    servername: stackoverflow.com
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q
-      short-id: 9bc0a55a5379c0ed
-    ip-version: dual
-    udp: true
-  - name: Good10
-    type: vless
-    server: 138.199.166.63
-    port: 1825
-    uuid: 9d0047a8-8e7f-4f3a-8764-bf2db6249ed2
-    network: tcp
-    tls: true
-    servername: stackoverflow.com
-    alpn:
-      - h2
-    client-fingerprint: firefox
-    reality-opts:
-      public-key: '-UyKPBVzFFcYIP_m5gbAPILmHo32MKvVIIhC_S2I6Cc'
-      short-id: 9d43b089
-    ip-version: dual
-    udp: true
-  - name: Good11
-    type: vless
-    server: 45.67.215.44
-    port: 2096
-    uuid: 4337e327-c77e-4ae3-a376-0374fb82eca1
-    network: ws
-    tls: true
-    servername: Join-Channel-Te1egram-EiiiM.danesh-bonyan.Store
-    client-fingerprint: random
-    ws-opts:
-      path: join.----------------Telegram-EiiiM----------------Telegram-EiiiM---------------.Telegram-EiiiM.
-      headers:
-        host: eiiim.danesh-bonyan.Store
-    ip-version: dual
-  - name: Good12
-    type: vless
-    server: 156.226.174.90
-    port: 25585
-    uuid: ad80be46-fe43-4a1c-b54d-00e64fe37b73
-    network: tcp
-    tls: true
-    servername: yahoo.com
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: PeBC_tJjIk236cDe3NUZQfbWQZBgy4c-8aJWNQuL4mE
-      short-id: 2ca90ee3
-    ip-version: dual
-    udp: true
-  - name: Good13
-    type: vless
-    server: 146.103.41.166
-    port: 23055
-    uuid: 90cadcb1-5955-4ddc-c846-a40f06cbed39
-    network: tcp
-    tls: true
-    servername: vpn.pnm1.com
-    alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    ip-version: dual
+
+
 
 proxy-groups:
   - name: ProxyNet
@@ -646,19 +499,8 @@ proxy-groups:
   - name: Good-List
     type: url-test
     proxies:
-      - Good01
       - Good02
-      - Good03
       - Good04
-      - Good05
-      - Good06
-      - Good07
-      - Good08
-      - Good09
-      - Good10
-      - Good11
-      - Good12
-      - Good13
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -750,19 +592,8 @@ proxy-groups:
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - Good01
       - Good02
-      - Good03
       - Good04
-      - Good05
-      - Good06
-      - Good07
-      - Good08
-      - Good09
-      - Good10
-      - Good11
-      - Good12
-      - Good13
       - US-WS-1
       - HK-TLS-2
       - JP-TLS-1
@@ -795,19 +626,8 @@ proxy-groups:
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - Good01
       - Good02
-      - Good03
       - Good04
-      - Good05
-      - Good06
-      - Good07
-      - Good08
-      - Good09
-      - Good10
-      - Good11
-      - Good12
-      - Good13
       - US-WS-1
       - HK-TLS-2
       - JP-TLS-1
