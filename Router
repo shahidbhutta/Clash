@@ -485,67 +485,31 @@ proxy-groups:
   - name: ProxyNet
     type: select
     proxies:
-      - Good-List
-      - Alvin-List
-      - NEW-List
-      - NewA-List
-      - Extra-List
-      - BarryFar-List
-      - NewYear-List
-      - HighSpeed-List
+      - Streaming
+      - Netflix
+      - Google
+      - Youtube
       - Best-of-All
       - Static-Server
   
-  - name: Good-List
+  - name: Streaming
     type: url-test
     proxies:
-      - Good02
-      - Good04
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-  - name: Extra-List
-    type: url-test
-    proxies:
-      - Ex8
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-
-  - name: NewA-List
-    type: url-test
-    proxies:
-      - NewA-3
-      - NewA-5
-      - NewA-6
       - RU_speednode_0047
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-  - name: BarryFar-List
-    type: url-test
-    proxies:
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-
-  - name: NewYear-List
-    type: url-test
-    proxies:
+      - Good02
+      - Good04
       - US-WS-1
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-    url: https://www.fast.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
-  - name: Alvin-List
-    type: url-test
-    proxies:
+      - 110mbps
+      - Ex8
+      - NewA-3
+      - NewA-5
+      - NewA-6
       - DE-1
       - AlvinVLESS
       - AlvinHy2-1
@@ -555,32 +519,115 @@ proxy-groups:
       - AlvinSingbox-1
       - AlvinSingbox-2
       - US-HY2-1
+      - NEW1
+      - NEW21
+      - NEW38
+      - Static-Server
+    url: https://hindilinks4u.living/favicon.ico
+    interval: 30
+    tolerance: 10
+
+  - name: Netflix
+    type: url-test
+    proxies:
+      - RU_speednode_0047
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
+      - Good02
+      - Good04
+      - US-WS-1
+      - HK-TLS-2
+      - JP-TLS-1
+      - JP-TLS-2
+      - 110mbps
+      - Ex8
+      - NewA-3
+      - NewA-5
+      - NewA-6
+      - DE-1
+      - AlvinVLESS
+      - AlvinHy2-1
+      - AlvinQuick-1
+      - AlvinQuick-2
+      - AlvinQuick-3
+      - AlvinSingbox-1
+      - AlvinSingbox-2
+      - US-HY2-1
+      - NEW1
+      - NEW21
+      - NEW38
+      - Static-Server
     url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
 
-  - name: NEW-List
+  - name: Google
     type: url-test
     proxies:
+      - RU_speednode_0047
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
+      - Good02
+      - Good04
+      - US-WS-1
+      - HK-TLS-2
+      - JP-TLS-1
+      - JP-TLS-2
+      - 110mbps
+      - Ex8
+      - NewA-3
+      - NewA-5
+      - NewA-6
+      - DE-1
+      - AlvinVLESS
+      - AlvinHy2-1
+      - AlvinQuick-1
+      - AlvinQuick-2
+      - AlvinQuick-3
+      - AlvinSingbox-1
+      - AlvinSingbox-2
+      - US-HY2-1
       - NEW1
       - NEW21
       - NEW38
+      - Static-Server
     url: https://www.google.com/favicon.ico
     interval: 120
     tolerance: 50
 
-  - name: HighSpeed-List
+  - name: Youtube
     type: url-test
     proxies:
-      - NEW38
-      - AlvinQuick-2
-      - JP-TLS-1
-      - AlvinSingbox-1
       - RU_speednode_0047
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
+      - Good02
+      - Good04
       - US-WS-1
-      - DE_HTTP_High
-      - SK_TLS_High
-      - DE_High
+      - HK-TLS-2
+      - JP-TLS-1
+      - JP-TLS-2
+      - 110mbps
+      - Ex8
+      - NewA-3
+      - NewA-5
+      - NewA-6
+      - DE-1
+      - AlvinVLESS
+      - AlvinHy2-1
+      - AlvinQuick-1
+      - AlvinQuick-2
+      - AlvinQuick-3
+      - AlvinSingbox-1
+      - AlvinSingbox-2
+      - US-HY2-1
+      - NEW1
+      - NEW21
+      - NEW38
+      - Static-Server
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
