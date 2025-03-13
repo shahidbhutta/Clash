@@ -153,22 +153,12 @@ proxies:
         host: japan.freenods-8d6.workers.dev
     ip-version: dual
 
-  - name: US-HY2-2
-    type: hysteria2
-    server: 108.181.5.133
-    port: 15544
-    password: remove.com
-    sni: apple.com
-    fast-open: true
-    tls: true
-    udp: true
-    skip-cert-verify: true
 
   - name: US-HY2-1
     type: hysteria2
     server: 46.29.163.171
     port: 18626
-    password: remove.com
+    password: dongtaiwang.com
     sni: www.bing.com
     fast-open: true
     tls: true
@@ -302,22 +292,6 @@ proxies:
       headers:
         Host: config-proxy-vl.telegram-config-proxy.workers.dev
 
-  - name: AlvinVMESS
-    port: 40898
-    server: 185.22.153.73
-    type: vmess
-    network: ws
-    tls: false
-    skip-cert-verify: true
-    ws-opts:
-      path: github.com/Alvin9999
-      headers:
-        host: www.bing.com
-    cipher: auto
-    uuid: af7f07dc-d726-4b1e-967d-dbb6c594999f
-    alterId: 0
-
-
   - name: AlvinVLESS
     server: 195.154.56.233
     port: 22234
@@ -339,7 +313,7 @@ proxies:
     type: hysteria
     server: 185.22.155.71
     port: 10803
-    auth_str: remove.com
+    auth_str: dongtaiwang.com
     alpn:
       - h3
     sni: www.bing.com
@@ -351,7 +325,7 @@ proxies:
     type: hysteria
     server: 208.87.243.151
     port: 17549
-    auth_str: remove.com
+    auth_str: dongtaiwang.com
     alpn:
       - h3
     sni: www.bing.com
@@ -364,7 +338,7 @@ proxies:
     server: 108.181.24.77
     port: 11512
     udp: true
-    auth_str: remove.com
+    auth_str: dongtaiwang.com
     alpn:
       - h3
     sni: apple.com
@@ -376,7 +350,7 @@ proxies:
     type: hysteria
     server: 195.154.200.178
     port: 44557
-    auth_str: remove.com
+    auth_str: dongtaiwang.com
     alpn:
       - h3
     tls: true
@@ -389,7 +363,7 @@ proxies:
     type: hysteria
     server: 176.32.35.226
     port: 62003
-    auth_str: remove.com
+    auth_str: dongtaiwang.com
     alpn:
       - h3
     tls: true
@@ -402,7 +376,7 @@ proxies:
     type: hysteria
     server: 46.17.41.174
     port: 10469
-    auth_str: remove.com
+    auth_str: dongtaiwang.com
     alpn:
     - h3
     sni: apple.com
@@ -415,46 +389,13 @@ proxies:
     type: hysteria2
     server: 46.17.41.217
     port: 37481
-    password: remove.com
+    password: dongtaiwang.com
     sni: www.bing.com
     fast-open: true
     tls: true
     udp: true
     skip-cert-verify: true
 
-  - name: NewA-1
-    server: 89.187.169.72
-    port: 443
-    type: vless
-    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
-      short-id: 01b200e90e250221
-
-  - name: NewA-2
-    server: 20.211.64.15
-    port: 443
-    type: vless
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    tls: true
-    sni: "bdfgfrtt7.azurewebsites.net"
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: bdfgfrtt7.azurewebsites.net
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: bdfgfrtt7.azurewebsites.net
-  
   - name: NewA-3
     port: 80
     server: 172.67.132.72
@@ -496,66 +437,6 @@ proxies:
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
 
-  - name: Ex3
-    port: 443
-    server: high.work.lzg.me
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
-      headers:
-        host: high.work.lzg.me
-    uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
-    client-fingerprint: chrome
-
-  - name: Ex5
-    port: 443
-    server: hkklo.azurewebsites.net
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: hkklo.azurewebsites.net
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: hkklo.azurewebsites.net
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    client-fingerprint: chrome
-
-  - name: Ex6
-    port: 443
-    server: py.pl
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: py.pl
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=1024
-      headers:
-        host: trickshow.silaber.net
-    uuid: 9b7645aa-91f4-4f6d-98d9-c22f4ce8784f
-    client-fingerprint: chrome
-  
-  - name: Ex7
-    port: 80
-    server: 172.67.137.156
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: c.lkzb-0t0.workers.dev
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    client-fingerprint: chrome
   - name: Ex8
     port: 80
     server: 162.159.250.246
@@ -784,10 +665,6 @@ proxy-groups:
   - name: Extra-List
     type: url-test
     proxies:
-      - Ex3
-      - Ex5
-      - Ex6
-      - Ex7
       - Ex8
     url: https://www.youtube.com/favicon.ico
     interval: 30
@@ -796,14 +673,10 @@ proxy-groups:
   - name: NewA-List
     type: url-test
     proxies:
-      - NewA-1
-      - NewA-2
       - NewA-3
       - NewA-5
       - NewA-6
       - RU_speednode_0047
-      - remove
-      - remove
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -820,15 +693,10 @@ proxy-groups:
   - name: NewYear-List
     type: url-test
     proxies:
-      - remove
       - US-WS-1
-      - remove
-      - remove
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - remove
-      - remove
     url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
@@ -838,7 +706,6 @@ proxy-groups:
     proxies:
       - DE-1
       - AlvinVLESS
-      - AlvinVMESS
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
@@ -846,9 +713,6 @@ proxy-groups:
       - AlvinSingbox-1
       - AlvinSingbox-2
       - US-HY2-1
-      - US-HY2-2
-      - remove
-      - remove
     url: https://www.fast.com/favicon.ico
     interval: 120
     tolerance: 50
@@ -868,17 +732,13 @@ proxy-groups:
     proxies:
       - NEW38
       - AlvinQuick-2
-      - remove
-      - remove
       - JP-TLS-1
-      - remove
       - AlvinSingbox-1
       - RU_speednode_0047
       - US-WS-1
       - DE_HTTP_High
       - SK_TLS_High
       - DE_High
-      - remove
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -908,19 +768,12 @@ proxy-groups:
       - JP-TLS-1
       - JP-TLS-2
       - 110mbps
-      - Ex3
-      - Ex5
-      - Ex6
-      - Ex7
       - Ex8
-      - NewA-1
-      - NewA-2
       - NewA-3
       - NewA-5
       - NewA-6
       - DE-1
       - AlvinVLESS
-      - AlvinVMESS
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
@@ -928,7 +781,6 @@ proxy-groups:
       - AlvinSingbox-1
       - AlvinSingbox-2
       - US-HY2-1
-      - US-HY2-2
       - NEW1
       - NEW21
       - NEW38
@@ -940,8 +792,6 @@ proxy-groups:
     type: select
     proxies:
       - RU_speednode_0047
-      - remove
-      - remove
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
@@ -963,19 +813,12 @@ proxy-groups:
       - JP-TLS-1
       - JP-TLS-2
       - 110mbps
-      - Ex3
-      - Ex5
-      - Ex6
-      - Ex7
       - Ex8
-      - NewA-1
-      - NewA-2
       - NewA-3
       - NewA-5
       - NewA-6
       - DE-1
       - AlvinVLESS
-      - AlvinVMESS
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
@@ -983,7 +826,6 @@ proxy-groups:
       - AlvinSingbox-1
       - AlvinSingbox-2
       - US-HY2-1
-      - US-HY2-2
       - NEW1
       - NEW21
       - NEW38
