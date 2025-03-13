@@ -258,23 +258,6 @@ proxies:
         Host: a.mifeng.us.kg
     udp: true
 
-  - name: NEW21
-    server: 104.21.86.235
-    port: 80
-    type: vless
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    tls: false
-    sni: c.lkzb-0t0.workers.dev
-    skip-cert-verify: true
-    client-fingerprint: random
-    servername: c.lkzb-0t0.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: c.lkzb-0t0.workers.dev
-    udp: true
-
   - name: NEW38
     server: 172.64.146.118
     port: 8880
@@ -520,7 +503,6 @@ proxy-groups:
       - AlvinSingbox-2
       - US-HY2-1
       - NEW1
-      - NEW21
       - NEW38
       - Static-Server
     url: https://hindilinks4u.living/favicon.ico
@@ -555,7 +537,6 @@ proxy-groups:
       - AlvinSingbox-2
       - US-HY2-1
       - NEW1
-      - NEW21
       - NEW38
       - Static-Server
     url: https://www.fast.com/favicon.ico
@@ -590,7 +571,6 @@ proxy-groups:
       - AlvinSingbox-2
       - US-HY2-1
       - NEW1
-      - NEW21
       - NEW38
       - Static-Server
     url: https://www.google.com/favicon.ico
@@ -625,7 +605,6 @@ proxy-groups:
       - AlvinSingbox-2
       - US-HY2-1
       - NEW1
-      - NEW21
       - NEW38
       - Static-Server
     url: https://www.youtube.com/favicon.ico
@@ -660,7 +639,6 @@ proxy-groups:
       - AlvinSingbox-2
       - US-HY2-1
       - NEW1
-      - NEW21
       - NEW38
     url: https://www.fast.com/favicon.ico
     interval: 30
@@ -694,7 +672,6 @@ proxy-groups:
       - AlvinSingbox-2
       - US-HY2-1
       - NEW1
-      - NEW21
       - NEW38
 
 rules:
