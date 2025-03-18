@@ -48,6 +48,58 @@ dns:
       - 119.29.29.29
       - 223.5.5.5
 proxies:
+  - {"name":"PP2_🇩🇪2","server":"156.238.18.163","port":"2095","type":"vless","uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","skip-cert-verify":false,"network":"ws","tls":false,"client-fingerprint":"chrome","ws-opts":{"headers":{"Host":"redw.pooriam.ir"},"path":"/TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1"}}
+  - {"name":"PP2_🇺🇸7","server":"154.83.2.156","port":"8880","type":"vless","uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"redw.pooriam.ir"},"path":"/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed"},"servername":"redw.pooriam.ir"}
+  - {name: SC_0049, server: 154.83.2.156, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: SC_0050, server: 154.83.2.230, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: SC_0051, server: 154.83.2.228, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: 🇷🇺-HY2-1, server: 185.22.152.236, port: 33007, type: hysteria2, password: f93244dc-be35-401d-a937-2b17016f3e8b, auth: f93244dc-be35-401d-a937-2b17016f3e8b, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇷🇺-HY2-2, server: 46.17.43.122, port: 32006, type: hysteria2, password: fbcf809c-11bb-420d-ba97-206940b6e9fc, auth: fbcf809c-11bb-420d-ba97-206940b6e9fc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇭🇰-HY2-1, server: 212.192.13.68, port: 33007, type: hysteria2, password: fbcf809c-11bb-420d-ba97-206940b6e9fc, auth: fbcf809c-11bb-420d-ba97-206940b6e9fc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
+  - name: "Ruku-1"
+    type: vless
+    client-fingerprint: chrome
+    network: ws
+    port: 2052
+    server: 156.238.18.165
+    skip-cert-verify: false
+    tls: false
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+          Host: redw.pooriam.ir
+      path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+    
+  - name: "Ruku-2"
+    network: ws
+    port: 8880
+    server: 185.146.173.112
+    skip-cert-verify: false
+    tls: false
+    type: vless
+    uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+    ws-opts:
+      headers:
+          Host: photographipictureai.ir
+      path: /Telegram
+  - name: Ruku-HTTP-1
+    password: exaxgqkKkd0TAMrCxeonWg==
+    port: 443
+    server: tw1-cdn-route.couldflare-cdn.com
+    skip-cert-verify: false
+    sni: tw1-cdn-route.couldflare-cdn.com
+    tls: true
+    type: http
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+  - name: Ruku-HTTP-2
+    password: exaxgqkKkd0TAMrCxeonWg==
+    port: 443
+    server: hkre1-cdn-route.couldflare-cdn.com
+    skip-cert-verify: false
+    sni: hkre1-cdn-route.couldflare-cdn.com
+    tls: true
+    type: http
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
 
   - name: NL_High
     type: vless
@@ -326,8 +378,6 @@ proxies:
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
 
-
-
   - name: JP-TLS-2
     port: 443
     server: vsdfee.azurewebsites.net
@@ -342,21 +392,22 @@ proxies:
       - http/1.1
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
-  - name: SG-TCP-NONE
-    port: 8081
-    server: 5.223.41.114
+  - name: SG-WS-TLS
+    port: 2052
+    server: www.speedtest.net
     type: vless
-    tls: false
-    udp: false
-    xudp: false
-    network: tcp
-    headerType : http
-    servername : www.speedtest.net
-    sni : www.speedtest.net
-    host : www.speedtest.net
-    skip-cert-verify: true
-    uuid: ab954190-4554-4c09-9dfe-dc264069e9ee
+    tls: true
+    udp: true
+    network: ws
+    servername : Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    ws-opts:
+      path: /?ed=1080
+      headers:
+        host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    skip-cert-verify: false
+    uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
     client-fingerprint: chrome
+  
   - name: TLS-5
     port: 443
     server: 3.122.62.145
@@ -1586,6 +1637,18 @@ proxy-groups:
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
     url: https://www.youtube.com/favicon.ico
     interval: 30
     tolerance: 10
@@ -1600,7 +1663,7 @@ proxy-groups:
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - SG-TCP-NONE
+      - SG-WS-TLS
       - TLS-5
     url: https://www.fast.com/favicon.ico
     interval: 120
@@ -1693,6 +1756,18 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
       - NL_High
       - SK_TLS_High
       - DE_High
@@ -1723,7 +1798,7 @@ proxy-groups:
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - SG-TCP-NONE
+      - SG-WS-TLS
       - TLS-5
       - CN-1
       - CN-2
@@ -1797,6 +1872,18 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
       - NL_High
       - SK_TLS_High
       - DE_High
@@ -1827,7 +1914,7 @@ proxy-groups:
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - SG-TCP-NONE
+      - SG-WS-TLS
       - TLS-5
       - CN-1
       - CN-2
@@ -1956,6 +2043,7 @@ rules:
   - DOMAIN-KEYWORD,alicdn,DIRECT
   - DOMAIN-KEYWORD,alipay,DIRECT
   - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-KEYWORD,apple,ProxyNet
   - DOMAIN-SUFFIX,amap.com,DIRECT
   - DOMAIN-SUFFIX,autonavi.com,DIRECT
   - DOMAIN-KEYWORD,baidu,DIRECT
