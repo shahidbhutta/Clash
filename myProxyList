@@ -48,7 +48,8 @@ dns:
       - 119.29.29.29
       - 223.5.5.5
 proxies:
-  - name: DE_HTTP_High
+
+  - name: NL_High
     type: vless
     server: 45.149.12.183
     port: 2052
@@ -373,21 +374,22 @@ proxies:
     cipher: auto
     uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
     alterId: 0
+
   - name: CN-1
-    server: 183.236.48.158
-    port: 45402
+    server: 47.104.186.133
+    port: 50002
     type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
   - name: CN-2
-    server: 183.236.51.23
-    port: 41020
+    server: 183.236.51.36
+    port: 59003
     type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
+    alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: false
@@ -1680,7 +1682,7 @@ proxy-groups:
       - AlvinSingbox-1
       - RU_speednode_0047
       - US-WS-1
-      - DE_HTTP_High
+      - NL_High
       - SK_TLS_High
       - DE_High
       - CA_High
@@ -1691,6 +1693,10 @@ proxy-groups:
   - name: Best-of-All
     type: url-test
     proxies:
+      - NL_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
       - RU_speednode_0047
       - DigitalOcean
       - DongTaiWang
@@ -1791,6 +1797,10 @@ proxy-groups:
   - name: Static-Server
     type: select
     proxies:
+      - NL_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
       - RU_speednode_0047
       - DigitalOcean
       - DongTaiWang
