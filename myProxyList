@@ -426,24 +426,6 @@ proxies:
     uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
     alterId: 0
 
-  - name: CN-1
-    server: 47.104.186.133
-    port: 50002
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-  - name: CN-2
-    server: 183.236.51.36
-    port: 59003
-    type: vmess
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
   - name: US-27
     server: 172.64.40.169
     port: 80
@@ -1800,8 +1782,6 @@ proxy-groups:
       - JP-TLS-2
       - SG-WS-TLS
       - TLS-5
-      - CN-1
-      - CN-2
       - US-27
       - twserver
       - 110mbps
@@ -1916,8 +1896,6 @@ proxy-groups:
       - JP-TLS-2
       - SG-WS-TLS
       - TLS-5
-      - CN-1
-      - CN-2
       - US-27
       - twserver
       - 110mbps
