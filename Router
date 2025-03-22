@@ -68,19 +68,6 @@ proxies:
       headers:
           Host: redw.pooriam.ir
       path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
-    
-  - name: "Ruku-2"
-    network: ws
-    port: 8880
-    server: 185.146.173.112
-    skip-cert-verify: false
-    tls: false
-    type: vless
-    uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
-    ws-opts:
-      headers:
-          Host: photographipictureai.ir
-      path: /Telegram
   - name: Ruku-HTTP-1
     password: exaxgqkKkd0TAMrCxeonWg==
     port: 443
@@ -438,7 +425,6 @@ proxy-groups:
       - 🇷🇺-HY2-1
       - 🇭🇰-HY2-1
       - Ruku-1
-      - Ruku-2
       - Ruku-HTTP-1
       - Ruku-HTTP-2
       - SK_TLS_High
@@ -475,7 +461,6 @@ proxy-groups:
       - 🇷🇺-HY2-1
       - 🇭🇰-HY2-1
       - Ruku-1
-      - Ruku-2
       - Ruku-HTTP-1
       - Ruku-HTTP-2
       - SK_TLS_High
@@ -511,7 +496,6 @@ proxy-groups:
       - 🇷🇺-HY2-1
       - 🇭🇰-HY2-1
       - Ruku-1
-      - Ruku-2
       - Ruku-HTTP-1
       - Ruku-HTTP-2
       - SK_TLS_High
