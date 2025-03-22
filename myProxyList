@@ -1557,20 +1557,29 @@ proxy-groups:
   - name: ProxyNet
     type: select
     proxies:
-      - Good-List
-      - Alvin-List
-      - NEW-List
-      - NewA-List
-      - Extra-List
-      - BarryFar-List
-      - NewYear-List
-      - HighSpeed-List
       - Best-of-All
-      - Static-Server
-  
-  - name: Good-List
-    type: url-test
-    proxies:
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
+      - NL_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
+      - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
+      - VL-WsNone-1
+      - VL-WsNone-2
+      - VL-WsNone-3
       - Good01
       - Good02
       - Good03
@@ -1584,60 +1593,6 @@ proxy-groups:
       - Good11
       - Good12
       - Good13
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-  - name: Extra-List
-    type: url-test
-    proxies:
-      - Ex3
-      - Ex5
-      - Ex6
-      - Ex7
-      - Ex8
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-
-  - name: NewA-List
-    type: url-test
-    proxies:
-      - NewA-1
-      - NewA-2
-      - NewA-3
-      - NewA-5
-      - NewA-6
-      - RU_speednode_0047
-      - DigitalOcean
-      - DongTaiWang
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-  - name: BarryFar-List
-    type: url-test
-    proxies:
-      - VL-WsNone-1
-      - VL-WsNone-2
-      - VL-WsNone-3
-      - PP2_🇩🇪2
-      - PP2_🇺🇸7
-      - SC_0049
-      - SC_0050
-      - SC_0051
-      - 🇷🇺-HY2-1
-      - 🇷🇺-HY2-2
-      - 🇭🇰-HY2-1
-      - Ruku-1
-      - Ruku-2
-      - Ruku-HTTP-1
-      - Ruku-HTTP-2
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
-
-  - name: NewYear-List
-    type: url-test
-    proxies:
       - SG-TLS-1
       - US-WS-1
       - AE-REALITY-1
@@ -1647,13 +1602,19 @@ proxy-groups:
       - JP-TLS-2
       - SG-WS-TLS
       - TLS-5
-    url: https://www.fast.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
-  - name: Alvin-List
-    type: url-test
-    proxies:
+      - US-27
+      - twserver
+      - 110mbps
+      - Ex3
+      - Ex5
+      - Ex6
+      - Ex7
+      - Ex8
+      - NewA-1
+      - NewA-2
+      - NewA-3
+      - NewA-5
+      - NewA-6
       - DE-1
       - AlvinVLESS
       - AlvinVMESS
@@ -1667,13 +1628,6 @@ proxy-groups:
       - US-HY2-2
       - US-HY2-3
       - SE-HY2
-    url: https://www.fast.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
-  - name: NEW-List
-    type: url-test
-    proxies:
       - NEW1
       - NEW2
       - NEW3
@@ -1711,33 +1665,10 @@ proxy-groups:
       - NEW36
       - NEW37
       - NEW38
-    url: https://www.google.com/favicon.ico
-    interval: 120
-    tolerance: 50
 
-  - name: HighSpeed-List
-    type: url-test
-    proxies:
-      - NEW38
-      - AlvinQuick-2
-      - DigitalOcean
-      - DongTaiWang
-      - JP-TLS-1
-      - SE-HY2
-      - AlvinSingbox-1
-      - RU_speednode_0047
-      - US-WS-1
-      - NL_High
-      - SK_TLS_High
-      - DE_High
-      - CA_High
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
   - name: Streamers
     type: select
     proxies:
-      - Static-Server
       - Best-of-All
       - PP2_🇩🇪2
       - PP2_🇺🇸7
@@ -1957,120 +1888,9 @@ proxy-groups:
       - NEW36
       - NEW37
       - NEW38
-    url: https://www.fast.com/favicon.ico
+    url: https://www.gstatic.com/generate_204
     interval: 30
     tolerance: 10
-
-  - name: Static-Server
-    type: select
-    proxies:
-      - PP2_🇩🇪2
-      - PP2_🇺🇸7
-      - SC_0049
-      - SC_0050
-      - SC_0051
-      - 🇷🇺-HY2-1
-      - 🇷🇺-HY2-2
-      - 🇭🇰-HY2-1
-      - Ruku-1
-      - Ruku-2
-      - Ruku-HTTP-1
-      - Ruku-HTTP-2
-      - NL_High
-      - SK_TLS_High
-      - DE_High
-      - CA_High
-      - RU_speednode_0047
-      - DigitalOcean
-      - DongTaiWang
-      - VL-WsNone-1
-      - VL-WsNone-2
-      - VL-WsNone-3
-      - Good01
-      - Good02
-      - Good03
-      - Good04
-      - Good05
-      - Good06
-      - Good07
-      - Good08
-      - Good09
-      - Good10
-      - Good11
-      - Good12
-      - Good13
-      - SG-TLS-1
-      - US-WS-1
-      - AE-REALITY-1
-      - KR-REALITY-1
-      - HK-TLS-2
-      - JP-TLS-1
-      - JP-TLS-2
-      - SG-WS-TLS
-      - TLS-5
-      - US-27
-      - twserver
-      - 110mbps
-      - Ex3
-      - Ex5
-      - Ex6
-      - Ex7
-      - Ex8
-      - NewA-1
-      - NewA-2
-      - NewA-3
-      - NewA-5
-      - NewA-6
-      - DE-1
-      - AlvinVLESS
-      - AlvinVMESS
-      - AlvinHy2-1
-      - AlvinQuick-1
-      - AlvinQuick-2
-      - AlvinQuick-3
-      - AlvinSingbox-1
-      - AlvinSingbox-2
-      - US-HY2-1
-      - US-HY2-2
-      - US-HY2-3
-      - SE-HY2
-      - NEW1
-      - NEW2
-      - NEW3
-      - NEW4
-      - NEW5
-      - NEW6
-      - NEW8
-      - NEW9
-      - NEW10
-      - NEW11
-      - NEW12
-      - NEW13
-      - NEW14
-      - NEW15
-      - NEW16
-      - NEW17
-      - NEW18
-      - NEW19
-      - NEW20
-      - NEW21
-      - NEW22
-      - NEW23
-      - NEW24
-      - NEW25
-      - NEW26
-      - NEW27
-      - NEW28
-      - NEW29
-      - NEW30
-      - NEW31
-      - NEW32
-      - NEW33
-      - NEW34
-      - NEW35
-      - NEW36
-      - NEW37
-      - NEW38
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
