@@ -614,7 +614,6 @@ proxy-groups:
       - NewA-6
       - DE-1
       - AlvinVLESS
-      - AlvinVMESS
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
