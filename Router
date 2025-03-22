@@ -185,24 +185,6 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-
-  - name: SG-TLS-1
-    port: 443
-    server: 13.67.9.5
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: shg2.azurewebsites.net
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: shg2.azurewebsites.net
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    client-fingerprint: chrome
-  
-
   - name: US-WS-1
     port: 2082
     server: 159.112.235.174
@@ -415,39 +397,6 @@ proxies:
     udp: true
     skip-cert-verify: true
 
-  - name: NewA-1
-    server: 89.187.169.72
-    port: 443
-    type: vless
-    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
-    tls: true
-    udp: true
-    flow: xtls-rprx-vision
-    sni: "pardazeshvpn-tg71.pages.dev"
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
-      short-id: 01b200e90e250221
-
-  - name: NewA-2
-    server: 20.211.64.15
-    port: 443
-    type: vless
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    tls: true
-    sni: "bdfgfrtt7.azurewebsites.net"
-    skip-cert-verify: false
-    client-fingerprint: chrome
-    servername: bdfgfrtt7.azurewebsites.net
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: bdfgfrtt7.azurewebsites.net
-  
   - name: NewA-3
     port: 80
     server: 172.67.132.72
@@ -460,64 +409,6 @@ proxies:
       headers:
         host: workerr.aasihmin.workers.dev
     uuid: dc00f1f8-05b2-4bc0-b851-d4dfe5089329
-    client-fingerprint: chrome
-
-  - name: NewA-5
-    port: 80
-    server: 172.67.193.80
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /cm08G2LS63hBrLzw?ed=2560
-      headers:
-        host: BroKEn-bAR-5948.nepOg45969.WoRkERS.deV
-    uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
-    client-fingerprint: chrome
-  - name: NewA-6
-    port: 80
-    server: 104.21.90.15
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /K3xgkEyQmb7pPhho?ed=2560
-      headers:
-        host: BRoKEn-bar-5948.NEpog45969.WoRKERS.dev
-    uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
-    client-fingerprint: chrome
-
-  - name: Ex3
-    port: 443
-    server: high.work.lzg.me
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
-      headers:
-        host: high.work.lzg.me
-    uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
-    client-fingerprint: chrome
-
-  - name: Ex5
-    port: 443
-    server: hkklo.azurewebsites.net
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: hkklo.azurewebsites.net
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: hkklo.azurewebsites.net
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
 
   - name: Ex8
@@ -552,21 +443,14 @@ proxy-groups:
       - Ruku-HTTP-2
       - SK_TLS_High
       - DE_High
-      - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - SG-TLS-1
       - US-WS-1
       - JP-TLS-1
       - JP-TLS-2
       - 110mbps
-      - Ex3
       - Ex8
-      - NewA-1
-      - NewA-2
       - NewA-3
-      - NewA-5
-      - NewA-6
       - DE-1
       - AlvinVLESS
       - AlvinHy2-1
@@ -596,22 +480,14 @@ proxy-groups:
       - Ruku-HTTP-2
       - SK_TLS_High
       - DE_High
-      - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - SG-TLS-1
       - US-WS-1
       - JP-TLS-1
       - JP-TLS-2
       - 110mbps
-      - Ex3
-      - Ex5
       - Ex8
-      - NewA-1
-      - NewA-2
       - NewA-3
-      - NewA-5
-      - NewA-6
       - DE-1
       - AlvinVLESS
       - AlvinHy2-1
@@ -640,22 +516,14 @@ proxy-groups:
       - Ruku-HTTP-2
       - SK_TLS_High
       - DE_High
-      - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - SG-TLS-1
       - US-WS-1
       - JP-TLS-1
       - JP-TLS-2
       - 110mbps
-      - Ex3
-      - Ex5
       - Ex8
-      - NewA-1
-      - NewA-2
       - NewA-3
-      - NewA-5
-      - NewA-6
       - DE-1
       - AlvinVLESS
       - AlvinHy2-1
