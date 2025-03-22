@@ -2070,9 +2070,11 @@ rules:
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
   - DOMAIN-KEYWORD,amazon,ProxyNet
-  - DOMAIN-KEYWORD,google,ProxyNet
-  - DOMAIN-KEYWORD,gmail,ProxyNet
   - DOMAIN-KEYWORD,youtube,Streamers
+  - DOMAIN-SUFFIX,googlevideo.com,Streamers
+  - DOMAIN-SUFFIX,ytimg.com,Streamers
+  - DOMAIN-KEYWORD,google,ProxyNet
+  - DOMAIN-SUFFIX,gmail.com,ProxyNet
   - DOMAIN-KEYWORD,facebook,ProxyNet
   - DOMAIN-SUFFIX,fb.me,ProxyNet
   - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
