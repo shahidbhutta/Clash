@@ -561,9 +561,6 @@ proxy-groups:
       - JP-TLS-2
       - 110mbps
       - Ex3
-      - Ex5
-      - Ex6
-      - Ex7
       - Ex8
       - NewA-1
       - NewA-2
@@ -609,8 +606,6 @@ proxy-groups:
       - 110mbps
       - Ex3
       - Ex5
-      - Ex6
-      - Ex7
       - Ex8
       - NewA-1
       - NewA-2
