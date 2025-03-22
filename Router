@@ -48,7 +48,60 @@ dns:
       - 119.29.29.29
       - 223.5.5.5
 proxies:
-  - name: DE_HTTP_High
+  - {"name":"PP2_🇩🇪2","server":"156.238.18.163","port":"2095","type":"vless","uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","skip-cert-verify":false,"network":"ws","tls":false,"client-fingerprint":"chrome","ws-opts":{"headers":{"Host":"redw.pooriam.ir"},"path":"/TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1"}}
+  - {"name":"PP2_🇺🇸7","server":"154.83.2.156","port":"8880","type":"vless","uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","skip-cert-verify":false,"network":"ws","ws-opts":{"headers":{"Host":"redw.pooriam.ir"},"path":"/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed"},"servername":"redw.pooriam.ir"}
+  - {name: SC_0049, server: 154.83.2.156, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: SC_0050, server: 154.83.2.230, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: SC_0051, server: 154.83.2.228, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: 🇷🇺-HY2-1, server: 185.22.152.236, port: 33007, type: hysteria2, password: f93244dc-be35-401d-a937-2b17016f3e8b, auth: f93244dc-be35-401d-a937-2b17016f3e8b, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇷🇺-HY2-2, server: 46.17.43.122, port: 32006, type: hysteria2, password: fbcf809c-11bb-420d-ba97-206940b6e9fc, auth: fbcf809c-11bb-420d-ba97-206940b6e9fc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: 🇭🇰-HY2-1, server: 212.192.13.68, port: 33007, type: hysteria2, password: fbcf809c-11bb-420d-ba97-206940b6e9fc, auth: fbcf809c-11bb-420d-ba97-206940b6e9fc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
+  - name: "Ruku-1"
+    type: vless
+    client-fingerprint: chrome
+    network: ws
+    port: 2052
+    server: 156.238.18.165
+    skip-cert-verify: false
+    tls: false
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    ws-opts:
+      headers:
+          Host: redw.pooriam.ir
+      path: /TM-AZARBAYJAB1TM-AZARBAYJAB1TM-AZARBAYJAB1
+    
+  - name: "Ruku-2"
+    network: ws
+    port: 8880
+    server: 185.146.173.112
+    skip-cert-verify: false
+    tls: false
+    type: vless
+    uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+    ws-opts:
+      headers:
+          Host: photographipictureai.ir
+      path: /Telegram
+  - name: Ruku-HTTP-1
+    password: exaxgqkKkd0TAMrCxeonWg==
+    port: 443
+    server: tw1-cdn-route.couldflare-cdn.com
+    skip-cert-verify: false
+    sni: tw1-cdn-route.couldflare-cdn.com
+    tls: true
+    type: http
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+  - name: Ruku-HTTP-2
+    password: exaxgqkKkd0TAMrCxeonWg==
+    port: 443
+    server: hkre1-cdn-route.couldflare-cdn.com
+    skip-cert-verify: false
+    sni: hkre1-cdn-route.couldflare-cdn.com
+    tls: true
+    type: http
+    username: mrwdfNTD8M79LCukCieldrqZWqs=
+
+  - name: NL_High
     type: vless
     server: 45.149.12.183
     port: 2052
@@ -99,6 +152,23 @@ proxies:
         host: redw.pooriam.ir
     ip-version: dual
 
+
+  - name: CA_High
+    type: vless
+    server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
+    port: 80
+    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+    network: ws
+    tls: false
+    skip-cert-verify: false
+    fingerprint: chrome
+    servername: Join--E-L-i-V-2-R-A-Y.net
+    ws-opts:
+      path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
+      headers:
+        host: Join--E-L-i-V-2-R-A-Y.net
+    ip-version: dual
+
   - name: RU_speednode_0047
     type: vless
     server: 185.174.138.197
@@ -112,7 +182,26 @@ proxies:
       headers:
         host: a.xn--i-sx6a60i.us.kg.
     ip-version: dual
-  
+  - name: DigitalOcean
+    type: hysteria2
+    server: 143.198.235.49
+    port: 443
+    tls: false
+    password: iMqY3uG_5pgEj3hCfyHB-0vB
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: DongTaiWang
+    type: hysteria2
+    server: 195.154.33.70
+    port: 13861
+    tls: true
+    password: dongtaiwang.com
+    sni: www.bing.com
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+
   - name: VL-WsNone-1
     type: vless
     server: 45.149.12.183
@@ -153,7 +242,6 @@ proxies:
         host: japan.freenods-8d6.workers.dev
     ip-version: dual
 
-
   - name: US-HY2-1
     type: hysteria2
     server: 46.29.163.171
@@ -164,6 +252,24 @@ proxies:
     tls: true
     udp: true
     skip-cert-verify: true
+
+
+  - name: SG-TLS-1
+    port: 443
+    server: 13.67.9.5
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: shg2.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: shg2.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+  
 
   - name: US-WS-1
     port: 2082
@@ -179,7 +285,35 @@ proxies:
     uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
 
     client-fingerprint: chrome
- 
+  - name: AE-REALITY-1
+    port: 443
+    server: 181.215.205.99
+    type: vless
+    network: tcp
+    tls: true
+    udp: true
+    servername: adobe.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: ljzfoaXVBSNu3tw58-B0WNViso1aA9JSCX9GUcMDu0k
+      short-id: 4048A3da
+    uuid: 71b60539-19bf-4282-b09f-7596ffc3cc8b
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+  - name: KR-REALITY-1
+    port: 59167
+    server: 193.122.97.28
+    type: vless
+    network: tcp
+    udp: true
+    servername: www.sega.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: d9cGLVBrDFS02L2OvkqyqwFZ1Ux3AHs28ehl4Rwiyl0
+      short-id: adef9bdb
+    uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
+    client-fingerprint: chrome
+
   - name: HK-TLS-2
     port: 443
     server: 20.189.104.97
@@ -225,6 +359,53 @@ proxies:
       - http/1.1
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
+  - name: SG-WS-TLS
+    port: 2052
+    server: www.speedtest.net
+    type: vless
+    tls: true
+    udp: true
+    network: ws
+    servername : Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    ws-opts:
+      path: /?ed=1080
+      headers:
+        host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    skip-cert-verify: false
+    uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+    client-fingerprint: chrome
+  
+  - name: TLS-5
+    port: 443
+    server: 3.122.62.145
+    type: vmess
+    network: ws
+    tls: true
+    udp: true
+    version: "2"
+    servername: ""
+    skip-cert-verify: true
+    ws-opts:
+      path: /ylks
+      headers:
+        host: nl.zhuk.us.kg
+    cipher: auto
+    uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
+    alterId: 0
+
+  - name: US-27
+    server: 172.64.40.169
+    port: 80
+    type: vless
+    uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
+    tls: false
+    skip-cert-verify: false
+    servername: worker-winter-meadow-e881.test55.workers.dev
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: worker-winter-meadow-e881.test55.workers.dev
 
   - name: 110mbps
     port: 8880
@@ -240,6 +421,19 @@ proxies:
         host: mohsenfitshr.wibibin259.workers.dev
     uuid: 1b6ae0f5-01dc-4b96-bca9-31c672dcf0aa
     client-fingerprint: random
+  - name: 111mbps
+    port: 13579
+    server: 82.117.87.178
+    type: vless
+    network: tcp
+    udp: true
+    servername: icloud.com
+    skip-cert-verify: true
+    reality-opts:
+      public-key: yHujXYE95xI1v3LxfkFRU_T1_WPYKtY9xHbpYZ11hko
+      short-id: 811a9175
+    uuid: f647d08a-1e76-446f-94c3-9067aa69368d
+    client-fingerprint: chrome
 
   - name: NEW1
     server: 103.214.68.133
@@ -379,6 +573,39 @@ proxies:
     udp: true
     skip-cert-verify: true
 
+  - name: NewA-1
+    server: 89.187.169.72
+    port: 443
+    type: vless
+    uuid: 6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1
+    tls: true
+    udp: true
+    flow: xtls-rprx-vision
+    sni: "pardazeshvpn-tg71.pages.dev"
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    servername: www.cloudflare.com
+    network: tcp
+    reality-opts:
+      public-key: B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g
+      short-id: 01b200e90e250221
+
+  - name: NewA-2
+    server: 20.211.64.15
+    port: 443
+    type: vless
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    tls: true
+    sni: "bdfgfrtt7.azurewebsites.net"
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    servername: bdfgfrtt7.azurewebsites.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: bdfgfrtt7.azurewebsites.net
+  
   - name: NewA-3
     port: 80
     server: 172.67.132.72
@@ -420,6 +647,66 @@ proxies:
     uuid: 44b3cbba-e6ac-485a-9481-981a0415eab9
     client-fingerprint: chrome
 
+  - name: Ex3
+    port: 443
+    server: high.work.lzg.me
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+      headers:
+        host: high.work.lzg.me
+    uuid: 4c5f4cf8-b30a-4658-84bb-f0145dd123d4
+    client-fingerprint: chrome
+
+  - name: Ex5
+    port: 443
+    server: hkklo.azurewebsites.net
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: hkklo.azurewebsites.net
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: hkklo.azurewebsites.net
+    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+    client-fingerprint: chrome
+
+  - name: Ex6
+    port: 443
+    server: py.pl
+    type: vless
+    network: ws
+    tls: true
+    udp: true
+    servername: py.pl
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=1024
+      headers:
+        host: trickshow.silaber.net
+    uuid: 9b7645aa-91f4-4f6d-98d9-c22f4ce8784f
+    client-fingerprint: chrome
+  
+  - name: Ex7
+    port: 80
+    server: 172.67.137.156
+    type: vless
+    network: ws
+    udp: true
+    skip-cert-verify: true
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: c.lkzb-0t0.workers.dev
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    client-fingerprint: chrome
   - name: Ex8
     port: 80
     server: 162.159.250.246
@@ -434,62 +721,52 @@ proxies:
     uuid: 63583ca2-b618-4bd8-96a1-08febe3a6730
     client-fingerprint: chrome
   
-  - name: Good02
-    type: vless
-    server: 20.42.228.160
-    port: 443
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    network: ws
-    tls: true
-    servername: sdfee4.azurewebsites.net
-    alpn:
-      - http/1.1
-    client-fingerprint: chrome
-    ws-opts:
-      path: /
-      headers:
-        host: sdfee4.azurewebsites.net
-    ip-version: dual
-
-  - name: Good04
-    type: vless
-    server: 51.81.18.62
-    port: 443
-    uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
-    network: tcp
-    tls: true
-    servername: 147135011033.sec21org.com
-    client-fingerprint: chrome
-    ip-version: dual
-
-
-
 proxy-groups:
   - name: ProxyNet
     type: select
     proxies:
-      - Streaming
-      - Netflix
-      - Google
-      - Youtube
       - Best-of-All
-      - Static-Server
-  
-  - name: Streaming
-    type: url-test
-    proxies:
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
+      - NL_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
       - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - Good02
-      - Good04
+      - SG-TLS-1
       - US-WS-1
+      - AE-REALITY-1
+      - KR-REALITY-1
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
+      - SG-WS-TLS
+      - TLS-5
+      - US-27
+      - twserver
       - 110mbps
+      - Ex3
+      - Ex5
+      - Ex6
+      - Ex7
       - Ex8
+      - NewA-1
+      - NewA-2
       - NewA-3
       - NewA-5
       - NewA-6
@@ -504,31 +781,58 @@ proxy-groups:
       - US-HY2-1
       - NEW1
       - NEW38
-      - Static-Server
-    url: https://hindilinks4u.living/favicon.ico
-    interval: 30
-    tolerance: 10
 
-  - name: Netflix
-    type: url-test
+  - name: Streamers
+    type: select
     proxies:
+      - Best-of-All
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
+      - NL_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
       - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - Good02
-      - Good04
+      - SG-TLS-1
       - US-WS-1
+      - AE-REALITY-1
+      - KR-REALITY-1
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
+      - SG-WS-TLS
+      - TLS-5
+      - US-27
+      - twserver
       - 110mbps
+      - Ex3
+      - Ex5
+      - Ex6
+      - Ex7
       - Ex8
+      - NewA-1
+      - NewA-2
       - NewA-3
       - NewA-5
       - NewA-6
       - DE-1
       - AlvinVLESS
+      - AlvinVMESS
       - AlvinHy2-1
       - AlvinQuick-1
       - AlvinQuick-2
@@ -538,94 +842,51 @@ proxy-groups:
       - US-HY2-1
       - NEW1
       - NEW38
-      - Static-Server
-    url: https://www.fast.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
-  - name: Google
-    type: url-test
-    proxies:
-      - RU_speednode_0047
-      - VL-WsNone-1
-      - VL-WsNone-2
-      - VL-WsNone-3
-      - Good02
-      - Good04
-      - US-WS-1
-      - HK-TLS-2
-      - JP-TLS-1
-      - JP-TLS-2
-      - 110mbps
-      - Ex8
-      - NewA-3
-      - NewA-5
-      - NewA-6
-      - DE-1
-      - AlvinVLESS
-      - AlvinHy2-1
-      - AlvinQuick-1
-      - AlvinQuick-2
-      - AlvinQuick-3
-      - AlvinSingbox-1
-      - AlvinSingbox-2
-      - US-HY2-1
-      - NEW1
-      - NEW38
-      - Static-Server
-    url: https://www.google.com/favicon.ico
-    interval: 120
-    tolerance: 50
-
-  - name: Youtube
-    type: url-test
-    proxies:
-      - RU_speednode_0047
-      - VL-WsNone-1
-      - VL-WsNone-2
-      - VL-WsNone-3
-      - Good02
-      - Good04
-      - US-WS-1
-      - HK-TLS-2
-      - JP-TLS-1
-      - JP-TLS-2
-      - 110mbps
-      - Ex8
-      - NewA-3
-      - NewA-5
-      - NewA-6
-      - DE-1
-      - AlvinVLESS
-      - AlvinHy2-1
-      - AlvinQuick-1
-      - AlvinQuick-2
-      - AlvinQuick-3
-      - AlvinSingbox-1
-      - AlvinSingbox-2
-      - US-HY2-1
-      - NEW1
-      - NEW38
-      - Static-Server
-    url: https://www.youtube.com/favicon.ico
-    interval: 30
-    tolerance: 10
 
   - name: Best-of-All
     type: url-test
     proxies:
+      - PP2_🇩🇪2
+      - PP2_🇺🇸7
+      - SC_0049
+      - SC_0050
+      - SC_0051
+      - 🇷🇺-HY2-1
+      - 🇷🇺-HY2-2
+      - 🇭🇰-HY2-1
+      - Ruku-1
+      - Ruku-2
+      - Ruku-HTTP-1
+      - Ruku-HTTP-2
+      - NL_High
+      - SK_TLS_High
+      - DE_High
+      - CA_High
       - RU_speednode_0047
+      - DigitalOcean
+      - DongTaiWang
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
-      - Good02
-      - Good04
+      - SG-TLS-1
       - US-WS-1
+      - AE-REALITY-1
+      - KR-REALITY-1
       - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
+      - SG-WS-TLS
+      - TLS-5
+      - US-27
+      - twserver
       - 110mbps
+      - Ex3
+      - Ex5
+      - Ex6
+      - Ex7
       - Ex8
+      - NewA-1
+      - NewA-2
       - NewA-3
       - NewA-5
       - NewA-6
@@ -640,39 +901,9 @@ proxy-groups:
       - US-HY2-1
       - NEW1
       - NEW38
-    url: https://www.fast.com/favicon.ico
+    url: https://www.gstatic.com/generate_204
     interval: 30
     tolerance: 10
-
-  - name: Static-Server
-    type: select
-    proxies:
-      - RU_speednode_0047
-      - VL-WsNone-1
-      - VL-WsNone-2
-      - VL-WsNone-3
-      - Good02
-      - Good04
-      - US-WS-1
-      - HK-TLS-2
-      - JP-TLS-1
-      - JP-TLS-2
-      - 110mbps
-      - Ex8
-      - NewA-3
-      - NewA-5
-      - NewA-6
-      - DE-1
-      - AlvinVLESS
-      - AlvinHy2-1
-      - AlvinQuick-1
-      - AlvinQuick-2
-      - AlvinQuick-3
-      - AlvinSingbox-1
-      - AlvinSingbox-2
-      - US-HY2-1
-      - NEW1
-      - NEW38
 
 rules:
   - DOMAIN-SUFFIX,baidu.com,DIRECT
@@ -681,7 +912,6 @@ rules:
   - DOMAIN-SUFFIX,yunjiasu-cdn.net,DIRECT
   - DOMAIN-SUFFIX,taobao.com,DIRECT
   - DOMAIN-SUFFIX,alicdn.com,DIRECT
-  - DOMAIN-KEYWORD,hindilinks4u,Streaming
   - DOMAIN,blzddist1-a.akamaihd.net,DIRECT
   - DOMAIN,cdn.angruo.com,ProxyNet
   - DOMAIN,download.jetbrains.com,DIRECT
@@ -690,10 +920,10 @@ rules:
   - DOMAIN,officecdn-microsoft-com.akamaized.net,DIRECT
   - DOMAIN,speedtest.macpaw.com,DIRECT
   - DOMAIN,beiyong.starnetcn.com,ProxyNet
-  - DOMAIN-SUFFIX,services.googleapis.cn,Google
+  - DOMAIN-SUFFIX,services.googleapis.cn,ProxyNet
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,ProxyNet
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
-  - DOMAIN,safebrowsing.googleapis.com,Google
+  - DOMAIN,safebrowsing.googleapis.com,ProxyNet
   - DOMAIN,developer.apple.com,ProxyNet
   - DOMAIN-SUFFIX,digicert.com,ProxyNet
   - DOMAIN,ocsp.apple.com,ProxyNet
@@ -736,6 +966,7 @@ rules:
   - DOMAIN-KEYWORD,alicdn,DIRECT
   - DOMAIN-KEYWORD,alipay,DIRECT
   - DOMAIN-KEYWORD,taobao,DIRECT
+  - DOMAIN-KEYWORD,apple,ProxyNet
   - DOMAIN-SUFFIX,amap.com,DIRECT
   - DOMAIN-SUFFIX,autonavi.com,DIRECT
   - DOMAIN-KEYWORD,baidu,DIRECT
@@ -852,9 +1083,11 @@ rules:
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
   - DOMAIN-KEYWORD,amazon,ProxyNet
-  - DOMAIN-KEYWORD,google,Google
-  - DOMAIN-KEYWORD,gmail,ProxyNet
-  - DOMAIN-KEYWORD,youtube,Youtube
+  - DOMAIN-KEYWORD,youtube,Streamers
+  - DOMAIN-SUFFIX,googlevideo.com,Streamers
+  - DOMAIN-SUFFIX,ytimg.com,Streamers
+  - DOMAIN-KEYWORD,google,ProxyNet
+  - DOMAIN-SUFFIX,gmail.com,ProxyNet
   - DOMAIN-KEYWORD,facebook,ProxyNet
   - DOMAIN-SUFFIX,fb.me,ProxyNet
   - DOMAIN-SUFFIX,fbcdn.net,ProxyNet
@@ -1551,7 +1784,7 @@ rules:
   - DOMAIN-SUFFIX,line-cdn.net,ProxyNet
   - DOMAIN-SUFFIX,line-scdn.net,ProxyNet
   - DOMAIN-KEYWORD,blogspot,ProxyNet
-  - DOMAIN-KEYWORD,google,Google
+  - DOMAIN-KEYWORD,google,ProxyNet
   - DOMAIN-SUFFIX,abc.xyz,ProxyNet
   - DOMAIN-SUFFIX,admin.recaptcha.net,ProxyNet
   - DOMAIN-SUFFIX,ampproject.org,ProxyNet
@@ -1612,7 +1845,9 @@ rules:
   - DOMAIN-SUFFIX,ap3.agora.io,ProxyNet
   - DOMAIN-KEYWORD,aka,ProxyNet
   - DOMAIN-KEYWORD,facebook,ProxyNet
-  - DOMAIN-KEYWORD,youtube,Youtube
+  - DOMAIN-KEYWORD,youtube,Streamers
+  - DOMAIN-KEYWORD,hindilinks4u,Streamers
+  - DOMAIN-KEYWORD,watchomovies,Streamers
   - DOMAIN-KEYWORD,twitter,ProxyNet
   - DOMAIN-SUFFIX,instagram.com,ProxyNet
   - DOMAIN-SUFFIX,cdninstagram.com,ProxyNet
