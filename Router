@@ -54,7 +54,6 @@ proxies:
   - {name: SC_0050, server: 154.83.2.230, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
   - {name: SC_0051, server: 154.83.2.228, port: 8880, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, skip-cert-verify: false, servername: redw.pooriam.ir, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560", headers: {Host: redw.pooriam.ir}}, udp: true}
   - {name: 🇷🇺-HY2-1, server: 185.22.152.236, port: 33007, type: hysteria2, password: f93244dc-be35-401d-a937-2b17016f3e8b, auth: f93244dc-be35-401d-a937-2b17016f3e8b, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
-  - {name: 🇷🇺-HY2-2, server: 46.17.43.122, port: 32006, type: hysteria2, password: fbcf809c-11bb-420d-ba97-206940b6e9fc, auth: fbcf809c-11bb-420d-ba97-206940b6e9fc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
   - {name: 🇭🇰-HY2-1, server: 212.192.13.68, port: 33007, type: hysteria2, password: fbcf809c-11bb-420d-ba97-206940b6e9fc, auth: fbcf809c-11bb-420d-ba97-206940b6e9fc, up: 100, down: 100, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
   - name: "Ruku-1"
     type: vless
@@ -101,23 +100,6 @@ proxies:
     type: http
     username: mrwdfNTD8M79LCukCieldrqZWqs=
 
-  - name: NL_High
-    type: vless
-    server: 45.149.12.183
-    port: 2052
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    network: ws
-    tls: false
-    udp: true
-    skip-cert-verify: false
-    fingerprint: chrome
-    servername: redw.pooriam.ir
-    ws-opts:
-      path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-      headers:
-        host: redw.pooriam.ir
-    ip-version: dual
-
   - name: SK_TLS_High
     type: vless
     server: 154.83.2.156
@@ -151,57 +133,7 @@ proxies:
       headers:
         host: redw.pooriam.ir
     ip-version: dual
-
-
-  - name: CA_High
-    type: vless
-    server: join.e-l-i-v-2-r-a-y.fastly80-3.hosting-ip.com
-    port: 80
-    uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-    network: ws
-    tls: false
-    skip-cert-verify: false
-    fingerprint: chrome
-    servername: Join--E-L-i-V-2-R-A-Y.net
-    ws-opts:
-      path: /channel,ELiV2RAY-channel,ELiV2RAY-channel,ELiV2RAY?ed
-      headers:
-        host: Join--E-L-i-V-2-R-A-Y.net
-    ip-version: dual
-
-  - name: RU_speednode_0047
-    type: vless
-    server: 185.174.138.197
-    port: 8080
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    network: ws
-    tls: false
-    servername: a.xn--i-sx6a60i.us.kg.
-    ws-opts:
-      path: /
-      headers:
-        host: a.xn--i-sx6a60i.us.kg.
-    ip-version: dual
-  - name: DigitalOcean
-    type: hysteria2
-    server: 143.198.235.49
-    port: 443
-    tls: false
-    password: iMqY3uG_5pgEj3hCfyHB-0vB
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-  - name: DongTaiWang
-    type: hysteria2
-    server: 195.154.33.70
-    port: 13861
-    tls: true
-    password: dongtaiwang.com
-    sni: www.bing.com
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-
+ 
   - name: VL-WsNone-1
     type: vless
     server: 45.149.12.183
@@ -285,50 +217,7 @@ proxies:
     uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
 
     client-fingerprint: chrome
-  - name: AE-REALITY-1
-    port: 443
-    server: 181.215.205.99
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: adobe.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: ljzfoaXVBSNu3tw58-B0WNViso1aA9JSCX9GUcMDu0k
-      short-id: 4048A3da
-    uuid: 71b60539-19bf-4282-b09f-7596ffc3cc8b
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: KR-REALITY-1
-    port: 59167
-    server: 193.122.97.28
-    type: vless
-    network: tcp
-    udp: true
-    servername: www.sega.com
-    skip-cert-verify: true
-    reality-opts:
-      public-key: d9cGLVBrDFS02L2OvkqyqwFZ1Ux3AHs28ehl4Rwiyl0
-      short-id: adef9bdb
-    uuid: 3fdf9d48-578a-42dc-9fdd-0dfcefa3d0c5
-    client-fingerprint: chrome
-
-  - name: HK-TLS-2
-    port: 443
-    server: 20.189.104.97
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: dee33.azurewebsites.net
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: dee33.azurewebsites.net
-    uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-    client-fingerprint: chrome
+  
   - name: JP-TLS-1
     port: 443
     server: 20.210.64.11
@@ -359,53 +248,6 @@ proxies:
       - http/1.1
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
-  - name: SG-WS-TLS
-    port: 2052
-    server: www.speedtest.net
-    type: vless
-    tls: true
-    udp: true
-    network: ws
-    servername : Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    ws-opts:
-      path: /?ed=1080
-      headers:
-        host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    skip-cert-verify: false
-    uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-    client-fingerprint: chrome
-  
-  - name: TLS-5
-    port: 443
-    server: 3.122.62.145
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: /ylks
-      headers:
-        host: nl.zhuk.us.kg
-    cipher: auto
-    uuid: 60c0bbfa-c54f-49a9-81ba-779b0206a9fd
-    alterId: 0
-
-  - name: US-27
-    server: 172.64.40.169
-    port: 80
-    type: vless
-    uuid: a2056696-90fc-4e0a-b7c8-e85ce9f96d18
-    tls: false
-    skip-cert-verify: false
-    servername: worker-winter-meadow-e881.test55.workers.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: worker-winter-meadow-e881.test55.workers.dev
 
   - name: 110mbps
     port: 8880
@@ -678,35 +520,6 @@ proxies:
     uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
     client-fingerprint: chrome
 
-  - name: Ex6
-    port: 443
-    server: py.pl
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: py.pl
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=1024
-      headers:
-        host: trickshow.silaber.net
-    uuid: 9b7645aa-91f4-4f6d-98d9-c22f4ce8784f
-    client-fingerprint: chrome
-  
-  - name: Ex7
-    port: 80
-    server: 172.67.137.156
-    type: vless
-    network: ws
-    udp: true
-    skip-cert-verify: true
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        host: c.lkzb-0t0.workers.dev
-    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-    client-fingerprint: chrome
   - name: Ex8
     port: 80
     server: 162.159.250.246
@@ -732,33 +545,20 @@ proxy-groups:
       - SC_0050
       - SC_0051
       - 🇷🇺-HY2-1
-      - 🇷🇺-HY2-2
       - 🇭🇰-HY2-1
       - Ruku-1
       - Ruku-2
       - Ruku-HTTP-1
       - Ruku-HTTP-2
-      - NL_High
       - SK_TLS_High
       - DE_High
-      - CA_High
-      - RU_speednode_0047
-      - DigitalOcean
-      - DongTaiWang
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
       - SG-TLS-1
       - US-WS-1
-      - AE-REALITY-1
-      - KR-REALITY-1
-      - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - SG-WS-TLS
-      - TLS-5
-      - US-27
-      - twserver
       - 110mbps
       - Ex3
       - Ex5
@@ -792,33 +592,20 @@ proxy-groups:
       - SC_0050
       - SC_0051
       - 🇷🇺-HY2-1
-      - 🇷🇺-HY2-2
       - 🇭🇰-HY2-1
       - Ruku-1
       - Ruku-2
       - Ruku-HTTP-1
       - Ruku-HTTP-2
-      - NL_High
       - SK_TLS_High
       - DE_High
-      - CA_High
-      - RU_speednode_0047
-      - DigitalOcean
-      - DongTaiWang
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
       - SG-TLS-1
       - US-WS-1
-      - AE-REALITY-1
-      - KR-REALITY-1
-      - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - SG-WS-TLS
-      - TLS-5
-      - US-27
-      - twserver
       - 110mbps
       - Ex3
       - Ex5
@@ -852,38 +639,23 @@ proxy-groups:
       - SC_0050
       - SC_0051
       - 🇷🇺-HY2-1
-      - 🇷🇺-HY2-2
       - 🇭🇰-HY2-1
       - Ruku-1
       - Ruku-2
       - Ruku-HTTP-1
       - Ruku-HTTP-2
-      - NL_High
       - SK_TLS_High
       - DE_High
-      - CA_High
-      - RU_speednode_0047
-      - DigitalOcean
-      - DongTaiWang
       - VL-WsNone-1
       - VL-WsNone-2
       - VL-WsNone-3
       - SG-TLS-1
       - US-WS-1
-      - AE-REALITY-1
-      - KR-REALITY-1
-      - HK-TLS-2
       - JP-TLS-1
       - JP-TLS-2
-      - SG-WS-TLS
-      - TLS-5
-      - US-27
-      - twserver
       - 110mbps
       - Ex3
       - Ex5
-      - Ex6
-      - Ex7
       - Ex8
       - NewA-1
       - NewA-2
