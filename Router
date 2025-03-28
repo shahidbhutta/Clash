@@ -140,16 +140,7 @@ proxies:
       headers:
         host: a.xn--i-sx6a60i.us.kg.
     ip-version: dual
-  - name: DigitalOcean
-    type: hysteria2
-    server: 143.198.235.49
-    port: 443
-    tls: false
-    password: iMqY3uG_5pgEj3hCfyHB-0vB
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-
+  
   - name: VL-WsNone-1
     type: vless
     server: 45.149.12.183
