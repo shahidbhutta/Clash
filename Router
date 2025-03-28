@@ -825,7 +825,7 @@ proxies:
     type: http
     username: mrwdfNTD8M79LCukCieldrqZWqs=
 
-  - name: 3861373363386365
+  - name: HTTP-TW-CloudFlare
     password: exaxgqkKkd0TAMrCxeonWg==
     port: 443
     server: tw1-cdn-route.couldflare-cdn.com
@@ -920,7 +920,7 @@ proxies:
   
   - alterId: 0
     cipher: auto
-    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_3433333363653037"
+    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_150"
     port: 51095
     server: 120.198.71.219
     tls: false
@@ -961,7 +961,7 @@ proxies:
     type: hysteria2
   - alterId: 0
     cipher: auto
-    name: "\U0001F7E1_\U0001F1F8\U0001F1EC_\U0001F4BB_3130656639666637"
+    name: "\U0001F7E1_\U0001F1F8\U0001F1EC_\U0001F4BB_151"
     network: ws
     port: 443
     server: 8.219.206.22
@@ -991,14 +991,14 @@ proxies:
   
   
   - auth: c8ed6f77-3a96-46f9-9959-79118f9c1019
-    name: "❓_\U0001F1F5\U0001F1F1_\U0001F4F6_6466326133653230"
+    name: "❓_\U0001F1F5\U0001F1F1_\U0001F4F6_152"
     password: c8ed6f77-3a96-46f9-9959-79118f9c1019
     port: 53252
     server: 85.194.246.115
     skip-cert-verify: true
     sni: www.bing.com
     type: hysteria2
-  - name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BB_6633343962363532"
+  - name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BB_153"
     network: ws
     password: 6040a753-e35b-4384-8713-96f3c639b621
     port: 443
@@ -1022,7 +1022,7 @@ proxies:
   
   - flow: ""
     mode: ""
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_3563656137663135"
+    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_154"
     network: ws
     port: 443
     server: 172.67.163.14
@@ -1038,14 +1038,14 @@ proxies:
   
   - alterId: 0
     cipher: auto
-    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_6239363865303630"
+    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_155"
     port: 31998
     server: 120.234.102.229
     tls: false
     type: vmess
     uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   
-  - name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BB_6337366264303139"
+  - name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BB_156"
     network: tcp
     port: 443
     server: 135.148.152.97
@@ -1056,7 +1056,7 @@ proxies:
   
   - client-fingerprint: qq
     flow: xtls-rprx-vision
-    name: "\U0001F7E1_\U0001F1F0\U0001F1F7_\U0001F4BB_3662616164383531"
+    name: "\U0001F7E1_\U0001F1F0\U0001F1F7_\U0001F4BB_157"
     network: tcp
     port: 23333
     reality-opts:
@@ -1077,7 +1077,7 @@ proxies:
     type: hysteria2
   - flow: ""
     mode: ""
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_3936316466313964"
+    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_158"
     network: ws
     port: 443
     server: 172.67.173.64
@@ -1093,7 +1093,7 @@ proxies:
   - alterId: 0
     cipher: auto
     ip-version: dual
-    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_3137383833356432"
+    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_159"
     network: tcp
     port: 50002
     server: 112.132.215.12
@@ -1119,7 +1119,7 @@ proxies:
   
   - alterId: 0
     cipher: auto
-    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_36313734643964"
+    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_160"
     port: 34093
     server: 120.198.71.214
     tls: false
@@ -1139,7 +1139,7 @@ proxies:
   
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BC_3634366630346265"
+    name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BC_161"
     network: tcp
     port: 33718
     reality-opts:
@@ -1219,7 +1219,7 @@ proxies:
 
   - alterId: 0
     cipher: auto
-    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_39343638313663"
+    name: "❓_\U0001F1E8\U0001F1F3_\U0001F4F6_162"
     port: 51052
     server: 120.232.153.123
     skip-cert-verify: true
@@ -1246,7 +1246,7 @@ proxies:
 
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "❓_\U0001F1EF\U0001F1F5_\U0001F4BB_33306163653237"
+    name: "❓_\U0001F1EF\U0001F1F5_\U0001F4BB_163"
     network: tcp
     port: 4132
     reality-opts:
@@ -1257,7 +1257,7 @@ proxies:
     type: vless
     uuid: e190cf54-cabc-4585-88ec-0e80f72f1abf
 
-  - name: "\U0001F7E1_\U0001F1EF\U0001F1F5_\U0001F4BB_3338313661616633"
+  - name: "\U0001F7E1_\U0001F1EF\U0001F1F5_\U0001F4BB_164"
     password: 6aqnYj7NA2CAeSeZpY34RIC3KzNzDO33aOOaZSxFSc5ETBcwXeyaDF3qC9A907y2nXT8S
     port: 443
     server: 154.31.114.12
