@@ -895,19 +895,6 @@ proxies:
       headers:
           Host: ad.oldcloud.online
       path: /
-  - auth: 2cae1b54-57f2-42b6-9ebb-99db1b58fd8d
-    client-fingerprint: chrome
-    down: 1000
-    name: "❓_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BC_7"
-    obfs: salamander
-    obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
-    password: 2cae1b54-57f2-42b6-9ebb-99db1b58fd8d
-    port: 33007
-    server: 212.192.13.68
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    up: 1000
   - auth: 7f9b8dad-e41e-4a60-892d-ed414a5cfd2e
     client-fingerprint: chrome
     down: 1000
@@ -917,19 +904,6 @@ proxies:
     password: 7f9b8dad-e41e-4a60-892d-ed414a5cfd2e
     port: 30031
     server: 141.195.112.33
-    skip-cert-verify: true
-    type: hysteria2
-    udp: true
-    up: 1000
-  - auth: 1988f67f-4e50-46e8-8c58-1c336fb38632
-    client-fingerprint: chrome
-    down: 1000
-    name: "❓_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BC_9"
-    obfs: salamander
-    obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
-    password: 1988f67f-4e50-46e8-8c58-1c336fb38632
-    port: 33007
-    server: 212.192.13.68
     skip-cert-verify: true
     type: hysteria2
     udp: true
