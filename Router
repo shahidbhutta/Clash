@@ -407,42 +407,6 @@ proxy-groups:
       - NEW1
       - NEW38
 
-  - name: Streamers
-    type: select
-    proxies:
-      - Best-of-All
-      - PP2_🇩🇪2
-      - PP2_🇺🇸7
-      - SC_0049
-      - SC_0050
-      - SC_0051
-      - 🇷🇺-HY2-1
-      - 🇭🇰-HY2-1
-      - Ruku-1
-      - Ruku-HTTP-1
-      - Ruku-HTTP-2
-      - SK_TLS_High
-      - DE_High
-      - VL-WsNone-2
-      - VL-WsNone-3
-      - US-WS-1
-      - JP-TLS-1
-      - JP-TLS-2
-      - 110mbps
-      - Ex8
-      - NewA-3
-      - DE-1
-      - AlvinVLESS
-      - AlvinHy2-1
-      - AlvinQuick-1
-      - AlvinQuick-2
-      - AlvinQuick-3
-      - AlvinSingbox-1
-      - AlvinSingbox-2
-      - US-HY2-1
-      - NEW1
-      - NEW38
-
   - name: Best-of-All
     type: url-test
     proxies:
@@ -659,9 +623,9 @@ rules:
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
   - DOMAIN-KEYWORD,amazon,ProxyNet
-  - DOMAIN-KEYWORD,youtube,Streamers
-  - DOMAIN-SUFFIX,googlevideo.com,Streamers
-  - DOMAIN-SUFFIX,ytimg.com,Streamers
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-SUFFIX,googlevideo.com,ProxyNet
+  - DOMAIN-SUFFIX,ytimg.com,ProxyNet
   - DOMAIN-KEYWORD,google,ProxyNet
   - DOMAIN-SUFFIX,gmail.com,ProxyNet
   - DOMAIN-KEYWORD,facebook,ProxyNet
@@ -1421,9 +1385,9 @@ rules:
   - DOMAIN-SUFFIX,ap3.agora.io,ProxyNet
   - DOMAIN-KEYWORD,aka,ProxyNet
   - DOMAIN-KEYWORD,facebook,ProxyNet
-  - DOMAIN-KEYWORD,youtube,Streamers
-  - DOMAIN-KEYWORD,hindilinks4u,Streamers
-  - DOMAIN-KEYWORD,watchomovies,Streamers
+  - DOMAIN-KEYWORD,youtube,ProxyNet
+  - DOMAIN-KEYWORD,hindilinks4u,ProxyNet
+  - DOMAIN-KEYWORD,watchomovies,ProxyNet
   - DOMAIN-KEYWORD,twitter,ProxyNet
   - DOMAIN-SUFFIX,instagram.com,ProxyNet
   - DOMAIN-SUFFIX,cdninstagram.com,ProxyNet
