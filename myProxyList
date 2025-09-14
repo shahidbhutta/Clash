@@ -6,7 +6,25 @@ log-level: info
 external-controller: :9090
 
 proxies:
-    
+  
+  - alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    name: "SuperCric1"
+    network: ws
+    port: 443
+    server: 172.67.130.204
+    servername: ddDDdDDdDDF.777198.XyZ
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8
+    ws-opts:
+      headers:
+          Host: ddDDdDDdDDF.777198.XyZ
+      path: /OjdW89Bpg4ykd4O
+
   - name: TW Moon
     password: exaxgqkKkd0TAMrCxeonWg==
     port: 1443
@@ -100,6 +118,8 @@ proxy-groups:
     url: https://watchomovies.yoga/favicon.ico
 
 rules:
+  - DOMAIN-KEYWORD,crichdstreaming,ProxyNet
+  - DOMAIN-SUFFIX,crichd.com.co,ProxyNet
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,baidubcr.com,DIRECT
   - DOMAIN-SUFFIX,bdstatic.com,DIRECT
