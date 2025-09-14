@@ -6,7 +6,49 @@ log-level: info
 external-controller: :9090
 
 proxies:
-  
+
+  - cipher: aes-256-cfb
+    name: Shadow_Proxy
+    password: f8f7aCzcPKbsF8p3
+    port: 989
+    server: 185.153.197.5
+    type: ss
+    udp: true
+
+  - name: Socks5_Proxy
+    password: <password>
+    port: 443
+    server: acc485af-sx6ps0-t1bnjq-1krtb.hkt2.cdnhuawei.com
+    tls: true
+    type: socks5
+    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  - name: HTTP_Proxy
+    password: <password>
+    port: 8443
+    server: 9497cfdb-sx4v40-t1bnjq-1krtb.hkt.cdnhuawei.com
+    tls: true
+    type: http
+    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+
+  - alpn:
+      - h2
+      - http/1.1
+    client-fingerprint: chrome
+    name: VLESS_Proxy
+    network: ws
+    port: 2087
+    server: www.researchgate.net
+    servername: interimrita.shividpolo.store
+    tls: true
+    type: vless
+    udp: true
+    uuid: cd7f3c2f-8d6d-4ad8-98eb-fb10e0f6da9e
+    ws-opts:
+      headers:
+          Host: interimrita.shividpolo.store
+          User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+      path: /downloader?ed=2048
+
   - alpn:
       - http/1.1
     client-fingerprint: chrome
@@ -34,7 +76,7 @@ proxies:
     tls: true
     type: http
     username: mrwdfNTD8M79LCukCieldrqZWqs=
-      
+
   - name: AlvinQuick-1-RU                  
     type: hysteria
     server: 109.104.153.91
