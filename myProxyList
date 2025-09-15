@@ -49,6 +49,17 @@ proxies:
           User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
       path: /downloader?ed=2048
 
+  - name: RaceVPN
+    network: tcp
+    port: 443
+    server: 206.189.106.37
+    servername: nl2-full.privateip.net
+    tls: true
+    flow: xtls-rprx-vision
+    type: vless
+    udp: true
+    uuid: bbd95c2b-7100-4503-915f-6210d23c4952
+
   - alpn:
       - http/1.1
     client-fingerprint: chrome
