@@ -7,6 +7,11 @@ external-controller: :9090
 
 proxies:
 
+  - name: LocalSocks5
+    port: 1080
+    server: 192.168.8.100
+    type: socks5
+
   - cipher: aes-256-cfb
     name: Shadow_Proxy
     password: f8f7aCzcPKbsF8p3
