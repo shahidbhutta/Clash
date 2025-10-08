@@ -6,65 +6,7 @@ log-level: info
 external-controller: :9090
 
 proxies:
-
-  - name: LocalSocks5
-    port: 1080
-    server: 192.168.1.13
-    type: socks5
-
-  - cipher: aes-256-cfb
-    name: Shadow_Proxy
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 185.153.197.5
-    type: ss
-    udp: true
-
-  - name: Socks5_Proxy
-    password: <password>
-    port: 443
-    server: acc485af-sx6ps0-t1bnjq-1krtb.hkt2.cdnhuawei.com
-    tls: true
-    type: socks5
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  - name: HTTP_Proxy
-    password: <password>
-    port: 8443
-    server: 9497cfdb-sx4v40-t1bnjq-1krtb.hkt.cdnhuawei.com
-    tls: true
-    type: http
-    username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-
-  - alpn:
-      - h2
-      - http/1.1
-    client-fingerprint: chrome
-    name: VLESS_Proxy
-    network: ws
-    port: 2087
-    server: www.researchgate.net
-    servername: interimrita.shividpolo.store
-    tls: true
-    type: vless
-    udp: true
-    uuid: cd7f3c2f-8d6d-4ad8-98eb-fb10e0f6da9e
-    ws-opts:
-      headers:
-          Host: interimrita.shividpolo.store
-          User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-      path: /downloader?ed=2048
-
-  - name: RaceVPN
-    network: tcp
-    port: 443
-    server: 206.189.106.37
-    servername: nl2-full.privateip.net
-    tls: true
-    flow: xtls-rprx-vision
-    type: vless
-    udp: true
-    uuid: bbd95c2b-7100-4503-915f-6210d23c4952
-
+  
   - alpn:
       - http/1.1
     client-fingerprint: chrome
@@ -92,27 +34,28 @@ proxies:
     tls: true
     type: http
     username: mrwdfNTD8M79LCukCieldrqZWqs=
-
+      
   - name: AlvinQuick-1-RU                  
     type: hysteria
-    server: 109.104.153.91
-    port: 37519
+    server: 2001:bc8:32d7:158::4
+    port: 50011
     auth_str: dongtaiwang.com
     alpn:
       - h3
-    sni: www.bing.com
+    sni: apple.com
     skip-cert-verify: true
     up: "1000 Mbps"
     down: "1000 Mbps"
 
-  - name: AlvinQuick-2-US                  
+  - name: AlvinQuick-2                  
     type: hysteria
-    server: 208.87.243.151
-    port: 38845
+    server: 62.210.127.217
+    port: 50011
     auth_str: dongtaiwang.com
     alpn:
       - h3
     sni: www.bing.com
+    udp: true
     skip-cert-verify: true
     up: "1000 Mbps"
     down: "1000 Mbps"
@@ -131,24 +74,9 @@ proxies:
     down: "1000 Mbps"
 
   - name: AlvinSingbox-1-RU
-    type: hysteria2
-    server: 104.168.10.176
-    port: 35205
-    auth_str: dongtaiwang.com
-    obfs: salamander
-    obfs-password: dongtaiwang.com
-    alpn:
-      - h3
-    tls: true
-    servername: www.bing.com
-    skip-cert-verify: true
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-
-  - name: AlvinSingbox-2-RU
     type: hysteria
-    server: 108.181.24.77
-    port: 11512
+    server: 62.210.127.217
+    port: 35511
     auth_str: dongtaiwang.com
     alpn:
       - h3
@@ -158,6 +86,32 @@ proxies:
     up: "1000 Mbps"
     down: "1000 Mbps"
 
+  - name: AlvinSingbox-2-RU
+    type: hysteria
+    server: 51.159.226.1
+    port: 49003
+    auth_str: dongtaiwang.com
+    alpn:
+      - h3
+    tls: true
+    servername: apple.com
+    skip-cert-verify: true
+    up: "1000 Mbps"
+    down: "1000 Mbps"
+
+  - name: AlvinHy1
+    type: hysteria2
+    server: [2001:bc8:32d7:302::11]
+    port: 20088
+    auth_str: dongtaiwang.com
+    tls: true
+    upd: true
+    servername: apple.com
+    skip-cert-verify: true
+    up: "1000 Mbps"
+    down: "1000 Mbps"
+
+
 
 proxy-groups:
   - name: "ProxyNet"
@@ -165,14 +119,15 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - REJECT
       - "Best-of-ALL"
 
   - name: "Best-of-ALL"
-    interval: 30
+    interval: 300
     include-all: true
     test-timeout: 3
     type: url-test
-    url: https://cp.cloudflare.com/generate_204
+    url: https://watchomovies.yoga/favicon.ico
 
 rules:
   - DOMAIN-KEYWORD,crichdstreaming,ProxyNet
