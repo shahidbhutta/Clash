@@ -63,7 +63,7 @@ proxies:
     client-fingerprint: safari
 
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3935386332313238
+    name: saasorg
     network: ws
     port: 2053
     server: notion.site
@@ -78,7 +78,7 @@ proxies:
           Host: saasorg.saaas.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
   - alterId: 0
-    name: github.com/Ruk1ng001_6332303465396165
+    name: cdntencentmusic
     password: adb3985f-f23b-42f9-9332-cac7604021fd
     port: 35501
     server: green2.cdntencentmusic.com
@@ -87,15 +87,10 @@ proxies:
     tls: true
     type: trojan
     udp: true
-  - cipher: aes-256-cfb
-    name: "\U0001F534_\U0001F1F2\U0001F1E9_\U0001F4BC_github.com/Ruk1ng001_65373938613838"
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 185.153.197.5
-    type: ss
+
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_6538383664343536
+    name: t1.620720.xyz
     network: ws
     port: 8443
     server: t1.620720.xyz
@@ -108,7 +103,7 @@ proxies:
           Host: t1.620720.xyz
       path: /
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_6338376464363632
+    name: Snippets 2
     network: ws
     port: 443
     server: cdn.204910.best
@@ -123,7 +118,7 @@ proxies:
           Host: snippets.kkii.eu.org
       path: /
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3637343939633837
+    name: saass cc
     network: ws
     port: 2053
     server: cfxr.eu.org
@@ -138,7 +133,7 @@ proxies:
           Host: stall.saass.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3439646535633136
+    name: lenovo
     network: ws
     port: 2053
     server: go2.lenovo.com
@@ -152,7 +147,7 @@ proxies:
       headers:
           Host: stall.saass.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
-  - name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_6638633566386337"
+  - name: snippets 3
     network: ws
     password: 5a2c16f9
     port: 443
@@ -164,18 +159,10 @@ proxies:
       headers:
           Host: snippets.kkii.eu.org
       path: '%2F'
-  - alterId: 0
-    name: github.com/Ruk1ng001_6363376566373435
-    password: cfdf8794-5365-41ac-9e59-573aab964b3e
-    port: 31103
-    server: green2.cdntencentmusic.com
-    skip-cert-verify: true
-    sni: green2.cdntencentmusic.com
-    tls: true
-    type: trojan
+
     udp: true
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3939323837363334
+    name: aapanel
     network: ws
     port: 2053
     server: www.aapanel.com
@@ -191,14 +178,14 @@ proxies:
       path: /?ed=2560
   - alterId: 0
     cipher: aes-256-gcm
-    name: github.com/Ruk1ng001_3763633566303736
+    name: bigairport
     password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
     port: 15099
     server: ss.022.node-for-bigairport.win
     skip-cert-verify: true
     tls: true
     type: ss
-  - name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4F6_github.com/Ruk1ng001_6538353162396365"
+  - name: nintendogames
     network: tcp
     password: 44e660b0ee21cf3ac66aee2c08af85d2
     port: 443
@@ -221,16 +208,10 @@ proxies:
       headers:
           Host: snippets.kkii.eu.org
       path: /
-  - cipher: aes-256-cfb
-    name: "\U0001F534_\U0001F1F5\U0001F1F1_\U0001F4BB_github.com/Ruk1ng001_3636356462366561"
-    password: wjTugX3ZtHMB9c3Z
-    port: 9057
-    server: 217.30.10.70
-    type: ss
-    udp: true
+
   - alterId: 0
     cipher: auto
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_3865313434326536"
+    name: hk.nbee
     network: ws
     port: 443
     server: 104.19.61.72
@@ -243,7 +224,7 @@ proxies:
       headers:
           Host: hk.nbee.pp.ua
       path: /aa
-  - name: github.com/Ruk1ng001_3838636266313366
+  - name: sylu.net
     network: ws
     port: 443
     server: 104.26.0.221
@@ -258,7 +239,7 @@ proxies:
       path: /db10240eb751d6ab
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_6338383464373435
+    name: sy4.620720.xyz
     network: ws
     port: 443
     server: sy4.620720.xyz
@@ -270,14 +251,9 @@ proxies:
       headers:
           Host: sy4.620720.xyz
       path: /
-  - cipher: chacha20-ietf
-    name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BC_github.com/Ruk1ng001_3538366339633462"
-    password: asd123456
-    port: 8388
-    server: 103.149.182.86
-    type: ss
+
   - client-fingerprint: chrome
-    name: "❓_\U0001F1FA\U0001F1F8_\U0001F4BC_github.com/Ruk1ng001_6561323332336432"
+    name: dynv6.net
     network: ws
     port: 2053
     server: 208.103.161.33
@@ -292,7 +268,7 @@ proxies:
           Host: sni.111000.dynv6.net
       path: /?ed=2560
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3635323330653630
+    name: dynv6.net 1
     network: ws
     port: 2053
     server: quick-edit.devprod.cloudflare.dev
@@ -307,13 +283,13 @@ proxies:
           Host: sni.111000.dynv6.net
       path: /?ed=2560
   - cipher: chacha20-ietf-poly1305
-    name: github.com/Ruk1ng001_3832343639373763
+    name: fleetfoxi.link
     password: 2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw
     port: 44884
     server: backup.fleetfoxi.link
     type: ss
   - cipher: chacha20-ietf-poly1305
-    name: github.com/Ruk1ng001_6634656461396162
+    name: SS 11
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     port: 990
     server: 45.154.204.7
@@ -323,7 +299,7 @@ proxies:
     country: "\U0001F1ED\U0001F1F0HK"
     h2-opts: {}
     http-opts: {}
-    name: github.com/Ruk1ng001_3562396435613365
+    name: "\U0001F1ED\U0001F1F0HK hdacd.com"
     network: tcp
     port: 30824
     server: v24.hdacd.com
@@ -332,19 +308,19 @@ proxies:
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - alterId: 0
     cipher: auto
-    name: "\U0001F7E0_\U0001F1F7\U0001F1FA_\U0001F4BB_github.com/Ruk1ng001_6165333535343162"
+    name: VMESS3
     network: none
     port: 34895
     server: 2.56.242.210
     tls: false
     type: vmess
     uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea
-  - name: "\U0001F534_\U0001F1EE\U0001F1F3_\U0001F4BB_github.com/Ruk1ng001_3438366264326263"
+  - name: Socket 1
     port: 1080
     server: 64.227.131.240
     type: socks5
     udp: true
-  - name: github.com/Ruk1ng001_3930656635636538
+  - name: snippets 4
     network: ws
     password: 5a2c16f9
     port: 443
@@ -356,16 +332,10 @@ proxies:
       headers:
           Host: snippets.kkii.eu.org
       path: '%2F'
-  - cipher: aes-256-cfb
-    country: "\U0001F3C1 ZZ"
-    name: "\U0001F7E0_\U0001F1F5\U0001F1F9_\U0001F4BB_github.com/Ruk1ng001_6239313761366362"
-    password: f8f7aCzcPKbsF8p3
-    port: 989
-    server: 185.231.233.112
-    type: ss
+
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_3631656137643238
+    name: ondemand.com
     network: ws
     port: 443
     server: oksl.cfapps.ap21.hana.ondemand.com
@@ -378,7 +348,7 @@ proxies:
           Host: oksl.cfapps.ap21.hana.ondemand.com
       path: /laoluo
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3465353036346564
+    name: dynv6.net 5
     network: ws
     port: 2053
     server: convera.com
@@ -393,14 +363,14 @@ proxies:
           Host: sni.111000.dynv6.net
       path: /?ed=2560
   - cipher: auto
-    name: "❓_\U0001F1FA\U0001F1F8_\U0001F4F6_github.com/Ruk1ng001_3837656263366636"
+    name: VLESS2
     network: none
     port: 54661
     server: 99.88.80.195
     tls: false
     type: vless
     uuid: aa3e6633-40ff-4d90-fb85-a3a73c0ee4c3
-  - name: github.com/Ruk1ng001_66336439653339
+  - name: snippets 9
     network: ws
     password: 5a2c16f9
     port: 443
@@ -413,7 +383,7 @@ proxies:
       headers:
           Host: snippets.kkii.eu.org
       path: /
-  - name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_6266356563633065"
+  - name: snippets 11
     network: ws
     password: 5a2c16f9
     port: 443
@@ -426,7 +396,7 @@ proxies:
           Host: snippets.kkii.eu.org
       path: '%2F'
   - alterId: 0
-    name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4F6_github.com/Ruk1ng001_3263373139613164"
+    name: 2Fripaojiedian
     password: BxceQaOe
     port: 443
     server: 58.152.26.107
@@ -435,14 +405,14 @@ proxies:
     tls: true
     type: trojan
     udp: true
-  - name: "\U0001F534_\U0001F1F3\U0001F1F1_\U0001F4BB_github.com/Ruk1ng001_3665366637643364"
+  - name: Socket4
     port: 1080
     server: 104.248.203.234
     type: socks5
     udp: true
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: github.com/Ruk1ng001_64346437363534
+    name: icloud.com
     port: 10001
     reality-opts:
       public-key: 7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34
@@ -454,23 +424,9 @@ proxies:
     type: vless
     udp: true
     uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
-  - alterId: 0
-    cipher: aes-128-gcm
-    name: github.com/Ruk1ng001_3666343861386363
-    password: 57bc0c04-8184-48f5-906b-897d095ed445
-    port: 17459
-    server: liubu9.singdns.com
-    skip-cert-verify: true
-    tls: true
-    type: ss
-  - cipher: chacha20-ietf
-    name: "\U0001F7E0_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BC_github.com/Ruk1ng001_3133316339323936"
-    password: asd123456
-    port: 8388
-    server: 103.149.183.200
-    type: ss
+
   - client-fingerprint: chrome
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_3438333034323365"
+    name: saasorg.saaas.ccwu.cc
     network: ws
     port: 2053
     server: 104.17.53.155
@@ -489,7 +445,7 @@ proxies:
     country: "\U0001F1E8\U0001F1F3CN"
     h2-opts: {}
     http-opts: {}
-    name: github.com/Ruk1ng001_6631383961303161
+    name: v29.hdacd.com
     network: tcp
     port: 30829
     server: v29.hdacd.com
@@ -497,14 +453,14 @@ proxies:
     type: vmess
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - cipher: chacha20-ietf-poly1305
-    name: github.com/Ruk1ng001_3739636533356363
+    name: SS2
     password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
     port: 443
     server: 185.193.48.157
     type: ss
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_3739613735636635
+    name: xiaoniu.andcdn.bid
     network: ws
     port: 41318
     server: xiaoniu.andcdn.bid
@@ -516,7 +472,7 @@ proxies:
       headers:
           Host: img14.360buyimg.com
       path: /obj
-  - name: "\U0001F534_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_3433343463643264"
+  - name: snippets 22
     network: ws
     port: 443
     server: 108.162.198.185
@@ -530,51 +486,14 @@ proxies:
       headers:
           Host: snippets.kkii.eu.org
       path: /
-  - name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4F6_github.com/Ruk1ng001_3635313934363431"
-    network: tcp
-    password: BxceQaOe
-    port: 443
-    server: 58.152.26.107
-    skip-cert-verify: true
-    sni: t.me%2Fripaojiedian
-    type: trojan
-  - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_3164383966343062
-    network: ws
-    port: 443
-    server: 172.64.229.205
-    servername: snippets.kkii.eu.org
-    skip-cert-verify: true
-    tls: true
-    type: vless
-    udp: true
-    uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
-    ws-opts:
-      headers:
-          Host: snippets.kkii.eu.org
-      path: /
-  - name: "\U0001F534_\U0001F1F3\U0001F1F1_\U0001F4BB_github.com/Ruk1ng001_3566383035656465"
+
+  - name: Socket3
     port: 1080
     server: 161.35.82.57
     type: socks5
     udp: true
-  - name: github.com/Ruk1ng001_6537653361656239
-    network: tcp
-    password: cfdf8794-5365-41ac-9e59-573aab964b3e
-    port: 31103
-    server: green2.cdntencentmusic.com
-    skip-cert-verify: false
-    sni: green2.cdntencentmusic.com
-    type: trojan
-  - cipher: aes-128-gcm
-    name: github.com/Ruk1ng001_3261373933353430
-    password: 57bc0c04-8184-48f5-906b-897d095ed445
-    port: 17459
-    server: liubu9.singdns.com
-    tfo: false
-    type: ss
-    udp: true
-  - name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4F6_github.com/Ruk1ng001_3534613737303965"
+
+  - name: Fripaojiedian Trojan1
     network: tcp
     password: BxceQaOe
     port: 443
@@ -584,7 +503,7 @@ proxies:
     type: trojan
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F7E1_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_6461653539363765"
+    name: nokia.com
     network: tcp
     port: 33873
     reality-opts:
@@ -597,7 +516,7 @@ proxies:
     type: vless
     uuid: ffb5a850-edbc-4831-ad0b-e29483949ea8
   - client-fingerprint: chrome
-    name: "\U0001F534_\U0001F1E8\U0001F1F7_\U0001F4BB_github.com/Ruk1ng001_3932376365356531"
+    name: saasorg.saaas.ccwu.cc 11
     network: ws
     port: 2053
     server: 190.93.246.191
@@ -611,39 +530,12 @@ proxies:
       headers:
           Host: saasorg.saaas.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
-  - name: github.com/Ruk1ng001_3165323331306263
-    network: ws
-    password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-    port: 443
-    server: cf.zhetengsha.eu.org
-    skip-cert-verify: false
-    sni: _acme-challenge.2go.cloudns.be
-    type: trojan
-    ws-opts:
-      headers:
-          Host: _acme-challenge.2go.cloudns.be
-      path: /?ed=2560
-  - alterId: 0
-    name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4F6_github.com/Ruk1ng001_6265306262323932"
-    password: 44e660b0ee21cf3ac66aee2c08af85d2
-    port: 443
-    server: 112.118.116.8
-    skip-cert-verify: true
-    sni: www.nintendogames.net
-    tls: true
-    type: trojan
-    udp: true
-  - name: "\U0001F7E1_\U0001F1F0\U0001F1F7_\U0001F4F6_github.com/Ruk1ng001_3764353236333539"
-    port: 1090
-    server: 121.169.46.116
-    type: socks5
-    udp: true
+
   - alterId: 2
     cipher: auto
-    country: "\U0001F1ED\U0001F1F0HK"
     h2-opts: {}
     http-opts: {}
-    name: github.com/Ruk1ng001_3464336161643930
+    name: v4.hdacd.com
     network: tcp
     port: 30804
     server: v4.hdacd.com
@@ -651,7 +543,7 @@ proxies:
     type: vmess
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - client-fingerprint: chrome
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_3266383961613939"
+    name: snippets 57
     network: ws
     port: 443
     server: 172.64.53.226
@@ -666,7 +558,7 @@ proxies:
           Host: snippets.kkii.eu.org
       path: /
   - cipher: chacha20-ietf-poly1305
-    name: "\U0001F534_\U0001F1E8\U0001F1E6_\U0001F4BB_github.com/Ruk1ng001_3634316438666564"
+    name: SS8
     password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
     port: 443
     server: 193.203.203.66
@@ -674,7 +566,7 @@ proxies:
     udp: true
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_6561316164353231
+    name: dDdCCVFg.922922.SHOP
     network: ws
     port: 80
     server: dDdCCVFg.922922.SHOP
@@ -686,21 +578,16 @@ proxies:
       headers:
           Host: dDdCCVFg.922922.SHOP
       path: /RkUUbqhA9GJZBROjL3Q5vTymr
-  - name: "❓_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_6638623562336563"
-    password: gs4BXwT6SW
-    port: 10988
-    server: 154.26.192.123
-    type: http
-    username: fQ67Dpe5dU
+
   - cipher: chacha20-ietf-poly1305
-    name: "\U0001F534_\U0001F1F2\U0001F1E9_\U0001F4BB_github.com/Ruk1ng001_3261653661656135"
+    name: SS5
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     port: 990
     server: 176.123.1.175
     type: ss
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_34633062363766
+    name: ccc.922922.shop
     network: ws
     port: 80
     server: ccc.922922.shop
@@ -715,7 +602,7 @@ proxies:
           Host: cCc.922922.ShOp
       path: /RkUUbqhA9GJZBROjL3Q5vTymr
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_6565633566373632
+    name: one.dash.cloudflare.com
     network: ws
     port: 2053
     server: one.dash.cloudflare.com
@@ -730,7 +617,7 @@ proxies:
           Host: saasorg.saaas.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
   - client-fingerprint: chrome
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_3662656466666230"
+    name: saasorg.saaas.ccwu.cc 88
     network: ws
     port: 2053
     server: 162.159.254.137
@@ -744,39 +631,16 @@ proxies:
       headers:
           Host: saasorg.saaas.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
-  - alpn:
-      - h3
-    auth-str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F7E0_\U0001F1EB\U0001F1F7_\U0001F4F6_github.com/Ruk1ng001_3131383538386534"
-    port: 50011
-    protocol: udp
-    server: 62.210.10.186
-    skip-cert-verify: true
-    sni: apple.com
-    type: hysteria
-    up: 11 Mbps
-  - name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BB_github.com/Ruk1ng001_6563343062613731"
-    password: 76nlxJLO35
-    port: 36855
-    server: 172.93.165.193
-    type: http
-    username: xZedCGy2A5
-  - cipher: chacha20-ietf
-    name: "\U0001F7E0_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BC_github.com/Ruk1ng001_3937656232646539"
-    password: asd123456
-    port: 8388
-    server: 103.149.182.79
-    type: ss
+
   - cipher: aes-256-cfb
-    name: github.com/Ruk1ng001_3734356137653538
+    name: SS12
     password: JdmRK9gMEqFgs8nP
     port: 9003
     server: 5.188.181.201
     type: ss
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_65653438663836
+    name: xiaoniu.andcdn.bid 2
     network: ws
     port: 41315
     server: xiaoniu.andcdn.bid
@@ -789,7 +653,7 @@ proxies:
           Host: img14.360buyimg.com
       path: /obj
   - client-fingerprint: chrome
-    name: "❓_\U0001F1FA\U0001F1F8_\U0001F4BC_github.com/Ruk1ng001_3834323936323331"
+    name: sni.111000.dynv6.net 23
     network: ws
     port: 2053
     server: 208.103.161.32
@@ -803,7 +667,7 @@ proxies:
       headers:
           Host: sni.111000.dynv6.net
       path: /?ed=2560
-  - name: github.com/Ruk1ng001_6334326135336463
+  - name: one.cf.cdn.hyli.xyz
     network: ws
     password: 5a2c16f9
     port: 443
@@ -817,20 +681,15 @@ proxies:
           Host: snippets.kkii.eu.org
       path: /
   - cipher: chacha20-ietf-poly1305
-    name: "\U0001F534_\U0001F1F9\U0001F1F7_\U0001F4BB_github.com/Ruk1ng001_3862613837303763"
+    name: SS13
     password: pQmnC03JObbPhdh5FBJHgD6jnTLchsRA
     port: 443
     server: 95.164.116.33
     type: ss
-  - name: "\U0001F7E0_\U0001F1F5\U0001F1ED_\U0001F4BB_github.com/Ruk1ng001_3663626139626334"
-    password: Ejtp4SfY82
-    port: 10881
-    server: 38.54.87.34
-    type: http
-    username: 09ahaEWmXn
+
   - alterId: 2
     cipher: auto
-    name: github.com/Ruk1ng001_3363323732376161
+    name: v10.hdacd.com
     port: 30807
     server: v10.hdacd.com
     skip-cert-verify: false
@@ -839,7 +698,7 @@ proxies:
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - alterId: 0
     cipher: auto
-    name: "\U0001F7E0_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4BC_github.com/Ruk1ng001_6331316331383538"
+    name: VMESS4
     network: none
     port: 51000
     server: 8.217.90.175
@@ -848,7 +707,7 @@ proxies:
     uuid: 6c82a994-b6ba-48ca-f2ed-11288fe4913b
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_6435313562666230
+    name: v12.hdacd.com
     port: 30812
     server: v12.hdacd.com
     skip-cert-verify: true
@@ -858,7 +717,7 @@ proxies:
     udp: true
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - client-fingerprint: chrome
-    name: github.com/Ruk1ng001_6131383432646233
+    name: oralb.com
     network: ws
     port: 2053
     server: oralb.com
@@ -873,13 +732,13 @@ proxies:
           Host: stall.saass.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
   - cipher: chacha20-ietf-poly1305
-    name: github.com/Ruk1ng001_6534353765653264
+    name: SS15
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     port: 990
     server: 103.97.203.227
     type: ss
   - client-fingerprint: chrome
-    name: "\U0001F7E0_\U0001F1FA\U0001F1F8_\U0001F4BB_github.com/Ruk1ng001_3539363264306563"
+    name: stall.saass.ccwu.cc 25
     network: ws
     port: 2053
     server: 104.16.241.241
@@ -894,7 +753,7 @@ proxies:
           Host: stall.saass.ccwu.cc
       path: /proxyip=sjc.o00o.ooo
   - cipher: chacha20-ietf-poly1305
-    name: "❓_\U0001F1F3\U0001F1F1_\U0001F4BB_github.com/Ruk1ng001_6432323461376432"
+    name: SS16
     password: k1dBOmOB4oqi7Ump37a1bQ
     port: 8080
     server: 82.38.31.184
@@ -902,7 +761,7 @@ proxies:
     udp: true
   - alterId: 2
     cipher: auto
-    name: github.com/Ruk1ng001_37353234663638
+    name: v9.hdacd.com
     port: 30809
     server: v9.hdacd.com
     skip-cert-verify: false
@@ -910,14 +769,14 @@ proxies:
     type: vmess
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - cipher: chacha20-ietf-poly1305
-    name: "\U0001F7E0_\U0001F1E8\U0001F1E6_\U0001F4BB_github.com/Ruk1ng001_6539356237336535"
+    name: SS17
     password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     port: 990
     server: 23.95.76.59
     type: ss
   - alterId: 0
     cipher: auto
-    name: github.com/Ruk1ng001_3837346366363163
+    name: v30.hdacd.com
     port: 30830
     server: v30.hdacd.com
     skip-cert-verify: true
@@ -928,7 +787,7 @@ proxies:
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   - alterId: 2
     cipher: auto
-    name: github.com/Ruk1ng001_6631306661336630
+    name: v6.hdacd.com
     port: 30806
     server: v6.hdacd.com
     skip-cert-verify: false
@@ -938,32 +797,23 @@ proxies:
   - alpn:
       - h3
     auth-str: dongtaiwang.com
-    down: 55 Mbps
-    name: "\U0001F7E0_\U0001F1EB\U0001F1F7_\U0001F4F6_github.com/Ruk1ng001_3661613034663966"
+    down: 1000 Mbps
+    name: Alvin-Hy1
     port: 26691
     protocol: udp
     server: 62.210.196.68
     skip-cert-verify: true
     sni: apple.com
     type: hysteria
-    up: 11 Mbps
-  - alterId: 0
-    name: "\U0001F7E1_\U0001F1E8\U0001F1F3:\U0001F1ED\U0001F1F0_\U0001F4F6_github.com/Ruk1ng001_3163393462393032"
-    password: BxceQaOe
-    port: 443
-    server: 58.152.25.71
-    skip-cert-verify: true
-    sni: t.me/ripaojiedian
-    tls: true
-    type: trojan
-    udp: true
+    up: 1000 Mbps
+
   - cipher: chacha20-ietf-poly1305
-    name: "\U0001F534_\U0001F1EE\U0001F1F1_\U0001F4BB_github.com/Ruk1ng001_3763343263643633"
+    name: SS18
     password: yCbQ4bry4otfifK7oel71NaXpPL9pYJb
     port: 443
     server: 89.221.225.15
     type: ss
-  - name: github.com/Ruk1ng001_3962396666303733
+  - name: snippets 44
     network: ws
     port: 443
     server: cf.zhetengsha.eu.org
@@ -979,7 +829,7 @@ proxies:
       path: /
   - client-fingerprint: chrome
     flow: xtls-rprx-vision
-    name: "\U0001F534_\U0001F1F7\U0001F1FA_\U0001F4BC_github.com/Ruk1ng001_6233353532306634"
+    name: kinopoisk.ru
     port: 443
     reality-opts:
       public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
@@ -991,16 +841,7 @@ proxies:
     type: vless
     udp: true
     uuid: d44e93de-4a8c-464f-81f2-eb0d384b1ab2
-  - alterId: 0
-    name: github.com/Ruk1ng001_3831333333353835
-    password: 15299860-fadf-4a95-bb62-63666856822b
-    port: 31102
-    server: green2.cdntencentmusic.com
-    skip-cert-verify: true
-    sni: green2.cdntencentmusic.com
-    tls: true
-    type: trojan
-    udp: true
+
   - cipher: chacha20-ietf
     name: SS1
     password: asd123456
@@ -1014,15 +855,6 @@ proxies:
     port: 36887
     server: ss.029.node-for-bigairport.win
     type: ss
-  - alterId: 0
-    cipher: auto
-    name: VMESS1
-    port: 180
-    server: 82.198.246.97
-    skip-cert-verify: false
-    tls: false
-    type: vmess
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   - alterId: 0
     cipher: auto
     name: VMESS2
