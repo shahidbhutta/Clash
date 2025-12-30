@@ -1,5 +1,116 @@
 
 proxies:
+  - name: Pakistan
+    country: Pakistan
+    server: 156.59.243.6
+    port: 990
+    password: ARgvGZywa+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    type: ss
+    cipher: chacha20-ietf-poly1305
+  - type: vless
+    name: ch1.tunnely.ru
+    server: ch1.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: ch1.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - type: vless
+    name: de3.tunnely.ru
+    server: de3.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: de3.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - type: vless
+    name: es1.tunnely.ru
+    server: es1.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: es1.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - type: vless
+    name: fr1.tunnely.ru
+    server: fr1.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: fr1.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - type: vless
+    name: nl4.tunnely.ru
+    server: nl4.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: nl4.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - type: vless
+    name: us2.tunnely.ru
+    server: us2.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: us2.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - type: vless
+    name: nl4.tunnely.ru_1
+    server: nl4.tunnely.ru
+    port: 443
+    uuid: 4685d838-99e1-4dc7-bc26-d8589d41f2a1
+    network: tcp
+    servername: nl4.tunnely.ru
+    tls: true
+    encryption: none
+    reality-opts:
+      public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
+      short-id: 2e40144ddc07e8e1
+    client-fingerprint: random
+    flow: xtls-rprx-vision
+  - cipher: chacha20-ietf-poly1305
+    name: SS 11
+    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
+    port: 990
+    server: 45.154.204.7
+    type: ss
   - type: vless
     name: 🇳🇱 荷兰 | NLD
     server: subhol.abbvest.in
@@ -287,12 +398,6 @@ proxies:
     password: 2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw
     port: 44884
     server: backup.fleetfoxi.link
-    type: ss
-  - cipher: chacha20-ietf-poly1305
-    name: SS 11
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    port: 990
-    server: 45.154.204.7
     type: ss
   - alterId: 2
     cipher: auto
