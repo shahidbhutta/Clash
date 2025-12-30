@@ -7,6 +7,7 @@ proxies:
     password: ARgvGZywa+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     type: ss
     cipher: chacha20-ietf-poly1305
+    dialer-proxy: TW Moon
   - type: vless
     name: ch1.tunnely.ru
     server: ch1.tunnely.ru
@@ -1099,11 +1100,23 @@ proxies:
 
 proxy-groups:
   - name: "ProxyNet"
-    include-all: true
+    type: relay
+    proxies:
+      - VPNServer
+      - VPNProxyServer
+
+  - name: VPNServer
     type: select
+    include-all: true
     proxies:
       - DIRECT
       - "Best-of-ALL"
+
+  - name: VPNProxyServer
+    type: select
+    include-all: true
+    proxies:
+      - DIRECT
 
   - name: "Best-of-ALL"
     interval: 30
