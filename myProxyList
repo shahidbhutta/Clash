@@ -1100,32 +1100,25 @@ proxies:
 
 proxy-groups:
   - name: "ProxyNet"
-    type: relay
-    proxies:
-      - VPNServer
-      - VPNProxyServer
-
-  - name: VPNServer
     type: select
     include-all: true
     proxies:
       - DIRECT
-      - "Best-of-ALL"
+      - "Google"
 
-  - name: VPNProxyServer
-    type: select
-    include-all: true
-    proxies:
-      - DIRECT
-
-  - name: "Best-of-ALL"
+  - name: "Google"
     interval: 30
     include-all: true
     test-timeout: 3
     type: url-test
     url: https://www.gstatic.com/generate_204
 
-
+  - name: "BestMovies"
+    interval: 30
+    include-all: true
+    test-timeout: 3
+    type: url-test
+    url: https://hindilinks4u.services
 
 
 
