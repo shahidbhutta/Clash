@@ -7,7 +7,34 @@ proxies:
     password: ARgvGZywa+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     type: ss
     cipher: chacha20-ietf-poly1305
-    dialer-proxy: TW Moon
+    dialer-proxy: HTTP3
+  - name: GRM1
+    password: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNw%3D%3D
+    port: 1080
+    server: 193.233.254.7
+    type: socks5
+    udp: true
+    username: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNw%3D%3D
+  - name: GRM2
+    password: '@193.233.254.9:'
+    port: 1080
+    server: 193.233.254.9
+    type: socks5
+    username: Og@193.233.254.9
+  - client-fingerprint: random
+    flow: xtls-rprx-vision
+    name: NL1
+    port: 8443
+    reality-opts:
+      public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+      short-id: 58c512b4422e2517
+    server: 78.153.139.68
+    servername: images.apple.com
+    skip-cert-verify: false
+    tls: true
+    type: vless
+    udp: true
+    uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
   - type: vless
     name: ch1.tunnely.ru
     server: ch1.tunnely.ru
@@ -1105,6 +1132,7 @@ proxy-groups:
     proxies:
       - DIRECT
       - "Google"
+      - "BestMovies"
 
   - name: "Google"
     interval: 30
@@ -1118,7 +1146,7 @@ proxy-groups:
     include-all: true
     test-timeout: 3
     type: url-test
-    url: https://hindilinks4u.services
+    url: https://corner.streamoupload.xyz
 
 
 
