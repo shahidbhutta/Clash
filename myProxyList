@@ -7,7 +7,15 @@ proxies:
     password: ARgvGZywa+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
     type: ss
     cipher: chacha20-ietf-poly1305
-    dialer-proxy: HTTP3
+    dialer-proxy: US1
+  - name: US1
+    password: gs4BXwT6SW
+    port: 10988
+    server: 154.26.192.123
+    skip-cert-verify: false
+    tls: false
+    type: http
+    username: fQ67Dpe5dU
   - name: GRM1
     password: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNw%3D%3D
     port: 1080
