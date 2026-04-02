@@ -8,6 +8,203 @@ proxies:
     type: ss
     cipher: chacha20-ietf-poly1305
     dialer-proxy: 290MBPS
+  - name: 剩余流量：100 GB
+    type: vless
+    server: hyui.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: hyui.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: 套餐到期：长期有效
+    type: vless
+    server: hyui.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: hyui.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | HK 01
+    type: vless
+    server: hyui.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: hyui.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | HK 02
+    type: vless
+    server: hkt.starnetcn.top
+    port: 58000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: hkt.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | JP 01
+    type: vless
+    server: jpbackg.starnetcn.top
+    port: 54000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: jpbackg.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | JP 02
+    type: vless
+    server: jagbackup.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: jagbackup.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | US 01
+    type: vless
+    server: uino.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: uino.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | US 02
+    type: vless
+    server: usst.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: usst.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V3N | US 03
+    type: vless
+    server: 199.168.139.27
+    port: 443
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: www.starlux-airlines.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: nnjt8slzjI1LzJdaxrgxUvFeuW_MvUx3CD_p8u4Bcms
+      short-id: 2cdd898c
+  - name: V3N | US 04
+    type: vless
+    server: ussz.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: ussz.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V2N | HK 01
+    type: vless
+    server: 203.23.128.225
+    port: 443
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: www.gbm.hsbc.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Atv2bXIloE1hxTnTiayWS72DQhHVEjawkHofZU5q12g
+      short-id: 28bde716
+  - name: V2N | TW 01
+    type: vless
+    server: twg.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: twg.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V2N | JP 01
+    type: vless
+    server: backjp.starnetcn.top
+    port: 58000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: backjp.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V2N | SG 01
+    type: vless
+    server: sgx.timoyun.cyou
+    port: 58000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: sgx.timoyun.cyou
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V2N | KR 01
+    type: vless
+    server: 158.180.88.205
+    port: 443
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    encryption: mlkem768x25519plus.random.1rtt.W-e4AfoMvVvy9YWVavU07sFkEgIwthAAEPFCjb0BDi8
+    servername: www.qatarairways.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: xqb4MjPETqSDC4E8BAfSbbhIb2OorH1thnzqg7-shW0
+      short-id: 0a4adc43
+  - name: V1N | US 01
+    type: vless
+    server: usgo.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: usgo.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V1N | US 02
+    type: vless
+    server: usgt.starnetcn.top
+    port: 54000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: usgt.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+  - name: V1N | US 03
+    type: vless
+    server: 209.141.41.196
+    port: 443
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    encryption: mlkem768x25519plus.xorpub.0rtt.iXICnBotfRlHZCZd5NR8WcE8tS7U2GI3U9wiob4MMhA
+    servername: www.aa.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc
+      short-id: 751c0f48
+  - name: V1N | UK 01
+    type: vless
+    server: ukg.starnetcn.top
+    port: 443
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: www.starlux-airlines.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Tg48l1w3hbx-4I1KUFJ9yHVwaSd3jkdr6GcE3gWN9ko
+      short-id: aff7fdb5
+  - name: 备用 | starnetcn.com
+    type: vless
+    server: prx.starnetcn.top
+    port: 56000
+    uuid: 2bc6f6f4-e65a-4a0b-91b7-8ce196f58932
+    servername: prx.starnetcn.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
   - name: US1
     password: gs4BXwT6SW
     port: 10988
