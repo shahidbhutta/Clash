@@ -24,15 +24,9 @@ proxies:
   - {"client-fingerprint":"chrome","name":" t.me/PFSub | 🇳🇱 NL 074 | ⬇️ 2MB/s","network":"ws","password":"8r\u003c[9'l6hAO#8ZQi","port":8443,"server":"172.66.44.230","skip-cert-verify":false,"sni":"Koma-YT.PAGeS.Dev","type":"trojan","udp":true,"ws-opts":{"early-data-header-name":"Sec-WebSocket-Protocol","headers":{"User-Agent":"Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36"},"max-early-data":2560,"path":"/tro8sFW1S91B6sZrM1"}}
   - {"client-fingerprint":"chrome","encryption":"none","http-opts":{"path":["/@monacoVPN@monacoVPN@monacoVPN@monacoVPN"]},"name":" t.me/PFSub | 🇨🇭 CH 075 | ⬇️ 2MB/s","network":"http","port":22,"server":"172.65.111.43","skip-cert-verify":false,"tls":false,"type":"vless","uuid":"monacoVPN"}
   - {"client-fingerprint":"chrome","name":" t.me/PFSub | 🇩🇪 DE 076 | ⬇️ 7MB/s","network":"ws","port":4002,"server":"37.114.50.157","servername":"sub.mot.ip-ddns.com","skip-cert-verify":false,"tls":true,"type":"vless","uuid":"00000000-0000-4000-8000-000000000000","ws-opts":{"headers":{"Host":"sub.mot.ip-ddns.com"},"path":"/"}}
-  - {"alpn":["h2"],"name":" t.me/PFSub | 🇺🇸 US 081 | ⬇️ 14MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"type":"anytls","udp":true}
   - {"client-fingerprint":"chrome","encryption":"none","http-opts":{"path":["/@monacoVPN@monacoVPN@monacoVPN@monacoVPN"]},"name":" t.me/PFSub | 🇨🇭 CH 083 | ⬇️ 1MB/s","network":"http","port":22,"server":"172.65.111.43","skip-cert-verify":false,"tls":false,"type":"vless","uuid":"monacoVPN"}
   - {"client-fingerprint":"chrome","encryption":"none","http-opts":{"path":["/@monacoVPN@monacoVPN@monacoVPN@monacoVPN"]},"name":" t.me/PFSub | 🇨🇭 CH 086 | ⬇️ 2MB/s","network":"http","port":22,"server":"172.65.111.43","skip-cert-verify":false,"tls":false,"type":"vless","uuid":"monacoVPN"}
-  - {"alpn":["h2"],"name":" t.me/PFSub | 🇺🇸 US 089 | ⬇️ 12MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"type":"anytls","udp":true}
-  - {"alpn":["h2"],"name":" t.me/PFSub | 🇺🇸 US 090 | ⬇️ 14MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"type":"anytls","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 092 | ⬇️ 15MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","skip-cert-verify":true,"tls":true},"port":443,"server":"sub.danfeng.eu.org","tfo":false,"type":"ss"}
-  - {"allowInsecure":"1","alpn":["h2"],"client-fingerprint":"chrome","disable-sni":"true","fp":"chrome","name":" t.me/PFSub | 🇺🇸 US 098 | ⬇️ 7MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"sni":"","type":"anytls","udp":true}
-  - {"alpn":["h2"],"name":" t.me/PFSub | 🇺🇸 US 100 | ⬇️ 8MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"type":"anytls","udp":true}
-  - {"alpn":["h2"],"name":" t.me/PFSub | 🇺🇸 US 101 | ⬇️ 13MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"type":"anytls","udp":true}
   - {"name":" t.me/PFSub | 🇰🇷 KR 102 | ⬇️ 1MB/s","password":"","port":1090,"server":"121.169.46.116","skip-cert-verify":true,"type":"socks5","username":""}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 103 | ⬇️ 9MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cf.zhetengsha.eu.org","type":"ss","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 104 | ⬇️ 8MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cdns.doon.eu.org","type":"ss","udp":true}
@@ -40,7 +34,6 @@ proxies:
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 107 | ⬇️ 5MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cf.090227.xyz","type":"ss","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 108 | ⬇️ 12MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cdns.doon.eu.org","type":"ss","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 109 | ⬇️ 8MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cf.090227.xyz","type":"ss","udp":true}
-  - {"alpn":["h2"],"name":" t.me/PFSub | 🇺🇸 US 113 | ⬇️ 5MB/s","password":"dongtaiwang.com","port":59901,"server":"45.221.98.14","skip-cert-verify":true,"type":"anytls","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 119 | ⬇️ 5MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"sub.danfeng.eu.org","type":"ss","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 122 | ⬇️ 11MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cf.zhetengsha.eu.org","type":"ss","udp":true}
   - {"client-fingerprint":"chrome","encryption":"none","name":" t.me/PFSub | 🇺🇸 US 125 | ⬇️ 13MB/s","network":"ws","port":80,"server":"162.159.34.235","skip-cert-verify":false,"tls":false,"type":"vless","uuid":"0ca855d9-7c03-40eb-929b-919f934abdc3","ws-opts":{"early-data-header-name":"Sec-WebSocket-Protocol","headers":{"Host":"amirvpn.amirhm00100.workers.dev"},"max-early-data":2048,"path":"/"}}
@@ -1659,15 +1652,6 @@ proxies:
     server: jq26txdo.ovalyraa.com
     type: ss
     udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F9E0\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_2b485f0c"
-    password: d720a490-d56b-11ef-a1cb-f23c9313b177
-    port: 8300
-    server: 1b30bbb8-t9wqo0-tb5ob4-64gc.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 1b30bbb8-t9wqo0-tb5ob4-64gc.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - cipher: 2022-blake3-aes-128-gcm
     name: "\U0001F534\U0001F1EF\U0001F1F5[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_076e369c"
     password: aLBxsnzSc2Gb8Q72O0HHhw==:AVxKgcM8uSH7ckaVonRIzg==
@@ -1698,15 +1682,6 @@ proxies:
     skip-cert-verify: true
     sni: mpvideo.qpic.cn
     type: trojan
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F3AD\U0001F3AA]_github.com/Ruk1ng001_18432dc6"
-    password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-    port: 8300
-    server: 1dfe1864-t9ylc0-tb7mup-4550.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 1dfe1864-t9ylc0-tb7mup-4550.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - cipher: chacha20-ietf-poly1305
     name: "\U0001F7E2\U0001F1F9\U0001F1FC_github.com/Ruk1ng001_d0aff99f"
     password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
@@ -1795,15 +1770,6 @@ proxies:
     port: 50099
     server: r3mrcg007150y7y.cybervena.com
     type: ss
-    udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_b4ffeb06"
-    password: 1b609740-eec2-11ef-8543-f23c93136cb3
-    port: 8300
-    server: 5cdec792-t9wqo0-tdtx5w-au6.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 5cdec792-t9wqo0-tdtx5w-au6.hkt.east.wctype.com
-    type: anytls
     udp: true
   - name: "\U0001F7E2\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_136e3c0b"
     password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
@@ -2128,15 +2094,6 @@ proxies:
     tls: false
     type: vmess
     uuid: MoJia-@iranpwner-telegram
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_85816aad"
-    password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-    port: 8300
-    server: 1f99c2a2-t9l0g0-t9ijp5-4550.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 1f99c2a2-t9l0g0-t9ijp5-4550.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - cipher: chacha20-ietf
     name: "\U0001F534\U0001F1ED\U0001F1F0[✨]_github.com/Ruk1ng001_aab9aa85"
     password: asd123456
@@ -2199,13 +2156,6 @@ proxies:
     port: 15808
     server: shrimp-door-9527.gym0boy.com
     type: ss
-    udp: true
-  - name: "\U0001F534\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F916\U0001F4FA✨]_github.com/Ruk1ng001_68d24eec"
-    password: fe0fda62-79ff-467e-bef4-983322c1d21b
-    port: 60001
-    server: 47.238.235.158
-    skip-cert-verify: true
-    type: anytls
     udp: true
   - name: "\U0001F534\U0001F1F8\U0001F1EC[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_0a0d8c38"
     password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
@@ -2975,15 +2925,6 @@ proxies:
     skip-cert-verify: true
     sni: mpvideo.qpic.cn
     type: trojan
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F3AD\U0001F3AA]_github.com/Ruk1ng001_4596f5aa"
-    password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-    port: 8300
-    server: 605a5788-t9wqo0-tcm6ys-deip.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 605a5788-t9wqo0-tcm6ys-deip.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - name: "\U0001F534\U0001F1F0\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F50D]_github.com/Ruk1ng001_d8c46e33"
     password: C79F45C4-3A2A-2FC5-5DC7-B9DD307945F7
     port: 20065
@@ -3362,15 +3303,6 @@ proxies:
     type: ss
     udp: true
   - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F3AD\U0001F3AA]_github.com/Ruk1ng001_f8280f95"
-    password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-    port: 8300
-    server: 270d7536-t9l0g0-t9lb2a-1glq.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 270d7536-t9l0g0-t9lb2a-1glq.hkt.east.wctype.com
-    type: anytls
-    udp: true
-  - client-fingerprint: chrome
     encryption: none
     grpc-opts:
       grpc-service-name: update
@@ -3686,15 +3618,6 @@ proxies:
         User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
       path: /danfeng
     xudp: true
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F3AD\U0001F3AA]_github.com/Ruk1ng001_c81e02ba"
-    password: 1b609740-eec2-11ef-8543-f23c93136cb3
-    port: 8300
-    server: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 8ff2fd1c-t9mv40-tdtaxw-au6.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - client-fingerprint: firefox
     encryption: none
     flow: xtls-rprx-vision
@@ -4189,15 +4112,6 @@ proxies:
     server: toy4lkdzy0c.22b74943-12ad-47f4-b705-f2defb6ffea0.org
     tfo: false
     type: ss
-    udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F4FA\U0001F3AD\U0001F3AA✨]_github.com/Ruk1ng001_e70f1bcb"
-    password: d720a490-d56b-11ef-a1cb-f23c9313b177
-    port: 8300
-    server: b7fd6a5e-t9lmo0-t9izwa-64gc.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: b7fd6a5e-t9lmo0-t9izwa-64gc.hkt.east.wctype.com
-    type: anytls
     udp: true
   - client-fingerprint: chrome
     encryption: none
@@ -4733,15 +4647,6 @@ proxies:
     udp: true
     uuid: 491ce522-7923-41ad-869f-df74539af6e0
     xudp: true
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F3AD✨]_github.com/Ruk1ng001_039f968b"
-    password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-    port: 8300
-    server: d1452429-t9nhc0-t9lxaa-1glq.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: d1452429-t9nhc0-t9lxaa-1glq.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - alpn:
       - ""
     alterId: "0"
@@ -5527,16 +5432,6 @@ proxies:
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
     port: 38388
     server: 103.186.154.73
-    type: ss
-  - client-fingerprint: chrome
-    name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_83ee1d96"
-    password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-    port: 8300
-    server: 4a070136-t9xz40-tcj7b6-d70y.losjan20.west.wctype.com
-    skip-cert-verify: true
-    sni: 4a070136-t9xz40-tcj7b6-d70y.losjan20.west.wctype.com
-    type: anytls
-    udp: true
   - cipher: aes-256-cfb
     name: "\U0001F7E2\U0001F1FB\U0001F1F3[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_Og9CXA3g"
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -5759,15 +5654,6 @@ proxies:
     server: 103.186.155.112
     type: ss
     udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA\U0001F39E️✈️]_github.com/Ruk1ng001_db7666e1"
-    password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-    port: 8300
-    server: 6ca2e345-t9r6o0-tee5aa-1glq.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 6ca2e345-t9r6o0-tee5aa-1glq.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - cipher: aes-256-cfb
     name: "\U0001F7E2\U0001F1FB\U0001F1F3[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_DLVLCAXK"
     password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -5960,15 +5846,6 @@ proxies:
     server: 103.186.155.205
     type: ss
   - client-fingerprint: chrome
-    name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_b7dbab26"
-    password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-    port: 8300
-    server: 4409b6d5-t9ylc0-tb7mup-4550.los.west.wctype.com
-    skip-cert-verify: true
-    sni: 4409b6d5-t9ylc0-tb7mup-4550.los.west.wctype.com
-    type: anytls
-    udp: true
-  - client-fingerprint: chrome
     name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_b91164f7"
     network: ws
     port: 443
@@ -6057,24 +5934,6 @@ proxies:
     port: 38388
     server: 103.186.155.204
     type: ss
-  - client-fingerprint: chrome
-    name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_b6e29b3b"
-    password: d720a490-d56b-11ef-a1cb-f23c9313b177
-    port: 8300
-    server: e43a650c-t9w4g0-tb5234-64gc.los.west.wctype.com
-    skip-cert-verify: true
-    sni: e43a650c-t9w4g0-tb5234-64gc.los.west.wctype.com
-    type: anytls
-    udp: true
-  - client-fingerprint: chrome
-    name: "\U0001F534\U0001F1FA\U0001F1F8[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_1ff8c8f6"
-    password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
-    port: 8300
-    server: a5991a54-t9ylc0-tcjtj6-d70y.losjan20.west.wctype.com
-    skip-cert-verify: true
-    sni: a5991a54-t9ylc0-tcjtj6-d70y.losjan20.west.wctype.com
-    type: anytls
-    udp: true
   - client-fingerprint: random
     name: "\U0001F534\U0001F1F0\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AA]_github.com/Ruk1ng001_0862203e"
     network: ws
@@ -6197,15 +6056,6 @@ proxies:
     port: 38388
     server: 103.186.154.247
     type: ss
-  - client-fingerprint: chrome
-    name: "\U0001F7E1\U0001F1ED\U0001F1F0[\U0001F3AC\U0001F4FA]_github.com/Ruk1ng001_8f543d0e"
-    password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-    port: 8300
-    server: 54e8635c-t9lmo0-tcm6ys-deip.hkt.east.wctype.com
-    skip-cert-verify: true
-    sni: 54e8635c-t9lmo0-tcm6ys-deip.hkt.east.wctype.com
-    type: anytls
-    udp: true
   - client-fingerprint: random
     name: "\U0001F534\U0001F1F0\U0001F1F7[\U0001F3AC\U0001F916\U0001F4FA\U0001F3AD]_github.com/Ruk1ng001_14b3afd7"
     network: ws
