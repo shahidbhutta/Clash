@@ -1240,17 +1240,17 @@ rules:
 
 
 port: 3333
-socks-port: 23456
-redir-port: 23457
+socks-port: 7890
+redir-port: 7891
 allow-lan: true
-mode: rule
+mode: global
 log-level: error
 external-controller: 0.0.0.0:9990
 experimental:
   ignore-resolve-fail: true
 external-ui: dashboard
 external-ui-name: metacubexd
-secret: "clash"
+secret: "mySecretClash"
 profile:
   store-selected: false
   store-fake-ip: false
