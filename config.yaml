@@ -83,26 +83,12 @@ proxy-groups:
       - Tested
       - TestedByProxy
 
-  - name: "TestedByProxy"
-    include-all: true
-    dialer-Proxy: DialerProxy
-    type: url-test
-    url: https://www.gstatic.com/generate_204
-    interval: 60
-    tolerance: 500
-
   - name: "Tested"
     include-all: true
     type: url-test
     url: https://www.gstatic.com/generate_204
     interval: 60
     tolerance: 500
-
-  - name: "DialerProxy"
-    type: select
-    include-all: true
-    proxies:
-      - DIRECT
 
   - name: "YTProxy"
     include-all: true
