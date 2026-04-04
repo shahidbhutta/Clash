@@ -18,6 +18,41 @@ proxies:
     sni: apple.com
     type: hysteria
     up: 1000 Mbps
+  - name: alvin VLESS
+    type: vless
+    server: 62.210.24.143
+    port: 32202
+    uuid: 28148be2-61a7-4f36-8adb-030cc9f82bd0
+    network: http
+    servername: www.amazon.com
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path: /G3EEoH63
+    reality-opts:
+      public-key: bGe_-nAtOq6_w_2mv6pcmD8RzJP65Tti-vyMP2hAwDc
+      short-id: f57d8f26
+  - name: alvin VMESS
+    type: vmess
+    server: 2001:bc8:32d7:225::1
+    port: 23456
+    uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /alvin9999.com
+      headers:
+        Host: www.bing.com
+  - name: alvin Hy2
+    type: hysteria2
+    server: 62.210.25.116
+    port: 40022
+    password: dongtaiwang.com
+    sni: www.microsoft.com
+    skip-cert-verify: true
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 004 | ⬇️ 2MB/s","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"host":"mfvpn.fuchen.indevs.in","mode":"websocket","mux":false,"path":"/3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560","tls":true},"port":443,"server":"cf.008500.xyz","type":"ss","udp":true}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 007 | ⬇️ 2MB/s","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"host":"woshinidie-et3.pages.dev","mode":"websocket","mux":false,"path":"/79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560","skip-cert-verify":true,"tls":true},"port":443,"server":"store.ubi.com","tfo":false,"type":"ss"}
   - {"cipher":"none","name":" t.me/PFSub | 🇯🇵 JP 009 | ⬇️ 2MB/s","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"host":"woshinidie-et3.pages.dev","mode":"websocket","mux":false,"path":"/79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560","skip-cert-verify":true,"tls":true},"port":443,"server":"mfa.gov.ua","tfo":false,"type":"ss"}
